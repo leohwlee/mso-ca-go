@@ -1,0 +1,408 @@
+[
+ {
+  "id": "m1-01",
+  "module": 1,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.1.1",
+   "tc": "測試文件 第1.1條"
+  },
+  "en": {
+   "q": "[DUMMY M1 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 1)",
+    "Option x (module 1)",
+    "Option y (module 1)",
+    "Option z (module 1)"
+   ],
+   "explain": "Placeholder explanation for module 1 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元1 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元1）",
+    "選項乙（單元1）",
+    "選項丙（單元1）",
+    "選項丁（單元1）"
+   ],
+   "explain": "單元1第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m1-02",
+  "module": 1,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.1.2",
+   "tc": "測試文件 第1.2條"
+  },
+  "en": {
+   "q": "[DUMMY M1 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 1)",
+    "Option x (module 1)",
+    "Option y (module 1)",
+    "Option z (module 1)"
+   ],
+   "explain": "Placeholder explanation for module 1 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元1 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元1）",
+    "選項乙（單元1）",
+    "選項丙（單元1）",
+    "選項丁（單元1）"
+   ],
+   "explain": "單元1第2題的測試解釋。"
+  }
+ },
+ {
+  "id": "m2-01",
+  "module": 2,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.2.1",
+   "tc": "測試文件 第2.1條"
+  },
+  "en": {
+   "q": "[DUMMY M2 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 2)",
+    "Option x (module 2)",
+    "Option y (module 2)",
+    "Option z (module 2)"
+   ],
+   "explain": "Placeholder explanation for module 2 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元2 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元2）",
+    "選項乙（單元2）",
+    "選項丙（單元2）",
+    "選項丁（單元2）"
+   ],
+   "explain": "單元2第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m2-02",
+  "module": 2,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.2.2",
+   "tc": "測試文件 第2.2條"
+  },
+  "en": {
+   "q": "[DUMMY M2 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 2)",
+    "Option x (module 2)",
+    "Option y (module 2)",
+    "Option z (module 2)"
+   ],
+   "explain": "Placeholder explanation for module 2 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元2 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元2）",
+    "選項乙（單元2）",
+    "選項丙（單元2）",
+    "選項丁（單元2）"
+   ],
+   "explain": "單元2第2題的測試解釋。"
+  }
+ },
+ {
+  "id": "m3-01",
+  "module": 3,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.3.1",
+   "tc": "測試文件 第3.1條"
+  },
+  "en": {
+   "q": "[DUMMY M3 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 3)",
+    "Option x (module 3)",
+    "Option y (module 3)",
+    "Option z (module 3)"
+   ],
+   "explain": "Placeholder explanation for module 3 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元3 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元3）",
+    "選項乙（單元3）",
+    "選項丙（單元3）",
+    "選項丁（單元3）"
+   ],
+   "explain": "單元3第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m3-02",
+  "module": 3,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.3.2",
+   "tc": "測試文件 第3.2條"
+  },
+  "en": {
+   "q": "[DUMMY M3 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 3)",
+    "Option x (module 3)",
+    "Option y (module 3)",
+    "Option z (module 3)"
+   ],
+   "explain": "Placeholder explanation for module 3 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元3 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元3）",
+    "選項乙（單元3）",
+    "選項丙（單元3）",
+    "選項丁（單元3）"
+   ],
+   "explain": "單元3第2題的測試解釋。"
+  }
+ },
+ {
+  "id": "m4-01",
+  "module": 4,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.4.1",
+   "tc": "測試文件 第4.1條"
+  },
+  "en": {
+   "q": "[DUMMY M4 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 4)",
+    "Option x (module 4)",
+    "Option y (module 4)",
+    "Option z (module 4)"
+   ],
+   "explain": "Placeholder explanation for module 4 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元4 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元4）",
+    "選項乙（單元4）",
+    "選項丙（單元4）",
+    "選項丁（單元4）"
+   ],
+   "explain": "單元4第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m4-02",
+  "module": 4,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.4.2",
+   "tc": "測試文件 第4.2條"
+  },
+  "en": {
+   "q": "[DUMMY M4 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 4)",
+    "Option x (module 4)",
+    "Option y (module 4)",
+    "Option z (module 4)"
+   ],
+   "explain": "Placeholder explanation for module 4 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元4 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元4）",
+    "選項乙（單元4）",
+    "選項丙（單元4）",
+    "選項丁（單元4）"
+   ],
+   "explain": "單元4第2題的測試解釋。"
+  }
+ },
+ {
+  "id": "m5-01",
+  "module": 5,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.5.1",
+   "tc": "測試文件 第5.1條"
+  },
+  "en": {
+   "q": "[DUMMY M5 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 5)",
+    "Option x (module 5)",
+    "Option y (module 5)",
+    "Option z (module 5)"
+   ],
+   "explain": "Placeholder explanation for module 5 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元5 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元5）",
+    "選項乙（單元5）",
+    "選項丙（單元5）",
+    "選項丁（單元5）"
+   ],
+   "explain": "單元5第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m5-02",
+  "module": 5,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.5.2",
+   "tc": "測試文件 第5.2條"
+  },
+  "en": {
+   "q": "[DUMMY M5 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 5)",
+    "Option x (module 5)",
+    "Option y (module 5)",
+    "Option z (module 5)"
+   ],
+   "explain": "Placeholder explanation for module 5 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元5 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元5）",
+    "選項乙（單元5）",
+    "選項丙（單元5）",
+    "選項丁（單元5）"
+   ],
+   "explain": "單元5第2題的測試解釋。"
+  }
+ },
+ {
+  "id": "m6-01",
+  "module": 6,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.6.1",
+   "tc": "測試文件 第6.1條"
+  },
+  "en": {
+   "q": "[DUMMY M6 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 6)",
+    "Option x (module 6)",
+    "Option y (module 6)",
+    "Option z (module 6)"
+   ],
+   "explain": "Placeholder explanation for module 6 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元6 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元6）",
+    "選項乙（單元6）",
+    "選項丙（單元6）",
+    "選項丁（單元6）"
+   ],
+   "explain": "單元6第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m6-02",
+  "module": 6,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.6.2",
+   "tc": "測試文件 第6.2條"
+  },
+  "en": {
+   "q": "[DUMMY M6 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 6)",
+    "Option x (module 6)",
+    "Option y (module 6)",
+    "Option z (module 6)"
+   ],
+   "explain": "Placeholder explanation for module 6 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元6 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元6）",
+    "選項乙（單元6）",
+    "選項丙（單元6）",
+    "選項丁（單元6）"
+   ],
+   "explain": "單元6第2題的測試解釋。"
+  }
+ },
+ {
+  "id": "m7-01",
+  "module": 7,
+  "answer": 1,
+  "source": {
+   "en": "Dummy doc, s.7.1",
+   "tc": "測試文件 第7.1條"
+  },
+  "en": {
+   "q": "[DUMMY M7 Q1] Which option is correct?",
+   "options": [
+    "Option w (module 7)",
+    "Option x (module 7)",
+    "Option y (module 7)",
+    "Option z (module 7)"
+   ],
+   "explain": "Placeholder explanation for module 7 question 1."
+  },
+  "tc": {
+   "q": "[測試 單元7 第1題] 哪一項正確？",
+   "options": [
+    "選項甲（單元7）",
+    "選項乙（單元7）",
+    "選項丙（單元7）",
+    "選項丁（單元7）"
+   ],
+   "explain": "單元7第1題的測試解釋。"
+  }
+ },
+ {
+  "id": "m7-02",
+  "module": 7,
+  "answer": 2,
+  "source": {
+   "en": "Dummy doc, s.7.2",
+   "tc": "測試文件 第7.2條"
+  },
+  "en": {
+   "q": "[DUMMY M7 Q2] Which option is correct?",
+   "options": [
+    "Option w (module 7)",
+    "Option x (module 7)",
+    "Option y (module 7)",
+    "Option z (module 7)"
+   ],
+   "explain": "Placeholder explanation for module 7 question 2."
+  },
+  "tc": {
+   "q": "[測試 單元7 第2題] 哪一項正確？",
+   "options": [
+    "選項甲（單元7）",
+    "選項乙（單元7）",
+    "選項丙（單元7）",
+    "選項丁（單元7）"
+   ],
+   "explain": "單元7第2題的測試解釋。"
+  }
+ }
+]

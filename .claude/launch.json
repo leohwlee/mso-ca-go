@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mso-ca",
+      "runtimeExecutable": "./mso-ca.exe",
+      "runtimeArgs": ["-no-browser", "-port", "8321"],
+      "port": 8321
+    }
+  ]
+}
