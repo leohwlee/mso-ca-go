@@ -34,7 +34,8 @@ Flags: `-port 9000` to use another port, `-no-browser` to skip auto-opening.
 - **Practice 練習** — pick modules, untimed, instant feedback with an
   explanation and an exact source citation after every answer.
 - **Review 重溫** — every past attempt is stored and can be replayed with full
-  explanations.
+  explanations; switch to *Wrong only* to see just the mistakes, and go
+  straight to *Practice my wrong answers* from the results page.
 - **Languages** — on first launch you pick English or 繁體中文; every question
   exists in both. Switch between **EN**, **中文**, or **EN+中** (bilingual,
   both shown together) at any time from the top bar, even mid-exam.

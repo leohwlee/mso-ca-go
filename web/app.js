@@ -38,6 +38,9 @@ let justFinished = false;       // results view: fresh submit vs history review
 let timerId = null;
 let homeNotice = null;          // one-shot message on home
 let pmodSel = new Set([1, 2, 3, 4, 5, 6, 7]); // practice module selection
+let reviewFilter = 'all';       // results view: 'all' | 'wrong'
+let homeTick = null;            // ticks the "time left" on the home resume card
+const BASE_TITLE = document.title;
 
 const qs = new URLSearchParams(location.search);
 const customMinutes = qs.has('minutes') ? Math.max(0.05, parseFloat(qs.get('minutes')) || CFG.minutes) : null;
@@ -155,6 +158,8 @@ function grade(qids, answers) {
 
 function render() {
   stopTimer();
+  clearInterval(homeTick);
+  if (S.view !== 'exam') document.title = BASE_TITLE;
   const app = $('#app');
   if (S.view === 'exam') app.innerHTML = examView();
   else if (S.view === 'results') app.innerHTML = resultsView();
@@ -244,6 +249,7 @@ function homeView() {
         <button class="btn secondary" id="btn-practice" ${bank.length ? '' : 'disabled'}>${ui('Start practice', '開始練習')}</button>
       </div>
     </div>
+    ${attempts.length ? progressCardHTML(attempts) : ''}
     <div class="card">
       <h2>${ui('History', '過往紀錄')}</h2>
       ${attempts.length ? historyHTML(attempts) : `<div class="sub" style="margin:0">${ui('No attempts yet.', '未有應考紀錄。')}</div>`}
@@ -256,7 +262,6 @@ function homeView() {
           '紀錄儲存於此瀏覽器；檔案是可閱讀的備份，可在任何電腦載入。')}</span>
       </div>
     </div>
-    ${attempts.length ? progressCardHTML(attempts) : ''}
     <div class="footer">${ui(
       'Practice questions are reconstructions from official C&ED / e-Legislation materials — not real exam questions.',
       '練習題按官方材料重構而成，並非真題。')}</div>
@@ -296,6 +301,13 @@ function bindHome() {
   if (start) start.onclick = () => startExam();
   const resume = $('#btn-resume');
   if (resume) resume.onclick = () => resumeExam();
+  const left = $('#resume-left');
+  if (left) homeTick = setInterval(() => {
+    const s = store.get(examKey(), null);
+    if (!s) return;
+    if (Date.now() >= s.endsAt) { exam = s; finishExam(true); return; }
+    left.textContent = fmtTime(s.endsAt - Date.now());
+  }, 1000);
   const discard = $('#btn-discard');
   if (discard) discard.onclick = () => {
     confirmModal(
@@ -310,16 +322,18 @@ function bindHome() {
       const n = +c.dataset.pm;
       if (pmodSel.has(n) && pmodSel.size === 1) return; // keep at least one
       pmodSel.has(n) ? pmodSel.delete(n) : pmodSel.add(n);
+      store.set('pmods', [...pmodSel]);
       render();
     };
   });
   const all = $('#pm-all');
-  if (all) all.onclick = () => { pmodSel = new Set([1, 2, 3, 4, 5, 6, 7]); render(); };
+  if (all) all.onclick = () => { pmodSel = new Set([1, 2, 3, 4, 5, 6, 7]); store.set('pmods', [...pmodSel]); render(); };
   document.querySelectorAll('[data-review]').forEach(b => {
     b.onclick = () => {
       const attempts = store.get(attemptsKey(), []);
       reviewAttempt = attempts[+b.dataset.review];
       justFinished = false;
+      reviewFilter = 'all';
       S.view = 'results'; render();
       window.scrollTo(0, 0);
     };
@@ -468,8 +482,8 @@ function examView() {
               : `<button class="btn" id="btn-next">${ui('Next', '下一題')}</button>`}
           </div>
         </div>
-        <div class="footer kbd">${ui('Keyboard: A–D or 1–4 to answer · ←/→ to move · click the sheet to mark or jump',
-          '鍵盤：A–D 或 1–4 作答 · ←/→ 切換題目 · 可直接在答題紙上作答或跳題')}</div>
+        <div class="footer kbd">${ui('Keyboard: A–D or 1–4 to answer (press again to erase) · Enter next · ←/→ move · or mark the sheet directly',
+          '鍵盤：A–D 或 1–4 作答（再按一次可清除）· Enter 下一題 · ←/→ 切換 · 亦可直接在答題紙上作答')}</div>
       </div>
       <aside class="rail">
         <div class="card">
@@ -570,11 +584,15 @@ function gotoQ(i) {
 }
 
 function examKeys(e) {
-  if (S.view !== 'exam' || $('.modal-back')) return;
+  if (S.view !== 'exam' || $('.modal-back') || e.ctrlKey || e.metaKey || e.altKey) return;
   const k = e.key.toLowerCase();
   if (k === 'arrowleft') gotoQ(exam.cur - 1);
   else if (k === 'arrowright') gotoQ(exam.cur + 1);
-  else if ('abcd'.includes(k) || '1234'.includes(k)) {
+  else if (k === 'enter') {
+    if (e.target && e.target.tagName === 'BUTTON') return;   // a focused button already handles Enter
+    if (exam.cur === exam.qids.length - 1) confirmSubmit(); else gotoQ(exam.cur + 1);
+  }
+  else if (k.length === 1 && ('abcd'.includes(k) || '1234'.includes(k))) {
     const di = 'abcd'.includes(k) ? 'abcd'.indexOf(k) : '1234'.indexOf(k);
     const q = byId.get(exam.qids[exam.cur]);
     const orig = exam.optOrder[q.id][di];
@@ -588,12 +606,15 @@ function examKeys(e) {
 function confirmSubmit() {
   const un = exam.qids.map((qid, i) => exam.answers[qid] === undefined ? i + 1 : null).filter(x => x);
   const flaggedN = exam.flags.length;
-  let body = ui('All 35 questions answered.', '35題已全部作答。');
+  let body = ui(`All ${exam.qids.length} questions answered.`, `${exam.qids.length}題已全部作答。`);
   if (un.length) body = `<span class="warn">${ui(
     `${un.length} unanswered question${un.length > 1 ? 's' : ''}: `, `尚有${un.length}題未作答：`)}#${un.join(', #')}</span><br>` +
     ui('Unanswered questions count as wrong.', '未作答的題目作錯題計算。');
   if (flaggedN) body += `<br>${ui(`${flaggedN} flagged for review.`, `${flaggedN}題已標記待覆核。`)}`;
-  confirmModal(ui('Submit the paper?', '確定交卷？'), body, ui('Submit', '交卷'), () => finishExam(false));
+  const extra = un.length
+    ? { label: ui('Go to first unanswered', '跳至首題未作答'), onClick: () => gotoQ(un[0] - 1) }
+    : flaggedN ? { label: ui('Go to first flagged', '跳至首題已標記'), onClick: () => gotoQ(exam.qids.indexOf(exam.flags[0])) } : null;
+  confirmModal(ui('Submit the paper?', '確定交卷？'), body, ui('Submit', '交卷'), () => finishExam(false), false, extra);
 }
 
 function finishExam(auto) {
@@ -613,6 +634,7 @@ function finishExam(auto) {
   exam = null;
   reviewAttempt = attempt;
   justFinished = true;
+  reviewFilter = 'all';
   S.view = 'results'; render();
   window.scrollTo(0, 0);
 }
@@ -631,6 +653,7 @@ function startTimer() {
     const left = exam.endsAt - Date.now();
     if (left <= 0) { finishExam(true); return; }
     const txt = fmtTime(left);
+    document.title = txt + ' · ' + BASE_TITLE;    // visible on the tab even when it is not in front
     els.forEach(el => {
       el.querySelector('.tval').textContent = txt;
       el.classList.toggle('warn', left <= 10 * 60000 && left > 5 * 60000);
@@ -690,7 +713,12 @@ function resultsView() {
   const why = S.lang === 'en' ? whyIn('en') : S.lang === 'tc' ? whyIn('tc')
     : whyIn('en') + '<br>' + whyIn('tc');
 
-  const items = a.qids.map((qid, i) => byId.has(qid) ? reviewItemHTML(byId.get(qid), i, a) : '').join('');
+  const wrongIdx = a.qids.map((qid, i) => byId.has(qid) && a.answers[qid] !== byId.get(qid).answer ? i : -1).filter(i => i >= 0);
+  const shown = i => reviewFilter === 'all' || wrongIdx.includes(i);
+  const items = a.qids.map((qid, i) => byId.has(qid) && shown(i) ? reviewItemHTML(byId.get(qid), i, a) : '').join('');
+  const nextSteps = `
+    <button class="btn secondary btn-home">${ui('Back to home', '返回主頁')}</button>
+    ${wrongIdx.length ? `<button class="btn btn-practice-wrong">${ui(`Practice my ${wrongIdx.length} wrong answer${wrongIdx.length === 1 ? '' : 's'}`, `練習答錯的${wrongIdx.length}題`)}</button>` : ''}`;
 
   return topbarHTML() + `
   <div class="wrap">
@@ -704,9 +732,8 @@ function resultsView() {
       <div class="why">${why}</div>
     </div>
     <div class="actions" style="margin-top:12px">
-      <button class="btn secondary small" id="btn-save-r">${ui('Save history to file (.md)', '儲存紀錄至檔案 (.md)')}</button>
-      <span class="note">${ui('This attempt is already kept in this browser; the file is a readable backup of all attempts.',
-        '此次應考已存於此瀏覽器；檔案是所有紀錄的可閱讀備份。')}</span>
+      ${nextSteps}
+      <button class="btn secondary" id="btn-save-r">${ui('Save history to file (.md)', '儲存紀錄至檔案 (.md)')}</button>
     </div>
     <div class="card">
       <h2>${ui('By module', '各單元成績')}</h2>
@@ -714,20 +741,22 @@ function resultsView() {
         '先列答對、後列答錯。豎線代表底線：每個單元最少須答對3題。')}</div>
       <div class="dotrows">${perMod}</div>
     </div>
-    <div class="card">
+    <div class="card" id="review-top">
       <h2>${ui('Full review', '全卷重溫')}</h2>
       <div class="sub">${ui('Your answer is marked; the correct answer is highlighted in green. Click a number to jump.',
         '你的作答已標示；正確答案以綠色顯示。點擊題號可跳至該題。')}</div>
+      <div class="chips" style="margin-bottom:12px">
+        <button class="chip ${reviewFilter === 'all' ? 'on' : ''}" data-rf="all">${ui('All', '全部')} · ${a.qids.length}</button>
+        <button class="chip ${reviewFilter === 'wrong' ? 'on' : ''}" data-rf="wrong">${ui('Wrong only', '只看錯題')} · ${wrongIdx.length}</button>
+      </div>
       <div class="chips" id="jumpgrid">${a.qids.map((qid, i) => {
-        if (!byId.has(qid)) return '';
+        if (!byId.has(qid) || !shown(i)) return '';
         const ok = a.answers[qid] === byId.get(qid).answer;
         return `<button class="ncell ${ok ? 'rok' : 'rbad'}" data-jump="${i}">${i + 1}</button>`;
       }).join('')}</div>
     </div>
-    ${items}
-    <div class="actions" style="margin-top:22px">
-      <button class="btn" id="btn-home">${ui('Back to home', '返回主頁')}</button>
-    </div>
+    ${items || `<div class="card"><div class="sub" style="margin:0">${ui('No wrong answers in this attempt.', '此次應考沒有錯題。')}</div></div>`}
+    <div class="actions" style="margin-top:22px">${nextSteps}</div>
   </div>`;
 }
 
@@ -765,7 +794,23 @@ function reviewItemHTML(q, i, a) {
 }
 
 function bindResults() {
-  $('#btn-home').onclick = () => { S.view = 'home'; reviewAttempt = null; render(); window.scrollTo(0, 0); };
+  document.querySelectorAll('.btn-home').forEach(b => {
+    b.onclick = () => { S.view = 'home'; reviewAttempt = null; render(); window.scrollTo(0, 0); };
+  });
+  document.querySelectorAll('.btn-practice-wrong').forEach(b => {
+    b.onclick = () => {
+      const a = reviewAttempt;
+      startPractice(a.qids.filter(qid => byId.has(qid) && a.answers[qid] !== byId.get(qid).answer));
+    };
+  });
+  document.querySelectorAll('[data-rf]').forEach(b => {
+    b.onclick = () => {
+      reviewFilter = b.dataset.rf;
+      render();
+      const top = $('#review-top');
+      if (top) top.scrollIntoView({ block: 'start' });
+    };
+  });
   const save = $('#btn-save-r');
   if (save) save.onclick = saveHistoryFile;
   document.querySelectorAll('[data-jump]').forEach(b => {
@@ -968,6 +1013,8 @@ function nextPracticeQ(advance = true) {
   if (practice.idx >= practice.pool.length) {   // recycle, reshuffled
     shuffle(practice.pool);
     practice.idx = 0;
+    toast(ui(`All ${practice.pool.length} questions seen once — starting another round`,
+      `已完成全部 ${practice.pool.length} 題，重新開始一輪`));
   }
   practice.order = shuffle([0, 1, 2, 3]);
   practice.chosen = null;
@@ -1032,13 +1079,13 @@ function bindPractice() {
   if (nx) nx.onclick = () => { nextPracticeQ(); render(); window.scrollTo(0, 0); };
   $('#btn-pend').onclick = () => { practice = null; S.view = 'home'; render(); };
   document.onkeydown = e => {
-    if (S.view !== 'practice' || $('.modal-back')) return;
+    if (S.view !== 'practice' || $('.modal-back') || e.ctrlKey || e.metaKey || e.altKey) return;
     const k = e.key.toLowerCase();
-    if (practice.chosen === null && ('abcd'.includes(k) || '1234'.includes(k))) {
+    if (practice.chosen === null && k.length === 1 && ('abcd'.includes(k) || '1234'.includes(k))) {
       const di = 'abcd'.includes(k) ? 'abcd'.indexOf(k) : '1234'.indexOf(k);
       const el = document.querySelectorAll('#opts .opt')[di];
       if (el) el.click();
-    } else if (practice.chosen !== null && (k === 'enter' || k === 'arrowright')) {
+    } else if (practice.chosen !== null && (k === 'arrowright' || (k === 'enter' && e.target.tagName !== 'BUTTON'))) {
       nextPracticeQ(); render(); window.scrollTo(0, 0);
     }
   };
@@ -1046,13 +1093,14 @@ function bindPractice() {
 
 /* ---------------- modal ---------------- */
 
-function confirmModal(title, bodyHTML, okLabel, onOK, danger = false) {
+function confirmModal(title, bodyHTML, okLabel, onOK, danger = false, extra = null) {
   const back = document.createElement('div');
   back.className = 'modal-back';
   back.innerHTML = `<div class="modal">
     <h3>${title}</h3>
     <p>${bodyHTML}</p>
     <div class="actions">
+      ${extra ? `<button class="btn secondary" id="m-extra">${extra.label}</button>` : ''}
       <button class="btn secondary" id="m-cancel">${ui('Cancel', '取消')}</button>
       <button class="btn ${danger ? 'danger' : ''}" id="m-ok">${okLabel}</button>
     </div>
@@ -1061,6 +1109,8 @@ function confirmModal(title, bodyHTML, okLabel, onOK, danger = false) {
   back.querySelector('#m-cancel').onclick = () => back.remove();
   back.onclick = e => { if (e.target === back) back.remove(); };
   back.querySelector('#m-ok').onclick = () => { back.remove(); onOK(); };
+  if (extra) back.querySelector('#m-extra').onclick = () => { back.remove(); extra.onClick(); };
+  back.querySelector('#m-ok').focus();
 }
 
 /* ---------------- boot ---------------- */
@@ -1080,6 +1130,8 @@ async function boot() {
   }
 
   S.lang = store.get('lang', null);
+  const savedSel = store.get('pmods', null);
+  if (Array.isArray(savedSel) && savedSel.length) pmodSel = new Set(savedSel.filter(n => n >= 1 && n <= 7));
 
   // an exam that expired while the app was closed → submit it now
   const saved = store.get(examKey(), null);
