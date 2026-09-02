@@ -1,29 +1,9 @@
 @echo off
-rem Cross-compile mso-ca for Windows and macOS into dist\
+rem Build the single self-contained HTML file into dist\
 setlocal
 cd /d "%~dp0"
 if not exist dist mkdir dist
-
-set CGO_ENABLED=0
-
-set GOOS=windows
-set GOARCH=amd64
-go build -trimpath -ldflags "-s -w" -o dist\mso-ca-windows-amd64.exe . || exit /b 1
-
-set GOOS=darwin
-set GOARCH=arm64
-go build -trimpath -ldflags "-s -w" -o dist\mso-ca-macos-arm64 . || exit /b 1
-
-set GOOS=darwin
-set GOARCH=amd64
-go build -trimpath -ldflags "-s -w" -o dist\mso-ca-macos-amd64 . || exit /b 1
-
-rem single self-contained HTML file (runs from disk in a browser, no server)
-set GOOS=
-set GOARCH=
+go test ./... || exit /b 1
 go run . -export-html dist\mso-ca.html || exit /b 1
-
-echo.
-echo Built:
-dir /b dist
+dir dist\mso-ca.html
 endlocal

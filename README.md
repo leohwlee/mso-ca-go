@@ -9,38 +9,21 @@ An offline mock-exam app for the Hong Kong Customs & Excise Department's
   one available in English and Traditional Chinese, with an explanation and a
   citation to the exact source document and paragraph.
 - Mirrors the real paper: 35 questions, 75 minutes, and the real pass rules.
-- One small program for Windows or Mac. No internet, no installation, no
-  account. Your history stays on your own computer.
+- **One file, nothing to install.** The whole app is a single HTML file that
+  opens in Google Chrome. No internet, no program to run, no account. Your
+  history stays in your own browser.
 
 ## Quick start
 
-1. **Download** the file for your computer from the
-   [Releases page](../../releases/latest):
-   `mso-ca-windows-amd64.exe` (Windows),
-   `mso-ca-macos-arm64` (Mac with Apple Silicon) or
-   `mso-ca-macos-amd64` (Mac with an Intel chip).
-2. **Run it.** Windows: double-click the `.exe`. Mac: open Terminal in the
-   folder, run `chmod +x mso-ca-macos-arm64` once, then double-click the file
-   (right-click → Open the first time, as it is not notarised).
-   A small terminal window appears and your browser opens the app at
-   <http://127.0.0.1:8321>. **Keep that terminal window open while you
-   practise**; close it (or press `Ctrl+C`) when you are done.
+1. **Download `mso-ca.html`** from the [Releases page](../../releases/latest)
+   (about 400 KB — the question bank and fonts are inside it).
+2. **Open it in Google Chrome.** Double-click the file, or right-click →
+   Open with → Google Chrome if another browser is your default. It also
+   works in Microsoft Edge and Firefox.
 3. **Choose your paper language** (English or Traditional Chinese) and start.
 
-Optional flags: `-port 9000` to use another port, `-no-browser` to skip the
-automatic browser launch.
-
-**No-install alternative: the single HTML file.** The same release also has
-`mso-ca.html`, the whole app in one file (about 400 KB, with the question bank
-and fonts embedded). Download it and open it in **Google Chrome** — double-click
-it, or right-click → Open with → Google Chrome if another browser is your
-default. Nothing else is needed: no program to run, no terminal window, and it
-works on a Mac without the "unidentified developer" step. It also works in
-Edge and Firefox. Your history is kept by the browser as usual; the only
-difference is that Chrome keeps one shared history for all local files, so if
-you use several local HTML pages the *Save history to file* backup is the
-reliable record. (You can regenerate the file at any time with
-`mso-ca -export-html mso-ca.html`.)
+Keep the file somewhere permanent (for example your Documents folder) and
+open the same file each time.
 
 ## How to use it
 
@@ -85,8 +68,8 @@ computer. *Clear history* removes everything after a confirmation.
 **EN+中** (both languages shown together) at any time, even mid-exam, and
 between Auto / Light / Dark themes.
 
-**Quick drills.** Open `http://127.0.0.1:8321/?minutes=20` to run mocks with a
-custom time limit.
+**Quick drills.** Add `?minutes=20` to the address in Chrome's address bar
+(after `mso-ca.html`) to run mocks with a custom time limit.
 
 ## The question bank
 
@@ -108,8 +91,8 @@ answer, a bilingual explanation, and a citation you can check against the PDF.
 > practice, not real exam questions.
 
 The bank is the file `web/questions.json`. To add or fix a question, edit it
-and rebuild; `go test ./...` checks the shape (20 per module, 4 options each,
-both languages and a citation present).
+and regenerate the HTML file (see below); `go test ./...` checks the shape
+(20 per module, 4 options each, both languages and a citation present).
 
 **The official documents themselves** — all 13, in English and Traditional
 Chinese — are in [`docs/`](docs/README.md), so every citation in the app can be
@@ -118,25 +101,28 @@ checked against the source PDF.
 ## Where your history lives
 
 All attempts, an in-progress exam and your settings live in the browser's
-local storage on your own computer. Nothing is sent anywhere; the program is
-only a local file server. Practically: history survives closing the app,
-restarting the computer and app updates; it belongs to one browser on one
-machine, so two people on their own computers automatically have separate
-histories, and clearing that browser's site data erases it. Use *Save history
-to file* as a backup.
+local storage on your own computer. Nothing is sent anywhere — the file
+contains no network code. Practically: history survives closing the browser,
+restarting the computer and replacing the HTML file with a newer edition; it
+belongs to one browser on one machine, so two people on their own computers
+automatically have separate histories, and clearing that browser's site data
+erases it. One Chrome detail: Chrome keeps a single shared history for all
+local HTML files, so if you use other local HTML pages, treat *Save history to
+file* as the reliable record.
 
-## Build from source
+## Regenerating the file from source
 
-Requires Go ≥ 1.21 and nothing else: the server is standard library only and
-the front end is plain HTML, CSS and JavaScript with no build step.
+The repository holds the app's parts (`web/`) and a small Go program that
+folds them into the single file. Requires Go ≥ 1.21 and nothing else.
 
 ```bash
-go test ./...             # question-bank integrity + vet
-go build -o mso-ca.exe .  # single binary with everything embedded
+go test ./...                          # question-bank integrity + vet
+go run . -export-html dist/mso-ca.html # build the single file
+go run .                               # or: serve web/ locally while developing
 ```
 
-`build.cmd` (Windows) or `./build.sh` (Mac/Linux) cross-compiles all three
-binaries into `dist/`.
+`build.cmd` (Windows) or `./build.sh` (Mac/Linux) does the same and writes
+`dist/mso-ca.html`.
 
-Fonts: DM Sans and DM Mono are bundled under the SIL Open Font License (see
+Fonts: DM Sans and DM Mono are embedded under the SIL Open Font License (see
 `web/fonts/`); Chinese text uses the operating system's fonts.
