@@ -30,7 +30,7 @@ const CFG = {
 let bank = [];
 let byMod = new Map();          // module n -> [questions]
 let byId = new Map();           // id -> question
-let S = { lang: null, view: 'home' };   // lang null = not chosen yet
+let S = { lang: null, view: 'home', theme: 'auto' };   // lang null = not chosen yet; theme auto|light|dark
 let exam = null;                // active exam state
 let practice = null;            // active practice state
 let reviewAttempt = null;       // attempt shown on results view
@@ -73,6 +73,14 @@ const ICONS = {
   x: '<path d="M6 6l12 12M18 6L6 18"/>',
 };
 const icon = n => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
+
+/* theme: explicit light/dark, or auto = follow the operating system */
+const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+function applyTheme() {
+  const dark = S.theme === 'dark' || (S.theme === 'auto' && darkQuery.matches);
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+}
+darkQuery.addEventListener('change', () => { if (S.theme === 'auto') applyTheme(); });
 
 function toast(msg) {
   let el = document.querySelector('.toast');
@@ -181,13 +189,18 @@ function topbarHTML() {
       <div class="t1">${ui('MSO Competence Assessment — Mock Exam', '金錢服務經營者能力評核 — 模擬試')}</div>
       <div class="t2">${ui('C&ED · 35 questions · 7 modules · 75 minutes', '香港海關 · 35題 · 7個單元 · 75分鐘')}</div>
     </div>
-    ${S.lang ? `<div class="topctl">
-      <div class="seg" id="langseg">
+    <div class="topctl">
+      ${S.lang ? `<div class="seg" id="langseg">
         <button data-lang="en" class="${S.lang === 'en' ? 'on' : ''}">EN</button>
         <button data-lang="tc" class="${S.lang === 'tc' ? 'on' : ''}">中文</button>
         <button data-lang="both" class="${S.lang === 'both' ? 'on' : ''}">EN+中</button>
+      </div>` : ''}
+      <div class="seg" id="themeseg">
+        <button data-theme="auto" class="${S.theme === 'auto' ? 'on' : ''}">${ui('Auto', '自動')}</button>
+        <button data-theme="light" class="${S.theme === 'light' ? 'on' : ''}">${ui('Light', '淺色')}</button>
+        <button data-theme="dark" class="${S.theme === 'dark' ? 'on' : ''}">${ui('Dark', '深色')}</button>
       </div>
-    </div>` : ''}
+    </div>
   </div></div>`;
 }
 
@@ -196,6 +209,14 @@ function bindCommon() {
     b.onclick = () => {
       S.lang = b.dataset.lang;
       store.set('lang', S.lang);
+      render();
+    };
+  });
+  document.querySelectorAll('#themeseg button').forEach(b => {
+    b.onclick = () => {
+      S.theme = b.dataset.theme;
+      store.set('theme', S.theme);
+      applyTheme();
       render();
     };
   });
@@ -1130,6 +1151,8 @@ async function boot() {
   }
 
   S.lang = store.get('lang', null);
+  S.theme = ['auto', 'light', 'dark'].includes(store.get('theme', 'auto')) ? store.get('theme', 'auto') : 'auto';
+  applyTheme();
   const savedSel = store.get('pmods', null);
   if (Array.isArray(savedSel) && savedSel.length) pmodSel = new Set(savedSel.filter(n => n >= 1 && n <= 7));
 

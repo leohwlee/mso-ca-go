@@ -43,8 +43,8 @@ Flags: `-port 9000` to use another port, `-no-browser` to skip auto-opening.
   the app and resume; the clock keeps running, as it would in the real room.
 - **Exam room layout** — on a laptop the question sits beside a sticky answer
   sheet drawn like the real machine-read sheet: mark a bubble to answer, click
-  a number to jump. Warm paper colours by day; a dark theme follows the
-  operating system's dark-mode setting automatically.
+  a number to jump. Warm paper colours, with a dark theme: the **Auto / Light /
+  Dark** switch in the top bar picks it (Auto follows the operating system).
 
 Hidden switch for quick drills: open `http://127.0.0.1:8321/?minutes=20` to
 start mocks with a custom timer.
