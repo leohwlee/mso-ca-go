@@ -186,7 +186,7 @@ function topbarHTML() {
   return `
   <div class="topbar"><div class="wrap">
     <div class="brand">
-      <div class="t1">${ui('MSO Competence Assessment — Mock Exam', '金錢服務經營者能力評核 — 模擬試')}</div>
+      <div class="t1">${ui('MSO Competence Assessment — Mock Exam', '金錢服務經營者能力評核 — 模擬試')}<span class="dot">.</span></div>
       <div class="t2">${ui('C&ED · 35 questions · 7 modules · 75 minutes', '香港海關 · 35題 · 7個單元 · 75分鐘')}</div>
     </div>
     <div class="topctl">
