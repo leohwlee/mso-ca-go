@@ -563,19 +563,24 @@ function resultsView() {
     </tr>`;
   }).join('');
 
-  let why;
-  if (g.pass) {
-    why = ui('Total ≥ 25/35 and every module within the 2-wrong limit.', '總分達25/35，且每個單元錯題不多於2題。');
-  } else {
+  const whyIn = lang => {
+    if (g.pass) return lang === 'en'
+      ? 'Total ≥ 25/35 and every module within the 2-wrong limit.'
+      : '總分達25/35，且每個單元錯題不多於2題。';
     const reasons = [];
-    if (!g.totalOK) reasons.push(ui(`total ${g.score}/${a.qids.length} is below ${CFG.passTotal}`,
-      `總分${g.score}/${a.qids.length}未達${CFG.passTotal}`));
+    if (!g.totalOK) reasons.push(lang === 'en'
+      ? `total ${g.score}/${a.qids.length} is below ${CFG.passTotal}`
+      : `總分${g.score}/${a.qids.length}未達${CFG.passTotal}`);
     if (!g.floorsOK) {
       const bad = g.moduleWrong.map((w, i) => w > CFG.maxWrongPerModule ? `M${i + 1} (${w})` : null).filter(x => x);
-      reasons.push(ui(`more than 2 wrong in ${bad.join(', ')}`, `${bad.join('、')}錯題多於2題`));
+      reasons.push(lang === 'en'
+        ? `more than 2 wrong in ${bad.join(', ')}`
+        : `${bad.join('、')}錯題多於2題`);
     }
-    why = ui('Failed: ', '不合格原因：') + reasons.join(ui(' and ', '；'));
-  }
+    return (lang === 'en' ? 'Failed: ' : '不合格原因：') + reasons.join(lang === 'en' ? ' and ' : '；');
+  };
+  const why = S.lang === 'en' ? whyIn('en') : S.lang === 'tc' ? whyIn('tc')
+    : whyIn('en') + '<br>' + whyIn('tc');
 
   const items = a.qids.map((qid, i) => reviewItemHTML(byId.get(qid), i, a)).join('');
 
