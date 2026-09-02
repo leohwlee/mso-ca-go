@@ -10,6 +10,9 @@ GOOS=windows GOARCH=amd64 go build -trimpath -ldflags "-s -w" -o dist/mso-ca-win
 GOOS=darwin  GOARCH=arm64 go build -trimpath -ldflags "-s -w" -o dist/mso-ca-macos-arm64 .
 GOOS=darwin  GOARCH=amd64 go build -trimpath -ldflags "-s -w" -o dist/mso-ca-macos-amd64 .
 
+# single self-contained HTML file (runs from disk in a browser, no server)
+go run . -export-html dist/mso-ca.html
+
 echo
 echo "Built:"
 ls -la dist

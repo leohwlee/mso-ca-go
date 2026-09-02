@@ -1138,8 +1138,12 @@ function confirmModal(title, bodyHTML, okLabel, onOK, danger = false, extra = nu
 
 async function boot() {
   try {
-    const res = await fetch('questions.json');
-    bank = await res.json();
+    if (Array.isArray(window.BANK)) {
+      bank = window.BANK;                       // single-file build: bank embedded in the page
+    } else {
+      const res = await fetch('questions.json');
+      bank = await res.json();
+    }
   } catch (e) {
     $('#app').innerHTML = `<div class="loading">Failed to load questions.json 題庫載入失敗</div>`;
     return;

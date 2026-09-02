@@ -4,6 +4,7 @@ package main
 
 import (
 	"embed"
+	"encoding/base64"
 	"flag"
 	"fmt"
 	"io/fs"
@@ -11,7 +12,9 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"regexp"
 	"runtime"
+	"strings"
 )
 
 //go:embed web
@@ -20,11 +23,20 @@ var webFS embed.FS
 func main() {
 	port := flag.Int("port", 8321, "port to listen on (next ports are tried if busy)")
 	noBrowser := flag.Bool("no-browser", false, "do not open the browser automatically")
+	exportHTML := flag.String("export-html", "", "write the whole app as one self-contained HTML file to this path, then exit")
 	flag.Parse()
 
 	sub, err := fs.Sub(webFS, "web")
 	if err != nil {
 		fatal(err)
+	}
+
+	if *exportHTML != "" {
+		if err := writeSingleFile(sub, *exportHTML); err != nil {
+			fatal(err)
+		}
+		fmt.Println("wrote", *exportHTML)
+		return
 	}
 
 	// Find a free port starting at -port.
@@ -72,6 +84,53 @@ func openBrowser(url string) {
 		cmd = exec.Command("xdg-open", url)
 	}
 	_ = cmd.Start()
+}
+
+// writeSingleFile folds index.html, the stylesheet (with the fonts embedded as
+// data URIs), the question bank and the script into one HTML file that runs
+// straight from disk — no server needed.
+func writeSingleFile(fsys fs.FS, path string) error {
+	read := func(name string) (string, error) {
+		b, err := fs.ReadFile(fsys, name)
+		return string(b), err
+	}
+	index, err := read("index.html")
+	if err != nil {
+		return err
+	}
+	css, err := read("style.css")
+	if err != nil {
+		return err
+	}
+	js, err := read("app.js")
+	if err != nil {
+		return err
+	}
+	bank, err := read("questions.json")
+	if err != nil {
+		return err
+	}
+
+	fontRef := regexp.MustCompile(`url\("fonts/([^"]+)"\)`)
+	css = fontRef.ReplaceAllStringFunc(css, func(m string) string {
+		name := fontRef.FindStringSubmatch(m)[1]
+		b, err := fs.ReadFile(fsys, "fonts/"+name)
+		if err != nil {
+			return m
+		}
+		return "url(data:font/woff2;base64," + base64.StdEncoding.EncodeToString(b) + ")"
+	})
+
+	// a literal "</script" inside inlined code would end the script element early
+	safe := func(s string) string { return strings.ReplaceAll(s, "</script", `<\/script`) }
+
+	out := strings.Replace(index, `<link rel="stylesheet" href="style.css">`, "<style>\n"+css+"\n</style>", 1)
+	out = strings.Replace(out, `<script src="app.js"></script>`,
+		"<script>window.BANK = "+safe(bank)+";</script>\n<script>\n"+safe(js)+"\n</script>", 1)
+	if strings.Contains(out, `href="style.css"`) || strings.Contains(out, `src="app.js"`) {
+		return fmt.Errorf("index.html did not contain the expected stylesheet/script tags")
+	}
+	return os.WriteFile(path, []byte(out), 0o644)
 }
 
 func fatal(err error) {

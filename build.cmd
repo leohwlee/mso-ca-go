@@ -18,6 +18,11 @@ set GOOS=darwin
 set GOARCH=amd64
 go build -trimpath -ldflags "-s -w" -o dist\mso-ca-macos-amd64 . || exit /b 1
 
+rem single self-contained HTML file (runs from disk in a browser, no server)
+set GOOS=
+set GOARCH=
+go run . -export-html dist\mso-ca.html || exit /b 1
+
 echo.
 echo Built:
 dir /b dist

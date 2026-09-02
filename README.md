@@ -30,6 +30,18 @@ An offline mock-exam app for the Hong Kong Customs & Excise Department's
 Optional flags: `-port 9000` to use another port, `-no-browser` to skip the
 automatic browser launch.
 
+**No-install alternative: the single HTML file.** The same release also has
+`mso-ca.html`, the whole app in one file (about 400 KB, with the question bank
+and fonts embedded). Download it and open it in **Google Chrome** — double-click
+it, or right-click → Open with → Google Chrome if another browser is your
+default. Nothing else is needed: no program to run, no terminal window, and it
+works on a Mac without the "unidentified developer" step. It also works in
+Edge and Firefox. Your history is kept by the browser as usual; the only
+difference is that Chrome keeps one shared history for all local files, so if
+you use several local HTML pages the *Save history to file* backup is the
+reliable record. (You can regenerate the file at any time with
+`mso-ca -export-html mso-ca.html`.)
+
 ## How to use it
 
 **Mock exam.** *Start mock exam* draws 35 questions at random from the bank —
