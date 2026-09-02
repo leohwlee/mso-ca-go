@@ -99,6 +99,10 @@ The bank is the file `web/questions.json`. To add or fix a question, edit it
 and rebuild; `go test ./...` checks the shape (20 per module, 4 options each,
 both languages and a citation present).
 
+**The official documents themselves** — all 13, in English and Traditional
+Chinese — are in [`docs/`](docs/README.md), so every citation in the app can be
+checked against the source PDF.
+
 ## Where your history lives 紀錄儲存位置
 
 All attempts, an in-progress exam and your settings live in the browser's
