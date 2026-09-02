@@ -91,6 +91,7 @@ button.btn.secondary:disabled:hover { background: #e7ebf1; }
 .profile-card .paper { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
 
 /* ---------- history ---------- */
+.tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table.hist { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.hist th, table.hist td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
 table.hist th { color: var(--muted); font-weight: 600; font-size: 12.5px; white-space: nowrap; }
@@ -217,6 +218,29 @@ table.modtab .floor.bad { color: var(--red); }
 
 .review-item { margin-top: 14px; }
 .review-item .stem { font-size: 16px; }
+
+/* progress card */
+.pgrid { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.prow { display: grid; grid-template-columns: minmax(150px, 1.4fr) 2fr auto; gap: 12px; align-items: center; font-size: 13.5px; }
+.pbar { height: 10px; background: #e7ebf1; border-radius: 999px; overflow: hidden; }
+.pbar i { display: block; height: 100%; border-radius: 999px; background: var(--green); }
+.pbar i.mid { background: var(--amber); }
+.pbar i.bad { background: var(--red); }
+.pnum { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.pnum b { color: var(--ink); }
+.subhead { margin: 20px 0 8px; font-size: 13.5px; color: var(--muted); font-weight: 600; }
+.missed { border: 1.5px solid var(--line); border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+.missed-head {
+  display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left;
+  font: inherit; font-size: 14px; background: #fff; border: 0; padding: 10px 12px; cursor: pointer;
+}
+.missed-head:hover { background: #f7fafd; }
+.missed-head .qmod { flex: 0 0 auto; margin-top: 2px; font-weight: 700; }
+.missed-head .mstem { flex: 1; }
+.missed-head .tag { flex: 0 0 auto; }
+.missed-body { padding: 2px 14px 14px; border-top: 1px solid var(--line); background: #fbfcfe; }
+.missed-body .stem { font-size: 15px; margin-top: 10px; }
+@media (max-width: 640px) { .prow { grid-template-columns: 1fr; gap: 4px; } }
 
 /* practice tally */
 .tally { font-size: 14.5px; color: var(--muted); }

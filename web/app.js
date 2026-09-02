@@ -237,11 +237,15 @@ function homeView() {
     <div class="card">
       <h2>${ui('History', '過往紀錄')}</h2>
       ${attempts.length ? historyHTML(attempts) : `<div class="sub" style="margin:0">${ui('No attempts yet.', '未有應考紀錄。')}</div>`}
-      ${attempts.length ? `<div class="actions">
-        <button class="btn secondary small" id="btn-export">${ui('Export history (JSON)', '匯出紀錄 (JSON)')}</button>
-        <span class="note">${ui('History is stored in this browser only.', '紀錄只儲存於此瀏覽器。')}</span>
-      </div>` : ''}
+      <div class="actions">
+        ${attempts.length ? `<button class="btn secondary small" id="btn-save">${ui('Save history to file (.md)', '儲存紀錄至檔案 (.md)')}</button>` : ''}
+        <button class="btn secondary small" id="btn-load">${ui('Load history from file', '從檔案載入紀錄')}</button>
+        <input type="file" id="file-load" accept=".md,.json,.txt,text/markdown,application/json" hidden>
+        <span class="note">${ui('History lives in this browser; the file is a readable backup you can load on any computer.',
+          '紀錄儲存於此瀏覽器；檔案是可閱讀的備份，可在任何電腦載入。')}</span>
+      </div>
     </div>
+    ${attempts.length ? progressCardHTML(attempts) : ''}
     <div class="footer">${ui(
       'Practice questions are reconstructions from official C&ED / e-Legislation materials — not real exam questions.',
       '練習題按官方材料重構而成，並非真題。')}</div>
@@ -269,10 +273,10 @@ function historyHTML(attempts) {
       <td><button class="btn secondary small" data-review="${idx}">${ui('Review', '重溫')}</button></td>
     </tr>`;
   }).join('');
-  return `<table class="hist">
+  return `<div class="tablewrap"><table class="hist">
     <tr><th>${ui('Date', '日期')}</th><th>${ui('Score', '分數')}</th>
     <th>${ui('Wrong per module (M1–M7)', '各單元錯題數（M1–M7）')}</th><th></th><th></th></tr>
-    ${rows}</table>`;
+    ${rows}</table></div>`;
 }
 
 function bindHome() {
@@ -309,23 +313,30 @@ function bindHome() {
       window.scrollTo(0, 0);
     };
   });
-  const exp = $('#btn-export');
-  if (exp) exp.onclick = () => {
-    const attempts = store.get(attemptsKey(), []);
-    const data = {
-      app: 'MSO Competence Assessment mock exam',
-      exportedAt: new Date().toISOString(),
-      attempts: attempts.map(a => ({ date: new Date(a.ts).toISOString(), ...a })),
+  const save = $('#btn-save');
+  if (save) save.onclick = saveHistoryFile;
+  const load = $('#btn-load'), fileIn = $('#file-load');
+  if (load && fileIn) {
+    load.onclick = () => fileIn.click();
+    fileIn.onchange = async () => {
+      const f = fileIn.files[0];
+      if (!f) return;
+      try {
+        const r = importHistoryText(await f.text());
+        homeNotice = ui(`Loaded ${esc(f.name)}: ${r.found} attempt${r.found === 1 ? '' : 's'} found, ${r.added} new added.`,
+          `已載入 ${esc(f.name)}：找到${r.found}次應考紀錄，新增${r.added}次。`);
+      } catch (e) {
+        homeNotice = ui(`Could not read ${esc(f.name)} — it is not a history file saved by this app.`,
+          `無法讀取 ${esc(f.name)}——這不是本程式儲存的紀錄檔案。`);
+      }
+      render();
     };
-    const blob = new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'mso-ca-history-' + new Date().toISOString().slice(0, 10) + '.json';
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(link.href), 5000);
-  };
+  }
+  document.querySelectorAll('.missed-head').forEach(b => {
+    b.onclick = () => { const body = $('#mq-' + b.dataset.mq); if (body) body.hidden = !body.hidden; };
+  });
+  const weak = $('#btn-practice-weak');
+  if (weak) weak.onclick = () => startPractice(stats(store.get(attemptsKey(), [])).mostMissed.map(x => x.qid));
 }
 
 /* ---------------- first-run language chooser ---------------- */
@@ -597,7 +608,7 @@ function resultsView() {
   const why = S.lang === 'en' ? whyIn('en') : S.lang === 'tc' ? whyIn('tc')
     : whyIn('en') + '<br>' + whyIn('tc');
 
-  const items = a.qids.map((qid, i) => reviewItemHTML(byId.get(qid), i, a)).join('');
+  const items = a.qids.map((qid, i) => byId.has(qid) ? reviewItemHTML(byId.get(qid), i, a) : '').join('');
 
   return topbarHTML() + `
   <div class="wrap">
@@ -610,19 +621,25 @@ function resultsView() {
       <div class="score">${g.score}<small>/${a.qids.length}</small></div>
       <div class="why">${why}</div>
     </div>
+    <div class="actions" style="margin-top:12px">
+      <button class="btn secondary small" id="btn-save-r">${ui('Save history to file (.md)', '儲存紀錄至檔案 (.md)')}</button>
+      <span class="note">${ui('This attempt is already kept in this browser; the file is a readable backup of all attempts.',
+        '此次應考已存於此瀏覽器；檔案是所有紀錄的可閱讀備份。')}</span>
+    </div>
     <div class="card">
       <h2>${ui('By module', '各單元成績')}</h2>
-      <table class="modtab">
+      <div class="tablewrap"><table class="modtab">
         <tr><th>${ui('Module', '單元')}</th><th>${ui('Correct', '答對')}</th>
         <th>${ui('Wrong', '答錯')}</th><th>${ui('Module floor (max 2 wrong)', '單元底線（最多錯2題）')}</th></tr>
         ${perMod}
-      </table>
+      </table></div>
     </div>
     <div class="card">
       <h2>${ui('Full review', '全卷重溫')}</h2>
       <div class="sub">${ui('Your answer is marked; the correct answer is highlighted in green. Click a number to jump.',
         '你的作答已標示；正確答案以綠色顯示。點擊題號可跳至該題。')}</div>
       <div class="chips" id="jumpgrid">${a.qids.map((qid, i) => {
+        if (!byId.has(qid)) return '';
         const ok = a.answers[qid] === byId.get(qid).answer;
         return `<button class="ncell ${ok ? 'rok' : 'rbad'}" data-jump="${i}">${i + 1}</button>`;
       }).join('')}</div>
@@ -669,6 +686,8 @@ function reviewItemHTML(q, i, a) {
 
 function bindResults() {
   $('#btn-home').onclick = () => { S.view = 'home'; reviewAttempt = null; render(); window.scrollTo(0, 0); };
+  const save = $('#btn-save-r');
+  if (save) save.onclick = saveHistoryFile;
   document.querySelectorAll('[data-jump]').forEach(b => {
     b.onclick = () => {
       const el = $('#rev-' + b.dataset.jump);
@@ -677,10 +696,164 @@ function bindResults() {
   });
 }
 
+/* ---------------- history file & progress ---------------- */
+
+const pad2 = n => String(n).padStart(2, '0');
+function fmtDateFull(ts) {
+  const d = new Date(ts);
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+}
+
+/* plain-text (no HTML) question text in the current language mode, for the file */
+function qStem(q) { return S.lang === 'en' ? q.en.q : S.lang === 'tc' ? q.tc.q : q.en.q + ' ｜ ' + q.tc.q; }
+function optText(q, i) { return S.lang === 'en' ? q.en.options[i] : S.lang === 'tc' ? q.tc.options[i] : q.en.options[i] + ' ｜ ' + q.tc.options[i]; }
+
+/* aggregate all attempts: accuracy per module, and questions most often missed */
+function stats(attempts) {
+  const perModule = MODULES.map(() => ({ correct: 0, total: 0 }));
+  const seen = new Map();   // qid -> { wrong, seen }
+  for (const a of attempts) {
+    for (const qid of a.qids) {
+      const q = byId.get(qid);
+      if (!q) continue;
+      const ok = a.answers[qid] === q.answer;   // unanswered counts as wrong
+      const pm = perModule[q.module - 1];
+      pm.total++; if (ok) pm.correct++;
+      const m = seen.get(qid) || { wrong: 0, seen: 0 };
+      m.seen++; if (!ok) m.wrong++;
+      seen.set(qid, m);
+    }
+  }
+  const mostMissed = [...seen.entries()].filter(([, m]) => m.wrong > 0)
+    .sort((x, y) => y[1].wrong - x[1].wrong || (y[1].wrong / y[1].seen) - (x[1].wrong / x[1].seen))
+    .map(([qid, m]) => ({ qid, ...m }));
+  return { perModule, mostMissed };
+}
+
+/* the saved file: readable Markdown + a JSON data block the app reads back */
+function historyMarkdown(attempts) {
+  const L = (en, tc) => S.lang === 'en' ? en : S.lang === 'tc' ? tc : en + ' / ' + tc;
+  const st = stats(attempts);
+  const out = [];
+  out.push(`# ${L('MSO Competence Assessment — mock exam history', '金錢服務經營者能力評核 — 模擬試紀錄')}`, '');
+  out.push(`${L('Saved', '儲存時間')}: ${fmtDateFull(Date.now())} · ${L('Attempts', '應考次數')}: ${attempts.length}`, '');
+  out.push(`## ${L('Performance by module (all attempts)', '各單元表現（累計）')}`, '');
+  out.push(`| ${L('Module', '單元')} | ${L('Correct', '答對')} | % |`, '|---|---|---|');
+  MODULES.forEach(m => {
+    const s = st.perModule[m.n - 1];
+    const pct = s.total ? Math.round(100 * s.correct / s.total) : 0;
+    out.push(`| M${m.n} ${L(m.en, m.tc)} | ${s.correct}/${s.total} | ${pct}% |`);
+  });
+  if (st.mostMissed.length) {
+    out.push('', `## ${L('Most-missed questions', '最常答錯的題目')}`, '');
+    st.mostMissed.slice(0, 15).forEach(x => {
+      const q = byId.get(x.qid);
+      out.push(`- **${q.id}** (M${q.module}) — ${L('wrong', '答錯')} ${x.wrong}/${x.seen}: ${qStem(q)}`);
+      out.push(`  - ${L('Correct answer', '正確答案')}: ${optText(q, q.answer)}`);
+    });
+  }
+  [...attempts].reverse().forEach(a => {
+    out.push('', `## ${fmtDateFull(a.ts)} — ${a.score}/${a.qids.length} — ${a.pass ? L('PASS', '合格') : L('FAIL', '不合格')}`, '');
+    out.push(`${L('Wrong per module', '各單元錯題')}: ${a.moduleWrong.map((w, i) => `M${i + 1}: ${w}`).join(' · ')}` +
+      (a.auto ? ' · ' + L('auto-submitted when time ran out', '時間屆滿自動交卷') : ''), '');
+    a.qids.forEach((qid, n) => {
+      const q = byId.get(qid);
+      if (!q || a.answers[qid] === q.answer) return;
+      const chosen = a.answers[qid];
+      out.push(`- Q${n + 1} (M${q.module}, ${q.id}) ${qStem(q)}`);
+      out.push(`  - ${L('Your answer', '你的答案')}: ${chosen === undefined ? L('(not answered)', '（未作答）') : optText(q, chosen)}`);
+      out.push(`  - ${L('Correct answer', '正確答案')}: ${optText(q, q.answer)}`);
+    });
+  });
+  out.push('', '---', '', `<!-- ${L('Data block: the app reads this when you load the file. Do not edit.', '資料區塊：程式載入檔案時讀取，請勿修改。')} -->`);
+  out.push('```json', JSON.stringify({ app: 'mso-ca', version: 1, attempts }, null, 1), '```', '');
+  return out.join('\n');
+}
+
+function downloadText(text, filename, type) {
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(new Blob([text], { type }));
+  link.download = filename;
+  document.body.appendChild(link); link.click(); link.remove();
+  setTimeout(() => URL.revokeObjectURL(link.href), 5000);
+}
+
+function saveHistoryFile() {
+  downloadText(historyMarkdown(store.get(attemptsKey(), [])),
+    'mso-ca-history-' + new Date().toISOString().slice(0, 10) + '.md', 'text/markdown');
+}
+
+/* merge attempts from a saved file (.md with data block, or plain .json); returns counts */
+function importHistoryText(text) {
+  let raw = text.trim();
+  const fence = raw.match(/```json\s*([\s\S]*?)```/);
+  if (fence) raw = fence[1];
+  const data = JSON.parse(raw);
+  const list = Array.isArray(data) ? data : data && data.attempts;
+  if (!Array.isArray(list)) throw new Error('no attempts');
+  const valid = list.filter(a => a && typeof a.ts === 'number' && Array.isArray(a.qids) && a.answers
+    && typeof a.score === 'number' && Array.isArray(a.moduleWrong) && a.qids.every(id => byId.has(id)));
+  const existing = store.get(attemptsKey(), []);
+  const have = new Set(existing.map(a => a.ts));
+  const added = valid.filter(a => !have.has(a.ts));
+  store.set(attemptsKey(), existing.concat(added).sort((x, y) => x.ts - y.ts));
+  return { found: valid.length, added: added.length };
+}
+
+/* a question with its correct answer and explanation (no attempt context) */
+function explainCardHTML(q) {
+  const opts = [0, 1, 2, 3].map((orig, di) => `
+    <button class="opt ${orig === q.answer ? 'correct' : 'dim'}" disabled>
+      <span class="letter">${'ABCD'[di]}</span>
+      <span class="otext">${optionHTML(q, orig)}</span>
+    </button>`).join('');
+  return `<div class="stem">${contentHTML(q, 'q')}</div>
+    <div class="opts">${opts}</div>
+    <div class="explain">${contentHTML(q, 'explain')}${sourceHTML(q)}</div>`;
+}
+
+function progressCardHTML(attempts) {
+  const st = stats(attempts);
+  const rows = MODULES.map(m => {
+    const s = st.perModule[m.n - 1];
+    const pct = s.total ? Math.round(100 * s.correct / s.total) : 0;
+    const cls = pct < 60 ? 'bad' : pct < 80 ? 'mid' : 'good';
+    return `<div class="prow">
+      <div class="plabel">M${m.n} · ${esc(modName(m.n))}</div>
+      <div class="pbar"><i class="${cls}" style="width:${pct}%"></i></div>
+      <div class="pnum">${s.correct}/${s.total} · <b>${pct}%</b></div>
+    </div>`;
+  }).join('');
+  const missed = st.mostMissed.slice(0, 10).map(x => {
+    const q = byId.get(x.qid);
+    return `<div class="missed">
+      <button class="missed-head" data-mq="${q.id}">
+        <span class="qmod">M${q.module}</span>
+        <span class="mstem">${contentHTML(q, 'q')}</span>
+        <span class="tag fail">${ui('wrong', '答錯')} ${x.wrong}/${x.seen}</span>
+      </button>
+      <div class="missed-body" id="mq-${q.id}" hidden>${explainCardHTML(q)}</div>
+    </div>`;
+  }).join('');
+  const n = attempts.length, k = st.mostMissed.length;
+  return `<div class="card">
+    <h2>${ui('Progress', '進度')}</h2>
+    <div class="sub">${ui(`Across ${n} attempt${n === 1 ? '' : 's'}. A module under 60% is on course to breach the 2-wrong floor.`,
+      `累計${n}次應考。單元答對率低於60%，即有機會超出每單元錯2題的上限。`)}</div>
+    <div class="pgrid">${rows}</div>
+    ${k ? `<h3 class="subhead">${ui('Most-missed questions', '最常答錯的題目')} · ${ui('click to see the answer', '點擊查看答案')}</h3>
+    <div class="missed-list">${missed}</div>
+    <div class="actions">
+      <button class="btn" id="btn-practice-weak">${ui('Practice these questions', '練習這些題目')}</button>
+      <span class="note">${ui(`${k} question${k === 1 ? '' : 's'} missed at least once`, `共${k}題曾答錯`)}</span>
+    </div>` : `<div class="note" style="margin-top:12px">${ui('No mistakes so far.', '暫未有錯題。')}</div>`}
+  </div>`;
+}
+
 /* ---------------- practice ---------------- */
 
-function startPractice() {
-  const pool = shuffle(bank.filter(q => pmodSel.has(q.module)).map(q => q.id));
+function startPractice(customPool = null) {
+  const pool = customPool ? customPool.slice() : shuffle(bank.filter(q => pmodSel.has(q.module)).map(q => q.id));
   practice = {
     pool, idx: 0,
     order: null, chosen: null,

@@ -55,10 +55,20 @@ sent anywhere, and there is no server-side data. Practical consequences:
   laptop each have their own history, and clearing that browser's site data
   erases it. Each person practising on their own computer automatically has
   their own history.
-- **Export**: the *Export history (JSON)* button on the home screen downloads
-  a JSON file of all attempts (date, score, per-module results, and the exact
-  questions and answers of each attempt) — use it as a backup or to compare
-  progress. 主頁的「匯出紀錄」按鈕可將所有應考紀錄下載為 JSON 檔案備份。
+- **Save to file**: after each mock exam (and any time from the home screen),
+  *Save history to file (.md)* downloads `mso-ca-history-<date>.md` — a
+  readable Markdown record of **all** attempts so far: per-module accuracy,
+  the most-missed questions with their correct answers, and every wrong answer
+  of every attempt. The file ends with a data block the app reads back.
+- **Load from file**: *Load history from file* on the home screen reads such a
+  file into the browser — on a new computer, a different browser, or after
+  clearing browser data. Attempts already present are skipped, so loading the
+  same file twice is harmless. 主頁的「儲存紀錄至檔案」把所有紀錄存成可閱讀的
+  Markdown 檔案；「從檔案載入紀錄」可在任何電腦把紀錄載回。
+- **Progress card**: once there is history, the home screen shows accuracy per
+  module across all attempts (red under 60 % — on course to breach the
+  2-wrong floor), the questions missed most often (click to see the answer),
+  and a *Practice these questions* button that drills exactly those.
 
 ## The question bank
 
