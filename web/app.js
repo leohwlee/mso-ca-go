@@ -23,7 +23,6 @@ const CFG = {
   passTotal: 25,
   maxWrongPerModule: 2,
   minutes: 75,
-  examDate: '2026-10-06',
 };
 
 /* ---------------- state ---------------- */
@@ -181,16 +180,10 @@ function bindCommon() {
 
 /* ---------------- home ---------------- */
 
-function daysToExam() {
-  const now = new Date(); now.setHours(0, 0, 0, 0);
-  return Math.round((new Date(CFG.examDate + 'T00:00:00') - now) / 86400000);
-}
-
 function homeView() {
   if (!S.lang) return langView();
   const attempts = store.get(attemptsKey(), []);
   const saved = store.get(examKey(), null);
-  const days = daysToExam();
   const minutes = customMinutes || CFG.minutes;
 
   const examCard = saved ? `
@@ -213,7 +206,6 @@ function homeView() {
         '<b>及格準則（兩項須同時符合）：</b>每個單元錯題不多於2題，及全卷總分達<b>25/35</b>。即使總分32/35，只要任何一個單元錯3題即全卷不及格。')}</div>
       <div class="actions">
         <button class="btn" id="btn-start" ${bank.length ? '' : 'disabled'}>${ui('Start mock exam', '開始模擬試')}</button>
-        <span class="note">${ui('The real assessment', '正式評核')}: ${ui('Mon 6 Oct 2026', '2026年10月6日（一）')}${days >= 0 ? ' · ' + ui(`${days} day${days === 1 ? '' : 's'} to go`, `尚餘${days}日`) : ''}</span>
       </div>
     </div>`;
 

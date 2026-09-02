@@ -1,7 +1,7 @@
 # MSO Competence Assessment — Mock Exam 金錢服務經營者能力評核模擬試
 
 Offline mock-exam app for the Hong Kong C&ED **Competence Assessment for Money
-Service Operators** (assessment date: **Mon 6 Oct 2026**).
+Service Operators**.
 
 Everything runs locally in one small program: no internet, no accounts, no
 installation. Your practice history stays in your own browser.
