@@ -86,7 +86,7 @@ button.btn.secondary:disabled:hover { background: #e7ebf1; }
   padding: 26px 20px; text-align: center; cursor: pointer; box-shadow: var(--shadow);
 }
 .profile-card:hover { border-color: var(--navy); }
-.profile-card .avatar { font-size: 40px; }
+.profile-card .avatar { font-size: 40px; font-weight: 800; color: var(--navy); line-height: 1.2; }
 .profile-card .name { font-size: 20px; font-weight: 650; margin-top: 6px; }
 .profile-card .paper { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
 

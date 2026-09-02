@@ -26,17 +26,12 @@ const CFG = {
   examDate: '2026-10-06',
 };
 
-const USERS = {
-  leo:   { name: 'Leo',   avatar: '\u{1F9D1}‍\u{1F4BC}', paperEn: 'English paper', paperTc: '英文卷', defaultLang: 'en' },
-  bevis: { name: 'Bevis', avatar: '\u{1F468}‍\u{1F4BC}', paperEn: 'Chinese paper', paperTc: '中文卷', defaultLang: 'tc' },
-};
-
 /* ---------------- state ---------------- */
 
 let bank = [];
 let byMod = new Map();          // module n -> [questions]
 let byId = new Map();           // id -> question
-let S = { user: null, lang: 'en', view: 'home' };
+let S = { lang: null, view: 'home' };   // lang null = not chosen yet
 let exam = null;                // active exam state
 let practice = null;            // active practice state
 let reviewAttempt = null;       // attempt shown on results view
@@ -59,8 +54,8 @@ const store = {
   del(k) { try { localStorage.removeItem('msoca:' + k); } catch {} },
 };
 
-const attemptsKey = () => S.user + ':attempts';
-const examKey = () => S.user + ':exam';
+const attemptsKey = () => 'attempts';
+const examKey = () => 'exam';
 
 /* ---------------- helpers ---------------- */
 
@@ -157,24 +152,20 @@ function render() {
 
 /* ---------------- top bar ---------------- */
 
-function topbarHTML(showUser = true) {
-  const u = USERS[S.user];
+function topbarHTML() {
   return `
   <div class="topbar"><div class="wrap">
     <div class="brand">
       <div class="t1">${ui('MSO Competence Assessment — Mock Exam', '金錢服務經營者能力評核 — 模擬試')}</div>
       <div class="t2">${ui('C&ED · 35 questions · 7 modules · 75 minutes', '香港海關 · 35題 · 7個單元 · 75分鐘')}</div>
     </div>
-    <div class="topctl">
+    ${S.lang ? `<div class="topctl">
       <div class="seg" id="langseg">
         <button data-lang="en" class="${S.lang === 'en' ? 'on' : ''}">EN</button>
         <button data-lang="tc" class="${S.lang === 'tc' ? 'on' : ''}">中文</button>
         <button data-lang="both" class="${S.lang === 'both' ? 'on' : ''}">EN+中</button>
       </div>
-      ${showUser && u ? `<div class="seg" id="userseg">
-        <button id="userbtn">${esc(u.name)} ▾</button>
-      </div>` : ''}
-    </div>
+    </div>` : ''}
   </div></div>`;
 }
 
@@ -182,12 +173,10 @@ function bindCommon() {
   document.querySelectorAll('#langseg button').forEach(b => {
     b.onclick = () => {
       S.lang = b.dataset.lang;
-      if (S.user) store.set(S.user + ':lang', S.lang);
+      store.set('lang', S.lang);
       render();
     };
   });
-  const ub = $('#userbtn');
-  if (ub) ub.onclick = () => { S.user = null; store.del('user'); S.view = 'home'; render(); };
 }
 
 /* ---------------- home ---------------- */
@@ -198,8 +187,7 @@ function daysToExam() {
 }
 
 function homeView() {
-  if (!S.user) return profileView();
-  const u = USERS[S.user];
+  if (!S.lang) return langView();
   const attempts = store.get(attemptsKey(), []);
   const saved = store.get(examKey(), null);
   const days = daysToExam();
@@ -247,8 +235,12 @@ function homeView() {
       </div>
     </div>
     <div class="card">
-      <h2>${ui('History', '過往紀錄')} — ${esc(u.name)}</h2>
+      <h2>${ui('History', '過往紀錄')}</h2>
       ${attempts.length ? historyHTML(attempts) : `<div class="sub" style="margin:0">${ui('No attempts yet.', '未有應考紀錄。')}</div>`}
+      ${attempts.length ? `<div class="actions">
+        <button class="btn secondary small" id="btn-export">${ui('Export history (JSON)', '匯出紀錄 (JSON)')}</button>
+        <span class="note">${ui('History is stored in this browser only.', '紀錄只儲存於此瀏覽器。')}</span>
+      </div>` : ''}
     </div>
     <div class="footer">${ui(
       'Practice questions are reconstructions from official C&ED / e-Legislation materials — not real exam questions.',
@@ -317,22 +309,45 @@ function bindHome() {
       window.scrollTo(0, 0);
     };
   });
+  const exp = $('#btn-export');
+  if (exp) exp.onclick = () => {
+    const attempts = store.get(attemptsKey(), []);
+    const data = {
+      app: 'MSO Competence Assessment mock exam',
+      exportedAt: new Date().toISOString(),
+      attempts: attempts.map(a => ({ date: new Date(a.ts).toISOString(), ...a })),
+    };
+    const blob = new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'mso-ca-history-' + new Date().toISOString().slice(0, 10) + '.json';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 5000);
+  };
 }
 
-/* ---------------- profile picker ---------------- */
+/* ---------------- first-run language chooser ---------------- */
 
-function profileView() {
-  const cards = Object.entries(USERS).map(([id, u]) => `
-    <div class="profile-card" data-user="${id}">
-      <div class="avatar">${u.avatar}</div>
-      <div class="name">${esc(u.name)}</div>
-      <div class="paper">${ui(u.paperEn, u.paperTc)}</div>
-    </div>`).join('');
-  return topbarHTML(false) + `
+function langView() {
+  return topbarHTML() + `
   <div class="wrap">
     <div class="card" style="text-align:center">
-      <h2>${ui('Who is studying?', '請選擇使用者')}</h2>
-      <div class="profiles">${cards}</div>
+      <h2>Choose your paper language 請選擇試卷語言</h2>
+      <div class="profiles">
+        <div class="profile-card" data-pick-lang="en">
+          <div class="avatar">EN</div>
+          <div class="name">English</div>
+          <div class="paper">Take the mock exams in English</div>
+        </div>
+        <div class="profile-card" data-pick-lang="tc">
+          <div class="avatar">中</div>
+          <div class="name">繁體中文</div>
+          <div class="paper">以中文應考模擬試</div>
+        </div>
+      </div>
+      <div class="note" style="margin-top:14px">You can switch languages — or show both (EN+中) — at any time from the top bar.<br>可隨時於頂欄切換語言或顯示雙語（EN+中）。</div>
     </div>
   </div>`;
 }
@@ -386,7 +401,7 @@ function examView() {
   return `
   <div class="exambar"><div class="wrap">
     <div class="timer" id="timer">--:--</div>
-    <div class="who">${esc(USERS[S.user].name)}${exam.minutes !== CFG.minutes ? ' · ' + exam.minutes + ' min' : ''}</div>
+    <div class="who">${exam.minutes !== CFG.minutes ? exam.minutes + ' min' : ''}</div>
     <div class="grow"></div>
     <div class="prog">${ui('Answered', '已作答')} <b id="prog-n">${answered}</b>/${exam.qids.length}</div>
     <button class="btn small" id="btn-submit" style="background:#fff;color:var(--navy)">${ui('Submit paper', '交卷')}</button>
@@ -792,29 +807,24 @@ async function boot() {
     byMod.get(q.module).push(q);
   }
 
-  S.user = store.get('user', null);
-  if (S.user && !USERS[S.user]) S.user = null;
-  if (S.user) S.lang = store.get(S.user + ':lang', USERS[S.user].defaultLang);
+  S.lang = store.get('lang', null);
 
   // an exam that expired while the app was closed → submit it now
-  if (S.user) {
-    const saved = store.get(examKey(), null);
-    if (saved && Date.now() >= saved.endsAt) {
-      exam = saved;
-      finishExam(true);
-      return;
-    }
+  const saved = store.get(examKey(), null);
+  if (saved && Date.now() >= saved.endsAt) {
+    exam = saved;
+    finishExam(true);
+    return;
   }
   render();
 }
 
-/* profile selection (delegated: profile cards render before user exists) */
+/* first-run language choice (delegated) */
 document.addEventListener('click', e => {
-  const card = e.target.closest('.profile-card');
+  const card = e.target.closest('[data-pick-lang]');
   if (!card) return;
-  S.user = card.dataset.user;
-  store.set('user', S.user);
-  S.lang = store.get(S.user + ':lang', USERS[S.user].defaultLang);
+  S.lang = card.dataset.pickLang;
+  store.set('lang', S.lang);
   render();
 });
 

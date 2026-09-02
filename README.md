@@ -1,8 +1,7 @@
 # MSO Competence Assessment — Mock Exam 金錢服務經營者能力評核模擬試
 
 Offline mock-exam app for the Hong Kong C&ED **Competence Assessment for Money
-Service Operators** (assessment date: **Mon 6 Oct 2026** — Leo sits the English
-paper, Bevis sits the Chinese paper).
+Service Operators** (assessment date: **Mon 6 Oct 2026**).
 
 Everything runs locally in one small program: no internet, no accounts, no
 installation. Your practice history stays in your own browser.
@@ -34,16 +33,32 @@ Flags: `-port 9000` to use another port, `-no-browser` to skip auto-opening.
   mistakes — the app makes that painfully visible.
 - **Practice 練習** — pick modules, untimed, instant feedback with an
   explanation and an exact source citation after every answer.
-- **Review 重溫** — every past attempt is stored (per person) and can be
-  replayed with full explanations.
-- **Languages** — every question exists in English and Traditional Chinese.
-  Choose **EN**, **中文**, or **EN+中** (bilingual, both shown together) at any
-  time, even mid-exam.
+- **Review 重溫** — every past attempt is stored and can be replayed with full
+  explanations.
+- **Languages** — on first launch you pick English or 繁體中文; every question
+  exists in both. Switch between **EN**, **中文**, or **EN+中** (bilingual,
+  both shown together) at any time from the top bar, even mid-exam.
 - An accidental refresh or closed tab does **not** lose a mock exam — reopen
   the app and resume; the clock keeps running, as it would in the real room.
 
 Hidden switch for quick drills: open `http://127.0.0.1:8321/?minutes=20` to
 start mocks with a custom timer.
+
+## Where your history lives 紀錄儲存位置
+
+All attempts, the in-progress exam and your language choice are stored in the
+**browser's local storage** (`localStorage`) on your own computer — nothing is
+sent anywhere, and there is no server-side data. Practical consequences:
+
+- History survives closing the app, restarting the computer, and app updates.
+- It belongs to **one browser on one machine**: Chrome and Safari on the same
+  laptop each have their own history, and clearing that browser's site data
+  erases it. Each person practising on their own computer automatically has
+  their own history.
+- **Export**: the *Export history (JSON)* button on the home screen downloads
+  a JSON file of all attempts (date, score, per-module results, and the exact
+  questions and answers of each attempt) — use it as a backup or to compare
+  progress. 主頁的「匯出紀錄」按鈕可將所有應考紀錄下載為 JSON 檔案備份。
 
 ## The question bank
 
