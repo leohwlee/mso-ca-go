@@ -69,6 +69,9 @@ sent anywhere, and there is no server-side data. Practical consequences:
   clearing browser data. Attempts already present are skipped, so loading the
   same file twice is harmless. 主頁的「儲存紀錄至檔案」把所有紀錄存成可閱讀的
   Markdown 檔案；「從檔案載入紀錄」可在任何電腦把紀錄載回。
+- **Clear history**: the *Clear history* button on the home screen removes all
+  attempts from the browser after a confirmation. Save to a file first if you
+  may want them back; the language choice is kept.
 - **Progress card**: once there is history, the home screen shows accuracy per
   module across all attempts (red under 60 % — on course to breach the
   2-wrong floor), the questions missed most often (click to see the answer),

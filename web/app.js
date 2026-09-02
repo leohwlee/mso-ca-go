@@ -250,6 +250,7 @@ function homeView() {
       <div class="actions">
         ${attempts.length ? `<button class="btn secondary small" id="btn-save">${ui('Save history to file (.md)', '儲存紀錄至檔案 (.md)')}</button>` : ''}
         <button class="btn secondary small" id="btn-load">${ui('Load history from file', '從檔案載入紀錄')}</button>
+        ${attempts.length ? `<button class="btn secondary small" id="btn-clear">${ui('Clear history', '清除紀錄')}</button>` : ''}
         <input type="file" id="file-load" accept=".md,.json,.txt,text/markdown,application/json" hidden>
         <span class="note">${ui('History lives in this browser; the file is a readable backup you can load on any computer.',
           '紀錄儲存於此瀏覽器；檔案是可閱讀的備份，可在任何電腦載入。')}</span>
@@ -342,6 +343,20 @@ function bindHome() {
       render();
     };
   }
+  const clear = $('#btn-clear');
+  if (clear) clear.onclick = () => {
+    const n = store.get(attemptsKey(), []).length;
+    confirmModal(
+      ui('Clear all history?', '清除所有紀錄？'),
+      ui(`All ${n} attempt${n === 1 ? '' : 's'} and the Progress card will be removed from this browser. This cannot be undone — save history to a file first if you may want it later.`,
+         `此瀏覽器內的${n}次應考紀錄及進度卡將被刪除，且無法復原。如日後可能需要，請先將紀錄儲存至檔案。`),
+      ui('Clear history', '清除紀錄'),
+      () => {
+        store.del(attemptsKey());
+        homeNotice = ui('History cleared.', '紀錄已清除。');
+        render();
+      }, true);
+  };
   document.querySelectorAll('.missed-head').forEach(b => {
     b.onclick = () => { const body = $('#mq-' + b.dataset.mq); if (body) body.hidden = !body.hidden; };
   });
