@@ -45,11 +45,11 @@ Flags: `-port 9000` to use another port, `-no-browser` to skip auto-opening.
   sheet drawn like the real machine-read sheet: mark a bubble to answer, click
   a number to jump. The **Auto / Light / Dark** switch in the top bar picks the
   theme (Auto follows the operating system).
-- **Design** — the visual system follows d0fi.com: warm off-white ground,
-  near-black ink, hairline borders, the signature green accent, 8 px buttons
-  and 16 px cards, green uppercase labels, Plus Jakarta Sans headings, DM Sans
-  text and DM Mono for numbers. The three fonts are bundled (`web/fonts/`,
-  SIL Open Font License) so the app stays fully offline.
+- **Design** — minimal and monochrome: white ground, near-black ink, grey for
+  everything secondary, hairline borders, no shadows. Colour is used only for
+  meaning (green correct, red wrong, amber warning). DM Sans for text and DM
+  Mono for numbers are bundled (`web/fonts/`, SIL Open Font License) so the
+  app stays fully offline.
 
 Hidden switch for quick drills: open `http://127.0.0.1:8321/?minutes=20` to
 start mocks with a custom timer.

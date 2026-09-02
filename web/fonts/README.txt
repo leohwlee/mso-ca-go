@@ -8,9 +8,6 @@ SIL Open Font License, Version 1.1 — full text in OFL.txt.
   dmmono-500.woff2        DM Mono Medium
                           Copyright 2020 The DM Mono Project Authors
                           https://github.com/googlefonts/dm-mono
-  plusjakartasans.woff2   Plus Jakarta Sans (variable weight)
-                          Copyright 2020 The Plus Jakarta Sans Project Authors
-                          https://github.com/tokotype/PlusJakartaSans
 
 Chinese text falls back to the operating system's fonts (PingFang TC on
 macOS, Microsoft JhengHei on Windows).
