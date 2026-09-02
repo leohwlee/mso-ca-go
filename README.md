@@ -1,112 +1,126 @@
-# MSO Competence Assessment — Mock Exam 金錢服務經營者能力評核模擬試
+# MSO Competence Assessment — Mock Exam
+# 金錢服務經營者能力評核 — 模擬試
 
-Offline mock-exam app for the Hong Kong C&ED **Competence Assessment for Money
-Service Operators**.
+An offline mock-exam app for the Hong Kong Customs & Excise Department's
+**Competence Assessment for Money Service Operators**.
 
-Everything runs locally in one small program: no internet, no accounts, no
-installation. Your practice history stays in your own browser.
+- **140 questions** in the bank — 20 for each of the 7 official modules — every
+  one in English and Traditional Chinese, with an explanation and a citation to
+  the exact source document and paragraph.
+- Mirrors the real paper: 35 questions, 75 minutes, and the real pass rules.
+- One small program for Windows or Mac. No internet, no installation, no
+  account. Your history stays on your own computer.
 
-## Run it 使用方法
+## Quick start 快速開始
 
-| | |
-|---|---|
-| **Windows** | double-click `mso-ca-windows-amd64.exe` |
-| **Mac (Apple Silicon)** | double-click `mso-ca-macos-arm64` * |
-| **Mac (Intel)** | double-click `mso-ca-macos-amd64` * |
+1. **Download** the file for your computer from the
+   [Releases page](../../releases/latest):
+   `mso-ca-windows-amd64.exe` (Windows),
+   `mso-ca-macos-arm64` (Mac with Apple Silicon) or
+   `mso-ca-macos-amd64` (Mac with an Intel chip).
+2. **Run it.** Windows: double-click the `.exe`. Mac: open Terminal in the
+   folder, run `chmod +x mso-ca-macos-arm64` once, then double-click the file
+   (right-click → Open the first time, as it is not notarised).
+   A small terminal window appears and your browser opens the app at
+   <http://127.0.0.1:8321>. **Keep that terminal window open while you
+   practise**; close it (or press `Ctrl+C`) when you are done.
+   使用期間請保持該視窗開啟。
+3. **Choose your paper language** (English or 繁體中文) and start.
 
-The program starts a tiny local server and opens the app in your browser.
-**Keep the terminal window open while practising**; press `Ctrl+C` to quit.
-使用期間請保持該視窗開啟；按 `Ctrl+C` 結束。
+Optional flags: `-port 9000` to use another port, `-no-browser` to skip the
+automatic browser launch.
 
-\* On a Mac you may first need: `chmod +x mso-ca-macos-arm64`, then right-click →
-Open the first time (unsigned binary). If the browser doesn't open
-automatically, go to <http://127.0.0.1:8321>.
+## How to use it 使用說明
 
-Flags: `-port 9000` to use another port, `-no-browser` to skip auto-opening.
+**Mock exam 模擬試.** *Start mock exam* draws 35 questions at random from the
+bank — 5 from each module, in module order like the real paper — and starts a
+75-minute clock. Answer by clicking an option, pressing `A`–`D` or `1`–`4`
+(press again to erase), or marking a bubble on the answer sheet beside the
+question. `Enter` or `→` moves on; `←` goes back; the sheet's numbers jump to
+any question. *Flag* marks a question to revisit. *Submit paper* lists anything
+unanswered before you commit; *Exit* saves your progress and returns home, but
+the clock keeps running — exactly as it would in the exam room — and you can
+resume from the home screen. If time runs out the paper is submitted
+automatically. The clock turns amber at 10 minutes and red at 5.
 
-## What's inside
+**The pass rules.** You pass only if **both** hold: no more than 2 wrong in
+**each** module, **and** at least 25/35 overall. A 32/35 with three mistakes in
+one module is a fail. The results page shows every module as a row of dots
+with the floor marked, so a breach is obvious at a glance.
 
-- **Mock Exam 模擬試** — mirrors the real paper: 35 questions (7 modules × 5,
-  drawn at random from a 140-question bank), 75-minute countdown, module-grouped
-  answer sheet, flags, and the **real pass rules**: at most 2 wrong in *each*
-  module **and** ≥ 25/35 overall. 32/35 still fails if one module has 3
-  mistakes — the app makes that painfully visible.
-- **Practice 練習** — pick modules, untimed, instant feedback with an
-  explanation and an exact source citation after every answer.
-- **Review 重溫** — every past attempt is stored and can be replayed with full
-  explanations; switch to *Wrong only* to see just the mistakes, and go
-  straight to *Practice my wrong answers* from the results page.
-- **Languages** — on first launch you pick English or 繁體中文; every question
-  exists in both. Switch between **EN**, **中文**, or **EN+中** (bilingual,
-  both shown together) at any time from the top bar, even mid-exam.
-- An accidental refresh or closed tab does **not** lose a mock exam — reopen
-  the app and resume; the clock keeps running, as it would in the real room.
-- **Exam room layout** — on a laptop the question sits beside a sticky answer
-  sheet drawn like the real machine-read sheet: mark a bubble to answer, click
-  a number to jump. The **Auto / Light / Dark** switch in the top bar picks the
-  theme (Auto follows the operating system).
-- **Design** — minimal and monochrome: white ground, near-black ink, grey for
-  everything secondary, hairline borders, no shadows. Colour is used only for
-  meaning (green correct, red wrong, amber warning). DM Sans for text and DM
-  Mono for numbers are bundled (`web/fonts/`, SIL Open Font License) so the
-  app stays fully offline.
+**Results and review.** After submitting you see PASS or FAIL, the score, the
+per-module rows, and a full review of every question with your answer, the
+correct answer, the explanation and its source. Switch to *Wrong only* to see
+just the mistakes. *Practice my wrong answers* drills exactly those questions.
 
-Hidden switch for quick drills: open `http://127.0.0.1:8321/?minutes=20` to
-start mocks with a custom timer.
+**Practice 練習.** Pick one or more modules and practise without a clock: after
+each answer you immediately see whether it was right, with the explanation and
+citation. The pool recycles when you have seen every question once.
+
+**Progress 進度.** Once you have some history the home screen shows your score
+per attempt, your accuracy per module across all attempts (red under 60 %,
+which is on course to breach the 2-wrong floor), and the questions you miss
+most often — click one to see its answer, or *Practice these questions*.
+
+**History 過往紀錄.** Every attempt is kept in this browser and can be replayed
+from the History table. *Save history to file (.md)* writes a readable
+Markdown record of all attempts (per-module accuracy, most-missed questions
+with answers, every wrong answer of every attempt) that the app can also read
+back with *Load history from file* — use it as a backup or to move to another
+computer. *Clear history* removes everything after a confirmation.
+
+**Language and theme.** The top bar switches between **EN**, **中文** and
+**EN+中** (both languages shown together) at any time, even mid-exam, and
+between Auto / Light / Dark themes.
+
+**Quick drills.** Open `http://127.0.0.1:8321/?minutes=20` to run mocks with a
+custom time limit.
+
+## The question bank 題庫
+
+**140 questions in total, 20 per module**, all written from the official
+materials and nothing else. Each question has four options, one correct
+answer, a bilingual explanation, and a citation you can check against the PDF.
+
+| Module | Questions | Written from |
+|---|---|---|
+| 1 · General knowledge on AML/CFT and counter-proliferation financing | 20 | AML/CFT Guideline for MSOs (Jun 2023) ch. 1 & 6; AMLO Sch. 1 |
+| 2 · Parts 1–7 of the AMLO | 20 | AMLO (Cap. 615, consolidated 15 May 2026) |
+| 3 · Schedules to the AMLO | 20 | AMLO Schedules 1–3 |
+| 4 · Guidelines promulgated by the C&ED | 20 | Licensing Guide (May 2026), fitness-and-propriety, business-plan, AML-policy and disciplinary guidelines, 2026 circulars |
+| 5 · Systems and controls (i): governance and strategy | 20 | AML/CFT Guideline ch. 2–3 |
+| 6 · Systems and controls (ii): AML/CFT control areas | 20 | AML/CFT Guideline ch. 4–6, 10–11 |
+| 7 · Systems and controls (iii): demonstrating and monitoring compliance | 20 | AML/CFT Guideline ch. 7–9 |
+
+> C&ED publishes no sample or past questions. These are reconstructions for
+> practice, not real exam questions. 本題庫按官方材料重構而成，並非真題。
+
+The bank is the file `web/questions.json`. To add or fix a question, edit it
+and rebuild; `go test ./...` checks the shape (20 per module, 4 options each,
+both languages and a citation present).
 
 ## Where your history lives 紀錄儲存位置
 
-All attempts, the in-progress exam and your language choice are stored in the
-**browser's local storage** (`localStorage`) on your own computer — nothing is
-sent anywhere, and there is no server-side data. Practical consequences:
-
-- History survives closing the app, restarting the computer, and app updates.
-- It belongs to **one browser on one machine**: Chrome and Safari on the same
-  laptop each have their own history, and clearing that browser's site data
-  erases it. Each person practising on their own computer automatically has
-  their own history.
-- **Save to file**: after each mock exam (and any time from the home screen),
-  *Save history to file (.md)* downloads `mso-ca-history-<date>.md` — a
-  readable Markdown record of **all** attempts so far: per-module accuracy,
-  the most-missed questions with their correct answers, and every wrong answer
-  of every attempt. The file ends with a data block the app reads back.
-- **Load from file**: *Load history from file* on the home screen reads such a
-  file into the browser — on a new computer, a different browser, or after
-  clearing browser data. Attempts already present are skipped, so loading the
-  same file twice is harmless. 主頁的「儲存紀錄至檔案」把所有紀錄存成可閱讀的
-  Markdown 檔案；「從檔案載入紀錄」可在任何電腦把紀錄載回。
-- **Clear history**: the *Clear history* button on the home screen removes all
-  attempts from the browser after a confirmation. Save to a file first if you
-  may want them back; the language choice is kept.
-- **Progress card**: once there is history, the home screen shows accuracy per
-  module across all attempts (red under 60 % — on course to breach the
-  2-wrong floor), the questions missed most often (click to see the answer),
-  and a *Practice these questions* button that drills exactly those.
-
-## The question bank
-
-140 bilingual questions (20 per module), hand-written from the official
-materials only — the AMLO (Cap. 615, consolidated 15 May 2026), the C&ED
-AML/CFT Guideline for MSOs (Jun 2023), the Licensing Guide (May 2026), the
-fitness-and-propriety / business-plan / AML-policy / disciplinary guidelines,
-and the 2026 circulars (including the 15 May 2026 fee revisions). Every
-question cites its source so answers can be checked against the PDFs.
-
-> C&ED publishes no sample or past questions. These are reconstructions for
-> practice — not real exam questions. 本題庫按官方材料重構，並非真題。
-
-The bank lives in `web/questions.json`. To add or fix questions, edit that
-file and rebuild (`go test ./...` validates its shape: 20 per module, 4
-options each, both languages present).
+All attempts, an in-progress exam and your settings live in the browser's
+local storage on your own computer. Nothing is sent anywhere; the program is
+only a local file server. Practically: history survives closing the app,
+restarting the computer and app updates; it belongs to one browser on one
+machine, so two people on their own computers automatically have separate
+histories, and clearing that browser's site data erases it. Use *Save history
+to file* as a backup.
 
 ## Build from source
 
-Requires Go ≥ 1.21, nothing else (stdlib only, frontend is plain HTML/JS).
+Requires Go ≥ 1.21 and nothing else: the server is standard library only and
+the front end is plain HTML, CSS and JavaScript with no build step.
 
 ```bash
-go test ./...   # bank integrity + vet
-go build -o mso-ca.exe .
+go test ./...             # question-bank integrity + vet
+go build -o mso-ca.exe .  # single binary with everything embedded
 ```
 
-Cross-compile both platforms into `dist/`: run `build.cmd` (Windows) or
-`./build.sh` (Mac/Linux).
+`build.cmd` (Windows) or `./build.sh` (Mac/Linux) cross-compiles all three
+binaries into `dist/`.
+
+Fonts: DM Sans and DM Mono are bundled under the SIL Open Font License (see
+`web/fonts/`); Chinese text uses the operating system's fonts.
