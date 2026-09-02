@@ -187,9 +187,11 @@ table.hist td.num { font-family: var(--mono); font-size: 13.5px; color: var(--in
 .railbtns .btn { flex: 1 1 auto; justify-content: center; }
 @media (min-width: 960px) {
   .examtop { display: none; }
-  .examgrid { grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; }
-  .rail { position: sticky; top: 84px; max-height: calc(100vh - 100px); overflow: auto; }
+  /* rail = sheet (2 × 134px + 12px gap) + card padding (2 × 18px) + borders + room for a 17px scrollbar */
+  .examgrid { grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; }
+  .rail { position: sticky; top: 84px; max-height: calc(100vh - 100px); overflow-y: auto; overflow-x: hidden; scrollbar-gutter: stable; }
 }
+.rail .card { padding: 16px 18px; }
 
 .qcard { border: 1px solid var(--line); border-radius: var(--r); padding: 28px; margin-top: 20px; }
 .examgrid .qcard { margin-top: 0; }
@@ -206,13 +208,15 @@ table.hist td.num { font-family: var(--mono); font-size: 13.5px; color: var(--in
 .qnav-row .grow { flex: 1; }
 .kbd { font-size: 12.5px; color: var(--faint); }
 
-/* the answer sheet, drawn like the machine-read sheet */
-.omr { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; margin-top: 8px; }
+/* the answer sheet, drawn like the machine-read sheet.
+   Every row is a fixed grid — number, four bubbles, a permanent flag slot —
+   so a flagged row is exactly as wide as any other (134px). */
+.omr { display: grid; grid-template-columns: repeat(2, 134px); justify-content: space-between; gap: 6px 12px; margin-top: 8px; }
 .omr-group { break-inside: avoid; }
 .omr-mod { margin: 8px 0 4px 2px; }
-.omr-row { display: flex; align-items: center; gap: 5px; padding: 1px 3px; border-radius: 4px; }
+.omr-row { display: grid; grid-template-columns: 22px repeat(4, 20px) 12px; gap: 4px; align-items: center; padding: 1px 0; border-radius: 4px; }
 .omr-row.current { background: var(--panel); }
-.omr-num { width: 24px; text-align: right; font-family: var(--mono); font-size: 11.5px; color: var(--faint); background: transparent; border: 0; padding: 0 2px 0 0; cursor: pointer; }
+.omr-num { text-align: right; font-family: var(--mono); font-size: 11.5px; color: var(--faint); background: transparent; border: 0; padding: 0; cursor: pointer; }
 .omr-row.current .omr-num { color: var(--ink); }
 .bub {
   width: 20px; height: 20px; border-radius: 50%; border: 1px solid var(--line-strong); background: transparent;
@@ -220,9 +224,9 @@ table.hist td.num { font-family: var(--mono); font-size: 13.5px; color: var(--in
 }
 .bub:hover { border-color: var(--ink); color: var(--ink); }
 .bub.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-.omr-row .fl { font-size: 12px; line-height: 1; display: inline-flex; color: var(--amber); margin-left: 1px; }
+.omr-row .fl { font-size: 12px; line-height: 1; display: inline-flex; justify-content: center; color: var(--amber); }
 .omr-legend { font-size: 12px; color: var(--faint); margin-top: 10px; }
-@media (max-width: 959px) { .omr { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); } }
+@media (max-width: 959px) { .omr { grid-template-columns: repeat(auto-fill, 134px); justify-content: start; gap: 6px 20px; } }
 
 /* ---------- results ---------- */
 .banner { border: 1px solid var(--line); border-radius: var(--r); padding: 28px; margin-top: 20px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }

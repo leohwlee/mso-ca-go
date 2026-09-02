@@ -536,7 +536,7 @@ function omrSheetHTML() {
         const chosen = exam.answers[x.qid];
         const bubbles = exam.optOrder[x.qid].map((orig, di) =>
           `<button class="bub ${chosen === orig ? 'on' : ''}" data-mark="${x.i}:${di}" title="Q${x.i + 1} ${'ABCD'[di]}">${'ABCD'[di]}</button>`).join('');
-        const fl = exam.flags.includes(x.qid) ? `<span class="fl">${icon('flag')}</span>` : '';
+        const fl = `<span class="fl">${exam.flags.includes(x.qid) ? icon('flag') : ''}</span>`;   // slot always present
         return `<div class="omr-row ${x.i === exam.cur ? 'current' : ''}">
           <button class="omr-num" data-goto="${x.i}">${x.i + 1}</button>${bubbles}${fl}</div>`;
       }).join('');
