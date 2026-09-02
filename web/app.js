@@ -62,6 +62,24 @@ const $ = sel => document.querySelector(sel);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => (
   { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+/* inline SVG icons (render identically on Windows and Mac, unlike emoji) */
+const ICONS = {
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
+  check: '<path d="M5 13l4 4L19 7"/>',
+  x: '<path d="M6 6l12 12M18 6L6 18"/>',
+};
+const icon = n => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
+
+function toast(msg) {
+  let el = document.querySelector('.toast');
+  if (!el) { el = document.createElement('div'); el.className = 'toast'; document.body.appendChild(el); }
+  el.textContent = msg;
+  clearTimeout(toast.t);
+  requestAnimationFrame(() => el.classList.add('show'));
+  toast.t = setTimeout(() => el.classList.remove('show'), 3500);
+}
+
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -336,21 +354,22 @@ function bindHome() {
 function langView() {
   return topbarHTML() + `
   <div class="wrap">
-    <div class="card" style="text-align:center">
-      <h2>Choose your paper language 請選擇試卷語言</h2>
+    <div class="card welcome">
+      <div class="eyebrow">Customs and Excise Department · Money Service Operators</div>
+      <h2>Choose your paper language<br>請選擇試卷語言</h2>
       <div class="profiles">
         <div class="profile-card" data-pick-lang="en">
           <div class="avatar">EN</div>
-          <div class="name">English</div>
-          <div class="paper">Take the mock exams in English</div>
+          <div class="name">English paper</div>
+          <div class="paper">Questions, answers and explanations in English</div>
         </div>
         <div class="profile-card" data-pick-lang="tc">
           <div class="avatar">中</div>
-          <div class="name">繁體中文</div>
-          <div class="paper">以中文應考模擬試</div>
+          <div class="name">中文卷</div>
+          <div class="paper">以繁體中文顯示題目、答案及解釋</div>
         </div>
       </div>
-      <div class="note" style="margin-top:14px">You can switch languages — or show both (EN+中) — at any time from the top bar.<br>可隨時於頂欄切換語言或顯示雙語（EN+中）。</div>
+      <div class="note" style="margin-top:20px">You can switch languages, or show both (EN+中), at any time from the top bar.<br>可隨時於頂欄切換語言或同時顯示雙語（EN+中）。</div>
     </div>
   </div>`;
 }
@@ -372,6 +391,7 @@ function startExam() {
     cur: 0, minutes,
     startedAt: Date.now(), endsAt: Date.now() + minutes * 60000,
   };
+  warned = new Set();
   saveExam();
   S.view = 'exam'; render();
   window.scrollTo(0, 0);
@@ -382,6 +402,7 @@ function resumeExam() {
   if (!saved) { render(); return; }
   if (Date.now() >= saved.endsAt) { exam = saved; finishExam(true); return; }
   exam = saved;
+  warned = new Set();
   S.view = 'exam'; render();
   window.scrollTo(0, 0);
 }
@@ -401,54 +422,77 @@ function examView() {
       <span class="otext">${optionHTML(q, orig)}</span>
     </button>`).join('');
 
+  const n = exam.qids.length;
+  const buttons = `
+    <button class="btn small btn-submit">${ui('Submit paper', '交卷')}</button>
+    <button class="btn small secondary btn-exit">${ui('Exit', '離開')}</button>`;
+
   return `
-  <div class="exambar"><div class="wrap">
-    <div class="timer" id="timer">--:--</div>
-    <div class="who">${exam.minutes !== CFG.minutes ? exam.minutes + ' min' : ''}</div>
+  <div class="examtop"><div class="wrap">
+    <div class="timer">${icon('clock')}<span class="tval">--:--</span></div>
     <div class="grow"></div>
-    <div class="prog">${ui('Answered', '已作答')} <b id="prog-n">${answered}</b>/${exam.qids.length}</div>
-    <button class="btn small" id="btn-submit" style="background:#fff;color:var(--navy)">${ui('Submit paper', '交卷')}</button>
-    <button class="btn small secondary" id="btn-exit" style="background:rgba(255,255,255,.16);color:#fff">${ui('Exit', '離開')}</button>
+    <div class="prog">${ui('Answered', '已作答')} <b>${answered}</b>/${n}</div>
+    ${buttons}
   </div></div>
   <div class="wrap">
-    <div class="qcard">
-      <div class="qmeta">
-        <span class="qnum">${ui('Question', '第')} ${exam.cur + 1} / ${exam.qids.length}${S.lang === 'tc' ? ' 題' : ''}</span>
-        <span class="qmod">M${q.module} · ${esc(modName(q.module))}</span>
-        <button class="qflag ${flagged ? 'on' : ''}" id="btn-flag">${flagged ? '⚑' : '⚐'} ${ui('Flag', '標記')}</button>
+    <div class="examgrid">
+      <div>
+        <div class="qcard">
+          <div class="qmeta">
+            <span class="qnum">${ui('Question', '第')} ${exam.cur + 1} / ${n}${S.lang === 'tc' ? ' 題' : ''}</span>
+            <span class="qmod">M${q.module} · ${esc(modName(q.module))}</span>
+            <button class="qflag ${flagged ? 'on' : ''}" id="btn-flag">${icon('flag')} ${flagged ? ui('Flagged', '已標記') : ui('Flag', '標記')}</button>
+          </div>
+          <div class="stem">${contentHTML(q, 'q')}</div>
+          <div class="opts" id="opts">${opts}</div>
+          <div class="qnav-row">
+            <button class="btn secondary" id="btn-prev" ${exam.cur === 0 ? 'disabled' : ''}>${ui('Previous', '上一題')}</button>
+            <div class="grow"></div>
+            ${exam.cur === n - 1
+              ? `<button class="btn" id="btn-next-submit">${ui('Submit paper', '交卷')}</button>`
+              : `<button class="btn" id="btn-next">${ui('Next', '下一題')}</button>`}
+          </div>
+        </div>
+        <div class="footer kbd">${ui('Keyboard: A–D or 1–4 to answer · ←/→ to move · click the sheet to mark or jump',
+          '鍵盤：A–D 或 1–4 作答 · ←/→ 切換題目 · 可直接在答題紙上作答或跳題')}</div>
       </div>
-      <div class="stem">${contentHTML(q, 'q')}</div>
-      <div class="opts" id="opts">${opts}</div>
-      <div class="qnav-row">
-        <button class="btn secondary" id="btn-prev" ${exam.cur === 0 ? 'disabled' : ''}>← ${ui('Previous', '上一題')}</button>
-        <div class="grow"></div>
-        ${exam.cur === exam.qids.length - 1
-          ? `<button class="btn" id="btn-next-submit">${ui('Submit paper', '交卷')}</button>`
-          : `<button class="btn" id="btn-next">${ui('Next', '下一題')} →</button>`}
-      </div>
+      <aside class="rail">
+        <div class="card">
+          <div class="tlabel">${ui('Time remaining', '剩餘時間')}${exam.minutes !== CFG.minutes ? ` · ${exam.minutes} min` : ''}</div>
+          <div class="timer">${icon('clock')}<span class="tval">--:--</span></div>
+          <div class="tprog"><i></i></div>
+          <div class="meta">
+            <span>${ui('Answered', '已作答')} <b>${answered}</b>/${n}</span>
+            <span>${ui('Flagged', '已標記')} <b>${exam.flags.length}</b></span>
+          </div>
+        </div>
+        <div class="railbtns">${buttons}</div>
+        <div class="card">
+          <div class="tlabel">${ui('Answer sheet', '答題紙')}</div>
+          ${omrSheetHTML()}
+          <div class="omr-legend">${ui('Mark a bubble to answer; click a number to jump.', '點選圓圈作答；點擊題號跳至該題。')}</div>
+        </div>
+      </aside>
     </div>
-    ${navgridHTML()}
-    <div class="footer">${ui('Keyboard: A–D or 1–4 to answer · ←/→ to move', '鍵盤：A–D 或 1–4 作答 · ←/→ 切換題目')}</div>
   </div>`;
 }
 
-function navgridHTML(reviewGrade = null) {
-  const rows = MODULES.map(m => {
-    const cells = exam.qids.map((qid, i) => ({ qid, i, q: byId.get(qid) }))
+/* the answer sheet in the rail, drawn like the machine-read sheet: one row per question, bubbles A–D */
+function omrSheetHTML() {
+  const groups = MODULES.map(m => {
+    const rows = exam.qids.map((qid, i) => ({ qid, i, q: byId.get(qid) }))
       .filter(x => x.q.module === m.n)
       .map(x => {
-        let cls = '';
-        if (reviewGrade) cls = reviewGrade.answers[x.qid] === x.q.answer ? 'rok' : 'rbad';
-        else {
-          if (exam.answers[x.qid] !== undefined) cls = 'answered';
-          if (x.i === exam.cur) cls += ' current';
-          if (exam.flags.includes(x.qid)) cls += ' flagged';
-        }
-        return `<button class="ncell ${cls}" data-goto="${x.i}">${x.i + 1}</button>`;
+        const chosen = exam.answers[x.qid];
+        const bubbles = exam.optOrder[x.qid].map((orig, di) =>
+          `<button class="bub ${chosen === orig ? 'on' : ''}" data-mark="${x.i}:${di}" title="Q${x.i + 1} ${'ABCD'[di]}">${'ABCD'[di]}</button>`).join('');
+        const fl = exam.flags.includes(x.qid) ? `<span class="fl">${icon('flag')}</span>` : '';
+        return `<div class="omr-row ${x.i === exam.cur ? 'current' : ''}">
+          <button class="omr-num" data-goto="${x.i}">${x.i + 1}</button>${bubbles}${fl}</div>`;
       }).join('');
-    return `<div class="ngrow"><span class="mlabel">M${m.n}</span><span class="cells">${cells}</span></div>`;
+    return `<div class="omr-group"><div class="omr-mod">M${m.n}</div>${rows}</div>`;
   }).join('');
-  return `<div class="navgrid"><h3>${ui('Answer sheet', '答題一覽')}</h3>${rows}</div>`;
+  return `<div class="omr">${groups}</div>`;
 }
 
 function bindExam() {
@@ -473,15 +517,29 @@ function bindExam() {
   const prev = $('#btn-prev'); if (prev) prev.onclick = () => gotoQ(exam.cur - 1);
   const next = $('#btn-next'); if (next) next.onclick = () => gotoQ(exam.cur + 1);
   const nsub = $('#btn-next-submit'); if (nsub) nsub.onclick = () => confirmSubmit();
-  $('#btn-submit').onclick = () => confirmSubmit();
-  $('#btn-exit').onclick = () => {
-    confirmModal(
+  document.querySelectorAll('.btn-submit').forEach(b => { b.onclick = () => confirmSubmit(); });
+  document.querySelectorAll('.btn-exit').forEach(b => {
+    b.onclick = () => confirmModal(
       ui('Leave the exam?', '離開模擬試？'),
       ui('Your answers are saved and you can resume from the home screen — but the clock keeps running.',
          '你的答案已儲存，可隨時從主頁繼續 — 但計時不會暫停。'),
       ui('Leave', '離開'), () => { S.view = 'home'; render(); });
-  };
+  });
   document.querySelectorAll('[data-goto]').forEach(b => { b.onclick = () => gotoQ(+b.dataset.goto); });
+  document.querySelectorAll('[data-mark]').forEach(b => {
+    b.onclick = () => {                       // mark the sheet directly
+      const [i, di] = b.dataset.mark.split(':').map(Number);
+      const qid = exam.qids[i];
+      const orig = exam.optOrder[qid][di];
+      if (exam.answers[qid] === orig) delete exam.answers[qid];
+      else exam.answers[qid] = orig;
+      saveExam();
+      rerenderExamKeepScroll();
+    };
+  });
+  // keep the current row visible inside the sticky rail (wide layout only)
+  const cur = document.querySelector('.omr-row.current');
+  if (cur && window.matchMedia('(min-width: 960px)').matches) cur.scrollIntoView({ block: 'nearest' });
   document.onkeydown = examKeys;
 }
 
@@ -546,16 +604,27 @@ function finishExam(auto) {
 
 /* ---------------- timer ---------------- */
 
+let warned = new Set();   // minute marks already announced in this sitting
+
 function startTimer() {
-  const el = $('#timer');
-  if (!el || !exam) return;
+  if (!exam) return;
+  const els = document.querySelectorAll('.timer');
+  const bar = document.querySelector('.tprog i');
+  if (!els.length) return;
   const tick = () => {
     if (!exam) return;
     const left = exam.endsAt - Date.now();
     if (left <= 0) { finishExam(true); return; }
-    el.textContent = fmtTime(left);
-    el.classList.toggle('warn', left <= 10 * 60000 && left > 5 * 60000);
-    el.classList.toggle('crit', left <= 5 * 60000);
+    const txt = fmtTime(left);
+    els.forEach(el => {
+      el.querySelector('.tval').textContent = txt;
+      el.classList.toggle('warn', left <= 10 * 60000 && left > 5 * 60000);
+      el.classList.toggle('crit', left <= 5 * 60000);
+    });
+    if (bar) bar.style.width = Math.min(100, 100 * (1 - left / (exam.minutes * 60000))) + '%';
+    for (const m of [10, 5]) {
+      if (left <= m * 60000 && !warned.has(m)) { warned.add(m); toast(ui(`${m} minutes left`, `尚餘 ${m} 分鐘`)); }
+    }
   };
   tick();
   timerId = setInterval(tick, 500);
@@ -568,17 +637,23 @@ function stopTimer() { if (timerId) { clearInterval(timerId); timerId = null; } 
 function resultsView() {
   const a = reviewAttempt;
   const g = grade(a.qids, a.answers);
+  // one row of dots per module: correct first, then wrong; the mark is the floor (at least 3 correct)
   const perMod = MODULES.map(m => {
-    const total = g.moduleTotal[m.n - 1], wrong = g.moduleWrong[m.n - 1];
+    const total = g.moduleTotal[m.n - 1], wrong = g.moduleWrong[m.n - 1], right = total - wrong;
     const breach = wrong > CFG.maxWrongPerModule;
-    return `<tr class="${breach ? 'breach' : ''}">
-      <td>M${m.n} · ${esc(modName(m.n))}</td>
-      <td class="num">${total - wrong}/${total}</td>
-      <td class="num">${wrong}</td>
-      <td class="floor ${breach ? 'bad' : 'ok'}">${breach
-        ? ui('✖ over the 2-wrong limit', '✖ 超出每單元錯2題上限')
-        : ui('✓ within limit', '✓ 符合')}</td>
-    </tr>`;
+    const need = total - CFG.maxWrongPerModule;
+    let dots = '';
+    for (let i = 0; i < total; i++) {
+      if (i === need) dots += '<i class="floor"></i>';
+      dots += `<i class="dot ${i < right ? 'ok' : 'bad'}"></i>`;
+    }
+    return `<div class="dotrow ${breach ? 'breach' : ''}">
+      <div class="dlabel">M${m.n} · ${esc(modName(m.n))}</div>
+      <div class="dots">${dots}</div>
+      <div class="dnum">${right}/${total} · ${breach
+        ? `<span class="bad">${ui(`${wrong} wrong, over the limit`, `錯${wrong}題，超出上限`)}</span>`
+        : `<span class="ok">${ui(`${wrong} wrong`, `錯${wrong}題`)}</span>`}</div>
+    </div>`;
   }).join('');
 
   const whyIn = lang => {
@@ -620,11 +695,9 @@ function resultsView() {
     </div>
     <div class="card">
       <h2>${ui('By module', '各單元成績')}</h2>
-      <div class="tablewrap"><table class="modtab">
-        <tr><th>${ui('Module', '單元')}</th><th>${ui('Correct', '答對')}</th>
-        <th>${ui('Wrong', '答錯')}</th><th>${ui('Module floor (max 2 wrong)', '單元底線（最多錯2題）')}</th></tr>
-        ${perMod}
-      </table></div>
+      <div class="sub">${ui('Correct answers first, then wrong. The mark is the floor: at least 3 correct in every module.',
+        '先列答對、後列答錯。豎線代表底線：每個單元最少須答對3題。')}</div>
+      <div class="dotrows">${perMod}</div>
     </div>
     <div class="card">
       <h2>${ui('Full review', '全卷重溫')}</h2>
@@ -656,10 +729,10 @@ function reviewItemHTML(q, i, a) {
     </button>`;
   }).join('');
   const state = chosen === undefined
-    ? `<span class="verdict bad">${ui('Not answered', '未作答')}</span>`
+    ? `<span class="verdict bad">${icon('x')} ${ui('Not answered', '未作答')}</span>`
     : chosen === q.answer
-      ? `<span class="verdict good">${ui('Correct', '答對')} ✓</span>`
-      : `<span class="verdict bad">${ui('Incorrect', '答錯')} ✖</span>`;
+      ? `<span class="verdict good">${icon('check')} ${ui('Correct', '答對')}</span>`
+      : `<span class="verdict bad">${icon('x')} ${ui('Incorrect', '答錯')}</span>`;
   return `
   <div class="qcard review-item" id="rev-${i}">
     <div class="qmeta">
@@ -804,6 +877,22 @@ function explainCardHTML(q) {
     <div class="explain">${contentHTML(q, 'explain')}${sourceHTML(q)}</div>`;
 }
 
+/* score per attempt, with the pass mark as a dashed line; inline SVG, no library */
+function sparklineSVG(attempts) {
+  if (attempts.length < 2) return '';
+  const W = 1000, H = 72, px = 12, py = 10, T = CFG.total;
+  const xs = i => (px + i * (W - 2 * px) / (attempts.length - 1)).toFixed(1);
+  const ys = s => (H - py - (s / T) * (H - 2 * py)).toFixed(1);
+  const pts = attempts.map((a, i) => `${xs(i)},${ys(a.score)}`).join(' ');
+  const dots = attempts.map((a, i) =>
+    `<circle class="pt ${a.pass ? 'pass' : 'fail'}" cx="${xs(i)}" cy="${ys(a.score)}" r="5"><title>${fmtDate(a.ts)} · ${a.score}/${a.qids.length}</title></circle>`).join('');
+  const passY = ys(CFG.passTotal);
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMinYMid meet">
+    <line class="pass-line" x1="${px}" x2="${W - px}" y1="${passY}" y2="${passY}"/>
+    <text x="${W - px}" y="${passY - 4}" text-anchor="end">${CFG.passTotal}/${T}</text>
+    <polyline class="line" points="${pts}"/>${dots}</svg>`;
+}
+
 function progressCardHTML(attempts) {
   const st = stats(attempts);
   const rows = MODULES.map(m => {
@@ -832,6 +921,9 @@ function progressCardHTML(attempts) {
     <h2>${ui('Progress', '進度')}</h2>
     <div class="sub">${ui(`Across ${n} attempt${n === 1 ? '' : 's'}. A module under 60% is on course to breach the 2-wrong floor.`,
       `累計${n}次應考。單元答對率低於60%，即有機會超出每單元錯2題的上限。`)}</div>
+    ${sparklineSVG(attempts)}
+    ${n >= 2 ? `<div class="note">${ui('Score per attempt, oldest to newest; the dashed line is the pass mark.', '每次應考的分數（由舊至新）；虛線為及格分數。')}</div>` : ''}
+    <h3 class="subhead">${ui('Accuracy by module', '各單元答對率')}</h3>
     <div class="pgrid">${rows}</div>
     ${k ? `<h3 class="subhead">${ui('Most-missed questions', '最常答錯的題目')} · ${ui('click to see the answer', '點擊查看答案')}</h3>
     <div class="missed-list">${missed}</div>
@@ -896,13 +988,13 @@ function practiceView() {
       ${done ? `
       <div class="explain">
         <div class="verdict ${practice.chosen === q.answer ? 'good' : 'bad'}">
-          ${practice.chosen === q.answer ? ui('Correct', '答對') + ' ✓' : ui('Incorrect', '答錯') + ' ✖'}</div>
+          ${practice.chosen === q.answer ? icon('check') + ' ' + ui('Correct', '答對') : icon('x') + ' ' + ui('Incorrect', '答錯')}</div>
         ${contentHTML(q, 'explain')}
         ${sourceHTML(q)}
       </div>
       <div class="qnav-row">
         <div class="grow"></div>
-        <button class="btn" id="btn-pnext">${ui('Next question', '下一題')} →</button>
+        <button class="btn" id="btn-pnext">${ui('Next question', '下一題')}</button>
       </div>` : ''}
     </div>
     <div class="actions">
