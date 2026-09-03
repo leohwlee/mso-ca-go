@@ -1,0 +1,41 @@
+name: Release
+
+# Builds the single-file app from the tagged commit and attaches it to the
+# release. dist/ is gitignored, so the artefact never lives in the repo — it
+# is produced here, from source, at tag time.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      # A tag that fails the bank checks must not become a download.
+      - name: Verify
+        run: |
+          go vet ./...
+          go test ./...
+
+      - name: Build single-file app
+        run: |
+          mkdir -p dist
+          go run . -export-html dist/mso-ca.html
+          ls -lh dist/mso-ca.html
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/mso-ca.html \
+            --title "$GITHUB_REF_NAME" \
+            --generate-notes
