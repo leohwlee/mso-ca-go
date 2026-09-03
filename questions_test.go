@@ -2,6 +2,8 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
+	"regexp"
 	"strings"
 	"testing"
 )
@@ -24,7 +26,19 @@ type question struct {
 	Tc qLang `json:"tc"`
 }
 
-const perModule = 20
+// Target bank size per module. The modules are deliberately unequal: each is
+// sized to the volume of official source material behind it, so that every
+// question traces to a real provision rather than rewording its neighbour.
+// See README for the measured source volumes.
+var minPerModule = map[int]int{1: 120, 2: 300, 3: 260, 4: 300, 5: 90, 6: 300, 7: 140}
+
+func wantTotal() int {
+	n := 0
+	for _, v := range minPerModule {
+		n += v
+	}
+	return n
+}
 
 func loadBank(t *testing.T) []question {
 	t.Helper()
@@ -42,8 +56,8 @@ func loadBank(t *testing.T) []question {
 func TestBankIntegrity(t *testing.T) {
 	bank := loadBank(t)
 
-	if len(bank) != 7*perModule {
-		t.Errorf("bank has %d questions, want %d", len(bank), 7*perModule)
+	if want := wantTotal(); len(bank) < want {
+		t.Errorf("bank has %d questions, want at least %d", len(bank), want)
 	}
 
 	seen := map[string]bool{}
@@ -59,8 +73,13 @@ func TestBankIntegrity(t *testing.T) {
 		}
 		perMod[q.Module]++
 
-		if q.Answer < 0 || q.Answer > 3 {
-			t.Errorf("%s: answer index %d out of range", q.ID, q.Answer)
+		// the bank is authored with the correct option first; the app shuffles
+		// option order at draw time, so a non-zero index means an authoring slip
+		if q.Answer != 0 {
+			t.Errorf("%s: answer index %d, want 0 (correct option written first)", q.ID, q.Answer)
+		}
+		if want := fmt.Sprintf("m%d-", q.Module); !strings.HasPrefix(q.ID, want) {
+			t.Errorf("%s: id does not match module %d (want prefix %q)", q.ID, q.Module, want)
 		}
 		if q.Source.En == "" || q.Source.Tc == "" {
 			t.Errorf("%s: missing source citation", q.ID)
@@ -87,8 +106,64 @@ func TestBankIntegrity(t *testing.T) {
 		}
 	}
 	for m := 1; m <= 7; m++ {
-		if perMod[m] != perModule {
-			t.Errorf("module %d has %d questions, want %d", m, perMod[m], perModule)
+		if perMod[m] < minPerModule[m] {
+			t.Errorf("module %d has %d questions, want at least %d", m, perMod[m], minPerModule[m])
 		}
 	}
+}
+
+// TestNoDuplicateStems guards the bank against the main risk of a large
+// question bank: the same proposition asked twice in slightly different words.
+// Stems are compared as 4-word shingles within a module.
+func TestNoDuplicateStems(t *testing.T) {
+	bank := loadBank(t)
+
+	byMod := map[int][]question{}
+	for _, q := range bank {
+		byMod[q.Module] = append(byMod[q.Module], q)
+	}
+	for m := 1; m <= 7; m++ {
+		qs := byMod[m]
+		sets := make([]map[string]bool, len(qs))
+		for i, q := range qs {
+			sets[i] = shingles(q.En.Q + " " + q.En.Options[0])
+		}
+		for i := range qs {
+			for j := i + 1; j < len(qs); j++ {
+				if s := jaccard(sets[i], sets[j]); s >= 0.75 {
+					t.Errorf("module %d: %s and %s are near-duplicates (similarity %.2f)",
+						m, qs[i].ID, qs[j].ID, s)
+				}
+			}
+		}
+	}
+}
+
+var nonWord = regexp.MustCompile(`[^\p{L}\p{N}]+`)
+
+func shingles(s string) map[string]bool {
+	words := strings.Fields(nonWord.ReplaceAllString(strings.ToLower(s), " "))
+	out := map[string]bool{}
+	const k = 4
+	if len(words) < k {
+		out[strings.Join(words, " ")] = true
+		return out
+	}
+	for i := 0; i+k <= len(words); i++ {
+		out[strings.Join(words[i:i+k], " ")] = true
+	}
+	return out
+}
+
+func jaccard(a, b map[string]bool) float64 {
+	if len(a) == 0 || len(b) == 0 {
+		return 0
+	}
+	inter := 0
+	for k := range a {
+		if b[k] {
+			inter++
+		}
+	}
+	return float64(inter) / float64(len(a)+len(b)-inter)
 }

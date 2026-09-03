@@ -5,9 +5,10 @@
 An offline mock-exam app for the Hong Kong Customs & Excise Department's
 **Competence Assessment for Money Service Operators**.
 
-- **140 questions** in the bank — 20 for each of the 7 official modules — every
-  one available in English and Traditional Chinese, with an explanation and a
-  citation to the exact source document and paragraph.
+- **1,510 questions** in the bank, spread across the 7 official modules in
+  proportion to how much source material each one has — every one available in
+  English and Traditional Chinese, with an explanation and a citation to the
+  exact source document and paragraph.
 - Mirrors the real paper: 35 questions, 75 minutes, and the real pass rules.
 - **One file, nothing to install.** The whole app is a single HTML file that
   opens in Google Chrome. No internet, no program to run, no account. Your
@@ -16,7 +17,7 @@ An offline mock-exam app for the Hong Kong Customs & Excise Department's
 ## Quick start
 
 1. **Download `mso-ca.html`** from the [Releases page](../../releases/latest)
-   (about 400 KB — the question bank and fonts are inside it).
+   (about 2.6 MB — the question bank and fonts are inside it).
 2. **Open it in Google Chrome.** Double-click the file, or right-click →
    Open with → Google Chrome if another browser is your default. It also
    works in Microsoft Edge and Firefox.
@@ -73,26 +74,33 @@ between Auto / Light / Dark themes.
 
 ## The question bank
 
-**140 questions in total, 20 per module**, all written from the official
-materials and nothing else. Each question has four options, one correct
-answer, a bilingual explanation, and a citation you can check against the PDF.
+**1,510 questions in total**, all written from the official materials and
+nothing else. Each question has four options, one correct answer, a bilingual
+explanation, and a citation you can check against the PDF.
+
+The modules are deliberately unequal. The official reading behind them differs
+by a factor of eight — Module 5 rests on about 3,500 words, Modules 2, 4 and 6
+on tens of thousands — so each module is sized to the volume of source material
+behind it. That way every question traces to a real provision rather than
+rewording its neighbour.
 
 | Module | Questions | Written from |
 |---|---|---|
-| 1 · General knowledge on AML/CFT and counter-proliferation financing | 20 | AML/CFT Guideline for MSOs (Jun 2023) ch. 1 & 6; AMLO Sch. 1 |
-| 2 · Parts 1–7 of the AMLO | 20 | AMLO (Cap. 615, consolidated 15 May 2026) |
-| 3 · Schedules to the AMLO | 20 | AMLO Schedules 1–3 |
-| 4 · Guidelines promulgated by the C&ED | 20 | Licensing Guide (May 2026), fitness-and-propriety, business-plan, AML-policy and disciplinary guidelines, 2026 circulars |
-| 5 · Systems and controls (i): governance and strategy | 20 | AML/CFT Guideline ch. 2–3 |
-| 6 · Systems and controls (ii): AML/CFT control areas | 20 | AML/CFT Guideline ch. 4–6, 10–11 |
-| 7 · Systems and controls (iii): demonstrating and monitoring compliance | 20 | AML/CFT Guideline ch. 7–9 |
+| 1 · General knowledge on AML/CFT and counter-proliferation financing | 120 | AML/CFT Guideline for MSOs (Jun 2023) ch. 1 & 6; AMLO Sch. 1 |
+| 2 · Parts 1–7 of the AMLO | 300 | AMLO (Cap. 615, consolidated 15 May 2026) |
+| 3 · Schedules to the AMLO | 260 | AMLO Schedules 1–3 |
+| 4 · Guidelines promulgated by the C&ED | 300 | Licensing Guide (May 2026), fitness-and-propriety, business-plan, AML-policy and disciplinary guidelines, 2026 circulars |
+| 5 · Systems and controls (i): governance and strategy | 90 | AML/CFT Guideline ch. 2–3 |
+| 6 · Systems and controls (ii): AML/CFT control areas | 300 | AML/CFT Guideline ch. 4–6, 10–11 |
+| 7 · Systems and controls (iii): demonstrating and monitoring compliance | 140 | AML/CFT Guideline ch. 7–9 |
 
 > C&ED publishes no sample or past questions. These are reconstructions for
 > practice, not real exam questions.
 
 The bank is the file `web/questions.json`. To add or fix a question, edit it
 and regenerate the HTML file (see below); `go test ./...` checks the shape
-(20 per module, 4 options each, both languages and a citation present).
+(the per-module targets above, 4 options each, both languages and a citation
+present) and flags near-duplicate questions within a module.
 
 **The official documents themselves** — all 13, in English and Traditional
 Chinese — are in [`docs/`](docs/README.md), so every citation in the app can be
