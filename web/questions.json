@@ -903,8 +903,8 @@
   "module": 1,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶1.14",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第1.14段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶1.27",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第1.27段"
   },
   "en": {
    "q": "What does the Weapons of Mass Destruction (Control of Provision of Services) Ordinance (WMD(CPS)O) control?",
@@ -2759,8 +2759,8 @@
   "module": 1,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶1.14",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第1.14段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶1.27",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第1.27段"
   },
   "en": {
    "q": "According to the Guideline, what does the Weapons of Mass Destruction (Control of Provision of Services) Ordinance, Cap. 526 do?",
@@ -2788,8 +2788,8 @@
   "module": 1,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶1.14",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第1.14段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶6.7",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第6.7段"
   },
   "en": {
    "q": "According to the Guideline, what does the United Nations Sanctions Ordinance, Cap. 537 do?",
@@ -12039,8 +12039,8 @@
   "module": 2,
   "answer": 0,
   "source": {
-   "en": "AMLO s.14(3)",
-   "tc": "《打擊洗錢條例》第14(3)條"
+   "en": "AMLO s.14(1) & (2)(b)",
+   "tc": "《打擊洗錢條例》第14(1)及(2)(b)條"
   },
   "en": {
    "q": "Under section 14 of the AMLO, if a person fails to comply with a requirement imposed under section 9 or 12, who may apply to the Court of First Instance, and what may the Court do if satisfied the failure was without reasonable excuse?",
@@ -17437,7 +17437,7 @@
    "tc": "《打擊洗錢條例》附表2第1(1)條（「實益擁有人」的定義——法團）"
   },
   "en": {
-   "q": "A corporation holds no more than 25% of anything but exercises ultimate control over another corporation's management. Is that enough to make an individual behind it a beneficial owner?",
+   "q": "An individual holds no more than 25% of a corporation's shares or voting rights but exercises ultimate control over its management. Is that enough to make them a beneficial owner?",
    "options": [
     "Yes — ultimate control over the corporation's management is an independent limb of the definition",
     "No — only the 25% share capital and voting-rights limbs create a beneficial owner",
@@ -17447,7 +17447,7 @@
    "explain": "The definition includes, as a separate limb, an individual who exercises ultimate control over the management of the corporation — this does not depend on meeting the 25% shareholding or voting-rights limbs. It also does not require the control to be exercised through a trust or bearer shares (that phrase belongs to the shareholding limb), and holding no directorship or company-secretary role does not matter."
   },
   "tc": {
-   "q": "某法團持有的權益均不超過25%，但對另一法團的管理行使最終控制權。這是否足以令其背後的個人成為實益擁有人？",
+   "q": "某個人持有某法團的股本及投票權均不超遒25%，但對該法團的管理行使最終控制權。這是否足以令該個人成為實益擁有人？",
    "options": [
     "是——對法團的管理行使最終控制權是該定義的一項獨立條件",
     "否——只有25%股本及投票權兩項條件可構成實益擁有人",
@@ -20001,10 +20001,10 @@
   "tc": {
    "q": "關於能力評核作為發牌規定，下列哪項正確？",
    "options": [
-    "東主、合夥人或董事須過評核，僅一因素",
+    "東主、任一合夥人或董事須通過評核；結果只是其中一項因素",
     "僱員均須通過評核，不限於高級管理層",
-    "通過評核並不自動保證必然獲批牌照",
-    "評核純屬自願性質，與牌照審批完全無關"
+    "通過評核即自動保證必然獲批牌照",
+    "評核純屬自願性質，與牌照審批完全無關，亦不影響適當人選的評估"
    ],
    "explain": "第4.15(b)段：獨資經營者、任何一名合夥人及董事必須在海關舉行的能力評核取得合格成績，以確保高級管理層了解洗錢／恐怖分子資金籌集風險並有能力推行有效制度——一般僱員毋須應考。第5.4段：評核結果只是關長釐定申請人是否適當人選的考慮因素之一，故通過本身不保證獲批牌照，而評核屬強制性質，並非自願。"
   }
@@ -24422,26 +24422,26 @@
   "module": 4,
   "answer": 0,
   "source": {
-   "en": "Licensing Guide (May 2026) §5.4 & §6.2 compared",
-   "tc": "《牌照指引》（2026年5月）第5.4段與第6.2段的比較"
+   "en": "Licensing Guide (May 2026) §6.2",
+   "tc": "《牌照指引》（2026年5月）第6.2段"
   },
   "en": {
-   "q": "How does the consequence of failing to attend the Assessment differ between a grant application and a renewal application?",
+   "q": "What is the consequence of failing to attend the designated Assessment session for a renewal application?",
    "options": [
-    "On a grant application, failure to attend may result in refusal; on renewal, it will result in rejection of the application",
-    "On a grant application, failure to attend results in automatic rejection; on renewal it only leads to a warning",
-    "Failure to attend has the same effect in both cases — it may result in refusal of the corresponding application under paragraph 5.4 or 6.2",
-    "Failure to attend affects only the grant application; a renewal application proceeds regardless of attendance"
+    "Rejection of the corresponding application",
+    "A written warning, after which the application is processed as normal",
+    "A further session must be arranged within 30 days of the missed one",
+    "Suspension of the existing licence until the Assessment is passed"
    ],
    "explain": "Paragraph 5.4 states that failure to attend the designated session of the Assessment may result in refusal of the licence application, while paragraph 6.2 states that on renewal, failure to attend will result in rejection of the corresponding application — a firmer, non-discretionary formulation. Neither paragraph makes the consequence automatic on a grant application, reduces it to a warning on renewal, or excuses renewal applicants from attending altogether."
   },
   "tc": {
-   "q": "未有出席能力評核的後果，在批出申請與續期申請之間有何不同？",
+   "q": "就續期申請而言，未能在指定的時段應考能力評核會有甚麼後果？",
    "options": [
-    "批出申請時，未有出席可能導致申請被拒；續期申請時，未有出席將會導致申請被拒",
-    "就批出申請而言，未有出席會導致自動被拒；續期申請則只會收到警告",
-    "兩種情況下未有出席的後果相同，均只是可能導致有關申請被拒（由審裁處決定）",
-    "未有出席只影響批出申請；續期申請不論是否出席均會繼續處理"
+    "有關申請會被拒絕",
+    "只會收到書面警告，申請其後仍會如常處理",
+    "須在錯過該時段後30日內另行安排應考",
+    "現有牌照會被暫時吊銷，直至通過評核為止"
    ],
    "explain": "第5.4段訂明未有出席指定場次的能力評核，可能導致牌照申請被拒；第6.2段則訂明在續期時，未有出席將會導致有關申請被拒——措辭較為肯定，並非酌情性質。兩段均沒有將批出申請的後果定為自動被拒，也沒有將續期的後果降為警告，更沒有豁免續期申請人出席的責任。"
   }
@@ -30458,7 +30458,7 @@
    "tc": "《有關適當人選準則的補充指引》（2020年1月）第6(j)段"
   },
   "en": {
-   "q": "Which governance shortcoming does the Supplementary F&P Guideline treat as relevant to fitness and propriety?",
+   "q": "Which shortcoming concerns the person's organizational structure and personnel, rather than its systems or the person's own conduct?",
    "options": [
     "Failure to establish an organizational structure and personnel that comply with the relevant legislative or regulatory requirements",
     "Failure to be equipped with the skills, knowledge, experience and professionalism to perform the business's functions efficiently",
@@ -30468,7 +30468,7 @@
    "explain": "Paragraph 6(j) of the Supplementary F&P Guideline makes relevant whether the person has failed to establish an organizational structure and personnel that comply with the relevant legislative or regulatory requirements. This is a distinct governance criterion from paragraph 6(h) (skills, knowledge, experience and professionalism), 6(k) (infrastructure and internal controls), and 6(i) (untruthfulness to the CCE), which are separate matters listed elsewhere in paragraph 6."
   },
   "tc": {
-   "q": "《適當人選補充指引》將哪一項管治缺失視為與適當人選資格有關？",
+   "q": "哪一項缺失涉及該人的組織架構及人事安排，而非其系統或該人本身的操守？",
    "options": [
     "未能確立一套符合相關法例或監管規定的組織架構及人事安排",
     "未具備足以有效及竭誠地執行金錢服務業務職能的技能、知識、經驗及專業意識",
@@ -32662,7 +32662,7 @@
    "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.2.1(d)段"
   },
   "en": {
-   "q": "Which trigger for CDD arises from the MSO's own doubts rather than from a transaction?",
+   "q": "Which trigger for CDD arises from doubt about information already obtained, rather than from suspicion of ML/TF or from a transaction?",
    "options": [
     "When the MSO doubts the veracity or adequacy of previously obtained information",
     "When the MSO is about to establish a business relationship with the customer, in writing",
@@ -32672,12 +32672,12 @@
    "explain": "¶4.2.1(d) requires CDD when the MSO doubts the veracity or adequacy of any information previously obtained for identifying the customer or verifying the customer's identity. Establishing a business relationship is the separate trigger at ¶4.2.1(a); the $120,000 occasional-transaction threshold is the separate trigger at ¶4.2.1(b)(i); and suspicion of ML/TF is the separate trigger at ¶4.2.1(c), which footnote 15 confirms applies irrespective of the thresholds — none of these is the 'doubt' trigger the stem asks about."
   },
   "tc": {
-   "q": "哪一項客戶盡職審查觸發條件源自該經營者本身的疑問，而非源自某項交易？",
+   "q": "哪一項客戶盡職審查觸發條件源自對先前已取得資料的疑問，而非源自對洗錢／恐怖分子資金籌集的懷疑或某項交易？",
    "options": [
     "當該經營者懷疑先前為識別客戶而取得的資料的真確性或充分性時",
     "當該經營者即將與客戶建立業務關係時",
     "當某項非經常交易達到120,000元，不論是否有任何懷疑",
-    "當該經營者懷疑客戶的帳戶涉及洗錢／恐怖分子資金籌集時，須記錄"
+    "當該經營者懷疑該客戶或其帳戶涉及洗錢／恐怖分子資金籌集活動時"
    ],
    "explain": "第4.2.1(d)段規定，當該經營者懷疑先前為識別客戶或核實客戶身分而取得的任何資料的真確性或充分性時，須進行客戶盡職審查。建立業務關係是第4.2.1(a)段另一項觸發條件；120,000元非經常交易門檻是第4.2.1(b)(i)段另一項觸發條件；懷疑洗錢／恐怖分子資金籌集則是第4.2.1(c)段另一項觸發條件（註腳15確認該項不受門檻所限）——三者均非本題所問、源自該經營者本身疑問的觸發條件。"
   }
@@ -33247,7 +33247,7 @@
     "Limits on transaction number, type and amount; monitoring large or complex transactions outside the norm; and periodic updates to senior management",
     "A reasonable timeframe for completing verification; limits on the number, type and amount of transactions; and ensuring funds are not paid to third parties",
     "A reasonable timeframe for completing verification; monitoring large or complex transactions outside the expected norm; and periodic updates to senior management",
-    "Limits on the number, type and amount of transactions; periodic updates to senior management on pending cases; and ensuring funds are not paid to third parties"
+    "Limits on the number, type and amount of transactions; periodic updates to senior management; and the CCE's prior written approval for each transaction"
    ],
    "explain": "¶4.7.3 requires the policies to include placing appropriate limits on the number, types and/or amount of transactions that can be performed; monitoring of large and complex transactions being carried out outside the expected norms for that type of relationship; and keeping senior management periodically informed of any pending completion cases — sub-paragraphs (b), (c) and (d). Each distractor substitutes a real requirement from a neighbouring sub-paragraph — (a)'s reasonable timeframe, or (e)'s rule on not paying third parties — for one of the correct three."
   },
@@ -33257,7 +33257,7 @@
     "就交易的數目、類型及金額設定限制；監察超出常規的大額或複雜交易；以及定期向高級管理層通報",
     "訂立完成核實的合理時限；就交易的數目、類型及金額設定限制；以及確保不向第三方支付款項",
     "訂立完成核實的合理時限；監察超出預期常規的大額或複雜交易；以及定期向高級管理層通報",
-    "就交易的數目、類型及金額設定限制；定期向高級管理層通報尚待完成的個案；以及確保不向第三方支付款項"
+    "就可進行的交易數目、種類及金額設定限制；定期向高級管理層彙報；以及每宗交易均須事先取得關長的書面批准"
    ],
    "explain": "第4.7.3段規定該等政策須包括（b）就可進行交易的數目、類型及／或金額設定適當限制；（c）監察超出該類關係預期常規的大額及複雜交易；以及（d）定期向高級管理層通報任何尚待完成的個案。三個錯誤選項各以鄰近條文的真實規定——(a)的合理時限，或(e)的不得向第三方付款規定——取代三項正確規定之一。"
   }
@@ -35305,7 +35305,7 @@
    "options": [
     "No, an STR follows from relevant knowledge or suspicion, not termination alone",
     "Yes — every termination for failed CDD automatically requires an STR to be filed",
-    "No — an STR is never required merely because a relationship has been terminated",
+    "No — once the relationship has been terminated, a suspicion formed before it need not be reported",
     "Yes — but only where the customer formally disputes the termination decision"
    ],
    "explain": "¶4.13.1 couples the prohibition and termination duty with 'where there is relevant knowledge or suspicion, should make an STR to the JFIU'. The reporting duty turns on knowledge or suspicion, not on the fact of termination — though the circumstances that defeated CDD will often themselves give rise to suspicion, termination by itself is neither necessary nor sufficient for an STR."
@@ -35315,7 +35315,7 @@
    "options": [
     "否——只在有相關知悉或懷疑時方須作出報告；終止本身並非判斷準則",
     "是——每宗因客戶盡職審查失敗而終止的個案均自動須提交可疑交易報告",
-    "否——僅因業務關係已終止一事，永遠不會單獨觸發可疑交易報告",
+    "不需要——業務關係一經終止，終止前形成的懷疑便無須再作報告",
     "是——但只限該客戶正式就終止決定提出書面爭議的情況"
    ],
    "explain": "第4.13.1段將禁止及終止的責任與「如有相關知悉或懷疑，則應向聯合財富情報組作出可疑交易報告」一併訂明。報告責任取決於知悉或懷疑，而非取決於是否終止關係——惟導致客戶盡職審查無法完成的情況本身往往亦足以構成懷疑；終止本身既非必要，亦非充分的觸發條件。"
@@ -38184,7 +38184,7 @@
   "tc": {
    "q": "中介機構須向何人、多快取得欠缺的匯款人或收款人資料？",
    "options": [
-    "向接收其轉帳指示的機構，在合理切實可行範圍內盡快取得",
+    "向發出轉帳指示予它的機構，在合理切實可行範圍內盡快取得",
     "須直接向匯款人本人取得，並須在接獲指示後3個營業日內完成",
     "只可向收款機構取得，須在執行該轉帳指示前完成",
     "只可向海關關長取得，須經中介機構書面申請"
@@ -38897,7 +38897,7 @@
    "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）附錄A第2段"
   },
   "en": {
-   "q": "Which documents may an MSO use to identify or verify a non-resident individual who is not physically present in Hong Kong?",
+   "q": "Which documents does paragraph 2 of Appendix A itself list for a non-resident individual who is not physically present in Hong Kong?",
    "options": [
     "A valid international passport or other travel document; a current national identity card bearing the individual's photograph; or a current valid national driving licence with photographic evidence of identity, issued by a competent national or state authority",
     "A Permanent Resident Identity Card of the Macau Special Administrative Region; a Mainland Travel Permit for Taiwan Residents; or a Seaman's Identity Document issued under the International Labour Organisation's Seafarers' Identity Document Convention 1958, as amended",
@@ -38907,7 +38907,7 @@
    "explain": "Appendix A ¶2 lists, for a non-resident individual not physically present in Hong Kong: a valid international passport or other travel document; a current national identity card bearing the individual's photograph; or a current valid national driving licence with photographic evidence of identity, issued by a competent national or state authority. The named documents in ¶3 (e.g. Macau permanent resident card, Taiwan travel permit, seaman's document) illustrate what counts as a travel document generally, not the complete ¶2 list; the exit-entry permit, birth certificate and company search report belong to ¶3, ¶4 (minors) and ¶5 (corporate customers) respectively; and certified utility bills or reference letters are not identity documents under ¶2 at all."
   },
   "tc": {
-   "q": "就並未身處香港的非居民個人，金錢服務經營者可參照哪些文件識別或核實其身分？",
+   "q": "附錄A第2段本身就並未身處香港的非居民個人，列出哪些文件？",
    "options": [
     "有效的國際護照或其他旅行證件；載有該個人照片的現行國家身分證；或由主管的國家或州當局發出、載有身分照片證據的現行有效國家駕駛執照",
     "澳門特別行政區永久居民身分證；台灣居民往來內地通行證；或根據國際勞工組織《1958年海員身分證件公約》的規定所簽發的海員身分證明文件",
@@ -41046,8 +41046,8 @@
    "q": "Which of the following is listed among cash intensive transactions with abnormal patterns?",
    "options": [
     "Exchanging an unusually large amount of small notes for higher-denomination notes in a different currency",
-    "Frequent transactions of large cash amounts not justified by the customer's business activity or background",
-    "Large or frequent remittances made mostly to individuals or companies not normally associated with the customer's business",
+    "Funds routed through a series of financial institutions or intermediaries without any apparent commercial need",
+    "A commodity shipped to or from a jurisdiction that is designated as higher risk for ML, TF or PF activities",
     "Customer transactions that involve the use of counterfeit banknotes or forged payment instruments"
    ],
    "explain": "¶7.10(b)(iii) lists among cash intensive transactions with abnormal patterns the exchanging of an unusually large amount of small-denominated notes for those of higher denomination in a different currency. The distractors are other, distinct ¶7.10(b) red flags: frequent large cash transactions unjustified by the customer's business (i), large remittances to unrelated parties (ii), and transactions involving counterfeit notes (vi)."
@@ -41056,8 +41056,8 @@
    "q": "下列何者被列為「模式異常的現金密集交易」的預警指標？",
    "options": [
     "將異常大量的小額鈔票，兌換成另一貨幣的較大額鈔票",
-    "從客戶業務活動或背景看來，無法解釋的頻繁大額現金交易",
-    "客戶進行大額或頻繁匯款，多匯予與業務無關連的人士或公司",
+    "資金經多間金融機構或多名人士轉輸，而並無任何明顯需要",
+    "將商品付運至被界定為洗錢／恐怖分子資金籌集／擴散資金籌集高風險的司法管轄區",
     "客戶的交易涉及偽鈔或偽造的付款工具"
    ],
    "explain": "第7.10(b)(iii)段在「模式異常的現金密集交易」中列出：將異常大量的小額鈔票兌換成另一貨幣的較大額鈔票。其餘三項分別是第7.10(b)段所列的其他預警指標：無法解釋的頻繁大額現金交易（(i)）、匯予無關連人士或公司的大額或頻繁匯款（(ii)），以及涉及偽鈔或偽造工具的交易（(vi)）。"
@@ -41217,7 +41217,7 @@
    "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第7.10(c)(viii)及(ix)段"
   },
   "en": {
-   "q": "Which two features of a trade transaction are listed as red flags?",
+   "q": "Which two trade-transaction red flags concern the documentation and corporate structure, rather than the goods, the route or the payment?",
    "options": [
     "The use of repeatedly amended or frequently extended letters of credit; and the use of front or shell companies",
     "A shipment size inconsistent with the exporter's business scale; and a payment method inconsistent with the transaction's risk characteristics",
@@ -41227,7 +41227,7 @@
    "explain": "¶7.10(c)(viii) lists transactions involving the use of repeatedly amended or frequently extended letters of credit, and ¶7.10(c)(ix) lists transactions involving the use of front (or shell) companies. The distractors pair up other, distinct ¶7.10(c) red flags: shipment size/payment method (v)+(vi), higher-risk jurisdiction/commodity type (i)+(ii), and third-party cash/transhipment (vii)+(x)."
   },
   "tc": {
-   "q": "貿易交易的哪兩項特徵被列為預警指標？",
+   "q": "哪兩項貿易交易的預警訊號涉及單據及公司架構，而非貨品、路線或付款方式？",
    "options": [
     "使用一再修改或頻繁延期的信用證；以及使用門面（或空殼）公司",
     "裝運規模與出口商業務不相稱；以及支付方法與交易風險特徵不相稱",
@@ -42300,12 +42300,12 @@
    "explain": "Paragraph 7.28 states that an MSO should be aware that reporting a suspicion in respect of a transaction or event does not remove the need to report further suspicious transactions or events in respect of the same customer; further suspicious transactions or events, whether of the same nature or different, must continue to be reported to the MLRO, who should make further reports to the JFIU if appropriate. A single STR does not discharge future obligations, the 'different nature' qualifier creates no exception, and reports still go through the MLRO, not directly to the JFIU."
   },
   "tc": {
-   "q": "就某宗交易報告懷疑後，是否仍須就同一客戶的進一步懷疑作出報告？",
+   "q": "就某宗交易報告懷疑後，是否已無須就同一客戶的進一步懷疑作出報告？",
    "options": [
-    "不能——不論性質相同或不同，進一步的可疑交易仍須向洗錢報告主任報告",
-    "可以——就某客戶提交一份可疑交易報告，已足以履行日後的舉報責任",
-    "可以——但僅限於進一步的可疑交易屬不同性質的情況",
-    "不能——但進一步的報告一律須繞過洗錢報告主任，直接交予聯合財富情報組"
+    "否——不論性質相同或不同，進一步的可疑交易仍須向洗錢報告主任報告",
+    "是——就某客戶提交一份可疑交易報告，已足以履行日後的舉報責任",
+    "是——但僅限於進一步的可疑交易屬不同性質的情況",
+    "否——但進一步的報告一律須繞過洗錢報告主任，直接交予聯合財富情報組"
    ],
    "explain": "第7.28段訂明該經營者應知悉，就某交易或事件報告懷疑，並不免除就同一客戶報告進一步可疑交易或事件的需要；不論性質相同或不同，均須繼續向洗錢報告主任報告，該主任並應在適當時向聯合財富情報組作進一步報告。提交一份可疑交易報告並不能免除日後的舉報責任，「性質不同」亦不構成例外，報告仍須經洗錢報告主任處理，而非直接交予該組。"
   }
