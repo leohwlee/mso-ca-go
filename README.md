@@ -17,7 +17,7 @@ An offline mock-exam app for the Hong Kong Customs & Excise Department's
 ## Quick start
 
 1. **Download `mso-ca.html`** from the [Releases page](../../releases/latest)
-   (about 2.6 MB — the question bank and fonts are inside it).
+   (about 3 MB — the question bank and fonts are inside it).
 2. **Open it in Google Chrome.** Double-click the file, or right-click →
    Open with → Google Chrome if another browser is your default. It also
    works in Microsoft Edge and Firefox.
@@ -102,6 +102,26 @@ and regenerate the HTML file (see below); `go test ./...` checks the shape
 (the per-module targets above, 4 options each, both languages and a citation
 present) and flags near-duplicate questions within a module.
 
+Four further checks guard what a shape check cannot see. Option order is
+shuffled at draw time, so position never leaks the answer — but length does,
+and a September 2026 audit found the correct option was the longest of the four
+in 85% of questions, enough for a candidate who knew nothing to pass 71% of
+simulated papers by always picking the longest. The tests now cap that at 45%
+per module, require every citation to name a paragraph or section rather than
+just a document, and hold the Traditional Chinese to the wording of the
+official Chinese editions — the statutory term for each defined concept, and
+both halves of 洗錢／恐怖分子資金籌集 wherever the English says ML/TF.
+
+Repairing that fault taught the other half of the lesson, which a fifth check
+now guards. Trimming the answers so the longest option would be wrong simply
+moved the giveaway: the answer settled into *second* place in about half the
+bank, and "pick the second longest" is exactly as learnable as "pick the
+longest". So the test looks at the whole distribution — the answer must sit at
+each of the four length ranks no more than 40% of the time, in both languages.
+The practical rule when you write a question: vary it. Sometimes make the
+answer the longest option, sometimes the shortest, and keep the gap between
+options down to a few characters rather than a whole extra clause.
+
 **The official documents themselves** — all 13, in English and Traditional
 Chinese — are in [`docs/`](docs/README.md), so every citation in the app can be
 checked against the source PDF.
@@ -134,3 +154,19 @@ go run .                               # or: serve web/ locally while developing
 
 Fonts: DM Sans and DM Mono are embedded under the SIL Open Font License (see
 `web/fonts/`); Chinese text uses the operating system's fonts.
+
+## Publishing a release
+
+Releases are cut by tag. Pushing a tag beginning with `v` runs
+[`.github/workflows/release.yml`](.github/workflows/release.yml), which vets
+and tests the bank, builds the single file from that exact commit, and
+attaches it to a new GitHub release with generated notes.
+
+```bash
+git tag v1.2.0
+git push origin v1.2.0
+```
+
+The tests run before the build, so a tag that fails the bank checks never
+becomes a download. `dist/` is gitignored: the artefact is never committed,
+only built from source at tag time.
