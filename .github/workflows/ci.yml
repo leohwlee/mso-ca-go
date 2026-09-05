@@ -1,0 +1,31 @@
+name: CI
+
+# The release workflow only fires on a v* tag, which means a broken bank was
+# not caught until the tag had already been pushed. This runs the same checks
+# on every push and pull request, so a problem surfaces before release time.
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Vet and test
+        run: |
+          go vet ./...
+          go test ./...
+
+      # Building here catches an export that fails even when the bank is sound.
+      - name: Build single-file app
+        run: |
+          mkdir -p dist
+          go run . -export-html dist/mso-ca.html
+          ls -lh dist/mso-ca.html
