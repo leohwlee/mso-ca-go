@@ -139,6 +139,131 @@ func TestNoDuplicateStems(t *testing.T) {
 	}
 }
 
+// TestOptionLengthBalance guards the bank's biggest weakness as an exam: a
+// September 2026 audit found the keyed answer was the longest of the four
+// options in 83% of questions, by a median of 55 characters, so a candidate who
+// knew nothing could pass 64% of simulated papers by always picking the longest
+// one. Option order is shuffled at draw time, but length is not, so length must
+// not signal the key.
+func TestOptionLengthBalance(t *testing.T) {
+	bank := loadBank(t)
+
+	perMod, longestMod := map[int]int{}, map[int]int{}
+	for _, q := range bank {
+		perMod[q.Module]++
+		best, at := 0, 0
+		for i, o := range q.En.Options {
+			if n := len([]rune(o)); n > best {
+				best, at = n, i
+			}
+		}
+		if at == q.Answer {
+			longestMod[q.Module]++
+		}
+	}
+	for m := 1; m <= 7; m++ {
+		if perMod[m] == 0 {
+			continue
+		}
+		if share := float64(longestMod[m]) / float64(perMod[m]); share > 0.45 {
+			t.Errorf("module %d: keyed answer is the longest option in %.0f%% of questions, want at most 45%%",
+				m, share*100)
+		}
+	}
+}
+
+// TestOptionLengthRank is the lesson from repairing the fault above: removing a
+// giveaway can plant another one. Trimming the keys so that the longest option
+// would be wrong pushed the answer into second place in about half the bank, and
+// "pick the second longest" is exactly as learnable as "pick the longest". So it
+// is not enough to cap one rank — the answer has to sit at each of the four
+// length ranks about as often as chance would put it, in both languages.
+func TestOptionLengthRank(t *testing.T) {
+	bank := loadBank(t)
+
+	for _, lang := range []string{"en", "tc"} {
+		var atRank [4]int
+		for _, q := range bank {
+			l := q.En
+			if lang == "tc" {
+				l = q.Tc
+			}
+			if len(l.Options) != 4 || q.Answer < 0 || q.Answer >= 4 {
+				continue // TestBankIntegrity reports the shape problem
+			}
+			key := len([]rune(l.Options[q.Answer]))
+			place := 0
+			for i, o := range l.Options {
+				if i != q.Answer && len([]rune(o)) > key {
+					place++
+				}
+			}
+			atRank[place]++
+		}
+		names := [4]string{"longest", "2nd longest", "3rd longest", "shortest"}
+		for r, n := range atRank {
+			if share := float64(n) / float64(len(bank)); share > 0.40 {
+				t.Errorf("%s: the answer is the %s option in %.0f%% of questions, want at most 40%% (chance is 25%%)",
+					lang, names[r], share*100)
+			}
+		}
+	}
+}
+
+// TestCitationHasLocator: a citation must name a place a reader can turn to —
+// a paragraph, section, item or schedule number — not just a document.
+func TestCitationHasLocator(t *testing.T) {
+	bank := loadBank(t)
+	digit := regexp.MustCompile(`\d`)
+	for _, q := range bank {
+		if !digit.MatchString(q.Source.En) {
+			t.Errorf("%s: citation %q names no paragraph or section", q.ID, q.Source.En)
+		}
+	}
+}
+
+// TestChineseStatutoryTerms: the Traditional Chinese paper must use the terms
+// the official Chinese editions use, so a candidate meets the same wording in
+// the exam room as in the Ordinance and the Guideline.
+func TestChineseStatutoryTerms(t *testing.T) {
+	bank := loadBank(t)
+	banned := map[string]string{
+		"電匯":     "電傳轉帳 or 電傳轉賬 (wire transfer)",
+		"過渡期客戶":  "先前客戶 (pre-existing customer)",
+		"單次交易":   "非經常交易 (occasional transaction)",
+		"證券交易所":  "認可證券市場 or 證券市場 (recognized stock market)",
+		"指明條文":   "指明的條文 (specified provision)",
+		"洗錢事務主任": "洗錢報告主任 (MLRO)",
+		"安施塔特":   "機構（anstalt）",
+	}
+	for _, q := range bank {
+		fields := append([]string{q.Tc.Q, q.Tc.Explain}, q.Tc.Options...)
+		for _, f := range fields {
+			for bad, want := range banned {
+				if strings.Contains(f, bad) {
+					t.Errorf("%s: Chinese text uses %q, want %s", q.ID, bad, want)
+				}
+			}
+		}
+	}
+}
+
+// TestMLTFPairing: where the English says ML/TF the Chinese must carry both
+// limbs. Dropping the terrorist-financing half changes what is being asked.
+func TestMLTFPairing(t *testing.T) {
+	bank := loadBank(t)
+	for _, q := range bank {
+		en := append([]string{q.En.Q, q.En.Explain}, q.En.Options...)
+		tc := append([]string{q.Tc.Q, q.Tc.Explain}, q.Tc.Options...)
+		for i := range en {
+			if strings.Contains(en[i], "ML/TF") &&
+				strings.Contains(tc[i], "洗錢") && !strings.Contains(tc[i], "恐怖分子") {
+				t.Errorf("%s: English says ML/TF but the Chinese says 洗錢 alone: %q", q.ID, tc[i])
+			}
+		}
+	}
+}
+
 var nonWord = regexp.MustCompile(`[^\p{L}\p{N}]+`)
 
 func shingles(s string) map[string]bool {
