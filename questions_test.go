@@ -486,6 +486,38 @@ func TestNoDuplicateAnswers(t *testing.T) {
 				"question: %q", strings.Join(ids, ", "), key)
 		}
 	}
+
+	// A shared answer across two modules is a duplicate even when the citations
+	// differ. Six such pairs existed in September 2026, each stating a rule from
+	// the Ordinance in one module and from the Guideline in another — the same
+	// question twice, and a candidate could meet both in one paper. Within a
+	// module a shared answer is fine and often deliberate: several distinct
+	// offences carry a fine at level 5.
+	byAnswer := map[string][]question{}
+	for _, q := range bank {
+		answer := ""
+		if q.combo() {
+			answer = strings.Join(q.En.Statements, " ")
+		} else if q.Answer >= 0 && q.Answer < len(q.En.Options) {
+			answer = q.En.Options[q.Answer]
+		}
+		answer = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(answer), " "))
+		if len(answer) < 12 {
+			continue
+		}
+		byAnswer[answer] = append(byAnswer[answer], q)
+	}
+	for answer, qs := range byAnswer {
+		for i := range qs {
+			for j := i + 1; j < len(qs); j++ {
+				if qs[i].Module != qs[j].Module {
+					t.Errorf("%s (module %d) and %s (module %d) give the same answer, so one mock "+
+						"paper can ask the same thing twice: %q",
+						qs[i].ID, qs[i].Module, qs[j].ID, qs[j].Module, answer)
+				}
+			}
+		}
+	}
 }
 
 var nonWord = regexp.MustCompile(`[^\p{L}\p{N}]+`)
