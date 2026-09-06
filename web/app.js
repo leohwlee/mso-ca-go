@@ -38,6 +38,11 @@ let justFinished = false;       // results view: fresh submit vs history review
 let timerId = null;
 let homeNotice = null;          // one-shot message on home
 let pmodSel = new Set([1, 2, 3, 4, 5, 6, 7]); // practice module selection
+/* Every sample question C&ED has published is a combination item, so the mock can
+   be drawn entirely from those — the closest the app gets to the printed paper.
+   Off by default: the four-option questions test one provision at a time and are
+   the better shape for learning one. */
+let examCombo = false;
 let reviewFilter = 'all';       // results view: 'all' | 'wrong'
 let homeTick = null;            // ticks the "time left" on the home resume card
 const BASE_TITLE = document.title;
@@ -283,6 +288,15 @@ function homeView() {
       <div class="rulebox">${ui(
         '<b>Pass rules (both required):</b> at most 2 wrong in <b>each</b> module, and a total of <b>25/35</b> or above. 32/35 still fails if one module has 3 mistakes.',
         '<b>及格準則（兩項須同時符合）：</b>每個單元錯題不多於2題，及全卷總分達<b>25/35</b>。即使總分32/35，只要任何一個單元錯3題即全卷不及格。')}</div>
+      ${(() => {
+        const c = comboCounts();
+        if (!c.ok) return '';
+        const papers = Math.floor(c.min / CFG.perModule);
+        return `<label class="optrow"><input type="checkbox" id="cb-combo" ${examCombo ? 'checked' : ''}>
+          <span>${ui(
+            `<b>Exam-realistic paper.</b> Draw all 35 from the combination questions — the format of every sample C&amp;ED has published. ${papers} papers before any question repeats.`,
+            `<b>試場模式。</b>35題全部抽自組合題，即海關已公布的所有參考試題所用的格式。可組成${papers}份不重複的試卷。`)}</span></label>`;
+      })()}
       <div class="actions">
         <button class="btn" id="btn-start" ${bank.length ? '' : 'disabled'}>${ui('Start mock exam', '開始模擬試')}</button>
       </div>
@@ -353,6 +367,8 @@ function historyHTML(attempts) {
 
 function bindHome() {
   homeNotice = null;
+  const cb = $('#cb-combo');
+  if (cb) cb.onchange = () => { examCombo = cb.checked; store.set('examcombo', examCombo); };
   const start = $('#btn-start');
   if (start) start.onclick = () => startExam();
   const resume = $('#btn-resume');
@@ -461,11 +477,21 @@ function langView() {
 
 /* ---------------- exam ---------------- */
 
+/* how many combination questions each module holds, and whether an all-combination
+   paper is possible at all */
+function comboCounts() {
+  const per = MODULES.map(m => (byMod.get(m.n) || []).filter(isCombo).length);
+  return { per, min: Math.min(...per), ok: Math.min(...per) >= CFG.perModule };
+}
+
 function startExam() {
   const minutes = customMinutes || CFG.minutes;
+  const combo = examCombo && comboCounts().ok;
   const qids = [], optOrder = {};
   for (const m of MODULES) {
-    const pool = shuffle([...(byMod.get(m.n) || [])]);
+    let all = byMod.get(m.n) || [];
+    if (combo) all = all.filter(isCombo);
+    const pool = shuffle([...all]);
     for (const q of pool.slice(0, CFG.perModule)) {
       qids.push(q.id);
       optOrder[q.id] = drawOrder(q);
@@ -1203,6 +1229,7 @@ async function boot() {
   S.lang = store.get('lang', null);
   S.theme = ['auto', 'light', 'dark'].includes(store.get('theme', 'auto')) ? store.get('theme', 'auto') : 'auto';
   applyTheme();
+  examCombo = store.get('examcombo', false) === true;
   const savedSel = store.get('pmods', null);
   if (Array.isArray(savedSel) && savedSel.length) pmodSel = new Set(savedSel.filter(n => n >= 1 && n <= 7));
 
