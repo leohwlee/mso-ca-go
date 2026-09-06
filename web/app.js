@@ -91,6 +91,25 @@ function toast(msg) {
   toast.t = setTimeout(() => el.classList.remove('show'), 3500);
 }
 
+/* The official papers use two question shapes. Most items are a stem and four
+   options, whose order the app shuffles at draw time so position never leaks the
+   key. Combination items — the shape of every sample question C&ED has published,
+   in the 2021 sample set and in Guidance Notes ¶7.1 — put numbered statements
+   under the stem and offer five fixed options naming subsets of them. There the
+   order is part of the question, so it is never shuffled and the letters A–E are
+   fixed, exactly as on the printed paper. */
+const isCombo = q => q.format === 'combination';
+const optCount = q => isCombo(q) ? 5 : 4;
+const letters = q => isCombo(q) ? 'ABCDE' : 'ABCD';
+const identity = q => isCombo(q) ? [0, 1, 2, 3, 4] : [0, 1, 2, 3];
+const drawOrder = q => isCombo(q) ? [0, 1, 2, 3, 4] : shuffle([0, 1, 2, 3]);
+/* History outlives the file it was made in, and a question that was four-option
+   when an attempt was saved may since have been rewritten as a combination item.
+   An order of the wrong length would drop the fifth option and could hide the
+   right answer, so fall back to the question's own order when it no longer fits. */
+const orderFor = (q, stored) =>
+  Array.isArray(stored) && stored.length === optCount(q) ? stored : identity(q);
+
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -119,6 +138,22 @@ function optionHTML(q, origIdx) {
   if (S.lang === 'en') return en;
   if (S.lang === 'tc') return tc;
   return `${en}<span class="tcline">${tc}</span>`;
+}
+
+/* the numbered statements a combination item's options refer to */
+function statementsHTML(q) {
+  if (!isCombo(q)) return '';
+  const rows = q.en.statements.map((en, i) => {
+    const e = esc(en), t = esc(q.tc.statements[i]);
+    const body = S.lang === 'en' ? e : S.lang === 'tc' ? t : `${e}<span class="tcline">${t}</span>`;
+    return `<li>${body}</li>`;
+  }).join('');
+  return `<ol class="stmts">${rows}</ol>`;
+}
+
+/* the stem, plus the statement list where the question has one */
+function stemHTML(q) {
+  return `<div class="stem">${contentHTML(q, 'q')}</div>${statementsHTML(q)}`;
 }
 
 function sourceHTML(q) {
@@ -433,7 +468,7 @@ function startExam() {
     const pool = shuffle([...(byMod.get(m.n) || [])]);
     for (const q of pool.slice(0, CFG.perModule)) {
       qids.push(q.id);
-      optOrder[q.id] = shuffle([0, 1, 2, 3]);
+      optOrder[q.id] = drawOrder(q);
     }
   }
   exam = {
@@ -463,12 +498,12 @@ function examView() {
   const q = byId.get(exam.qids[exam.cur]);
   const answered = Object.keys(exam.answers).length;
   const flagged = exam.flags.includes(q.id);
-  const order = exam.optOrder[q.id];
+  const order = orderFor(q, exam.optOrder[q.id]);
   const chosen = exam.answers[q.id];
 
   const opts = order.map((orig, di) => `
     <button class="opt ${chosen === orig ? 'sel' : ''}" data-orig="${orig}">
-      <span class="letter">${'ABCD'[di]}</span>
+      <span class="letter">${letters(q)[di]}</span>
       <span class="otext">${optionHTML(q, orig)}</span>
     </button>`).join('');
 
@@ -493,7 +528,7 @@ function examView() {
             <span class="qmod">M${q.module} · ${esc(modName(q.module))}</span>
             <button class="qflag ${flagged ? 'on' : ''}" id="btn-flag">${icon('flag')} ${flagged ? ui('Flagged', '已標記') : ui('Flag', '標記')}</button>
           </div>
-          <div class="stem">${contentHTML(q, 'q')}</div>
+          ${stemHTML(q)}
           <div class="opts" id="opts">${opts}</div>
           <div class="qnav-row">
             <button class="btn secondary" id="btn-prev" ${exam.cur === 0 ? 'disabled' : ''}>${ui('Previous', '上一題')}</button>
@@ -503,8 +538,8 @@ function examView() {
               : `<button class="btn" id="btn-next">${ui('Next', '下一題')}</button>`}
           </div>
         </div>
-        <div class="footer kbd">${ui('Keyboard: A–D or 1–4 to answer (press again to erase) · Enter next · ←/→ move · or mark the sheet directly',
-          '鍵盤：A–D 或 1–4 作答（再按一次可清除）· Enter 下一題 · ←/→ 切換 · 亦可直接在答題紙上作答')}</div>
+        <div class="footer kbd">${ui('Keyboard: A–E or 1–5 to answer (press again to erase) · Enter next · ←/→ move · or mark the sheet directly',
+          '鍵盤：A–E 或 1–5 作答（再按一次可清除）· Enter 下一題 · ←/→ 切換 · 亦可直接在答題紙上作答')}</div>
       </div>
       <aside class="rail">
         <div class="card">
@@ -534,8 +569,10 @@ function omrSheetHTML() {
       .filter(x => x.q.module === m.n)
       .map(x => {
         const chosen = exam.answers[x.qid];
-        const bubbles = exam.optOrder[x.qid].map((orig, di) =>
-          `<button class="bub ${chosen === orig ? 'on' : ''}" data-mark="${x.i}:${di}" title="Q${x.i + 1} ${'ABCD'[di]}">${'ABCD'[di]}</button>`).join('');
+        const L = letters(x.q);
+        const bubbles = orderFor(x.q, exam.optOrder[x.qid]).map((orig, di) =>
+          `<button class="bub ${chosen === orig ? 'on' : ''}" data-mark="${x.i}:${di}" title="Q${x.i + 1} ${L[di]}">${L[di]}</button>`).join('')
+          + '<span class="bub-gap"></span>'.repeat(5 - L.length);
         const fl = `<span class="fl">${exam.flags.includes(x.qid) ? icon('flag') : ''}</span>`;   // slot always present
         return `<div class="omr-row ${x.i === exam.cur ? 'current' : ''}">
           <button class="omr-num" data-goto="${x.i}">${x.i + 1}</button>${bubbles}${fl}</div>`;
@@ -613,10 +650,11 @@ function examKeys(e) {
     if (e.target && e.target.tagName === 'BUTTON') return;   // a focused button already handles Enter
     if (exam.cur === exam.qids.length - 1) confirmSubmit(); else gotoQ(exam.cur + 1);
   }
-  else if (k.length === 1 && ('abcd'.includes(k) || '1234'.includes(k))) {
-    const di = 'abcd'.includes(k) ? 'abcd'.indexOf(k) : '1234'.indexOf(k);
+  else if (k.length === 1 && ('abcde'.includes(k) || '12345'.includes(k))) {
+    const di = 'abcde'.includes(k) ? 'abcde'.indexOf(k) : '12345'.indexOf(k);
     const q = byId.get(exam.qids[exam.cur]);
-    const orig = exam.optOrder[q.id][di];
+    if (di >= optCount(q)) return;   // E / 5 only exist on a combination question
+    const orig = orderFor(q, exam.optOrder[q.id])[di];
     if (exam.answers[q.id] === orig) delete exam.answers[q.id];
     else exam.answers[q.id] = orig;
     saveExam();
@@ -783,13 +821,13 @@ function resultsView() {
 
 function reviewItemHTML(q, i, a) {
   const chosen = a.answers[q.id];
-  const order = (a.optOrder && a.optOrder[q.id]) || [0, 1, 2, 3];
+  const order = orderFor(q, a.optOrder && a.optOrder[q.id]);
   const opts = order.map((orig, di) => {
     let cls = 'dim';
     if (orig === q.answer) cls = 'correct';
     else if (orig === chosen) cls = 'wrong';
     return `<button class="opt ${cls}" disabled>
-      <span class="letter">${'ABCD'[di]}</span>
+      <span class="letter">${letters(q)[di]}</span>
       <span class="otext">${optionHTML(q, orig)}</span>
     </button>`;
   }).join('');
@@ -804,7 +842,7 @@ function reviewItemHTML(q, i, a) {
       <span class="qnum">${i + 1}.</span>
       <span class="qmod">M${q.module} · ${esc(modName(q.module))}</span>
     </div>
-    <div class="stem">${contentHTML(q, 'q')}</div>
+    ${stemHTML(q)}
     <div class="opts">${opts}</div>
     <div class="explain">
       <div class="verdict">${state}</div>
@@ -851,7 +889,15 @@ function fmtDateFull(ts) {
 }
 
 /* plain-text (no HTML) question text in the current language mode, for the file */
-function qStem(q) { return S.lang === 'en' ? q.en.q : S.lang === 'tc' ? q.tc.q : q.en.q + ' ｜ ' + q.tc.q; }
+function qStem(q) {
+  const stem = S.lang === 'en' ? q.en.q : S.lang === 'tc' ? q.tc.q : q.en.q + ' ｜ ' + q.tc.q;
+  if (!isCombo(q)) return stem;
+  const list = q.en.statements.map((en, i) => {
+    const t = q.tc.statements[i];
+    return `(${i + 1}) ` + (S.lang === 'en' ? en : S.lang === 'tc' ? t : en + ' ｜ ' + t);
+  }).join('  ');
+  return stem + '  ' + list;
+}
 function optText(q, i) { return S.lang === 'en' ? q.en.options[i] : S.lang === 'tc' ? q.tc.options[i] : q.en.options[i] + ' ｜ ' + q.tc.options[i]; }
 
 /* aggregate all attempts: accuracy per module, and questions most often missed */
@@ -948,12 +994,12 @@ function importHistoryText(text) {
 
 /* a question with its correct answer and explanation (no attempt context) */
 function explainCardHTML(q) {
-  const opts = [0, 1, 2, 3].map((orig, di) => `
+  const opts = identity(q).map((orig, di) => `
     <button class="opt ${orig === q.answer ? 'correct' : 'dim'}" disabled>
-      <span class="letter">${'ABCD'[di]}</span>
+      <span class="letter">${letters(q)[di]}</span>
       <span class="otext">${optionHTML(q, orig)}</span>
     </button>`).join('');
-  return `<div class="stem">${contentHTML(q, 'q')}</div>
+  return `${stemHTML(q)}
     <div class="opts">${opts}</div>
     <div class="explain">${contentHTML(q, 'explain')}${sourceHTML(q)}</div>`;
 }
@@ -1037,7 +1083,7 @@ function nextPracticeQ(advance = true) {
     toast(ui(`All ${practice.pool.length} questions seen once — starting another round`,
       `已完成全部 ${practice.pool.length} 題，重新開始一輪`));
   }
-  practice.order = shuffle([0, 1, 2, 3]);
+  practice.order = drawOrder(byId.get(practice.pool[practice.idx]));
   practice.chosen = null;
 }
 
@@ -1052,7 +1098,7 @@ function practiceView() {
       else cls = 'dim';
     }
     return `<button class="opt ${cls}" data-orig="${orig}" ${done ? 'disabled' : ''}>
-      <span class="letter">${'ABCD'[di]}</span>
+      <span class="letter">${letters(q)[di]}</span>
       <span class="otext">${optionHTML(q, orig)}</span>
     </button>`;
   }).join('');
@@ -1066,7 +1112,7 @@ function practiceView() {
         <span class="qmod">M${q.module} · ${esc(modName(q.module))}</span>
         <span class="tally" style="margin-left:auto">${ui('This session', '本節')}: <b>${t.right}</b>/${t.seen}</span>
       </div>
-      <div class="stem">${contentHTML(q, 'q')}</div>
+      ${stemHTML(q)}
       <div class="opts" id="opts">${opts}</div>
       ${done ? `
       <div class="explain">
@@ -1102,8 +1148,8 @@ function bindPractice() {
   document.onkeydown = e => {
     if (S.view !== 'practice' || $('.modal-back') || e.ctrlKey || e.metaKey || e.altKey) return;
     const k = e.key.toLowerCase();
-    if (practice.chosen === null && k.length === 1 && ('abcd'.includes(k) || '1234'.includes(k))) {
-      const di = 'abcd'.includes(k) ? 'abcd'.indexOf(k) : '1234'.indexOf(k);
+    if (practice.chosen === null && k.length === 1 && ('abcde'.includes(k) || '12345'.includes(k))) {
+      const di = 'abcde'.includes(k) ? 'abcde'.indexOf(k) : '12345'.indexOf(k);
       const el = document.querySelectorAll('#opts .opt')[di];
       if (el) el.click();
     } else if (practice.chosen !== null && (k === 'arrowright' || (k === 'enter' && e.target.tagName !== 'BUTTON'))) {
