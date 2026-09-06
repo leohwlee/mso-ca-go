@@ -448,6 +448,46 @@ func TestCombinationFormat(t *testing.T) {
 	}
 }
 
+// TestNoDuplicateAnswers catches the duplicate TestNoDuplicateStems cannot see.
+// That test compares wording, within one module. But the same fact asked in
+// different words, in a different module, looks nothing alike and is invisible
+// to it — three such pairs were found in September 2026 (m3-17/m6-268,
+// m1-70/m6-198, m1-117/m6-184), each asking one thing twice.
+//
+// The sharp signal is the pair (cited passage, answer): two questions that cite
+// the same provision and key on the same answer are asking one question. Sharing
+// an answer across *different* provisions is not a duplicate and is common on
+// purpose — several offences carry a fine at level 5, and a rule stated in both
+// the Ordinance and the Guideline is worth asking from each side.
+func TestNoDuplicateAnswers(t *testing.T) {
+	bank := loadBank(t)
+
+	seen := map[string][]string{}
+	for _, q := range bank {
+		// what the question settles: the keyed option, or for a combination item
+		// the statements, since its options are the same fixed block every time
+		answer := ""
+		if q.combo() {
+			answer = strings.Join(q.En.Statements, " ")
+		} else if q.Answer >= 0 && q.Answer < len(q.En.Options) {
+			answer = q.En.Options[q.Answer]
+		}
+		answer = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(answer), " "))
+		if len(answer) < 12 {
+			continue // too short to identify anything
+		}
+		src := strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(q.Source.En), " "))
+		key := src + " || " + answer
+		seen[key] = append(seen[key], q.ID)
+	}
+	for key, ids := range seen {
+		if len(ids) > 1 {
+			t.Errorf("%s all cite the same passage and give the same answer, so they ask one "+
+				"question: %q", strings.Join(ids, ", "), key)
+		}
+	}
+}
+
 var nonWord = regexp.MustCompile(`[^\p{L}\p{N}]+`)
 
 func shingles(s string) map[string]bool {
