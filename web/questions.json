@@ -7982,28 +7982,28 @@
   "module": 2,
   "answer": 0,
   "source": {
-   "en": "AMLO s.8 (definition of “non-Part 5B prescribed person”)",
-   "tc": "《打擊洗錢條例》第8條（「非第5B部訂明人士」的定義）"
+   "en": "AMLO s.8 (definition of “prescribed person”)",
+   "tc": "《打擊洗錢條例》第8條（「訂明人士」的定義）"
   },
   "en": {
-   "q": "Which of the following is included in the definition of “non-Part 5B prescribed person” in section 8?",
+   "q": "For the purposes of Part 3 of the AMLO (supervision and investigations), whom does section 8 define as a “prescribed person”?",
    "options": [
-    "The Postmaster General",
-    "The Financial Secretary",
-    "The Registrar of Companies",
-    "The Commissioner of Customs and Excise"
+    "A non-Part 5B prescribed person, a licensed VAS provider, or an associated entity of a licensed VAS provider",
+    "A relevant authority, together with any authorized person or investigator it has appointed under Part 3",
+    "A Schedule 1 financial institution, but excluding every licensed VAS provider and its associated entities",
+    "Only a licensed money service operator or the Postmaster General when operating a remittance service"
    ],
-   "explain": "The section 8 definition lists authorized institutions, licensed corporations, authorized insurers, licensed insurance agents, agencies and broker companies, licensed money service operators, the Postmaster General, SVF licensees, TCSP licensees, PMS registrants and stablecoin licensees. Regulators themselves are not prescribed persons."
+   "explain": "Section 8 defines “prescribed person” as (a) a non-Part 5B prescribed person — the list that runs from authorized institutions and licensed money service operators through the Postmaster General to TCSP licensees, PMS registrants and stablecoin licensees — (b) a licensed VAS provider, or (c) an associated entity of a licensed VAS provider. A prescribed person is the party inspected or investigated under Part 3, not the relevant authority or the authorized persons and investigators acting for it; the definition is wider than the Schedule 1 “financial institution” (it adds TCSP licensees and PMS registrants) and expressly includes VAS providers and their associated entities; and it reaches far beyond money service operators and the Postmaster General."
   },
   "tc": {
-   "q": "下列何者包括在第8條「非第5B部訂明人士」的定義內？",
+   "q": "就《打擊洗錢條例》第3部（監管及調查）而言，第8條界定何人為「訂明人士」？",
    "options": [
-    "郵政署署長",
-    "財政司司長",
-    "公司註冊處處長",
-    "海關關長"
+    "非第5B部訂明人士、持牌虛擬資產服務提供者，或持牌虛擬資產服務提供者的有聯繫實體",
+    "有關當局本身，連同該當局根據第3部授權的獲授權人及其委任的調查員",
+    "附表1「金融機構」定義所涵蓋的機構，但不包括任何持牌虛擬資產服務提供者及其有聯繫實體",
+    "只限持牌金錢服務經營者，以及在經營匯款服務的範圍內的郵政署署長"
    ],
-   "explain": "第8條的定義列出認可機構、持牌法團、認可保險人、持牌保險代理及代理機構及經紀公司、持牌金錢服務經營者、郵政署署長、儲值支付工具持牌人、信託或公司服務提供者持牌人、貴金屬及寶石交易商註冊人及穩定幣持牌人。監管機構本身並非訂明人士。"
+   "explain": "第8條將「訂明人士」界定為：(a)非第5B部訂明人士——該清單由認可機構、持牌金錢服務經營者，以至郵政署署長、信託或公司服務持牌人、貴金屬及寶石註冊人及穩定幣持牌人；(b)持牌虛擬資產服務提供者；或(c)持牌虛擬資產服務提供者的有聯繫實體。訂明人士是根據第3部受視察或調查的一方，而非有關當局或代其行事的獲授權人及調查員；該定義較附表1的「金融機構」為廣（加入了信託或公司服務持牌人及貴金屬及寶石註冊人），並明文包括虛擬資產服務提供者及其有聯繫實體；其範圍亦遠不止於金錢服務經營者及郵政署署長。"
   }
  },
  {
@@ -26216,28 +26216,28 @@
   "module": 4,
   "answer": 0,
   "source": {
-   "en": "Licensing Guide (May 2026) §6.1",
-   "tc": "《牌照指引》（2026年5月）第6.1段"
+   "en": "Licensing Guide (May 2026) §6.2",
+   "tc": "《牌照指引》（2026年5月）第6.2段"
   },
   "en": {
-   "q": "By when must a licensee apply to renew its MSO licence?",
+   "q": "In the renewal process described in paragraph 6.2 of the Licensing Guide, once a licensee has nominated its eligible person(s) for the Competence Assessment, how is their sitting arranged?",
    "options": [
-    "Not later than 45 days before the licence is due to expire",
-    "Not later than 90 days before the licence is due to expire",
-    "Not later than 30 days before the licence is due to expire",
-    "At any time before the licence expires, subject to a grace period"
+    "The C&ED sends an appointment letter, and the nominee attends at the date, time and centre it specifies",
+    "The nominee books any session on the MSOS eServices website within the 90 days before the licence expires",
+    "The licensee proposes three dates and the CCE confirms one of them in the demand note for the renewal fees",
+    "No sitting is arranged — a renewing licensee is exempt from the Assessment and attends only the CCE's interview"
    ],
-   "explain": "Paragraph 6.1 states that a licensee is required to renew the MSO licence not later than 45 days before the licence is due to expire, mirroring section 31(2)(a) of the AMLO. The 90-day period in paragraph 6.2 is when the department sends its reminder."
+   "explain": "Paragraph 6.2 states that an appointment letter for the Assessment will be sent to the licensee and that the eligible person(s) nominated must attend the Assessment at the specified date, time and centre; failure to attend the designated session results in rejection of the corresponding application. The nominee does not pick a session, the CCE does not fix the date through the demand note (which under paragraph 6.3 accompanies the interview notice once the documents are in order), and the Assessment is not waived on renewal — attending it remains a licensing requirement."
   },
   "tc": {
-   "q": "持牌人須於何時前申請續期金錢服務經營者牌照？",
+   "q": "根據《牌照指引》第6.2段所述的續期程序，持牌人提名合資格人士應考能力評核後，其應考安排如何確定？",
    "options": [
-    "於牌照到期屆滿前不少於45日",
-    "於牌照到期屆滿前不少於90日",
-    "於牌照到期屆滿前不少於30日",
-    "於牌照屆滿前任何時間（寬限14日）"
+    "海關會發出信件預約應考，獲提名人士須於指明的日期、時間及試場應考",
+    "獲提名人士可於牌照屆滿前90日內，自行在金錢服務經營者牌照系統網站預約任何一節評核",
+    "持牌人提出三個日期，由關長在續期費用的繳費單內確認其中一個作為應考日期",
+    "無須安排應考——續牌的持牌人獲豁免能力評核，只須出席關長安排的會面"
    ],
-   "explain": "第6.1段訂明持牌人須於牌照到期屆滿前不少於45日申請續期，與《打擊洗錢條例》第31(2)(a)條相對應。第6.2段的90日則是該部門發出提示的時間。"
+   "explain": "第6.2段訂明，海關會向持牌人發出信件預約應考能力評核，獲提名的合資格人士必須於指明的日期、時間在指明試場應考；未能在指定時段應考會導致相關申請被拒絕。獲提名人士不能自行選擇評核場次，關長亦不會透過繳費單確定日期（根據第6.3段，繳費單是在文件齊備後連同會面通知發出），而續牌時亦不獲豁免能力評核——應考仍是發牌規定之一。"
   }
  },
  {
@@ -35855,24 +35855,24 @@
    "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.4.6段"
   },
   "en": {
-   "q": "Where a corporation is acting on behalf of another person, who is the beneficial owner?",
+   "q": "An individual holds 10% of a corporate customer's issued shares but, under a shareholders' agreement, controls the exercise of 40% of the voting rights at the corporation's general meetings. Under paragraph 4.4.6 of the Guideline, is that individual a beneficial owner of the corporation?",
    "options": [
-    "That other person",
-    "The corporation's largest shareholder",
-    "The corporation's board of directors",
-    "The corporation itself"
+    "Yes — control over more than 25% of the voting rights at general meetings is a limb of the definition in its own right",
+    "No — the voting-rights limb is satisfied only above 50% of the voting rights, the threshold for a “controller” in Schedule 2",
+    "No — only ownership of more than 25% of the issued share capital counts, so control of voting rights alone is not enough",
+    "Only if the individual also exercises ultimate control over the corporation's management, for instance as a director"
    ],
-   "explain": "¶4.4.6 reproduces the AMLO definition: beneficial owner in relation to a corporation means an individual meeting one of the three control tests, or, if the corporation is acting on behalf of another person, that other person. ¶4.4.7 makes the same provision for partnerships."
+   "explain": "Paragraph 4.4.6 reproduces the AMLO definition: a beneficial owner of a corporation includes an individual who is, directly or indirectly, entitled to exercise or control the exercise of more than 25% of the voting rights at general meetings of the corporation. That limb stands on its own, independent of the share-capital limb (more than 25% of the issued share capital) and of the ultimate-control limb, so a 10% shareholder who controls 40% of the votes is a beneficial owner. The 50% voting threshold belongs to the separate definition of a “controller” in section 17(4) of Schedule 2, not to beneficial ownership."
   },
   "tc": {
-   "q": "如某法團是代另一人行事，誰是實益擁有人？",
+   "q": "某個人持有某法團客戶已發行股份的10%，但根據股東協議，可支配該法團成員大會上40%投票權的行使。根據《指引》第4.4.6段，該個人是否該法團的實益擁有人？",
    "options": [
-    "該另一人",
-    "該法團的最大股東",
-    "該法團的董事會",
-    "該法團本身"
+    "是——支配成員大會上25%以上投票權的行使，本身就是定義的一項準則",
+    "否——投票權準則須超過50%的投票權方告符合，一如附表2「控權人」的門檻",
+    "否——只有擁有已發行股本25%以上才符合定義，單憑支配投票權並不足夠",
+    "只有在該個人同時（例如以董事身分）對該法團的管理行使最終控制權時才算"
    ],
-   "explain": "第4.4.6段轉載《打擊洗錢條例》的定義：就法團而言，實益擁有人指符合三項控制權測試之一的個人；或如該法團是代另一人行事，則指該另一人。第4.4.7段就合夥訂有相同規定。"
+   "explain": "第4.4.6段轉載《打擊洗錢條例》的定義：法團的實益擁有人包括直接或間接地有權行使該法團成員大會上25%以上的投票權，或支配該比重投票權的行使的個人。該準則獨立成立，不取決於股本準則（已發行股本的25%以上）或最終控制權準則，故持股10%但支配40%投票權的人屬實益擁有人。50%的投票權門檻屬附表2第17(4)條「控權人」的另一定義，與實益擁有權無關。"
   }
  },
  {
@@ -40877,24 +40877,24 @@
    "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.2段"
   },
   "en": {
-   "q": "How does the AMLO define a remittance transaction?",
+   "q": "A customer asks an MSO to transfer HK$20,000 by electronic means to the customer's own account at a bank in Singapore. Under the definition of a wire transfer that paragraph 11.2 of the Guideline reproduces from the AMLO, is this a wire transfer?",
    "options": [
-    "A transaction for sending, or arranging for the sending of, money to a place outside Hong Kong",
-    "A transaction by an institution, on behalf of a person, by electronic means, to make money available to that person or another at a beneficiary institution",
-    "Any transfer of money between two persons in Hong Kong that is carried out otherwise than by electronic means, regardless of the amount involved",
-    "Any transaction carried out for a customer using a credit card, debit card or prepaid card, where the card is not used for a person-to-person transfer"
+    "Yes — the definition covers making money available to the originator personally or to another person",
+    "No — a wire transfer requires the money to be made available to someone other than the originator",
+    "No — a transfer abroad to the originator's own account is a remittance transaction governed by section 13",
+    "Only if the transfer passes through at least one intermediary institution on its way to Singapore"
    ],
-   "explain": "¶11.2 states the AMLO defines a remittance transaction as a transaction for sending, or arranging the sending of, money to a place outside Hong Kong. The electronic, institution-to-institution description is instead the AMLO's definition of a wire transfer, which ¶11.2 expressly distinguishes from a remittance transaction; a non-electronic domestic transfer and a card transaction are neither definition."
+   "explain": "Paragraph 11.2 reproduces the AMLO definition (section 1(4) of Schedule 2): a wire transfer is a transaction carried out by an ordering institution on behalf of a person by electronic means with a view to making an amount of money available to that person or another person at a beneficiary institution, whether or not intermediary institutions participate. A transfer to the originator's own overseas account is therefore a wire transfer, to which section 12 of Schedule 2 and Chapter 10 apply rather than the section 13 remittance requirements, and whether an intermediary institution takes part is irrelevant to the definition."
   },
   "tc": {
-   "q": "《打擊洗錢條例》如何界定「匯款交易」？",
+   "q": "一名客戶要求某金錢服務經營者以電子方式將20,000港元轉往該客戶本人在新加坡一間銀行的戶口。根據《指引》第11.2段轉載自《打擊洗錢條例》的電傳轉帳定義，這是否電傳轉帳？",
    "options": [
-    "將款項送往香港以外地方，或安排將款項送往香港以外地方的交易",
-    "由一間機構代表某人，藉電子方式在收款機構將款項提供予該人或另一人",
-    "在香港兩人之間、以電子方式以外的方法進行的任何款項轉移，不論款額多少",
-    "為客戶以信用卡、扣賬卡或預付卡進行的任何交易，而該卡並非用作人對人轉帳"
+    "是——該定義涵蓋將款項提供予匯款人本人或另一人",
+    "否——電傳轉帳規定款項須提供予匯款人本人以外的另一人",
+    "否——轉往匯款人本人海外戶口的交易屬匯款交易，受第13條規管",
+    "只有在轉帳途經至少一間中介機構才屬電傳轉帳"
    ],
-   "explain": "第11.2段訂明《打擊洗錢條例》將匯款交易界定為將款項送往香港以外地方，或安排將款項送往香港以外地方的交易。藉電子方式由機構代表某人進行、目的是將款項提供予收款機構的描述，其實是《打擊洗錢條例》對電傳轉帳的定義——第11.2段明確將匯款交易與電傳轉帳區分開來；非電子方式的本地轉帳及卡類交易均非此定義。"
+   "explain": "第11.2段轉載《打擊洗錢條例》的定義（附表2第1(4)條）：電傳轉帳是由匯款機構代表某人藉電子方式進行的交易，目的是在收款機構將某筆金錢提供予該人或另一人，而無論是否有中介機構參與。因此，轉往匯款人本人海外戶口的交易屬電傳轉帳，適用附表2第12條及第10章，而非第13條的匯款規定；有否中介機構參與，與定義無關。"
   }
  },
  {
@@ -41018,28 +41018,28 @@
   "module": 6,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶11.5",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.5段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶11.4",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.4段"
   },
   "en": {
-   "q": "By reference to what must an MSO identify and verify the identity of the originator of a remittance transaction?",
+   "q": "A walk-in customer who holds no account with an MSO hands over HK$12,000 in cash and instructs the MSO to send it, otherwise than by electronic means, to a relative in Manila. For the purposes of Chapter 11 of the Guideline, who is the originator of this remittance transaction?",
    "options": [
-    "The originator's identification document",
-    "A written declaration signed by the originator",
-    "A reference from another money service operator",
-    "The originator's bank statement"
+    "The walk-in customer, being the person who instructs the MSO to carry out the transaction",
+    "The relative in Manila, being the person to whom the money is ultimately to be made available",
+    "The MSO itself, being the institution that sends the money to a place outside Hong Kong",
+    "Nobody — an originator exists only where the money is paid from an account held with the MSO"
    ],
-   "explain": "¶11.5 states that an MSO is required to identify and verify the identity of the originator of the transaction by reference to the originator's identification document, reflecting section 13(2)(a) and (b) of Schedule 2."
+   "explain": "Paragraph 11.4 states that, under the AMLO, the originator of a remittance transaction is the person from whose account with the MSO the money for the remittance is paid or, in the absence of such an account, the person who instructs the MSO to carry out the remittance transaction. A walk-in customer has no account, so the customer giving the instruction is the originator. The recipient is never the originator, the MSO is the institution carrying out the transaction rather than a party to be identified, and the second limb of the definition means there is always an originator even where no account exists."
   },
   "tc": {
-   "q": "金錢服務經營者須參照甚麼，識別匯款交易的匯款人並核實其身分？",
+   "q": "一名沒有在某金錢服務經營者開立戶口的即場客戶交來12,000港元現金，指示該經營者以電子方式以外的方法將款項送交其在馬尼拉的親屬。就《指引》第11章而言，誰是這宗匯款交易的匯款人？",
    "options": [
-    "該匯款人的身分證明文件",
-    "由該匯款人簽署的書面聲明",
-    "另一金錢服務經營者的推薦",
-    "該匯款人的銀行結單"
+    "該即場客戶——即指示該經營者進行該項交易的人",
+    "馬尼拉的親屬——即款項最終將提供予的人",
+    "該經營者本身——即將款項送往香港以外地方的該機構",
+    "無人——只有款項自該經營者所開立的戶口匯出時才有匯款人"
    ],
-   "explain": "第11.5段訂明該經營者須參照匯款人的身分證明文件，識別該宗交易的匯款人並核實其身分；此反映附表2第13(2)(a)及(b)條。"
+   "explain": "第11.4段訂明，根據《打擊洗錢條例》，匯款交易的匯款人是指該人在金錢服務經營者開立戶口，而該項交易所涉金錢是自該戶口匯出的；或如沒有此戶口，則是指示該經營者進行該項交易的人。即場客戶沒有戶口，故發出指示的客戶就是匯款人。收款人永不會是匯款人；該經營者是進行交易的機構，而非須予識別的一方；而定義的第二項準則意味著即使沒有戶口，亦必定有匯款人。"
   }
  },
  {
@@ -41967,24 +41967,24 @@
    "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.6段"
   },
   "en": {
-   "q": "At what point must the ¶11.6 records be made?",
+   "q": "Before carrying out a remittance transaction, other than a wire transfer, of $8,000 or above, whose address must an MSO record under paragraph 11.6 of the Guideline?",
    "options": [
-    "Before carrying out the remittance transaction",
-    "Immediately after the funds have been despatched",
-    "Within three business days of the transaction",
-    "At the end of the month in which the transaction occurred"
+    "Both the originator's address and the recipient's address",
+    "The originator's address only — the recipient's name suffices",
+    "The recipient's address only — the originator's is not required",
+    "Neither address — the record holds names and document numbers"
    ],
-   "explain": "¶11.6 states that before carrying out a remittance transaction, other than a wire transfer, of $8,000 or above or of an equivalent amount in any other currency, an MSO is required to record the five specified particulars — the same timing as the identification and verification duty in ¶11.3."
+   "explain": "Paragraph 11.6 requires the MSO to record (a) the originator's name, (b) the originator's identification document number and, for a travel document, its place of issue, (c) the originator's address, (d) the currency and amount involved, and (e) the date and time of receipt of the instruction, the recipient's name and address and the method of delivery. Two addresses are therefore recorded — the originator's under (c) and the recipient's under (e); the recipient's identification document number, by contrast, is not among the particulars."
   },
   "tc": {
-   "q": "第11.6段所指的紀錄須在何時作出？",
+   "q": "在進行款額為8,000元或以上而並非電傳轉帳的匯款交易前，根據《指引》第11.6段，金錢服務經營者須記錄誰的地址？",
    "options": [
-    "在進行該匯款交易前",
-    "在款項送出後隨即作出",
-    "在該交易後三個營業日內",
-    "在該交易發生當月月底"
+    "匯款人的地址及收款人的地址，兩者均須記錄",
+    "只須記錄匯款人的地址——收款人只須記錄姓名",
+    "只須記錄收款人的地址——匯款人的地址無須記錄",
+    "兩者均無須記錄——紀錄只載有姓名及識別文件號碼"
    ],
-   "explain": "第11.6段訂明，在進行款額為8,000元或以上（或任何其他貨幣的等值款額）而並非電傳轉帳的匯款交易前，該經營者須記錄五項指明詳情——與第11.3段的識別及核實責任時點相同。"
+   "explain": "第11.6段規定該經營者須記錄：(a)匯款人的姓名；(b)匯款人的識別文件的號碼，以及（如屬旅行證件）發出旅行證件的地方；(c)匯款人的地址；(d)所涉的貨幣及款額；及(e)接獲指示的日期及時間、收款人的姓名及地址，以及送遞的方式。因此須記錄兩個地址——(c)項的匯款人地址及(e)項的收款人地址；相反，收款人的識別文件號碼並不在指明詳情之列。"
   }
  },
  {
