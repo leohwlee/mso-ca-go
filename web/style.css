@@ -196,6 +196,11 @@ table.hist td.num { font-family: var(--mono); font-size: 13.5px; color: var(--in
 .tprog i { display: block; height: 100%; width: 0; background: var(--ink); transition: width .5s linear; }
 .rail .meta { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-top: 10px; }
 .rail .meta b { font-family: var(--mono); font-weight: 500; }
+/* a setting offered above the action buttons, e.g. the exam-realistic draw */
+.optrow { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font-size: 14px; line-height: 1.5; color: var(--muted); cursor: pointer; max-width: 68ch; }
+.optrow input { margin: 2px 0 0; flex: 0 0 auto; accent-color: var(--accent); width: 15px; height: 15px; }
+.optrow b { color: var(--ink); font-weight: 600; }
+
 .railbtns { display: flex; gap: 8px; flex-wrap: wrap; }
 .railbtns .btn { flex: 1 1 auto; justify-content: center; }
 @media (min-width: 960px) {
