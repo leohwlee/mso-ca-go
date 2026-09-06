@@ -38578,28 +38578,28 @@
   "module": 6,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶6.2",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第6.2段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶4.9.2",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.9.2段"
   },
   "en": {
-   "q": "In relation to which groups has the UN published names of individuals and organisations under UNSCR 1267 (1999) and its successors?",
+   "q": "An MSO has applied enhanced due diligence to a high-risk business relationship, but the applicable EDD measures cannot fully mitigate the ML/TF risks it has identified. According to ¶4.9.2 of the AML/CFT Guideline, what should the MSO do?",
    "options": [
-    "Al-Qa'ida, ISIL (Da'esh) and the Taliban",
-    "The Democratic People's Republic of Korea and Iran",
-    "Organised crime syndicates operating across Asia",
-    "Entities involved in the proliferation of weapons of mass destruction"
+    "Take other measures to mitigate the residual risks, for example placing transaction limits or restricting account functionalities",
+    "Accept the residual risks as they stand, because applying the EDD measures has already discharged all of its obligations for it",
+    "Obtain the CCE's written approval before continuing, because only the CCE may decide to accept a relationship's residual risks",
+    "Reclassify the relationship as low risk and switch to simplified due diligence, so that the risks it cannot mitigate no longer arise"
    ],
-   "explain": "¶6.2 states that the UN has published the names of individuals and organisations in relation to involvement with Al-Qa'ida, ISIL (Da'esh) and the Taliban under relevant UNSCRs, giving UNSCR 1267 (1999), 1988 (2011), 1989 (2011), 2253 (2015), 2368 (2017) and their successor resolutions as examples. DPRK and Iran are dealt with under the separate PF resolutions in ¶6.9."
+   "explain": "¶4.9.2 requires the EDD measures applied to be commensurate with the nature and level of the ML/TF risks, based on the higher risk factors the MSO has identified; their extent should be proportionate, appropriate and discriminating, and capable of being justified to the CCE. Where the applicable EDD measures cannot fully mitigate the ML/TF risks identified, the MSO should take other measures to mitigate the residual risks, and the paragraph gives placing transaction limits or restricting account functionalities as examples. Nothing in ¶4.9.2 lets the MSO simply accept an unmitigated residual risk, makes acceptance of that risk a matter for the CCE's approval, or allows a relationship that presents a high ML/TF risk to be reclassified as low risk so that SDD applies."
   },
   "tc": {
-   "q": "聯合國根據第1267(1999)號決議及其後續決議，就哪些組織公布個人及組織名單？",
+   "q": "某金錢服務經營者已對一段高風險業務關係執行更嚴格的盡職審查，但適用的更嚴格盡職審查措施未能完全減低其所識別的洗錢／恐怖分子資金籌集風險。根據《打擊洗錢及恐怖分子資金籌集指引》第4.9.2段，該經營者應怎樣做？",
    "options": [
-    "「基地」組織、伊斯蘭國（達伊沙）及塔利班",
-    "朝鮮民主主義人民共和國及伊朗",
-    "在亞洲各地活動的有組織罪犯集團",
-    "涉及擴散大規模毀滅武器的實體"
+    "採取其他措施以減低剩餘風險，例如設立交易限額或限制帳戶功能等",
+    "照樣接受該等剩餘風險，因為執行更嚴格的盡職審查措施已履行其全部責任",
+    "先取得關長書面批准才繼續，因為只有關長可決定接受業務關係的剩餘風險",
+    "把該關係重評為低風險並改用簡化盡職審查，使其未能減低的風險不再存在"
    ],
-   "explain": "第6.2段訂明聯合國已根據有關決議（例如第1267(1999)、1988(2011)、1989(2011)、2253(2015)、2368(2017)號決議及其後續決議），公布涉及「基地」組織、伊斯蘭國（達伊沙）及塔利班的個人及組織名單。朝鮮及伊朗則由第6.9段所述另一套擴散資金籌集決議處理。"
+   "explain": "第4.9.2段訂明，金錢服務經營者應根據已識別的較高風險因素，執行與洗錢／恐怖分子資金籌集風險性質及水平相稱的更嚴格的盡職審查措施；措施的程度應合乎比例、適當及因情況而異，並能夠向關長提供理據。如適用的更嚴格盡職審查措施未能完全減低所識別的洗錢／恐怖分子資金籌集風險，該經營者應採取其他措施減低剩餘風險，該段舉出的例子是設立交易限額或限制帳戶功能。第4.9.2段並無容許該經營者照樣接受未經減低的剩餘風險，亦無規定接受剩餘風險須由關長批准，更不容許把屬高洗錢／恐怖分子資金籌集風險的業務關係重評為低風險以改用簡化盡職審查。"
   }
  },
  {
@@ -39001,28 +39001,28 @@
   "module": 6,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶6.8",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第6.8段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶4.11.9",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.11.9段"
   },
   "en": {
-   "q": "To which body should an MSO write when seeking a licence under the relevant UNSO regulation?",
+   "q": "An MSO intends to rely on a domestic intermediary, such as a firm of solicitors in Hong Kong, to perform part of its CDD measures. According to ¶4.11.9 of the AML/CFT Guideline, which of the following is an appropriate measure for ascertaining whether the intermediary satisfies the criteria in ¶4.11.8?",
    "options": [
-    "The Commerce and Economic Development Bureau",
-    "The Security Bureau",
-    "The Financial Services and Treasury Bureau",
-    "The Customs and Excise Department"
+    "Reviewing the intermediary's AML/CFT policies and procedures",
+    "Obtaining the CCE's prior written approval of the intermediary",
+    "Requiring the intermediary to lodge a security deposit with it",
+    "Relying on the intermediary's business registration alone"
    ],
-   "explain": "¶6.8 states that the Chief Executive may grant a licence for making available funds or dealing with funds belonging to certain persons or entities under specified circumstances in accordance with the provisions of the relevant regulation made under the UNSO, and that an MSO seeking such a licence should write to the Commerce and Economic Development Bureau."
+   "explain": "¶4.11.9 states that an MSO should take appropriate measures to ascertain whether a domestic intermediary satisfies the criteria in ¶4.11.8, and gives three examples: where the intermediary is an accounting professional, an estate agent, a legal professional or a TCSP licensee, ascertaining whether it is required to comply with the relevant Schedule 2 requirements with respect to the customer; making enquiries concerning the intermediary's stature or the extent to which any group AML/CFT standards are applied and audited; or reviewing the intermediary's AML/CFT policies and procedures. The Guideline provides no CCE approval of individual intermediaries and no security deposit, and a business registration by itself shows nothing about the intermediary's procedures to prevent ML/TF or its Schedule 2 obligations."
   },
   "tc": {
-   "q": "金錢服務經營者擬申請有關《聯合國制裁條例》規例下的許可，應致函哪個機構？",
+   "q": "某金錢服務經營者擬依賴一名本地中介人（例如一間香港律師行）執行部分盡職審查措施。根據《打擊洗錢及恐怖分子資金籌集指引》第4.11.9段，下列哪項是確定該中介人是否符合第4.11.8段所載準則的適當措施？",
    "options": [
-    "商務及經濟發展局",
-    "保安局",
-    "財經事務及庫務局",
-    "香港海關"
+    "覆核該中介人打擊洗錢／恐怖分子資金籌集的政策及程序",
+    "事先就擬依賴該中介人一事取得關長的書面批准",
+    "要求該中介人向該金錢服務經營者繳存一筆保證金",
+    "單憑該中介人已辦理商業登記一事作為依據即可"
    ],
-   "explain": "第6.8段訂明行政長官可按《聯合國制裁條例》下有關規例的條文，在指明情況下就向若干人士或實體提供資金，或處理屬於該等人士或實體所有或由其擁有或控制的資金，批出許可；擬申請該等許可的金錢服務經營者應致函商務及經濟發展局。"
+   "explain": "第4.11.9段訂明，金錢服務經營者應採取適當措施確定本地中介人是否符合第4.11.8段所載列的準則，並舉出三個例子：如該中介人屬會計專業人士、地產代理、法律專業人士或信託或公司服務持牌人，確定其是否須就有關客戶遵從附表2所載的相關規定；查詢該中介人的聲譽，或任何集團層面的打擊洗錢／恐怖分子資金籌集標準的應用及審核程度；或覆核該中介人打擊洗錢／恐怖分子資金籌集的政策及程序。《指引》並無設有由關長批准個別中介人的機制，亦無保證金的規定；單憑商業登記，並不能顯示該中介人有否防止洗錢／恐怖分子資金籌集的程序或是否須遵從附表2的規定。"
   }
  },
  {
@@ -41076,28 +41076,28 @@
   "module": 6,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶11.6(b)",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.6(b)段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶11.6(e)",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.6(e)段"
   },
   "en": {
-   "q": "What additional particular must be recorded where the originator's identification document is a travel document?",
+   "q": "Paragraph 11.6(e) requires an MSO to record a date and time before carrying out a remittance transaction of $8,000 or above. Which date and time is it?",
    "options": [
-    "The place of issue of the travel document",
-    "The expiry date of the travel document",
-    "The nationality shown on the travel document",
-    "The date of the originator's last entry into Hong Kong"
+    "When the instruction was received",
+    "When the funds reached the recipient",
+    "When the originator's identity was verified",
+    "When the record was submitted to the CCE"
    ],
-   "explain": "¶11.6(b) requires the MSO to record the originator's identification document number and, if the originator's identification document is a travel document, the place of issue of the travel document."
+   "explain": "Paragraph 11.6(e) requires the date and time of receipt of the instruction, together with the recipient's name and address and the method of delivery. What is recorded is the moment the MSO receives the instruction, not when the money reaches the recipient or when the originator's identity was verified. Nothing in the paragraph requires a record to be submitted to the CCE: the MSO must be able to justify under Chapter 8 that it kept the record with a view to making the information available to the CCE should the need arise, which is a duty to retain, not to file."
   },
   "tc": {
-   "q": "如匯款人的身分證明文件是旅行證件，須另行記錄甚麼詳情？",
+   "q": "在進行8,000元或以上的匯款交易前，《指引》第11.6(e)段規定金錢服務經營者須記錄一個日期及時間。該日期及時間是指甚麼？",
    "options": [
-    "該旅行證件的簽發地點",
-    "該旅行證件的屆滿日期",
-    "該旅行證件所示的國籍",
-    "該匯款人最近一次入境香港的日期"
+    "接獲指示的日期及時間",
+    "款項送抵收款人的日期及時間",
+    "核實匯款人身分的日期及時間",
+    "向關長提交紀錄的日期及時間"
    ],
-   "explain": "第11.6(b)款規定該經營者須記錄匯款人的身分證明文件號碼；如該匯款人的身分證明文件是旅行證件，則須另行記錄該旅行證件的簽發地點。"
+   "explain": "第11.6(e)段規定須記錄接獲指示的日期及時間，連同收款人的姓名及地址和交付方法。須記錄的是金錢服務經營者接獲指示的一刻，而非款項送抵收款人之時，亦非核實匯款人身分之時。該段並無要求向關長提交紀錄：經營者須能按第8章證明其備存匯款人及有關交易的紀錄，以便在有需要時向關長提供有關資料，這是備存的責任，並非提交的責任。"
   }
  },
  {
