@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
----------------------------------------------------------------------------
-This licence covers the source code only. Two parts of this repository are
-licensed differently, and one of them is not the copyright holder's to
-license at all. See LICENSE-CONTENT.md for the full picture.
-
-  web/questions.json      the question bank — CC BY 4.0
-  web/fonts/              DM Sans and DM Mono — SIL Open Font License 1.1
-  docs/                   HKSAR Government publications — NOT licensed here
