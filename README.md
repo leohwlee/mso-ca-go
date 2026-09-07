@@ -191,3 +191,25 @@ tests run before the build, so a tag that fails never becomes a download.
 git tag v1.5.0
 git push origin v1.5.0
 ```
+
+## Licence
+
+Open source, in three parts — because the repository holds three kinds of thing.
+
+| What | Licence |
+|---|---|
+| The code — Go, JavaScript, CSS, build scripts, tests | [MIT](LICENSE) |
+| The question bank — `web/questions.json` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| The bundled fonts — DM Sans, DM Mono | [SIL OFL 1.1](web/fonts/OFL.txt) |
+
+Use any of it, including commercially. For the question bank, credit the author
+and link back; for the code, keep the copyright notice.
+
+**The documents in `docs/` are excluded.** They are publications of the
+Government of the Hong Kong Special Administrative Region, reproduced for study
+reference only, and are not the author's to license. See
+[LICENSE-CONTENT.md](LICENSE-CONTENT.md) for the detail.
+
+This is not an official product of the Customs and Excise Department, and
+nothing here is legal advice. Every question cites the paragraph it came from
+so you can check it against the source.

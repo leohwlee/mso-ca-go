@@ -130,7 +130,43 @@ func writeSingleFile(fsys fs.FS, path string) error {
 	if strings.Contains(out, `href="style.css"`) || strings.Contains(out, `src="app.js"`) {
 		return fmt.Errorf("index.html did not contain the expected stylesheet/script tags")
 	}
+
+	// The fonts are embedded as data URIs, so the OFL notice has to travel with
+	// them. In the served app the stylesheet points at fonts/OFL.txt; that path
+	// does not exist in a one-file build, so the notice is inlined here instead.
+	notice, err := fontNotice(fsys)
+	if err != nil {
+		return err
+	}
+	out = strings.Replace(out, "<!DOCTYPE html>", "<!DOCTYPE html>\n"+notice, 1)
+
 	return os.WriteFile(path, []byte(out), 0o644)
+}
+
+// fontNotice returns the bundled fonts' attribution and licence as an HTML
+// comment, so a single-file build carries them even though fonts/ does not
+// ship alongside it.
+func fontNotice(fsys fs.FS) (string, error) {
+	var b strings.Builder
+	b.WriteString("<!--\n")
+	for _, name := range []string{"fonts/README.txt", "fonts/OFL.txt"} {
+		f, err := fs.ReadFile(fsys, name)
+		if err != nil {
+			return "", err
+		}
+		// A run of hyphens must not survive inside an HTML comment. Replacing
+		// "--" once is not enough: the rule separators in OFL.txt are long runs,
+		// and a single pass over "-----" still leaves "--" behind. Repeat until
+		// no pair remains — each pass shortens the longest run, so this ends.
+		text := string(f)
+		for strings.Contains(text, "--") {
+			text = strings.ReplaceAll(text, "--", "- -")
+		}
+		b.WriteString(text)
+		b.WriteString("\n")
+	}
+	b.WriteString("-->")
+	return b.String(), nil
 }
 
 func fatal(err error) {

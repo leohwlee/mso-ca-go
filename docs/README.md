@@ -71,3 +71,11 @@ FATF-statement circulars (deliberately not archived here):
 
 These documents are publications of the Government of the Hong Kong Special
 Administrative Region and are reproduced here for study reference only.
+
+They are **not covered by the licences that apply to the rest of this
+repository** — see [LICENSE-CONTENT.md](../LICENSE-CONTENT.md). The MIT licence
+on the code and the CC BY licence on the question bank grant no rights in them,
+because they are not the author's to grant. If you redistribute this repository
+or reuse the bank commercially, satisfy yourself about the terms on which these
+documents may be copied; every one is available from the official sources listed
+above.

@@ -164,3 +164,20 @@ commit 產生檔案並附加到 GitHub release。測試在產生檔案之前執�
 git tag v1.5.0
 git push origin v1.5.0
 ```
+
+## 授權
+
+開放源碼，分三部分——因為本倉庫收錄了三類不同的東西。
+
+| 內容 | 授權 |
+|---|---|
+| 程式碼——Go、JavaScript、CSS、建置指令碼、測試 | [MIT](LICENSE) |
+| 題庫——`web/questions.json` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hant) |
+| 內嵌字型——DM Sans、DM Mono | [SIL OFL 1.1](web/fonts/OFL.txt) |
+
+以上均可自由使用，包括商業用途。使用題庫須註明作者並連結回本倉庫；使用程式碼須保留版權聲明。
+
+**`docs/` 內的文件不在此列。** 該等文件為香港特別行政區政府的刊物，在此收錄僅供溫習參考，
+並非作者可以授權的內容。詳見 [LICENSE-CONTENT.md](LICENSE-CONTENT.md)。
+
+本程式並非香港海關的官方產品，內容亦不構成法律意見。每題均註明出處段落，方便你自行核對原文。
