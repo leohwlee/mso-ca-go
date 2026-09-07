@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"regexp"
+	"sort"
 	"strings"
 	"testing"
 )
@@ -642,6 +643,73 @@ func TestOptionLengthSpread(t *testing.T) {
 				break
 			}
 			t.Logf("  %s [%s] %s: %d runes apart, %.0f%% of mean", o.id, o.lang, o.what, o.gap, o.share*100)
+		}
+	}
+}
+
+// TestNoLengthStandout is the fourth and sharpest lesson about length. The
+// spread guard above bounds the whole set — longest against shortest — but a
+// question can satisfy it and still contain one option that visibly stands
+// apart from its nearest rival, and that is the only comparison a candidate
+// actually makes. Measured in September 2026, the Chinese options carried a
+// usable signal exactly there: an option standing 15-30% clear of its nearest
+// rival was the answer 42-55% of the time, while one standing 15-30% below its
+// nearest rival was the answer 10-16% of the time. In English the sign was
+// reversed — a conspicuously long option was the answer in 12% of cases — which
+// is the pattern that prompted this work.
+//
+// So no option may stand apart from the option next to it in length by more
+// than 15%. The floor lets small absolute differences through: on four options
+// of nine, ten and eleven runes the ratios are large and the difference is
+// invisible.
+func TestNoLengthStandout(t *testing.T) {
+	bank := loadBank(t)
+
+	const ratio = 0.15
+	floor := map[string]int{"en": 8, "tc": 3}
+
+	type offence struct{ id, lang, what, dir string }
+	var bad []offence
+	for _, q := range bank {
+		for _, lang := range []string{"en", "tc"} {
+			l := q.En
+			if lang == "tc" {
+				l = q.Tc
+			}
+			sets := map[string][]string{}
+			if q.combo() {
+				sets["statements"] = l.Statements
+			} else {
+				sets["options"] = l.Options
+			}
+			for what, ss := range sets {
+				if len(ss) < 2 {
+					continue
+				}
+				n := make([]int, len(ss))
+				for i, s := range ss {
+					n[i] = len([]rune(s))
+				}
+				sort.Ints(n)
+				last := len(n) - 1
+				if n[1]-n[0] > floor[lang] && float64(n[0]) < float64(n[1])*(1-ratio) {
+					bad = append(bad, offence{q.ID, lang, what, "shortest stands apart"})
+				}
+				if n[last]-n[last-1] > floor[lang] && float64(n[last]) > float64(n[last-1])*(1+ratio) {
+					bad = append(bad, offence{q.ID, lang, what, "longest stands apart"})
+				}
+			}
+		}
+	}
+	if len(bad) > 0 {
+		t.Errorf("%d cases where one option stands more than %.0f%% clear of its nearest rival",
+			len(bad), ratio*100)
+		for i, o := range bad {
+			if i == 15 {
+				t.Logf("... and %d more", len(bad)-15)
+				break
+			}
+			t.Logf("  %s [%s] %s: %s", o.id, o.lang, o.what, o.dir)
 		}
 	}
 }
