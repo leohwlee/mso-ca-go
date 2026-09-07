@@ -7,6 +7,7 @@ import (
 	"sort"
 	"strings"
 	"testing"
+	"unicode"
 )
 
 type qLang struct {
@@ -161,7 +162,9 @@ func TestBankIntegrity(t *testing.T) {
 
 // TestNoDuplicateStems guards the bank against the main risk of a large
 // question bank: the same proposition asked twice in slightly different words.
-// Stems are compared as 4-word shingles within a module.
+// Stems are compared as 4-word shingles within a module, in both languages —
+// see shingles, which until September 2026 cut Chinese into a single token and
+// so compared Chinese stems for exact equality and nothing else.
 func TestNoDuplicateStems(t *testing.T) {
 	bank := loadBank(t)
 
@@ -169,24 +172,30 @@ func TestNoDuplicateStems(t *testing.T) {
 	for _, q := range bank {
 		byMod[q.Module] = append(byMod[q.Module], q)
 	}
-	for m := 1; m <= 7; m++ {
-		qs := byMod[m]
-		sets := make([]map[string]bool, len(qs))
-		for i, q := range qs {
-			// Options[0] is the authored key for a standard question, but for a
-			// combination item it is the constant "1, 2 and 3" — every one of
-			// them would look alike. Compare what those items actually assert.
-			body := q.En.Options[0]
-			if q.combo() {
-				body = strings.Join(q.En.Statements, " ")
+	for _, lang := range []string{"en", "tc"} {
+		for m := 1; m <= 7; m++ {
+			qs := byMod[m]
+			sets := make([]map[string]bool, len(qs))
+			for i, q := range qs {
+				side := q.En
+				if lang == "tc" {
+					side = q.Tc
+				}
+				// Options[0] is the authored key for a standard question, but for a
+				// combination item it is the constant "1, 2 and 3" — every one of
+				// them would look alike. Compare what those items actually assert.
+				body := side.Options[0]
+				if q.combo() {
+					body = strings.Join(side.Statements, " ")
+				}
+				sets[i] = shingles(side.Q + " " + body)
 			}
-			sets[i] = shingles(q.En.Q + " " + body)
-		}
-		for i := range qs {
-			for j := i + 1; j < len(qs); j++ {
-				if s := jaccard(sets[i], sets[j]); s >= 0.75 {
-					t.Errorf("module %d: %s and %s are near-duplicates (similarity %.2f)",
-						m, qs[i].ID, qs[j].ID, s)
+			for i := range qs {
+				for j := i + 1; j < len(qs); j++ {
+					if s := jaccard(sets[i], sets[j]); s >= 0.75 {
+						t.Errorf("%s module %d: %s and %s are near-duplicates (similarity %.2f)",
+							lang, m, qs[i].ID, qs[j].ID, s)
+					}
 				}
 			}
 		}
@@ -571,7 +580,16 @@ func TestNoDuplicateAnswers(t *testing.T) {
 
 var nonWord = regexp.MustCompile(`[^\p{L}\p{N}]+`)
 
+// shingles cuts a stem into overlapping 4-word runs for comparison. Written
+// words are separated by spaces, so Fields finds them; Chinese is not, so a
+// Chinese stem collapses into a single "word" and every comparison degenerates
+// into an exact match. That silently disabled near-duplicate detection on half
+// the bank until a September 2026 sweep found two cross-module pairs by hand.
+// shinglesCJK is the Chinese equivalent, cutting 4-character runs instead.
 func shingles(s string) map[string]bool {
+	if cjkHeavy(s) {
+		return shinglesCJK(s)
+	}
 	words := strings.Fields(nonWord.ReplaceAllString(strings.ToLower(s), " "))
 	out := map[string]bool{}
 	const k = 4
@@ -581,6 +599,34 @@ func shingles(s string) map[string]bool {
 	}
 	for i := 0; i+k <= len(words); i++ {
 		out[strings.Join(words[i:i+k], " ")] = true
+	}
+	return out
+}
+
+func cjkHeavy(s string) bool {
+	cjk, letters := 0, 0
+	for _, r := range s {
+		switch {
+		case unicode.Is(unicode.Han, r):
+			cjk++
+			letters++
+		case unicode.IsLetter(r):
+			letters++
+		}
+	}
+	return letters > 0 && cjk*100/letters >= 30
+}
+
+func shinglesCJK(s string) map[string]bool {
+	runes := []rune(nonWord.ReplaceAllString(s, ""))
+	out := map[string]bool{}
+	const k = 4
+	if len(runes) < k {
+		out[string(runes)] = true
+		return out
+	}
+	for i := 0; i+k <= len(runes); i++ {
+		out[string(runes[i:i+k])] = true
 	}
 	return out
 }
