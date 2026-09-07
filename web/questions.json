@@ -173,7 +173,7 @@
     "TF is the financing of terrorist acts, and also the financing of terrorists and terrorist organisations themselves.",
     "TF generally refers to transactions involving property owned by terrorists or terrorist organisations, or used to assist the commission of terrorist acts.",
     "The focus of ML is on the handling of criminal proceeds, so that the source of the property is what matters most.",
-    "The focus of TF is likewise on the source of the property, so property derived from legitimate sources cannot be the subject of TF at all."
+    "The focus of TF is likewise on the source of the property, so property that has been derived from legitimate sources is outside the scope of TF."
    ],
    "options": [
     "1, 2 and 3",
@@ -492,7 +492,7 @@
    "statements": [
     "Tipping off is an offence under all three of the DTROP, the OSCO and the UNATMO, each of which creates it.",
     "The offence is committed only where the person actually knows that a disclosure has been made; a mere suspicion that one has is not enough.",
-    "A person who knows or suspects a disclosure has been made commits the offence if he discloses any matter likely to prejudice an investigation following it.",
+    "A person who knows or suspects a disclosure has been made commits the offence only if that person discloses a matter likely to prejudice the investigation.",
     "The maximum penalty for the tipping off offence upon conviction is imprisonment for 3 years together with a fine."
    ],
    "options": [
@@ -509,7 +509,7 @@
    "statements": [
     "根據《販毒（追討得益）條例》、《有組織及嚴重罪行條例》及《聯合國（反恐怖主義措施）條例》，「通風報訊」均屬罪行。",
     "只有在該人確實知道已曾作出披露的情況下才構成此罪行；僅屬懷疑曾作出該項披露並不足夠，須為實際知悉。",
-    "任何人如知道或懷疑已曾作出披露，而仍向其他人披露任何相當可能損害為跟進該披露而進行的調查的事宜，即屬犯罪。",
+    "任何人如知道或懷疑已曾作出披露，只有在其仍向他人披露相當可能損害為跟進該披露而進行的調查的事宜時，方屬犯罪。",
     "該項「通風報訊」罪行一經定罪，最高刑罰為監禁3年，並可同時判處罰款，兩者可一併判處。"
    ],
    "options": [
@@ -622,7 +622,7 @@
    "q": "According to paragraph 6.9 of the AML/CFT Guideline, which of the following statements about the two-tiered approach adopted by the UN Security Council to combat proliferation financing (PF) are correct?",
    "statements": [
     "To combat PF, the UNSC adopts a two-tiered approach through resolutions made under Chapter VII of the UN Charter.",
-    "Those resolutions are recommendatory only, so each UN member state may decide for itself whether to give effect to them.",
+    "Those resolutions are recommendatory in nature, so each UN member state may decide for itself whether to give effect to them.",
     "The first tier is a global approach, taken under UNSCR 1540 (2004) and its successor resolutions on PF.",
     "The second tier is a country-specific approach, under UNSCR 1718 (2006) against the DPRK and UNSCR 2231 (2015) against Iran."
    ],
@@ -639,7 +639,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第6.9段，關於聯合國安理會為遏止擴散資金籌集而採取的雙層策略，下列哪些陳述正確？",
    "statements": [
     "為遏止擴散資金籌集，聯合國安全理事會透過根據《聯合國憲章》第七章所通過的一系列決議，採取雙層的策略予以推行。",
-    "該等決議僅屬建議性質，故各個聯合國成員國均可自行決定是否加以落實及執行當中的措施。",
+    "該等決議是根據《聯合國憲章》第六章通過的，故各個聯合國成員國均可自行決定是否加以落實及執行當中的措施。",
     "第一層是全球層面的策略，依據第1540 (2004)號決議及其後續的各項決議在全球各地推行。",
     "第二層是針對個別國家的策略，依據針對朝鮮的第1718 (2006)號決議及針對伊朗的第2231 (2015)號決議。"
    ],
@@ -801,7 +801,7 @@
     "A failure by any person to comply with any provision of the Guideline does not by itself render the person liable to any judicial or other proceedings.",
     "In any proceedings under the AMLO before any court in Hong Kong, the Guideline is admissible in evidence against the person concerned.",
     "If any provision of the Guideline appears to the court to be relevant to a question in the proceedings, it must be taken into account in determining it.",
-    "In considering whether a person has contravened a provision of Schedule 2 to the AMLO, the CCE need not have regard to any provision in the Guideline."
+    "In considering whether a person has contravened a provision of Schedule 2 to the AMLO, the CCE is free to disregard the provisions of the Guideline."
    ],
    "options": [
     "1, 2 and 3",
@@ -818,7 +818,7 @@
     "任何人沒有遵守本指引的任何條文，此事本身不會令致該人可在任何司法或其他法律程序中被起訴。",
     "在根據《打擊洗錢條例》提起而於任何法院進行的法律程序中，本指引可獲接納為證據。",
     "如法院覺得本指引內所列條文攸關該法律程序中產生的任何問題，該法院在裁斷該問題時須考慮該條文。",
-    "關長在考慮某人有否違反《打擊洗錢條例》附表2的條文時，無須顧及本指引內的任何條文。"
+    "關長在考慮某人有否違反《打擊洗錢條例》附表2的條文時，可自行決定是否顧及本指引所載的條文。"
    ],
    "options": [
     "1、2 及 3",
@@ -901,10 +901,10 @@
    "q": "According to paragraph 1.11 of the AML/CFT Guideline, which of the following statements about the statutory definition of terrorist financing (TF) are correct?",
    "statements": [
     "TF includes the provision or collection of property, by any means, directly or indirectly, with the intention that it be used, or knowing that it will be used, in whole or in part, to commit one or more terrorist acts.",
-    "Such provision or collection of property amounts to TF only if the property is in fact used to commit a terrorist act, so property that is never in fact so used is not covered.",
+    "Such provision or collection of property amounts to TF where the property is in fact used to commit a terrorist act, so property that is not in fact so used falls outside the concept.",
     "TF includes making any property or financial (or related) services available, by any means, directly or indirectly, to or for the benefit of a person knowing that, or being reckless as to whether, the person is a terrorist or terrorist associate.",
     "TF includes the collection of property or solicitation of financial (or related) services, by any means, directly or indirectly, for the benefit of a person knowing that, or being reckless as to whether, the person is a terrorist or terrorist associate.",
-    "Making property available to a person who is in fact a terrorist amounts to TF only if the provider actually knew this, since recklessness as to whether the recipient is a terrorist is not sufficient."
+    "Making property available to a person who is in fact a terrorist amounts to TF where the provider actually knew this, since recklessness as to whether the recipient is a terrorist falls short."
    ],
    "options": [
     "1, 2 and 3",
@@ -919,10 +919,10 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.11段，關於「恐怖分子資金籌集」的法定定義，下列哪些陳述正確？",
    "statements": [
     "恐怖分子資金籌集包括懷有將財產的全部或部分用於作出一項或多於一項恐怖主義行為的意圖，或知道該財產將會被如此使用，而以任何方法直接或間接地提供或籌集該財產。",
-    "上述提供或籌集財產的行為，只有在該財產實際上被用於作出恐怖主義行為時才屬恐怖分子資金籌集，故從未被如此使用的財產不在涵蓋之列。",
+    "就本段而言，上述提供或籌集財產的行為，以該財產實際上被用於作出一項恐怖主義行為為要件，故從未被如此使用的有關財產，並不在涵蓋之列。",
     "恐怖分子資金籌集包括明知某人是恐怖分子或與恐怖分子有聯繫者、或罔顧某人是否屬此類人士，而以任何方法直接或間接地向該人或為該人的利益提供任何財產或金融（或有關的）服務。",
     "恐怖分子資金籌集包括明知某人是恐怖分子或與恐怖分子有聯繫者、或罔顧某人是否屬此類人士，而以任何方法直接或間接地為該人的利益籌集財產或尋求金融（或有關的）服務。",
-    "向實際上是恐怖分子的人提供財產，只有在提供者確實知道此事時才屬恐怖分子資金籌集，因為罔顧接受者是否恐怖分子並不足夠。"
+    "向實際上是恐怖分子或與恐怖分子有聯繫的人提供財產，以該提供者確實知道此事為要件，因為罔顧該接受者是否屬恐怖分子並不足夠。"
    ],
    "options": [
     "1、2 及 3",
@@ -947,7 +947,7 @@
    "q": "According to paragraph 1.12 of the AML/CFT Guideline, which of the following statements about why terrorists need to launder funds are correct?",
    "statements": [
     "Terrorists or terrorist organisations require financial support in order to be able to achieve their aims.",
-    "Terrorist groups need to launder funds only where those funds come from an illegitimate source.",
+    "Terrorist groups need to launder funds where those funds come from an illegitimate source, but not where the source is legitimate.",
     "There is often a need for terrorists to obscure or disguise the links between themselves and their own funding sources.",
     "Terrorist groups must find ways to launder funds in order to be able to use them without attracting the attention of the authorities."
    ],
@@ -964,7 +964,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.12段，關於恐怖分子為何需要清洗資金，下列哪些陳述正確？",
    "statements": [
     "恐怖分子或恐怖組織需要獲得財政支援，才能達到其目的。",
-    "恐怖分子集團只有在資金來源不合法時才需要清洗資金。",
+    "恐怖分子集團在資金來源不合法時需要清洗資金，但在來源合法時則不必如此。",
     "恐怖分子往往需要隱藏或掩飾他們本身與各項資金來源之間的連繫。",
     "恐怖分子集團必須尋找清洗資金的途徑，以便在不被當局發現下使用資金。"
    ],
@@ -1080,7 +1080,7 @@
     "The main pieces of legislation include the AMLO, the Drug Trafficking (Recovery of Proceeds) Ordinance (Cap. 405) and the Organized and Serious Crimes Ordinance (Cap. 455).",
     "They also include the UNATMO (Cap. 575), the United Nations Sanctions Ordinance (Cap. 537) and the Weapons of Mass Destruction (Control of Provision of Services) Ordinance (Cap. 526).",
     "It is very important that MSOs and their officers and staff fully understand their respective responsibilities under the different pieces of legislation.",
-    "Because MSOs' responsibilities arise under the AMLO alone, it is enough for their officers and staff to understand that Ordinance without regard to the other legislation."
+    "Because the other five Ordinances bind the CCE rather than MSOs, it is enough for officers and staff to understand the AMLO and to treat the remainder as background."
    ],
    "options": [
     "1, 2 and 3",
@@ -1097,7 +1097,7 @@
     "該等主要法例，包括《打擊洗錢及恐怖分子資金籌集條例》、《販毒（追討得益）條例》（第405章）及《有組織及嚴重罪行條例》（第455章）。",
     "亦包括《聯合國（反恐怖主義措施）條例》（第575章）、《聯合國制裁條例》（第537章）及《大規模毀滅武器（提供服務的管制）條例》（第526章）。",
     "金錢服務經營者及其主管人員和職員，充分了解他們在上述各項不同法例下各自須承擔的相關責任，實在至為重要。",
-    "由於金錢服務經營者的責任只源自《打擊洗錢條例》，其主管人員和職員只需了解該條例，而無須顧及其他各項法例。"
+    "由於金錢服務經營者的責任源自《打擊洗錢條例》，其主管人員和職員了解該條例即可，其他各項法例則可置諸不理。"
    ],
    "options": [
     "1、2 及 3",
@@ -1167,7 +1167,7 @@
    "statements": [
     "The AMLO makes it a criminal offence for an MSO to contravene a specified provision of the AMLO either knowingly or with the intent to defraud the CCE.",
     "The provisions whose contravention constitutes this offence, known as the specified provisions, are those listed in section 5(11) of the AMLO.",
-    "An MSO which knowingly contravenes a specified provision is liable on conviction to a fine of up to $1 million only, and not to any term of imprisonment at all.",
+    "An MSO which knowingly contravenes a specified provision is liable on conviction to a fine of up to $1 million, with no term of imprisonment available for that limb.",
     "An MSO which contravenes a specified provision with the intent to defraud the CCE is liable on conviction to a maximum term of imprisonment of 7 years and a fine of $1 million."
    ],
    "options": [
@@ -1184,7 +1184,7 @@
    "statements": [
     "根據《打擊洗錢條例》，金錢服務經營者如明知或出於詐騙關長的意圖而違反該條例指明的條文，即屬犯罪。",
     "違反即構成此罪行的條文，即「指明的條文」，載列於《打擊洗錢條例》第5(11)條。",
-    "金錢服務經營者如明知而違反指明的條文，一經定罪，最高只可被判罰款一百萬元，而不會被判監禁。",
+    "金錢服務經營者如明知而違反指明的條文，一經定罪，最高可被判監禁5年及罰款五百萬元。",
     "金錢服務經營者如出於詐騙關長的意圖而違反指明的條文，一經定罪，最高可被判監禁7年及罰款一百萬元。"
    ],
    "options": [
@@ -1239,7 +1239,7 @@
    "q": "According to paragraph 1.17 of the AML/CFT Guideline, which of the following statements about the AMLO offence committed by a person who causes or permits an MSO to contravene a specified provision are correct?",
    "statements": [
     "The offence applies to a person who is an employee of an MSO, is employed to work for an MSO, or is concerned in the management of an MSO.",
-    "The person commits the offence only if he acts with intent to defraud the CCE, so knowingly causing the contravention is not enough.",
+    "The person commits the offence where that person acts with intent to defraud the CCE, so knowingly causing the contravention falls outside it.",
     "A person who knowingly causes or permits the MSO to contravene a specified provision is liable on conviction to a maximum of 2 years' imprisonment and a fine of $1 million.",
     "A person who does so with the intent to defraud the MSO or the CCE is liable on conviction to a maximum of 7 years' imprisonment and a fine of $1 million."
    ],
@@ -1256,7 +1256,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.17段，關於《打擊洗錢條例》下致使或准許金錢服務經營者違反指明的條文的罪行，下列哪些陳述正確？",
    "statements": [
     "該罪行適用於屬金錢服務經營者的僱員、受僱為金錢服務經營者工作，或關涉金錢服務經營者的管理的人。",
-    "該人只有在出於詐騙關長的意圖下行事才屬犯罪，故明知而致使有關違反並不足以構成罪行。",
+    "該人在出於詐騙關長的意圖下行事時屬犯罪，故明知而致使有關違反並不足以構成該項罪行。",
     "任何人明知而致使或准許金錢服務經營者違反指明的條文，一經定罪，最高可被判監禁2年及罰款一百萬元。",
     "任何人出於詐騙該金錢服務經營者或關長的意圖而如此行事，一經定罪，最高可被判監禁7年及罰款一百萬元。"
    ],
@@ -1282,7 +1282,7 @@
   "en": {
    "q": "According to paragraph 1.18 of the AML/CFT Guideline, which of the following statements about the disciplinary actions the CCE may take against an MSO are correct?",
    "statements": [
-    "The pecuniary penalty the CCE may order an MSO to pay is capped at a fixed sum of $10 million in every case.",
+    "The pecuniary penalty the CCE may order an MSO to pay is capped at a fixed sum of $10 million, whatever the profit gained.",
     "The CCE may take disciplinary actions against an MSO for any contravention of a specified provision set out in the AMLO.",
     "The disciplinary actions that can be taken include publicly reprimanding the MSO for the contravention.",
     "The disciplinary actions that can be taken include ordering the MSO to take any action for the purpose of remedying the contravention."
@@ -1355,7 +1355,7 @@
   "en": {
    "q": "According to paragraph 1.22 of the AML/CFT Guideline, which of the following statements about the offence under section 25 of the DTROP and the OSCO of dealing with property representing the proceeds of drug trafficking or of an indictable offence are correct?",
    "statements": [
-    "A person commits the offence only if he actually knows that the property represents such proceeds, so having reasonable grounds to believe that it does is not enough.",
+    "The mental element required for the offence is dishonesty, so a person who deals with such property honestly falls outside it.",
     "Under the DTROP the property must represent a person's proceeds of drug trafficking, while under the OSCO it must represent a person's proceeds of an indictable offence.",
     "The offence may be committed in relation to any person's proceeds, and is not confined to property representing the proceeds of the person who deals with it.",
     "The highest penalty for the offence upon conviction on indictment is imprisonment for a term of 14 years together with a fine of $5 million."
@@ -1372,7 +1372,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.22段，關於《販毒（追討得益）條例》及《有組織及嚴重罪行條例》第25條下處理代表販毒得益或可公訴罪行得益的財產的罪行，下列哪些陳述正確？",
    "statements": [
-    "只有在該人實際知道有關財產代表該等得益時才屬犯罪，故有合理理由相信該財產代表該等得益仍並不足夠。",
+    "該罪行所需的犯罪意圖的要素為不誠實，故該人如以誠實的方式處理有關的該等財產，即不會構成該項的罪行。",
     "根據《販毒（追討得益）條例》，財產須代表某人的販毒得益；根據《有組織及嚴重罪行條例》，則須代表可公訴罪行得益。",
     "該罪行可就任何人的得益而干犯，並不限於代表處理該財產的人本人所得的得益的財產。",
     "該罪行一經循公訴程序定罪，最高刑罰為監禁14年，並可同時判處罰款500萬元。"
@@ -1446,7 +1446,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.24段，關於沒有披露對與販毒、可公訴罪行或恐怖主義有關的財產的知悉或懷疑的罪行，下列哪些陳述正確？",
    "statements": [
     "《販毒（追討得益）條例》、《有組織及嚴重罪行條例》及《聯合國（反恐怖主義措施）條例》均訂明沒有盡快披露知悉或懷疑即屬犯罪。",
-    "該項責任只限於實際曾用於與販毒或可公訴罪行有關的用途的財產，故僅屬意圖用於該等用途的財產並不在其涵蓋範圍之內。",
+    "該項責任的涵蓋範圍，須按有關財產的價值是否達到120,000元而定，價值低於該款額的有關財產則不在其涵蓋之內。",
     "涵蓋的財產包括直接或間接代表某人的販毒得益或可公訴罪行得益的財產，或屬恐怖分子財產的任何財產。",
     "沒有作出披露的罪行一經定罪，最高刑罰為監禁3個月及罰款50,000元，兩者可一併判處。"
    ],
@@ -1606,8 +1606,8 @@
     "UNSCR 1373 (2001), passed by the UN Security Council, calls on all member states to act to prevent and suppress the financing of terrorist acts.",
     "Under UNSCR 1267 (1999) and its successor resolutions, the UN has published the names of individuals and organisations involved with Al-Qa'ida, ISIL (Da'esh) and the Taliban.",
     "All UN member states are required to freeze any funds, or other financial assets, or economic resources of any person named in those lists.",
-    "A member state that identifies a suspected match with a name on those lists is not required to report it to the relevant authorities, since freezing alone discharges its obligation.",
-    "The freezing obligation applies only to persons named under UNSCR 1267 (1999) itself, and not to persons named under its successor resolutions."
+    "A member state that identifies a suspected match with a name on those lists reports it to the UN Security Council, which then decides whether the assets are to be frozen.",
+    "The freezing obligation extends to the funds of persons named in those lists once a Hong Kong court has confirmed the designation."
    ],
    "options": [
     "1, 2 and 3",
@@ -1623,9 +1623,9 @@
    "statements": [
     "聯合國安理會通過的第1373 (2001)號決議，要求全體成員國採取行動，防止和遏制恐怖分子資金籌集行為。",
     "聯合國已根據安理會第1267 (1999)號決議及其後續決議，公布涉及基地組織、伊黎伊斯蘭國（達伊沙）和塔利班組織的個人及組織名單。",
-    "聯合國全體成員國均須凍結名列該等名單的任何人等所擁有或控制的資金、其他財務資產或經濟資源。",
-    "成員國如發現與該等名單上的姓名／名稱可疑吻合的情況，無須向有關當局報告，因為單憑凍結已履行其責任。",
-    "凍結責任只適用於根據安理會第1267 (1999)號決議本身被列名的人等，並不適用於根據其後續各項決議被列名的人等。"
+    "聯合國全體成員國均須凍結名列該等名單的任何人等所擁有或控制的資金、其他財務資產或有關經濟資源。",
+    "成員國如發現與該等名單上的姓名／名稱可疑吻合的情況，須向聯合國安理會報告，再由安理會決定是否凍結有關資產。",
+    "凍結責任須在香港法院確認有關的列名之後，才適用於名列安理會該等名單的人等所擁有或控制的資金及其他各項的財務資產或經濟資源等。"
    ],
    "options": [
     "1、2 及 3",
@@ -1780,7 +1780,7 @@
   "en": {
    "q": "According to paragraph 1.6 of the AML/CFT Guideline, which of the following statements about how an MSO should read and apply the Guideline are correct?",
    "statements": [
-    "The words 'must' and 'should' in the Guideline indicate no more than a recommendation, which an MSO is free to disregard.",
+    "The words 'must' and 'should' in the Guideline carry the same weight as the examples given in it, which an MSO is free to adapt.",
     "Because MSOs differ greatly in structure and in the nature and scope of their business, there is no single set of universally applicable implementation measures.",
     "The content of the Guideline is not intended to be an exhaustive list of the means of meeting the statutory and regulatory requirements in question.",
     "An MSO should use the Guideline as a basis to develop measures appropriate to its own structure and business activities."
@@ -1797,7 +1797,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.6段，關於金錢服務經營者應如何理解及應用本指引，下列哪些陳述正確？",
    "statements": [
-    "本指引中的「須／必須」及「應／應該」字詞僅表示建議，金錢服務經營者可自行決定不予採納。",
+    "本指引中的「須／必須」及「應／應該」字詞的分量，與其中所載的示例相同，金錢服務經營者可自行調整。",
     "由於不同金錢服務經營者的結構以及業務活動的性質與範疇存在重大差異，故並無單一普遍適用的執行措施。",
     "本指引的內容並非旨在詳盡無遺地包羅所有符合法定及監管規定的可行途徑。",
     "金錢服務經營者應以本指引為基礎，制訂符合其本身結構及業務活動性質的適當措施。"
@@ -2016,7 +2016,7 @@
    "q": "According to paragraph 1.19 of the AML/CFT Guideline, which of the following statements about the Drug Trafficking (Recovery of Proceeds) Ordinance (DTROP) are correct?",
    "statements": [
     "The DTROP contains provisions for the investigation of assets that are suspected to be derived from drug trafficking activities.",
-    "The DTROP provides for the freezing of assets only after conviction, so no assets can be frozen at the time of a suspect's arrest.",
+    "The DTROP provides for the freezing of assets at the point of charge, so assets are not frozen at the time of a suspect's arrest.",
     "The DTROP provides for the confiscation of the proceeds derived from drug trafficking activities upon conviction.",
     "The provisions of the DTROP for investigation, freezing and confiscation are directed at assets and proceeds connected with drug trafficking."
    ],
@@ -2033,7 +2033,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.19段，關於《販毒（追討得益）條例》，下列哪些陳述正確？",
    "statements": [
     "《販毒（追討得益）條例》載有可對涉嫌從販毒活動所得的資產進行調查的條文。",
-    "《販毒（追討得益）條例》只容許在定罪後凍結資產，故在逮捕涉嫌罪犯時不能凍結任何資產。",
+    "《販毒（追討得益）條例》容許在落案起訴時凍結資產，故在逮捕涉嫌罪犯時不會凍結資產。",
     "《販毒（追討得益）條例》訂明可在定罪後沒收販毒活動所得的得益。",
     "《販毒（追討得益）條例》有關調查、凍結及沒收的條文，均針對與販毒活動有關的資產及得益。"
    ],
@@ -2117,7 +2117,7 @@
   "en": {
    "q": "According to paragraph 1.20 of the AML/CFT Guideline, which of the following statements about what the Organized and Serious Crimes Ordinance (OSCO) does are correct?",
    "statements": [
-    "The OSCO gives powers to investigate organized crime and triad activities to officers of the Hong Kong Police only, and not to officers of the Customs and Excise Department.",
+    "The OSCO gives powers to investigate organized crime and triad activities to officers of the Hong Kong Police and to officers of the Immigration Department.",
     "The OSCO gives the Courts jurisdiction to confiscate the proceeds of organized and serious crimes, but no power to issue restraint orders or charging orders in relation to a defendant's property.",
     "Among other things, the OSCO creates an offence of money laundering in relation to the proceeds of any indictable offence under Hong Kong law.",
     "The OSCO enables the Courts, in appropriate circumstances, to receive information about an offender and an offence to determine whether a greater sentence is appropriate.",
@@ -2135,7 +2135,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.20段，關於《有組織及嚴重罪行條例》的作用，下列哪些陳述正確？",
    "statements": [
-    "《有組織及嚴重罪行條例》只賦予香港警務處人員調查有組織罪行及三合會活動的權力，而不賦予香港海關人員該等權力。",
+    "《有組織及嚴重罪行條例》賦予香港警務處人員及入境事務處人員調查有組織罪行及三合會活動的權力，而非賦予海關人員。",
     "《有組織及嚴重罪行條例》賦予法庭沒收有組織及嚴重罪行得益的司法管轄權，但並無賦予法庭就被告人財產發出限制令或押記令的權力。",
     "《有組織及嚴重罪行條例》除其他事項外，亦就香港法律下可公訴罪行的得益訂立一項洗錢罪行。",
     "《有組織及嚴重罪行條例》使法庭在適當情況下可接收有關犯罪者及罪行的資料，以決定判處更重刑罰是否恰當。",
@@ -2195,7 +2195,7 @@
     "Among other things, the UNATMO criminalizes the provision or collection of property, and making property or financial services available to terrorists.",
     "Upon conviction of that offence, the highest penalty that may be imposed is imprisonment for 14 years and a fine.",
     "In addition to creating that offence, the UNATMO permits terrorist property to be frozen and dealt with.",
-    "Terrorist property that has been frozen under the UNATMO cannot subsequently be forfeited, because the Ordinance provides for freezing only."
+    "Terrorist property that has been frozen under the UNATMO may be forfeited once the Secretary for Security has renewed the freezing order twice."
    ],
    "options": [
     "1, 2 and 3",
@@ -2212,7 +2212,7 @@
     "《聯合國（反恐怖主義措施）條例》訂明，向恐怖分子或與其有聯繫者提供或籌集財產，以及提供財產或金融服務，均屬違法。",
     "若干犯此項罪行，一經定罪，最高可判處的刑罰為監禁14年及罰款，兩者可一併判處。",
     "除訂明該罪行外，《聯合國（反恐怖主義措施）條例》亦容許將恐怖分子財產予以凍結及處理。",
-    "根據《聯合國（反恐怖主義措施）條例》凍結的恐怖分子財產其後不能被充公，因為該條例只就凍結作出規定。"
+    "根據《聯合國（反恐怖主義措施）條例》凍結的恐怖分子財產，在保安局局長兩度為凍結令續期後，即可予以充公。"
    ],
    "options": [
     "1、2 及 3",
@@ -2719,7 +2719,7 @@
    "statements": [
     "Whether or not a UNSCR or sanctions list has been implemented through Hong Kong legislation, there are offences under existing legislation relating to ML, TF and PF that are relevant.",
     "Inclusion of a country, individual, entity or activity in a UNSCR or sanctions list may constitute grounds for knowledge or suspicion under the relevant ML, TF and PF laws, triggering statutory obligations and offence provisions.",
-    "An MSO need only add the countries, individuals and entities included in a UNSCR or sanctions list to its database once the relevant sanctions have in fact been implemented by legislation in Hong Kong.",
+    "An MSO adds the countries, individuals and entities included in a UNSCR or sanctions list to its database at the next quarterly review of that database following their promulgation by the Security Council.",
     "The CCE draws the attention of MSOs from time to time to updates to UNSCRs or sanctions lists relating to terrorism, TF and PF promulgated by the UN Security Council."
    ],
    "options": [
@@ -2736,7 +2736,7 @@
    "statements": [
     "不論聯合國安理會決議或制裁名單是否已透過香港法例實施，現行有關洗錢、恐怖分子資金籌集及擴散資金籌集的法例下均有相關的罪行。",
     "某國家、個人、實體或活動被列入安理會決議或制裁名單，可就相關洗錢、恐怖分子資金籌集及擴散資金籌集法例構成知情或懷疑的理由，從而觸發法定責任及罪行條文。",
-    "金錢服務經營者只需在相關制裁已透過香港法例實施後，才將聯合國安理會決議或制裁名單所列的國家、個人及實體納入其資料庫。",
+    "金錢服務經營者會在其資料庫下一次季度檢討時，才將聯合國安理會決議或制裁名單所列的國家、個人及實體納入該資料庫。",
     "海關關長會不時提請各金錢服務經營者注意聯合國安全理事會所頒布的有關恐怖主義、恐怖分子資金籌集及擴散資金籌集的各項決議或制裁名單的任何更新。"
    ],
    "options": [
@@ -3146,7 +3146,7 @@
     "經營者應設立及維持有效的政策、程序及管控措施，確保關於恐怖分子資金籌集、金融制裁及擴散資金籌集的法例獲遵守。",
     "金錢服務經營者本身在恐怖分子資金籌集、金融制裁及擴散資金籌集方面的法律及監管責任，應獲充分了解。",
     "金錢服務經營者的職員在上述該等事宜方面的法律及監管責任，同樣應獲充分了解。",
-    "只要金錢服務經營者的管理層了解該等責任，本指引並無要求向其職員提供任何導引或培訓。"
+    "本指引就導引及培訓所訂的有關規定，適用於金錢服務經營者的管理層，而不適用於其他職員。"
    ],
    "options": [
     "1、2 及 3",
@@ -3231,7 +3231,7 @@
     "Section 6 of the UNATMO empowers the Secretary for Security to freeze any property that is suspected to be terrorist property in Hong Kong.",
     "Section 7 of the UNATMO prohibits any person from providing or collecting any property for use to commit terrorist acts of any kind.",
     "Section 8 of the UNATMO prohibits making property or financial (or related) services available to terrorists and terrorist associates, but not collecting or soliciting such property for them.",
-    "Section 8A of the UNATMO prohibits dealing with property only where the person actually knows that it is specified terrorist property, so recklessness as to whether it is does not suffice.",
+    "Section 8A of the UNATMO prohibits dealing with property that a court has already ordered to be forfeited, rather than with property that is specified terrorist property under the Ordinance.",
     "Section 11L of the UNATMO prohibits providing or collecting property to finance travel between states, intending or knowing the travel is for planning or preparing terrorist acts."
    ],
    "options": [
@@ -3249,7 +3249,7 @@
     "《聯合國（反恐怖主義措施）條例》第6條賦權保安局局長凍結懷疑屬恐怖分子財產的任何財產。",
     "該條例第7條禁止任何人提供或籌集任何財產，以供用於作出任何恐怖主義行為之用。",
     "該條例第8條禁止向恐怖分子及其聯繫者提供財產或財務服務，但並不延伸至為他們籌集或徵求該等財產。",
-    "該條例第8A條只在該人實際知道財產屬指明恐怖分子財產時才禁止處理，故罔顧是否屬此類並不足夠。",
+    "該條例第8A條禁止處理法院已下令充公的財產，而非禁止處理屬指明恐怖分子財產的財產。",
     "該條例第11L條禁止提供或籌集財產以資助某人於國家之間旅行，而意圖或知道該旅行是為籌備恐怖主義行為。"
    ],
    "options": [
@@ -4480,7 +4480,7 @@
   "en": {
    "q": "Under section 21 of the AMLO, a relevant authority may take disciplinary action against a financial institution that contravenes a specified provision. Which of the following statements about that section are correct?",
    "statements": [
-    "The relevant authority may exercise the section 21 powers only one at a time, so a public reprimand cannot be combined with a pecuniary penalty for the same contravention.",
+    "The relevant authority must obtain the leave of the Court of First Instance before exercising any of the section 21 powers against a financial institution.",
     "The pecuniary penalty must not exceed the greater of $10,000,000 or 3 times the amount of the profit gained, or costs avoided, by the institution as a result of the contravention.",
     "On the relevant authority's application, the Court of First Instance may register an order to pay a pecuniary penalty, which is then regarded as an order of that Court.",
     "The relevant authority must pay any pecuniary penalty that it receives under an order made under section 21 into the general revenue of Hong Kong.",
@@ -4498,7 +4498,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第21條，有關當局可對違反指明的條文的金融機構採取紀律行動。關於該條，下列哪些陳述正確？",
    "statements": [
-    "有關當局每次只可行使第21條所指明的其中一項權力，因此不得就同一違反同時公開譴責及施加罰款。",
+    "有關當局須事先取得原訟法庭的許可，然後才可就有關的金融機構行使第21條所指明的任何一項權力。",
     "罰款的最高數額為$10,000,000，或該機構因該違反而獲取的利潤或避免的開支的3倍，以較大者為準。",
     "原訟法庭可應有關當局申請登記罰款命令，該命令一經登記即視為原訟法庭就繳付款項作出的命令。",
     "有關當局須將它依據第21條所作命令而收取的任何罰款，撥入政府的一般收入內。",
@@ -4818,7 +4818,7 @@
    "q": "A company's licence application contains a statement about its ultimate owner that is false in a material particular. Under section 52 of the AMLO, which of the following statements about the offence of providing false information are correct?",
    "statements": [
     "A person commits an offence if, in an application for the grant or renewal of a licence, the person makes a statement false or misleading in a material particular, knowing or reckless as to whether it is so.",
-    "The offence is committed only where the person makes the false statement with intent to defraud the Commissioner; recklessness as to its falsity is not enough.",
+    "The offence turns on whether the statement in fact caused the Commissioner to grant the licence, so a statement that made no difference falls outside it.",
     "A person also commits an offence if the person omits a material particular from a statement so that it is rendered false or misleading, knowing that, or being reckless as to whether, the particular is omitted.",
     "A person who commits either the false-statement offence or the omission offence is liable on conviction to a fine at level 5 and to imprisonment for 6 months."
    ],
@@ -4835,7 +4835,7 @@
    "q": "一間公司的牌照申請載有關於其最終擁有人、在要項上屬虛假的陳述。根據《打擊洗錢條例》第52條，關於提供虛假資料的罪行，下列哪些陳述正確？",
    "statements": [
     "任何人在批給牌照或牌照續期的申請中，作出在要項上屬虛假或具誤導性的陳述，並知道或罔顧該陳述是否如此，即屬犯罪。",
-    "該罪行只在該人出於詐騙關長的意圖而作出虛假陳述時方告成立，罔顧該項陳述是否虛假並不足夠。",
+    "該罪行取決於該項陳述有否實際導致關長批給牌照，故沒有造成影響的陳述並不構成該罪行。",
     "任何人在某項陳述中遺漏任何要項，以致該項陳述成為虛假或具誤導性的陳述，並知道或罔顧該項陳述是否遺漏該要項，亦屬犯罪。",
     "任何人犯上述作出虛假陳述的罪行或遺漏要項的罪行，一經定罪，均可處第5級罰款及監禁6個月。"
    ],
@@ -5545,7 +5545,7 @@
    "q": "Under section 10(1) to (4) of the AMLO, which of the following statements about the offences for non-compliance with a requirement imposed by an authorized person under section 9 are correct?",
    "statements": [
     "A person who, without reasonable excuse, fails to comply with a requirement imposed under section 9(3), (5), (9) or (10) commits an offence and is liable on summary conviction to a fine at level 5 and imprisonment for 6 months.",
-    "A person who produces a false or misleading record in purported compliance with a section 9 requirement commits the section 10(3) offence only if the person knew that the record was false or misleading, so recklessness is not enough.",
+    "A person who produces a false or misleading record in purported compliance with a section 9 requirement commits the section 10(3) offence where the record is false in any particular, whether material or not.",
     "The section 10(3) offence requires the record, document or answer to be false or misleading in a material particular, and is punishable on indictment by a fine of $1,000,000 and imprisonment for 2 years.",
     "The section 10(3) offence is confined to requirements imposed under section 9(3) or (5), whereas the section 10(1) offence also extends to requirements imposed under section 9(9) or (10)."
    ],
@@ -7554,7 +7554,7 @@
     "調查員可在該項調查的任何階段，向有關當局提交關於該調查的中期報告。",
     "調查員在有關當局要求其提交中期報告後，須在合理地切實可行範圍內盡快向有關當局提交該報告。",
     "調查員須在完成調查後，在合理地切實可行範圍內盡快向有關當局提交關於調查的最後報告。",
-    "調查員在交付最後報告後，可自行決定公布該報告，而無須取得任何其他人的同意。"
+    "調查員在交付最後報告後，可在取得保安局局長的同意下公布該報告。"
    ],
    "options": [
     "1、2 及 3",
@@ -8538,8 +8538,8 @@
    "statements": [
     "A licensed money service operator is a non-Part 5B prescribed person, and is therefore a prescribed person for the purposes of Part 3.",
     "The Postmaster General and a TCSP licensee are both non-Part 5B prescribed persons, and so are an SVF licensee and a PMS registrant.",
-    "A licensed VAS provider is a prescribed person only if it is also one of the persons that are listed in the definition of non-Part 5B prescribed person.",
-    "An associated entity of a licensed VAS provider falls outside the definition of prescribed person, which names only the provider itself.",
+    "A licensed VAS provider becomes a prescribed person once the relevant authority has entered it in the register kept under section 8 of the Ordinance.",
+    "An associated entity of a licensed VAS provider falls outside the definition of prescribed person, since Part 3 reaches the provider through its licence.",
     "A person listed in the definition of non-Part 5B prescribed person remains one whether or not the person is also a licensed VAS provider or an associated entity of one."
    ],
    "options": [
@@ -8556,8 +8556,8 @@
    "statements": [
     "持牌金錢服務經營者屬非第5B部訂明人士，因此就本條例第3部而言屬訂明人士。",
     "郵政署署長及信託或公司服務持牌人均屬非第5B部訂明人士，工具持牌人及貴金屬及寶石註冊人亦然。",
-    "持牌虛擬資產服務提供者只有在同時屬非第5B部訂明人士定義所列的人士時，方屬訂明人士。",
-    "持牌虛擬資產服務提供者的有聯繫實體不在訂明人士的定義範圍之內，該定義只列明提供者本身。",
+    "持牌虛擬資產服務提供者須待有關當局將其列入根據第8條備存的登記冊後，才屬訂明人士。",
+    "持牌虛擬資產服務提供者的有聯繫實體不在訂明人士的定義範圍之內，因第3部是透過牌照涵蓋該提供者。",
     "非第5B部訂明人士定義所列的人，不論是否亦屬持牌虛擬資產服務提供者或其有聯繫實體，仍屬該類人士。"
    ],
    "options": [
@@ -9497,7 +9497,7 @@
   "en": {
    "q": "Under sections 67 and 68 of the AMLO, which of the following statements about the form of the Review Tribunal's orders and their registration in the Court of First Instance are correct?",
    "statements": [
-    "An order of the Tribunal need not be recorded in writing or signed by the chairperson of the Tribunal, provided the chairperson announces it at a sitting of the Tribunal.",
+    "An order of the Tribunal must be recorded in writing and sealed with the seal of the Tribunal, which takes the place of the chairperson's signature.",
     "A document purporting to be an order of the Tribunal signed by its chairperson is, in the absence of evidence to the contrary, presumed to be an order duly made and signed, without proof of the signature.",
     "The Court of First Instance may register an order of the Tribunal after receiving a notice in writing given by the Tribunal in the manner prescribed by rules made by the Chief Justice under section 76.",
     "An order registered in the Court of First Instance is regarded for all purposes as an order of that Court that was made within its own jurisdiction."
@@ -9514,7 +9514,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第67及68條，關於覆核審裁處命令的格式及其在原訟法庭登記，下列哪些陳述正確？",
    "statements": [
-    "審裁處的命令無須藉書面記錄，亦無須由審裁處主席簽署，只要審裁處主席在審裁處聆訊時宣布該命令即可。",
+    "審裁處的命令須藉書面記錄，並須蓋上審裁處的有關印章，以代替審裁處主席在該項命令上的親筆簽署。",
     "任何文件如看來是由審裁處主席簽署的審裁處命令，在沒有相反證據的情況下，須被推定為妥為作出並簽署的命令，而無需證明該簽署。",
     "原訟法庭可在接獲審裁處按終審法院首席法官根據第76條訂立的規則訂明的方式發出的書面通知後，登記審裁處的命令。",
     "在原訟法庭登記的命令，就所有目的而言，須視為原訟法庭在其司法管轄權範圍內作出的命令。"
@@ -9701,7 +9701,7 @@
   "en": {
    "q": "Under section 66 of the AMLO, which of the following statements about the notification of the Review Tribunal's determinations are correct?",
    "statements": [
-    "The Tribunal must deliver its determination as soon as reasonably practicable after completing a review, but it is not required to deliver the reasons for the determination.",
+    "The Tribunal must deliver its determination within 14 days after completing a review, together with the reasons for the determination.",
     "Any order for costs that the Tribunal has made under section 65 in relation to the review must be delivered as well, and so must the reasons for it.",
     "If a sitting, or part of a sitting, was held in private, the Tribunal may by order prohibit the publication or disclosure of its determination, reasons or costs order, or any part of them.",
     "A person who without reasonable excuse fails to comply with such an order commits an offence punishable on indictment by a fine of $1,000,000 and imprisonment for 2 years."
@@ -9718,7 +9718,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第66條，關於覆核審裁處裁定的通知，下列哪些陳述正確？",
    "statements": [
-    "審裁處須在完成覆核後在合理地切實可行的範圍內盡快宣告其裁定，但無須宣告作出該裁定的理由。",
+    "審裁處須在完成有關的覆核後的14日內宣告其裁定，連同作出該項裁定的理由。",
     "審裁處根據第65條就該覆核作出的任何訟費命令亦須宣告，作出該命令的理由亦然。",
     "如聆訊或其任何部分閉門進行，審裁處可藉命令禁止發表或披露其裁定、理由或訟費命令，或其任何部分。",
     "任何人無合理辯解而沒有遵從該命令，即屬犯罪，一經循公訴程序定罪，可處罰款$1,000,000及監禁2年。"
@@ -9953,7 +9953,7 @@
    "statements": [
     "On granting a licence, the Commissioner may impose any condition that the Commissioner thinks fit, and must at the time the licence is granted inform the licensee of the condition by notice in writing.",
     "A condition imposed under section 30(5) takes effect when the licensee receives the notice or at the time specified in the notice, whichever is the later of the two.",
-    "If the Commissioner refuses to grant a licence, the refusal may be communicated informally, since the duty to give a notice in writing applies only where a licence is granted subject to conditions.",
+    "If the Commissioner refuses to grant a licence, the applicant is informed by notice in writing given within 45 days after the refusal decision has been made.",
     "A notice of the imposition of a condition or of a refusal to grant a licence must state the reasons for the decision and that the licensee or applicant may apply to the Review Tribunal."
    ],
    "options": [
@@ -9970,7 +9970,7 @@
    "statements": [
     "關長在批給牌照時可施加其認為合適的任何條件，並須在批給該牌照時藉書面通知將該條件告知持牌人。",
     "根據第30(5)條施加的條件，在持牌人接獲通知時或在該通知指明的時間（兩者以較遲者為準）生效。",
-    "關長如拒絕批給有關牌照，可以非正式的方式告知該申請人，因為藉書面通知的責任只適用於附帶條件批給牌照的情況。",
+    "關長如拒絕批給有關的牌照，須在作出該項拒絕決定後的45日內，藉書面通知告知該名申請人有關的決定及理由等。",
     "關於施加條件或拒絕批給牌照的通知，須載有作出該決定的理由的說明，以及持牌人或申請人可向覆核審裁處申請覆核該決定的提示。"
    ],
    "options": [
@@ -9996,7 +9996,7 @@
    "q": "Under section 31 of the AMLO, which of the following statements about the renewal of a licence to operate a money service are correct?",
    "statements": [
     "An application for renewal must be made not later than 45 days before the licence is due to expire, in the form and manner specified by the Commissioner and accompanied by the Schedule 3 fee.",
-    "On a renewal application the Commissioner reassesses only the suitability of the premises, because the fit and proper requirements in section 30(3) and (4) apply to an application for a new licence only at that stage.",
+    "On a renewal application the Commissioner reassesses the suitability of the premises and the applicant's financial standing, the fit and proper requirements in section 30(3) and (4) having been settled at the grant stage.",
     "A licence that expires before a renewal application is determined remains in force until it is renewed or, if renewal is refused, until the refusal takes effect, unless the application is withdrawn or the licence is revoked or suspended.",
     "A renewed licence is valid for 2 years or, if the Commissioner considers it appropriate in the particular case, any shorter period determined by the Commissioner, beginning on the date of renewal."
    ],
@@ -10013,7 +10013,7 @@
    "q": "根據《打擊洗錢條例》第31條，關於金錢服務經營者牌照的續期，下列哪些陳述正確？",
    "statements": [
     "牌照續期的申請，須在該牌照期滿前45日或之前，以關長指明的格式及方式提出，並附隨附表3所指明的費用。",
-    "關長處理續期申請時只會重新評估該處所是否適合，因為第30(3)及(4)條的適當人選規定只適用於新牌照的有關申請。",
+    "關長處理續期申請時，會重新評估該處所是否適合以及申請人的財政狀況，第30(3)及(4)條的適當人選規定已在批給階段處理。",
     "如牌照在關長就續期申請作出決定前屆滿，除非該申請被撤回或該牌照被撤銷或暫時吊銷，否則該牌照在獲續期前或拒絕決定生效前仍然有效。",
     "續期的牌照有效期為2年，或（如關長在特定個案中認為合適）由關長決定的較短期間，自續期生效當日起計。"
    ],
@@ -10127,7 +10127,7 @@
    "q": "Under section 47 of the AMLO, which of the following statements about a warrant to enter premises and remove evidence of an offence under section 29 are correct?",
    "statements": [
     "The warrant may be issued by the Commissioner without information on oath, whenever an authorized officer suspects that an offence under section 29 is being committed on the premises.",
-    "An authorized officer who enters the premises under the warrant is not required to produce the warrant for inspection, even if asked to do so by an occupant.",
+    "An authorized officer who enters the premises under the warrant must produce it for inspection within 7 days after the entry, on the written request of an occupant.",
     "The authorized officer may break into and forcibly enter the premises, and remove by force any person or thing obstructing the officer in the exercise of the powers.",
     "The authorized officer may detain any person found on the premises who appears able to give information relevant to the investigation, until the premises have been searched.",
     "A person who obstructs an authorized officer exercising a power conferred by the warrant or by section 47(2) commits an offence and is liable on conviction to a fine at level 6 and imprisonment for 6 months."
@@ -10144,8 +10144,8 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第47條，關於進入處所以移走第29條所訂罪行證據的手令，下列哪些陳述正確？",
    "statements": [
-    "該手令可由關長在無經宣誓的告發的情況下發出，只要獲授權人員懷疑有人正於該處所犯第29條所訂罪行即可。",
-    "根據該手令進入處所的獲授權人員，即使有人提出要求，亦無須出示該手令供任何人查閱。",
+    "該手令可由關長在無經宣誓的告發的情況下發出，條件是獲授權人員懷疑有人正於該處所犯第29條所訂罪行。",
+    "根據該手令進入處所的獲授權人員，須在進入後7日內應佔用人的書面要求出示該手令供查閱。",
     "獲授權人員可破門及強行進入該處所，並以武力移去任何妨礙該人員行使該等權力的人或物件。",
     "獲授權人員可扣留在該處所內發現、覺得有能力提供攸關涉嫌罪行的調查的資料的人，直至該處所搜查完畢為止。",
     "任何人妨礙獲授權人員行使手令或第47(2)條授予的權力，即屬犯罪，一經定罪，可處第6級罰款及監禁6個月。"
@@ -10506,11 +10506,11 @@
   "en": {
    "q": "In determining under section 30(4) of the AMLO whether a person is a fit and proper person for the purposes of section 30(3)(a), which of the following statements about the matters the Commissioner must have regard to are correct?",
    "statements": [
-    "Section 30(4) provides an exhaustive list, so the Commissioner must decide fitness and propriety on the matters in paragraphs (a) to (e) alone and may not weigh any other matter.",
+    "Section 30(4) requires the Commissioner to have regard to the matters in paragraphs (a) to (e) once the applicant has been licensed for two years or more.",
     "Whether the person has a conviction outside Hong Kong for an offence relating to money laundering or terrorist financing, or for an offence involving fraud, corruption or dishonesty.",
     "Whether the person has persistently failed to comply with any requirement imposed under the Ordinance or any regulation made by the Commissioner under section 51.",
     "Whether the person, being an individual, is an undischarged bankrupt or is the subject of any bankruptcy proceedings under the Bankruptcy Ordinance (Cap. 6).",
-    "Whether the person, being a corporation, is in liquidation or is the subject of a winding up order is relevant only if a receiver has also been appointed in relation to it."
+    "Whether the person, being a corporation, is in liquidation or is the subject of a winding up order is a matter for the Registrar of Companies rather than the Commissioner."
    ],
    "options": [
     "1, 2 and 3",
@@ -10524,11 +10524,11 @@
   "tc": {
    "q": "關長根據《打擊洗錢條例》第30(4)條斷定某人是否第30(3)(a)條所指的適當人選時，關於其須顧及的事宜，下列哪些陳述正確？",
    "statements": [
-    "第30(4)條所列的事宜屬盡列無遺，因此關長只可憑(a)至(e)段的事宜斷定適當人選資格，不得考慮任何其他事宜。",
+    "第30(4)條規定，關長須在申請人已持牌兩年或以上時，才顧及(a)至(e)段所列的事宜。",
     "該人是否曾在香港以外地方被裁定犯關乎洗錢或恐怖分子資金籌集的罪行，或犯涉及欺詐、舞弊或不誠實的罪行。",
     "該人是否屢次不遵從根據本條例施加的任何要求，或關長根據第51條訂立的任何規例。",
     "（如該人屬個人）該人是否未獲解除破產的破產人，或屬《破產條例》下破產程序的標的。",
-    "（如該人屬法團）該人是否正在清盤或是否清盤令的標的，只有在亦有接管人已就該人獲委任的情況下才屬相關。"
+    "（如該人屬法團）該人是否正在清盤或是否清盤令的標的，屬公司註冊處處長而非關長需要考慮的事宜。"
    ],
    "options": [
     "1、2 及 3",
@@ -11182,7 +11182,7 @@
    "q": "根據《打擊洗錢條例》第44條，關於關長根據第43條對持牌人行使紀律處分權力時須遵守的程序規定，下列哪些陳述正確？",
    "statements": [
     "關長須先給予該持牌人合理的陳詞機會，方可根據第43條就該名持牌人行使有關的各項權力。",
-    "關長只有在行使施加罰款的權力時才須以書面將決定告知持牌人；公開譴責或糾正行動命令可以口頭方式傳達。",
+    "關長須在行使第43條所指的有關權力後的14日內，以書面將有關的決定告知該名持牌人。",
     "有關決定的通知須載有（在適用範圍內）根據該決定對持牌人的譴責的內容，以及該持牌人須根據該決定採取的行動。",
     "如判處罰款，通知須述明罰款金額，以及（如繳付罰款的時間並非第43(3)(a)條所指定者）繳付罰款的時限。"
    ],
@@ -11329,7 +11329,7 @@
    "statements": [
     "Section 76B applies to a matter that comes to a specified person's knowledge by virtue of the person's appointment under the Ordinance or in the course of performing a function under it.",
     "It also applies to a matter that comes to the person's knowledge while assisting another in performing a function under the Ordinance, and to records that come into the person's possession in those circumstances.",
-    "A specified person may allow another person to have access to such a record or document, because the prohibition in section 76B(2) covers only the communication of a matter to a person.",
+    "A specified person may allow another person to have access to such a record or document, because section 76B(2) yields to any request made by a law enforcement agency.",
     "A person who contravenes section 76B(2) commits an offence and is liable on conviction on indictment to a fine of $1,000,000 and to imprisonment for a term of 2 years."
    ],
    "options": [
@@ -11346,7 +11346,7 @@
    "statements": [
     "第76B條適用於指明人士憑藉其根據本條例獲委任，或在根據本條例執行職能的過程中獲悉的事宜。",
     "該條亦適用於指明人士在協助另一人根據本條例執行職能的過程中獲悉的事宜，以及在該等情況下得以管有的紀錄或文件。",
-    "指明人士可容許另一人取覽該等紀錄或文件，因為第76B(2)條的禁止只涵蓋向任何人傳達事宜。",
+    "指明人士可容許另一人取覽該等紀錄或文件，因為第76B(2)條在執法機關提出要求時並不適用。",
     "違反第76B(2)條的人即屬犯罪，一經循公訴程序定罪，可處罰款$1,000,000及監禁2年。"
    ],
    "options": [
@@ -12265,7 +12265,7 @@
     "審裁處在懲罰犯藐視罪者方面所具有的權力與原訟法庭相同，而第63(2)條的特定權力並不局限這項一般權力。",
     "如任何人無合理辯解而作出第61(2)(a)至(f)條所指的行為，審裁處有權懲罰該人，猶如該人犯藐視法庭罪一樣。",
     "審裁處在行使懲罰犯藐視罪者的權力時，須採用原訟法庭在行使該等相同權力時所採用的舉證準則。",
-    "如已就某行為根據第61(2)條提起刑事法律程序而該程序仍待決，審裁處仍可就同一行為行使藐視罪權力，只要其後終止該程序即可。",
+    "如已就某行為根據第61(2)條提起刑事法律程序而該程序仍待決，審裁處仍可就同一行為行使藐視罪權力，因兩者屬不同性質的程序。",
     "審裁處就某行為行使藐視罪權力後，仍可就同一行為根據第61(2)條提起刑事法律程序，因為藐視罪與該罪行是分開的。"
    ],
    "options": [
@@ -12409,7 +12409,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第60條，關於覆核審裁處可如何就指明決定的覆核作出裁定，下列哪些陳述正確？",
    "statements": [
-    "審裁處如推翻某指明決定，必須將有關事宜發還指明當局處理，而不得以其本身的決定取代該決定。",
+    "審裁處如推翻某指明決定，須將有關事宜發還指明當局處理，並在其後30日內就該事宜再作覆核。",
     "審裁處可將有關事宜連同它認為適當的任何指示發還指明當局處理，以代替確認、更改或推翻該決定。",
     "審裁處用以取代的決定可以較原決定嚴苛，前提是該決定是指明當局本有權就申請人作出的決定。",
     "在覆核指明決定時，審裁處須給予覆核各方合理的陳詞機會，而事實事宜須在相對可能性的衡量下確立。"
@@ -12657,7 +12657,7 @@
     "The authorized person may at any reasonable time enter the business premises of the licensed VAS provider or of an associated entity of the licensed VAS provider.",
     "The authorized person may inspect any specified business record, and may make copies of it or otherwise record its details, in the course of the inspection.",
     "The authorized person may make inquiries of a related corporation of the licensed VAS provider, or of a related corporation of an associated entity of the provider.",
-    "The authorized person may make inquiries of any information holder without restriction, because the condition in section 9(6) applies only to non-Part 5B inspection subjects."
+    "The authorized person may make inquiries of any information holder once the Secretary for Financial Services has certified that the inquiry is necessary for the inspection."
    ],
    "options": [
     "1, 2 and 3",
@@ -12674,7 +12674,7 @@
     "獲授權人可於任何合理時間進入該持牌虛擬資產服務提供者的業務處所，或該提供者的有聯繫實體的業務處所。",
     "獲授權人可在視察過程中查閱任何指明業務紀錄，並可複製或複印該等紀錄，或以其他方式記錄該等紀錄的細節。",
     "獲授權人可向該持牌虛擬資產服務提供者的有連繫法團，或該提供者的有聯繫實體的有連繫法團作出查訊。",
-    "獲授權人可不受限制地向任何資料持有人作出查訊，因為第9(6)條的條件只適用於非第5B部視察對象。"
+    "獲授權人可向任何資料持有人作出查訊，但須先由財經事務及庫務局局長證明該項查訊對該視察屬必要。"
    ],
    "options": [
     "1、2 及 3",
@@ -12834,7 +12834,7 @@
     "關長如認為該合夥的任何合夥人不再屬經營金錢服務的適當人選，或該合夥的最終擁有人不再屬與該持牌人業務有聯繫的適當人選，即可行使權力。",
     "如該持牌人在住宅處所經營，該處所的佔用人撤銷其先前給予讓獲授權人進入的書面同意，或新佔用人拒絕給予該項書面同意，亦屬關長可行使權力的理由。",
     "關長可行使的權力，是撤銷該牌照，或在關長指明的期間內或在關長指明的某事件發生之前，暫時吊銷該牌照。",
-    "關長無須先給予該持牌人任何陳詞機會即可行使該等權力，只要其後以書面通知將該決定及其理由告知該持牌人即可。"
+    "關長可先行使該等有關的權力，然後在其後的14日內，以書面通知將該項決定及其有關的理由告知該名持牌人。"
    ],
    "options": [
     "1、2 及 3",
@@ -13483,7 +13483,7 @@
   "en": {
    "q": "Under section 10(7) to (9) of the AMLO, which of the following statements about the offences committed by a related person of a person on whom a requirement has been imposed under section 9 (the obligated person) are correct?",
    "statements": [
-    "A related person commits the section 10(7) offence merely by negligently causing or allowing the obligated person to fail to comply with the requirement, even where the related person has no intent to defraud anyone at all at any point.",
+    "A related person commits the section 10(7) offence by negligently causing or allowing the obligated person to fail to comply with a requirement imposed under section 9, since an intent to defraud belongs to the section 10(8) offence instead.",
     "A related person commits an offence under section 10(7) if, with intent to defraud, the person causes or allows the obligated person to fail to comply with a requirement imposed under section 9(3), (5), (9) or (10).",
     "A related person commits an offence under section 10(8) if, with intent to defraud, the person causes or allows the obligated person to produce a false or misleading record or document, or give a false or misleading reply, in purported compliance with the requirement.",
     "A person convicted under section 10(7) or (8) is liable on indictment to a fine of $1,000,000 and imprisonment for 7 years, or on summary conviction to a fine at level 6 and imprisonment for 6 months."
@@ -13500,7 +13500,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第10(7)至(9)條，關於被根據第9條施加要求的人（義務人）的相關人士所犯的罪行，下列哪些陳述正確？",
    "statements": [
-    "相關人士即使完全沒有詐騙意圖，只要疏忽地致使或容許義務人沒有遵從根據第9條施加的有關要求，即屬犯第10(7)條所訂罪行。",
+    "相關人士如疏忽地致使或容許義務人沒有遵從根據第9條施加的有關要求，即屬犯第10(7)條所訂罪行，而詐騙意圖屬第10(8)條罪行的要素。",
     "相關人士如出於詐騙意圖，致使或容許義務人沒有遵從根據第9(3)、(5)、(9)或(10)條施加的要求，即屬犯第10(7)條所訂罪行。",
     "相關人士如出於詐騙意圖，致使或容許義務人交出在要項上屬虛假或具誤導性的紀錄或文件，或給予該等回答，充作遵從有關要求，即屬犯第10(8)條所訂罪行。",
     "任何人犯第10(7)或(8)條所訂罪行，一經循公訴程序定罪，可處罰款1,000,000元及監禁7年；一經循簡易程序定罪，可處第6級罰款及監禁6個月。"
@@ -13614,7 +13614,7 @@
   "en": {
    "q": "Under section 39A of the AMLO, which of the following statements about a licensee's duty to display the original of its licence are correct?",
    "statements": [
-    "The duty to display the licence applies to every licensee, including one whose licence does not specify any premises at all.",
+    "The duty to display the licence applies to every licensee, whether or not the licence specifies premises at which the service is operated.",
     "The document that the licensee must display is the original of the licence, and not any copy of it.",
     "The licence must be displayed in a conspicuous place at the premises specified in the licence itself.",
     "A licensee who without reasonable excuse contravenes the duty commits an offence, the penalty being a fine at level 5 and no imprisonment."
@@ -13658,7 +13658,7 @@
   "en": {
    "q": "A licensee operates a money service at three premises specified in its licence and intends to close one of them while continuing at the other two. Under section 41 of the AMLO, which of the following statements are correct?",
    "statements": [
-    "The section 41(1) duty arises only where the licensee intends to cease operating a money service altogether, not where it will cease at one of several specified premises.",
+    "The section 41(1) duty arises where the licensee intends to cease operating a money service, and the Commissioner then decides whether it extends to individual premises.",
     "Before the date of cessation, the licensee must notify the Commissioner in writing both of its intention to cease and of the date of cessation.",
     "The licensee must return the licence to the Commissioner for cancellation or amendment within 7 days beginning on the date of cessation.",
     "After receiving the returned licence, the Commissioner must as soon as reasonably practicable cancel or amend it and remove the relevant particulars from the register.",
@@ -13676,7 +13676,7 @@
   "tc": {
    "q": "某持牌人在其牌照指明的三個處所經營金錢服務，現擬結束其中一個處所的業務，其餘兩個處所繼續經營。根據《打擊洗錢條例》第41條，下列哪些陳述正確？",
    "statements": [
-    "第41(1)條的責任只在持牌人擬完全停止經營金錢服務時方產生，擬停止在多個指明處所之一經營則不在此限。",
+    "第41(1)條的責任在持牌人擬停止經營金錢服務時產生，至於是否延伸至個別指明處所，則由關長決定。",
     "持牌人須在停業日期之前，藉書面向關長具報其停業的意向及該項停業的日期。",
     "持牌人須在自停業日期起計的7日內，將該牌照交回關長，以作取消或修訂。",
     "關長在收到交回的牌照後，須在合理地切實可行範圍內盡快取消或修訂該牌照，並在登記冊中刪除有關詳情。",
@@ -13806,7 +13806,7 @@
   "en": {
    "q": "Under section 32 of the AMLO, which of the following statements about the Commissioner's power to amend the conditions of a licence during its currency are correct?",
    "statements": [
-    "The Commissioner may amend or remove a condition, or impose a new condition, only on the renewal of the licence, and not at any other time during its currency.",
+    "The Commissioner may amend or remove a condition, or impose a new condition, on the renewal of the licence or at any time when the licensee applies for the change.",
     "The Commissioner may amend or remove a condition previously imposed, or impose a new condition, if satisfied that it is reasonable to do so in the circumstances.",
     "If the Commissioner amends or removes a condition or imposes a new condition, the Commissioner must inform the licensee by notice in writing stating the reasons and the right to apply to the Review Tribunal.",
     "An amendment, removal or imposition of a condition under section 32 takes effect when the licensee receives the notice or at the time specified in the notice, whichever is the later."
@@ -13823,7 +13823,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》第32條，關於關長在牌照有效期內修改牌照條件的權力，下列哪些陳述正確？",
    "statements": [
-    "關長只可在牌照續期時修改或免除條件或施加新的條件，而不得在牌照有效期內的其他時間如此行事。",
+    "關長可在牌照續期時，或在持牌人提出更改申請時，修改或免除條件或施加新的條件。",
     "關長如信納在有關情況下屬合理，即可修改或免除先前施加的牌照條件，或施加新的條件。",
     "關長如修改或免除條件或施加新條件，須藉書面通知告知持牌人，並須載有該決定的理由及可向覆核審裁處申請覆核的提示。",
     "根據第32條修訂、免除或施加條件，在持牌人接獲通知時或在該通知指明的時間（兩者以較遲者為準）生效。"
@@ -14305,7 +14305,7 @@
     "業務關係，指某人與機構之間、以延續一段時間為其元素的業務、專業或商業關係。",
     "如在該人首次以準客戶身分接觸機構時，機構期望延續一段時間是該關係的元素，該關係亦屬業務關係。",
     "非經常交易，指機構和與該機構並無業務關係的客戶之間所進行的交易。",
-    "機構在首次接觸時期望只屬一次性往來、並無延續一段時間元素的關係，只要該人屬準客戶，仍屬業務關係。"
+    "機構在首次接觸時期望屬一次性往來、並無延續一段時間元素的關係，如該人其後再次交易，即屬業務關係。"
    ],
    "options": [
     "1、2 及 3",
@@ -14882,7 +14882,7 @@
    "statements": [
     "Terrorist financing includes the provision or collection, by any means, directly or indirectly, of any property intending or knowing that it will be used, in whole or in part, to commit one or more terrorist acts.",
     "It also includes making any property or financial (or related) services available, by any means, directly or indirectly, to or for the benefit of a person, knowing that or being reckless as to whether the person is a terrorist or terrorist associate.",
-    "The collection of property, or the solicitation of financial (or related) services, for the benefit of a terrorist or terrorist associate is terrorist financing only where the person actually knows the recipient's status, recklessness not being sufficient.",
+    "The collection of property, or the solicitation of financial (or related) services, for the benefit of a terrorist or terrorist associate is terrorist financing where the property is in fact received by that person, an unsuccessful solicitation falling outside the definition.",
     "In the definition, terrorist, terrorist act and terrorist associate have the meaning given by section 2(1) of the United Nations (Anti-Terrorism Measures) Ordinance (Cap. 575) of Hong Kong."
    ],
    "options": [
@@ -14899,7 +14899,7 @@
    "statements": [
     "恐怖分子資金籌集包括懷有將財產的全部或部分用於作出一項或多於一項恐怖主義行為的意圖，或知道財產將會被如此使用，而以任何方法直接或間接提供或籌集財產，不論該財產實際上有否被如此使用。",
     "恐怖分子資金籌集亦包括在知道某人是或罔顧某人是否恐怖分子或與恐怖分子有聯繫者的情況下，以任何方法直接或間接向該人或為該人的利益提供任何財產或金融（或有關的）服務。",
-    "為恐怖分子或與恐怖分子有聯繫者的利益籌集財產或尋求金融（或有關的）服務，只有在該人實際知道對方的身分時才屬恐怖分子資金籌集，罔顧並不足夠。",
+    "為恐怖分子或與恐怖分子有聯繫者的利益籌集財產或尋求金融（或有關的）服務，須以該財產實際上由對方收取為條件，尋求不遂則不屬此定義。",
     "在該定義中，恐怖分子、恐怖主義行為及與恐怖分子有聯繫者具有《聯合國（反恐怖主義措施）條例》（第575章）第2(1)條給予該等詞的涵義。"
    ],
    "options": [
@@ -15305,7 +15305,7 @@
     "The institution must carry out customer due diligence measures before carrying out for the customer an occasional transaction involving an amount at or above $8,000, whether or not it is a wire transfer.",
     "The institution must carry out customer due diligence measures before carrying out for the customer an occasional transaction that is a wire transfer involving an amount at or above $8,000.",
     "The institution must carry out customer due diligence measures when it suspects that the customer or the customer's account is involved in money laundering or terrorist financing.",
-    "Where the institution doubts the veracity of information previously obtained for identifying the customer, it may continue to rely on that information and need not carry out CDD measures."
+    "Where the institution doubts the veracity of information previously obtained for identifying the customer, it must report the doubt to the JFIU before carrying out any CDD measures."
    ],
    "options": [
     "1, 2 and 3",
@@ -15323,7 +15323,7 @@
     "機構須在為客戶執行涉及相等於$8,000或以上款額的非經常交易之前執行客戶盡職審查措施，不論是否電傳轉賬。",
     "機構須在為客戶執行屬電傳轉賬並涉及相等於$8,000或以上款額的非經常交易之前，執行客戶盡職審查措施。",
     "當機構懷疑該客戶或其戶口涉及洗錢或恐怖分子資金籌集時，機構須執行客戶盡職審查措施。",
-    "如機構懷疑過往為識別客戶身分而取得的資料是否真實或充分，它可繼續倚賴該資料，無須執行客戶盡職審查措施。"
+    "如機構懷疑過往為識別客戶身分而取得的資料是否真實或充分，須先向聯合財富情報組舉報，然後才執行客戶盡職審查措施。"
    ],
    "options": [
     "1、2 及 3",
@@ -15667,7 +15667,7 @@
   "en": {
    "q": "Under section 5(3) of Schedule 2 to the AMLO, which of the following statements about the situations in which an institution must take additional measures when monitoring a business relationship are correct?",
    "statements": [
-    "Additional measures are required where the customer itself is a politically exposed person, but not where only a beneficial owner of the customer is a politically exposed person.",
+    "Additional measures are required where the customer itself is a politically exposed person, the position of a beneficial owner being a matter for the ongoing monitoring provisions instead.",
     "Additional measures are required in any case where the customer has not at any time been physically present for the purposes of identification.",
     "Additional measures are required where the customer, or a beneficial owner of the customer, is involved in a situation referred to in section 15 of Schedule 2.",
     "The additional measures must compensate for any risk of money laundering or terrorist financing caused by the customer or beneficial owner falling within one of those situations."
@@ -15684,7 +15684,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》附表2第5(3)條，關於機構在監察業務關係時須採取額外措施的情況，下列哪些陳述正確？",
    "statements": [
-    "如客戶本身屬政治人物，機構須採取額外措施；但如只是客戶的實益擁有人屬政治人物，則無須如此。",
+    "如客戶本身屬政治人物，機構須採取額外措施；實益擁有人的情況則由持續監察的條文處理。",
     "如該客戶從不曾為身分識別的目的而親身現身，機構須採取額外措施。",
     "如該客戶或其實益擁有人涉及附表2第15條提述的情況，機構須採取額外措施。",
     "該等額外措施須應對因客戶或實益擁有人屬上述情況而可能引致的洗錢／恐怖分子資金籌集風險。"
@@ -15759,7 +15759,7 @@
    "statements": [
     "如機構已以認可數碼識別系統提供的數據為基礎，就客戶執行第2(1)(a)或(ab)條的措施，則關乎不曾現身的客戶的第(3)(a)款不適用。",
     "關乎政治人物的第(3)(b)款，在機構信納客戶或實益擁有人屬前政治人物，而基於適當風險評估並不構成高度風險時，並不適用。",
-    "客戶或實益擁有人一旦成為前政治人物，第(3)(b)款即自動不再適用，機構無須藉風險評估信納任何事項。",
+    "客戶或實益擁有人成為前政治人物後，第(3)(b)款須在關長就該事宜作出書面確認之後，方會不再適用於該名客戶。",
     "涵蓋涉及第15條情況的客戶或實益擁有人的第(3)(c)款，不受第(4)及(5)款影響，因此該等額外措施始終須予採取。"
    ],
    "options": [
@@ -16095,7 +16095,7 @@
    "statements": [
     "在第9條適用的每一種情況下，機構均須執行第9(1)條所列的其中最少一項措施。",
     "其中一項所列措施，是以第2(1)(a)或(ab)條提述但不曾用於核實身分的文件或數據為據，進一步核實該客戶身分。",
-    "付款途徑措施規定，就該客戶戶口作出的每一次付款（而不只是第一次）均須經由以該客戶名義開設的戶口進行。",
+    "付款途徑措施規定，就該客戶戶口作出的首筆付款，須經由以該客戶配偶名義開設的戶口進行。",
     "採取增補措施以核實機構此前已取得的、關乎該客戶的各項資料，並不屬第9(1)條所列的措施。",
     "如機構已以認可數碼識別系統提供的數據為據，就該客戶執行第2(1)(a)或(ab)條的措施，則第9(1)條不適用。"
    ],
@@ -16460,7 +16460,7 @@
    "q": "根據《打擊洗錢條例》附表2第12(3)及(3A)條，關於匯款機構在進行電傳轉帳之前須記錄的資料，下列哪些陳述正確？",
    "statements": [
     "匯款機構在進行該項轉帳之前，須記錄匯款人的姓名或名稱，以及收款人的姓名或名稱兩者。",
-    "如匯款人並無在匯款機構開立作為該筆金錢來源的戶口，則無須就該項轉帳記錄任何戶口號碼或參考編號。",
+    "如匯款人並無在匯款機構開立作為該筆金錢來源的戶口，匯款機構須記錄該匯款人的稅務編號以代替之。",
     "匯款機構須記錄匯款人的地址、匯款人的客戶識別號碼或識別文件號碼，或（如匯款人屬個人）匯款人的出生日期及地方。",
     "匯款機構須記錄收款人在收款機構開立的戶口的號碼，或（如沒有該戶口）由收款機構編配予該項轉帳的獨特參考編號。",
     "記錄匯款人的地址、識別號碼或出生日期及地方的規定，適用於每一項電傳轉帳，包括涉及$8,000以下款額的電傳轉帳。"
@@ -16899,9 +16899,9 @@
    "q": "根據《打擊洗錢條例》附表2第13條，關於持牌金錢服務經營者進行匯款交易的特別規定，下列哪些陳述正確？",
    "statements": [
     "第13條適用於涉及相等於$120,000或以上的款額（或等值外幣）的匯款交易。",
-    "經營者可以其認為可靠的任何方式核實匯款人的身分，無須參考匯款人的識別文件。",
+    "經營者可以其認為可靠的任何方式核實匯款人的身分，並以口頭查詢代替查閱識別文件。",
     "在進行該項交易之前，經營者須識別匯款人的身分，並記錄匯款人的姓名、識別文件的號碼及地址。",
-    "如匯款人的識別文件是旅行證件，經營者亦須記錄發出該旅行證件的地方。",
+    "如匯款人的識別文件是旅行證件，經營者亦須記錄發出該旅行證件的有關地方。",
     "經營者須記錄所涉的貨幣及款額、接獲指示的日期及時間、收款人的姓名及地址，以及送遞的方式。"
    ],
    "options": [
@@ -17016,7 +17016,7 @@
     "A virtual asset transfer is a transaction carried out by an institution, the ordering institution, on behalf of an originator by transferring any virtual assets.",
     "The transaction is carried out with a view to making the virtual assets available to the originator or to another person, the recipient.",
     "The virtual assets are made available at an institution, the beneficiary institution, which may be the ordering institution or another institution.",
-    "A transaction is a virtual asset transfer only if no intermediary institution participates in completing the transfer of the virtual assets."
+    "A transaction is a virtual asset transfer where the ordering institution and the beneficiary institution are both licensed in Hong Kong, and not otherwise."
    ],
    "options": [
     "1, 2 and 3",
@@ -17033,7 +17033,7 @@
     "虛擬資產轉賬是由某機構（匯款機構）代匯款人進行的交易，而進行方式是將任何虛擬資產轉出。",
     "該項轉賬是使該等虛擬資產可供該匯款人或另一人（即有關的收款人）使用。",
     "該等虛擬資產是可供在某機構（收款機構）使用，而該機構可屬匯款機構或另一機構。",
-    "只有在沒有中介機構參與完成該項虛擬資產轉賬的情況下，該項交易才屬虛擬資產轉賬。"
+    "該項交易在匯款機構及收款機構均在香港領牌的情況下，才屬虛擬資產轉賬。"
    ],
    "options": [
     "1、2 及 3",
@@ -17134,7 +17134,7 @@
    "statements": [
     "如該項轉賬並無附隨第12(3)(b)條規定的戶口資料，該機構須在合理切實可行範圍內盡快向發出轉賬指示的機構取得該資料。",
     "如最終未能取得有關的所需資料，該機構可考慮限制或結束它與發出該項轉賬指示予它的有關機構之間的整個業務關係。",
-    "如未能取得有關資料，該機構只能限制或結束該業務關係，別無選擇；採取措施減低洗錢或恐怖分子資金籌集風險並不符合該條的規定。",
+    "如未能取得有關的資料，該機構須先向海關關長申請書面指示，然後才可限制或結束它與該有關機構之間的整個業務關係。",
     "如該機構察覺到附隨的第12(3)(b)條資料並不完整或不具意義，它須在合理地切實可行的範圍內，盡快採取合理措施減低所涉風險。"
    ],
    "options": [
@@ -17581,7 +17581,7 @@
   "en": {
    "q": "Under section 18 of Schedule 2 to the AMLO, which of the following statements about carrying out customer due diligence measures by means of an intermediary are correct?",
    "statements": [
-    "An institution may rely on a specified intermediary once the intermediary has orally agreed to act as the institution's intermediary; the intermediary's written consent is not required.",
+    "An institution may rely on a specified intermediary once the intermediary has been approved for that purpose by the relevant authority, the intermediary's own consent to act being immaterial.",
     "The institution must be satisfied that the intermediary will on request provide, without delay, a copy of any document, or a record of any data or information, obtained in the course of carrying out the measure.",
     "An institution that carries out a customer due diligence measure by means of an intermediary remains liable under the Ordinance for a failure to carry out that measure.",
     "Immediately after the intermediary has carried out the measure, the institution must obtain from the intermediary the data or information the intermediary obtained in carrying it out."
@@ -17598,7 +17598,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》附表2第18條，關於藉著中介人執行客戶盡職審查措施，下列哪些陳述正確？",
    "statements": [
-    "只要指明中介人口頭同意擔任該機構的中介人，該機構便可依賴該中介人，無須取得該中介人的書面同意。",
+    "指明中介人一經有關當局就該項目的批准，該機構便可依賴該名中介人，而該中介人本身的同意並不重要。",
     "機構須信納該中介人可應其要求，沒有延誤地提供該中介人在執行該措施時取得的文件複本，或取得的數據或資料的紀錄。",
     "藉著中介人執行客戶盡職審查措施的機構，仍然根據本條例就未有執行該措施負有法律責任。",
     "在該中介人執行該措施之後，機構須立刻從該中介人取得該中介人在執行該措施時取得的數據或資料。"
@@ -17685,7 +17685,7 @@
    "statements": [
     "A lawyer, notary public, auditor, professional accountant, trust or company service provider or tax advisor practising in an equivalent jurisdiction may be a specified intermediary.",
     "The person must be required under the law of that jurisdiction to be registered or licensed, or must otherwise be regulated under the law of that jurisdiction.",
-    "The person need not have any measures in place for complying with requirements similar to those of Schedule 2, provided it is supervised by an authority in that jurisdiction.",
+    "The person must have measures in place for complying with requirements similar to those of Schedule 2, which the relevant authority in Hong Kong reviews every three years.",
     "The person must be supervised for compliance with those requirements by an authority in that jurisdiction that performs functions similar to those of a relevant authority or regulatory body."
    ],
    "options": [
@@ -17702,7 +17702,7 @@
    "statements": [
     "在對等司法管轄區執業的律師、公證人、核數師、專業會計師、信託或公司服務提供者或稅務顧問，均可成為指明中介人。",
     "該人須按該司法管轄區的法律規定，根據該法律註冊或領牌，或須以其他方式根據該法律受規管。",
-    "該人只要受該司法管轄區的主管當局監管，便無需設有任何措施以確保遵從與附表2的規定相類似的規定。",
+    "該人須設有有關措施以確保遵從與附表2的規定相類似的規定，而香港的有關當局每三年會覆核該等措施。",
     "該人須在遵從該等規定方面，受到該司法管轄區職能與有關當局或監管機構相類似的主管當局監管。"
    ],
    "options": [
@@ -17843,7 +17843,7 @@
   "en": {
    "q": "Under section 19 of Schedule 2 to the AMLO, which of the following statements about the procedures an institution must establish and maintain are correct?",
    "statements": [
-    "The procedures for determining whether a customer or a beneficial owner of a customer is a politically exposed person are required only of institutions that carry out wire transfers.",
+    "The procedures for determining whether a customer or a beneficial owner of a customer is a politically exposed person are required of institutions once a customer has been assessed as high risk.",
     "A financial institution that carries out wire transfers must establish and maintain effective procedures for identifying and handling wire transfers in relation to which section 12(5) has not been complied with.",
     "A financial institution that carries out virtual asset transfers must establish and maintain effective procedures for identifying and handling virtual asset transfers in relation to which section 13A(4) has not been complied with.",
     "In respect of each kind of customer, business relationship, product and transaction, the institution must establish and maintain effective procedures for carrying out the duties under sections 3, 4, 5, 9, 10 and 15."
@@ -17860,7 +17860,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》附表2第19條，關於機構須設立及維持的程序，下列哪些陳述正確？",
    "statements": [
-    "只有進行電傳轉賬的有關機構，才須設立程序以斷定某客戶或某客戶的實益擁有人是否政治人物。",
+    "有關機構須在某客戶被評定為高風險後，才設立程序以斷定該客戶或其實益擁有人是否政治人物。",
     "進行電傳轉賬的金融機構，須設立及維持有效的程序，以識辨及處理與第12(5)條不獲遵守有關的電傳轉賬。",
     "進行虛擬資產轉賬的金融機構，須建立和維持有效程序，以識辨和處理與第13A(4)條不獲遵守有關的虛擬資產轉賬。",
     "機構須就每種類別的客戶、業務關係、產品及交易，設立及維持為履行第3、4、5、9、10及15條所指責任的有效程序。"
@@ -18996,7 +18996,7 @@
     "The starting point in section 6(6) is that, subject to subsections (7) and (8), every sitting of the Review Tribunal must be held in public and open to all.",
     "The Tribunal may hold a sitting, or any part of it, in private if it determines, on its own initiative or on the application of a party, that in the interests of justice it should not be held in public.",
     "Section 6(8) adds that, whenever such an application is made under subsection (7), the Tribunal must also deal with the application itself behind closed doors, that is, in private.",
-    "The decision to hold a sitting in private may be taken only on the application of a party, since the Tribunal has no power to raise the question on its own initiative."
+    "The decision to hold a sitting in private is taken by the chairperson without the other members of the Tribunal, who take no part in that particular question."
    ],
    "options": [
     "1, 2 and 3",
@@ -19013,7 +19013,7 @@
     "第6(6)條的起點是，除第(7)及(8)款另有規定外，覆核審裁處每次聆訊均須公開進行。",
     "如審裁處主動或應覆核任何一方的申請而裁定，為達致公正，聆訊不應公開進行，則可閉門進行該次聆訊或其部分。",
     "第6(8)條補充，如有人根據第(7)款提出該等申請，則審裁處亦須閉門處理該項申請本身的聆訊。",
-    "閉門進行聆訊的決定只可應覆核一方的申請而作出，因為審裁處無權主動提出該問題。"
+    "閉門進行有關聆訊的決定，由審裁處主席獨自作出，而其他各名成員在該問題上並無角色。"
    ],
    "options": [
     "1、2 及 3",
@@ -19188,7 +19188,7 @@
    "q": "根據《打擊洗錢條例》附表4第7條，關於覆核審裁處的初步會議，下列哪些陳述正確？",
    "statements": [
     "在接獲有關的覆核申請後的任何時間內，主席均可主動或應覆核任何一方的申請，指示舉行由各方或其代表出席的初步會議。",
-    "只要主席認為舉行初步會議可確使覆核在公正、迅速和合乎經濟原則的情況下進行，即使覆核各方不同意，主席亦可作出舉行初步會議的指示。",
+    "主席如認為舉行初步會議可確使覆核在公正、迅速和合乎經濟原則的情況下進行，即使覆核各方不同意，亦可作出舉行初步會議的指示。",
     "初步會議的目的，是使各方能夠準備進行覆核、協助審裁處為覆核的目的就爭議點作出裁定，以及一般而言確使覆核在公正、迅速和合乎經濟原則的情況下進行。",
     "初步會議由主席主持，主席可在會議上給予指示及設法促使各方達成他們按理應達成的協議，並須在會議後向審裁處報告其認為適當的關乎該會議的事宜。"
    ],
@@ -19709,7 +19709,7 @@
    "q": "Under section 2 of Schedule 4 to the AMLO, which of the following statements about the panel from which ordinary members of the Review Tribunal are appointed are correct?",
    "statements": [
     "The Secretary must appoint a panel of persons whom the Secretary considers suitable for appointment as ordinary members of the Tribunal and who are not public officers.",
-    "A panel member must be appointed for a fixed term of 3 years, the Secretary having no discretion at all over the length of the term.",
+    "A panel member must be appointed for a fixed term of 3 years, the length of the term being prescribed by regulations made under the Ordinance.",
     "A panel member may resign from office by giving notice in writing to the Secretary, and a person whose term has expired may be reappointed.",
     "Under section 2(5) the Secretary may by notice in writing remove a panel member from office on the grounds of incapacity, bankruptcy, neglect of duty or misconduct.",
     "Where additional tribunals are established under section 55(3), the Secretary must appoint a separate panel under section 2(1) for each of them."
@@ -19858,7 +19858,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》附表2第4(3)條，關於機構可就哪些客戶執行簡化客戶盡職審查，下列哪些陳述正確？",
    "statements": [
-    "在香港以外成立為法團的機構，只要經營與金融機構相類似的業務，不論是否在對等司法管轄區成立，均屬(b)段所指的客戶。",
+    "在香港以外成立為法團的機構，如經營與金融機構相類似的業務，不論是否在對等司法管轄區成立，均屬(b)段所指的客戶。",
     "屬(b)段所指的機構須設有措施確保與附表2規定相類似的規定獲遵從，並受該司法管轄區職能與有關當局相類似的主管當局監管。",
     "在任何證券市場上市的法團，以及政府或香港的任何公共機構，均屬該款所列的客戶之一。",
     "對等司法管轄區的政府，或在對等司法管轄區執行與公共機構職能相類似的職能的機構，亦屬所列的客戶。"
@@ -20729,7 +20729,7 @@
    "q": "Under the definition of “public body” in section 1(1) of Schedule 2 to the AMLO, which of the following statements are correct?",
    "statements": [
     "Any executive council, legislative council, municipal council or urban council falls within the definition of a public body.",
-    "A board, commission or committee appointed by the Chief Executive or the Government is a public body only if its members are paid.",
+    "A board, commission or committee appointed by the Chief Executive or the Government is a public body once it has been gazetted as such.",
     "Any Government department or undertaking, and any local or public authority or undertaking, falls within the definition of a public body.",
     "Any board, commission, committee or other body that has power to act in a public capacity under or for the purposes of any enactment is a public body."
    ],
@@ -20746,7 +20746,7 @@
    "q": "根據《打擊洗錢條例》附表2第1(1)條「公共機構」的定義，下列哪些陳述正確？",
    "statements": [
     "任何行政、立法、市政或市區的議會，均屬於公共機構這個定義的範圍之內。",
-    "由行政長官或政府委任的委員會或其他團體，只有在其成員有酬的情況下方屬公共機構。",
+    "由行政長官或政府委任的委員會或其他團體，在憲報刊登有關公告後即屬公共機構。",
     "政府的任何部門或政府承擔的任何事業，以及任何地方或公共主管當局或事業，均屬公共機構的定義範圍。",
     "根據或為施行任何成文法則而有權力以執行公務身分行事的各類委員會或其他團體，屬公共機構。"
    ],
@@ -20830,7 +20830,7 @@
   "en": {
    "q": "Under the definition of “beneficial owner” in section 1(1) of Schedule 2 to the AMLO, which of the following statements are correct?",
    "statements": [
-    "In relation to a corporation, an individual is a beneficial owner only if he or she owns or controls more than 50% of the issued share capital of that corporation.",
+    "In relation to a corporation, the beneficial owner is the individual who owns or controls the largest single holding of issued share capital in that corporation.",
     "In relation to a partnership, an individual who is entitled to or controls, directly or indirectly, more than a 25% share of the capital or profits of the partnership is a beneficial owner.",
     "In relation to a trust, the settlor, the trustee, a protector or enforcer of the trust, and an individual who has ultimate control over the trust are all beneficial owners.",
     "In relation to a person not falling within the corporation, partnership or trust limbs, an individual who ultimately owns or controls the person is a beneficial owner, and so is any person on whose behalf it acts."
@@ -20847,7 +20847,7 @@
   "tc": {
    "q": "根據《打擊洗錢條例》附表2第1(1)條「實益擁有人」的定義，下列哪些陳述正確？",
    "statements": [
-    "就法團而言，個人只有在擁有或控制該法團已發行股本的50%以上時，方屬實益擁有人。",
+    "就法團而言，實益擁有人指在該法團之中持有單一最大的已發行股本權益的個人，而非按百分比計算。",
     "就合夥而言，直接或間接地有權攤分或控制該合夥的資本或利潤的25%以上的個人，屬實益擁有人。",
     "就信託而言，該信託的財產授予人、受託人、保護人或執行人，以及對該信託擁有最終控制權的個人，均屬實益擁有人。",
     "就不屬法團、合夥或信託的人而言，最終擁有或控制該人的個人屬實益擁有人；如該人是代表另一人行事，則該另一人屬實益擁有人。"
@@ -22218,8 +22218,8 @@
     "Verifying the customer's identity may be based on documents, data or information provided by a governmental body, the relevant authority, a recognized digital identification system or any other reliable and independent source recognized by the relevant authority.",
     "If there is a beneficial owner in relation to the customer, the institution must identify the beneficial owner and take reasonable measures to verify the beneficial owner's identity so that it is satisfied it knows who the beneficial owner is.",
     "Where the customer is a legal person or trust, those reasonable measures include measures to enable the institution to understand the ownership and control structure of the legal person or trust.",
-    "If a business relationship is to be established, the institution must obtain information on the purpose and intended nature of the relationship in every case, even where the purpose and intended nature are obvious.",
-    "If a person purports to act on behalf of the customer, the institution need only verify that person's authority to act; it is not required to identify the person or to take measures to verify the person's identity."
+    "If a business relationship is to be established, the institution must obtain information on the purpose and intended nature of the relationship, including where the purpose and intended nature are obvious.",
+    "If a person purports to act on behalf of the customer, the institution must identify that person and verify the person's authority to act, the person's own identity being verified by the customer instead."
    ],
    "options": [
     "1, 2 and 3",
@@ -22237,7 +22237,7 @@
     "如就客戶而言有某實益擁有人，機構須識別該實益擁有人，並採取合理措施核實其身分，從而使機構信納其知道該實益擁有人為何人。",
     "如客戶屬法人或信託，該等合理措施包括可使機構能了解該法人或信託的擁有權及控制權結構的措施。",
     "如將要建立業務關係，機構在每一情況下均須取得關於該業務關係的目的及擬具有的性質的資料，即使有關目的及性質屬顯而易見亦然。",
-    "如某人看似是代表客戶行事，機構只須核實該人代表客戶行事的授權，而無須識別該人的身分或採取措施核實其身分。"
+    "如某人看似是代表客戶行事，機構須識別該人的身分並核實其代表客戶行事的授權，而該人本身的身分則由客戶核實。"
    ],
    "options": [
     "1、2 及 3",
@@ -22351,7 +22351,7 @@
     "Before establishing a business relationship with a customer it knows to be a politically exposed person, an institution must first obtain approval from its own senior management.",
     "In that case it must also take reasonable measures to establish the customer's or beneficial owner's source of wealth and the source of the funds that will be involved in the proposed business relationship.",
     "An institution that comes to know an existing customer is a politically exposed person must not continue the business relationship unless it has obtained senior management approval and taken those measures.",
-    "In a high risk situation under section 15, an institution establishing a business relationship must likewise establish source of wealth and source of funds in every case, with no alternative of additional risk-mitigating measures."
+    "In a high risk situation under section 15, an institution establishing a business relationship must establish source of wealth and source of funds, and must in addition obtain the approval of its senior management."
    ],
    "options": [
     "1, 2 and 3",
@@ -22617,7 +22617,7 @@
     "關長亦須顧及該人是否曾經被裁定犯有《聯合國（反恐怖主義措施）條例》（第575章）第14條所訂的任何一項罪行。",
     "關長須顧及該人是否曾在香港以外的任何地方，被裁定犯關乎洗錢或恐怖分子資金籌集的任何罪行。",
     "該人在香港以外地方所犯而以欺詐性、舞弊或不誠實的作為的裁斷屬必不可少的罪行，並不在所列事宜之內。",
-    "所列的事宜屬詳盡無遺，故關長不得再顧及其認為與該人的適當人選資格有關的其他任何事宜。"
+    "所列的有關事宜屬詳盡無遺，關長如欲顧及其他有關事宜，須先取得財經事務及庫務局局長的同意。"
    ],
    "options": [
     "1、2 及 3",
@@ -22932,7 +22932,7 @@
    "q": "According to paragraph 11.2 of the Licensing Guide, which of the following statements about the periodic return a licensee must lodge with the CCE are correct?",
    "statements": [
     "A licensee shall lodge a periodic return to the CCE within 2 weeks beginning from each half year.",
-    "The CCE cannot specify a different lodgement arrangement, so the half-yearly timing applies in every case.",
+    "The CCE may vary the lodgement arrangement by notice published in the Gazette, and by no other means.",
     "The periodic return must be submitted to the CCE in the form and in the manner that the CCE specifies.",
     "Any failure to submit a periodic return on time may result in the suspension and/or revocation of the licence."
    ],
@@ -23050,7 +23050,7 @@
   "tc": {
    "q": "根據通函MSSB/MIS_01/2026《打擊以貿易進行洗錢活動指引》，關於海關提醒金錢服務經營者應採取的措施，下列哪些陳述正確？",
    "statements": [
-    "只要客戶在建立業務關係時已完成客戶盡職審查，金錢服務經營者便可在沒有進一步分析的情況下消除監察交易系統作出的警報。",
+    "金錢服務經營者在消除監察交易系統作出的警報時，可依賴客戶在建立業務關係時所提供的資料，而該宗交易的背景及目的則交由核數師檢視。",
     "金錢服務經營者應對具高度洗錢／恐怖分子資金籌集風險的客戶施加更嚴格的盡職審查，並考慮索取其資金來源及財富來源的資料。",
     "金錢服務經營者應注意新成立且缺乏顯著資產、員工或活躍業務運作的法律實體所帶來的較高洗錢／恐怖分子資金籌集風險。",
     "舉報可疑交易的有關責任不論所涉及的金額均適用，並涵蓋試圖進行的交易，不論該項交易事實上有否進行。"
@@ -23210,7 +23210,7 @@
   "en": {
    "q": "According to paragraph 5 of the Guideline on Criteria for Determining Fitness and Propriety, which of the following statements about the factors the CCE takes into account in assessing an applicant's fitness and propriety are correct?",
    "statements": [
-    "Whether the person has failed to comply with a requirement under the AMLO or a CCE regulation is not a factor, since only criminal convictions count.",
+    "Whether the person has failed to comply with a requirement under the AMLO or a CCE regulation is a factor once the failure has been prosecuted.",
     "Whether the person, being an individual, is an undischarged bankrupt or is the subject of any bankruptcy proceedings under the Bankruptcy Ordinance is one of the factors.",
     "Whether the person, being a corporation, is in the course of being wound up, or has had a receiver appointed in relation to any of its property, is one of the factors.",
     "All of these factors are considered in the context of all the facts and circumstances of each individual case, rather than in isolation."
@@ -23227,7 +23227,7 @@
   "tc": {
    "q": "根據《有關適當人選準則的指引》第5段，關於關長評估申請人是否適當人選時會考慮的因素，下列哪些陳述正確？",
    "statements": [
-    "該人曾否不遵從《打擊洗錢條例》的要求或關長的規例並非考慮因素，因為只有刑事定罪才會計算在內。",
+    "該人曾否不遵從《打擊洗錢條例》的要求或關長的規例，須待該事項曾被檢控後才成為考慮因素。",
     "（如該人屬個人）該人是否未獲解除破產的破產人或《破產條例》下破產程序的標的，是考慮因素之一。",
     "（如該人屬法團）該人是否在清盤中，或是否有接管人已就其任何財產獲委任，是考慮因素之一。",
     "所有這些因素均會因應每一宗個案的全部事實和有關情況加以考慮，而非孤立地考慮。"
@@ -24753,7 +24753,7 @@
     "If the applicant acts as an agent for another local MSO or an overseas company or business entity, it must name that party and elaborate its functions as agent.",
     "If the applicant acts as a principal for another local MSO or an overseas company or business entity, it must name that party and elaborate its functions as principal.",
     "If the applicant's business involves the use of a third party's payment platform or network, such as a digital wallet, it must explain the role of that platform or network in its business.",
-    "If the applicant's business involves local or cross-boundary physical cash movement, it need only state the total value moved and need not name any company or person involved."
+    "If the applicant's business involves local or cross-boundary physical cash movement, it must state the total value moved and the routes used, the names of those involved being supplied on request."
    ],
    "options": [
     "1, 2 and 3",
@@ -24770,7 +24770,7 @@
     "如申請人為其他本地金錢服務經營者或海外公司／商業實體擔任代理人，須提供該方的名稱，並闡述申請人擔任代理人的職能。",
     "如申請人為其他本地金錢服務經營者或海外公司／商業實體擔任主事人，須提供該方的名稱，並闡述申請人擔任主事人的職能。",
     "如申請人的業務涉及使用其他第三方的支付平台或網絡（例如電子錢包），須解釋該支付平台／網絡在申請人業務中所擔當的角色。",
-    "如申請人的業務涉及本地／跨境實體現金流動活動，只須述明現金流動的總額，無須提供所涉公司／人士的名稱／姓名。"
+    "如申請人的業務涉及本地／跨境實體現金流動活動，須述明現金流動的總額及所用路線，所涉公司／人士的名稱則應要求提供。"
    ],
    "options": [
     "1、2 及 3",
@@ -25026,7 +25026,7 @@
   "en": {
    "q": "Item 3 of the Guidelines for Submission of AML/CFT Policy lists the matters an applicant must address when elaborating enhanced due diligence (EDD) and its application within the company. Which of the following statements about that list are correct?",
    "statements": [
-    "The policy need not explain what a politically exposed person (PEP) is, since that definition is left entirely to the AML Guideline.",
+    "The policy must explain what a politically exposed person (PEP) is, and must reproduce the definition set out in Schedule 1 to the AMLO in full.",
     "The policy must state the MSO's policy on domestic PEPs, foreign PEPs and international organization PEPs.",
     "Non-face-to-face channels are expressly listed among the matters the EDD section of the policy must address.",
     "High risk countries, such as those identified by the Financial Action Task Force, are among the matters the EDD section must address.",
@@ -25044,7 +25044,7 @@
   "tc": {
    "q": "《遞交打擊洗錢及恐怖分子資金籌集政策的指引》第3項列出申請人闡述更嚴格的盡職審查及其在公司內的適用範圍時須處理的事項。關於該列表，下列哪些陳述正確？",
    "statements": [
-    "政策無須解釋何謂政治人物，因為有關定義完全留待《打擊洗錢指引》處理。",
+    "政策須解釋何謂政治人物，並須全文載錄《打擊洗錢條例》附表1所訂的定義。",
     "政策須述明金錢服務經營者對本地、外地及國際組織政治人物所採取的政策。",
     "非面對面渠道，屬政策中更嚴格的盡職審查部分須處理的其中一項事項。",
     "高風險國家（例如由財務行動特別組織識別的國家）屬更嚴格的盡職審查部分須處理的事項之一。",
@@ -25219,7 +25219,7 @@
    "statements": [
     "The item covers remittance transactions under section 13 of Schedule 2 to the AMLO and wire transfers under section 12 of Schedule 2.",
     "The policy must elaborate on the relevant payment system, the fund flow and the settlement system, such as settlement by bank transfer or in cash.",
-    "The policy must describe procedures for identifying the source of funds, but need not address the identity or legality of counterparts in processing the transaction.",
+    "The policy must describe procedures for identifying the source of funds, the identity and legality of counterparts being left to the annual independent audit instead.",
     "The policy must set out procedures for monitoring the compliance of the company's overseas branch and agent with the AML/CFT policy."
    ],
    "options": [
@@ -25236,7 +25236,7 @@
    "statements": [
     "該項涵蓋《打擊洗錢條例》附表2第13條所指的匯款交易及附表2第12條所指的電傳轉帳。",
     "政策須闡述相關的支付系統、資金流向及結算系統，例如使用銀行轉帳或現金結算。",
-    "政策須訂明識別資金來源的程序，但處理交易的對口單位／相關各方的身分及合法地位則無須處理。",
+    "政策須訂明識別資金來源的程序，至於處理交易的對口單位的身分及合法地位，則交由年度獨立審計處理。",
     "政策須訂明監察公司外地分行及代理人有否遵從打擊洗錢及恐怖分子資金籌集政策的程序。"
    ],
    "options": [
@@ -25321,8 +25321,8 @@
    "statements": [
     "The scope of training must cover staff's personal statutory obligations and the consequence of failing to report a suspicious transaction.",
     "The scope of training must cover the statutory obligations on the MSO and the consequence of breaches of the relevant legislation.",
-    "New and emerging techniques, methods and trends in ML/TF fall outside the scope of training, which covers only statutory requirements.",
-    "The MSO monitors the effectiveness of training by recording attendance alone, since testing staff's understanding is not required.",
+    "New and emerging techniques, methods and trends in ML/TF are covered by the annual refresher briefing rather than by the scope of training in item 16.",
+    "The MSO monitors the effectiveness of training by recording attendance and the trainer's own assessment, with the results reported to the CCE each year.",
     "The MSO must monitor and maintain records of who has been trained, when the staff received the training and the type of training provided."
    ],
    "options": [
@@ -25337,10 +25337,10 @@
   "tc": {
    "q": "根據《遞交打擊洗錢及恐怖分子資金籌集政策的指引》第16項，關於金錢服務經營者須在政策內闡述的培訓計劃，下列哪些陳述正確？",
    "statements": [
-    "培訓範疇須涵蓋職員本身的法定責任，以及未有舉報可疑交易的後果。",
-    "培訓範疇須涵蓋金錢服務經營者的法定責任，以及違反相關法例的後果。",
-    "洗錢及恐怖分子資金籌集的嶄新及新興技巧、方法及趨勢不屬培訓範疇，培訓只限於現行的法定規定。",
-    "金錢服務經營者只須記錄出席情況以監察培訓的效用，無須測試職員的理解。",
+    "培訓範疇須涵蓋職員本身的法定責任，以及未有舉報可疑交易所引致的後果。",
+    "培訓範疇須涵蓋金錢服務經營者的法定責任，以及違反相關法例所引致的後果。",
+    "洗錢及恐怖分子資金籌集的嶄新技巧、方法及趨勢，由每年的複修簡介處理，而非屬第16項的培訓範疇。",
+    "金錢服務經營者以出席紀錄及導師評估監察培訓的效用，並須每年向關長匯報有關結果。",
     "金錢服務經營者須監察誰人已接受培訓、職員何時接受培訓，以及所提供培訓的類別，並備存紀錄。"
    ],
    "options": [
@@ -25844,7 +25844,7 @@
   "en": {
    "q": "According to paragraph 4.4 of the Licensing Guide, which of the following statements about the particular premises used for the operation of a money service that need to be registered are correct?",
    "statements": [
-    "Premises at which the licensee is only a visitor or a customer, such as a dining establishment or a bank, are treated as particular premises.",
+    "Premises at which the licensee is a visitor or a customer, such as a dining establishment or a bank, are treated as particular premises for this purpose.",
     "Premises that are occupied for operating a money service there are given as an example of particular premises for operating a money service business.",
     "Premises that are advertised for meeting customers there, including by a signboard on display, are given as an example of particular premises.",
     "Premises that are regularly controlled by the licensee, that is as a landlord or a tenant, are given as an example of particular premises."
@@ -25861,7 +25861,7 @@
   "tc": {
    "q": "根據《牌照指引》第4.4段，關於需要作出登記、用以經營金錢服務的特定處所，下列哪些陳述正確？",
    "statements": [
-    "如持牌人只是食肆或銀行等處所的訪客或顧客，有關處所亦視為特定處所。",
+    "持牌人作為訪客或顧客的處所（例如食肆或銀行），亦視為此用途的特定處所。",
     "被佔用作經營金錢服務的處所，是用以經營金錢服務業務的特定處所的例子之一。",
     "被宣傳（包括展示招牌）為用作會見客戶的處所，是特定處所的例子之一。",
     "經常受到持牌人以業主或租戶身分控制的處所，是特定處所的例子之一。"
@@ -26225,7 +26225,7 @@
     "The LPS is a physical place in Hong Kong for keeping the full set of books and records in respect of the MSO's money service transactions.",
     "The LPS must be under the control of the licensee so as to facilitate C&ED officers' access to the records to perform their functions under the AMLO.",
     "The CCE will not accept the residential premises of an MSO, or the premises of its service provider such as a company secretarial, accounting or solicitor firm, as its LPS.",
-    "The landlord of the LPS need not grant any permission for the premises to be used for the money service business, since the records are merely stored there."
+    "The landlord of the LPS grants permission for the premises to be used for the money service business by lodging a declaration with the CCE once each year."
    ],
    "options": [
     "1, 2 and 3",
@@ -26242,7 +26242,7 @@
     "本地儲存帳目及紀錄地點是在香港用作儲存金錢服務經營者完整金錢服務交易帳目及紀錄的實體地點。",
     "該本地儲存帳目及紀錄的地點必須由該持牌人所控制，以便海關人員前往有關地點查閱有關紀錄，執行條例所賦予的職能。",
     "金錢服務經營者的住宅處所，或其服務供應商（例如公司秘書、會計事務所或律師行）的處所，均不會獲接納為其本地儲存帳目及紀錄地點。",
-    "由於紀錄只是儲存於該處，本地儲存帳目及紀錄地點的業主無須准許將該處所用作經營金錢服務業務。"
+    "本地儲存帳目及紀錄地點的業主，須每年向關長提交聲明，以准許將該處所用作經營金錢服務業務。"
    ],
    "options": [
     "1、2 及 3",
@@ -26325,7 +26325,7 @@
    "q": "According to paragraph 4.15(a) of the Licensing Guide, which of the following statements about the Compliance Officer (CO) and the Money Laundering Reporting Officer (MLRO) an applicant must appoint are correct?",
    "statements": [
     "An applicant must appoint a competent CO and MLRO to act respectively as the focal point for oversight of its AML/CFT systems and the central reference point for reporting suspicious transactions.",
-    "The CO and the MLRO must in every case be persons other than the sole proprietor, partner, director or ultimate owner of the applicant.",
+    "The CO and the MLRO must be persons other than the sole proprietor, partner, director or ultimate owner of the applicant, unless the CCE gives written consent.",
     "Unless the sole proprietor, partner, director or ultimate owner is also the CO and MLRO, both officers must be the applicant's employee as defined by the Employment Ordinance, Cap. 57.",
     "Applicants and licensees may refer to the Guideline on AML/CFT issued by the CCE for the requirements that apply to the CO and the MLRO."
    ],
@@ -26342,7 +26342,7 @@
    "q": "根據《牌照指引》第4.15(a)段，關於申請人須委任的合規主任及洗錢報告主任，下列哪些陳述正確？",
    "statements": [
     "申請人須委任一名合資格的合規主任及洗錢報告主任，分別作為監督其打擊洗錢制度及合規措施的中心點，以及報告可疑交易的中央聯絡點。",
-    "合規主任及洗錢報告主任在任何情況下均不得由申請人的獨資經營者、合夥人、董事或最終擁有人擔任。",
+    "合規主任及洗錢報告主任須由申請人的獨資經營者、合夥人、董事或最終擁有人以外的人擔任，除非關長給予書面同意。",
     "除非申請人的獨資經營者、合夥人、董事或最終擁有人同時擔任該兩職，否則兩者必須為《僱傭條例》所界定受聘於申請人的僱員。",
     "申請人及持牌人可參閱關長發出的《打擊洗錢及恐怖分子資金籌集指引》，以了解合規主任及洗錢報告主任的規定。"
    ],
@@ -26577,7 +26577,7 @@
     "特定處所應可讓海關人員進入，以執行金錢服務經營者監管制度下的各項職能。",
     "如特定處所位於商住混合樓宇內，申請人應已取得每名佔用人的書面同意，讓獲海關授權的人進入該處所作視察。",
     "位於全屬住宅用途樓宇內的特定處所，被視為不適合登記用以經營金錢服務。",
-    "現由另一名金錢服務經營者用以經營金錢服務的特定處所，只要兩項業務展示各自的招牌，便被視為適合登記。"
+    "現由另一名金錢服務經營者用以經營金錢服務的特定處所，在該經營者遷出後即可被視為適合登記。"
    ],
    "options": [
     "1、2 及 3",
@@ -26826,7 +26826,7 @@
     "In relation to an applicant or a licensee that is an individual, if that individual is acting on behalf of another person, then that other person is the ultimate owner.",
     "For an applicant or licensee that is a partnership, an individual with a direct or indirect entitlement to, or control of, more than a 25% share of the partnership's capital or profits is an ultimate owner.",
     "In relation to an applicant or licensee that is a partnership, an individual who is, directly or indirectly, entitled to exercise or control the exercise of more than 25% of the voting rights in the partnership is an ultimate owner.",
-    "In relation to an applicant or licensee that is a partnership, an individual who exercises ultimate control over the management of the partnership is an ultimate owner only if he or she also holds more than 25% of its capital."
+    "In relation to an applicant or licensee that is a partnership, an individual who exercises ultimate control over the management of the partnership is an ultimate owner once registered as such with the Business Registration Office."
    ],
    "options": [
     "1, 2 and 3",
@@ -26844,7 +26844,7 @@
     "就屬個人的申請人或持牌人而言，如該名個人是代表另一人行事，則該另一人即為最終擁有人。",
     "就屬合夥的申請人或持牌人而言，直接或間接地有權攤分或控制該合夥的資本或利潤的25%以上的個人，屬最終擁有人。",
     "就屬合夥的申請人或持牌人而言，直接或間接地有權行使在該合夥的投票權的25%以上或支配該比重的投票權的行使的個人，屬最終擁有人。",
-    "就屬合夥的申請人或持牌人而言，行使對該合夥的管理最終的控制權的個人，只有在同時持有該合夥資本的25%以上時，才屬最終擁有人。"
+    "就屬合夥的申請人或持牌人而言，行使對該合夥的管理最終的控制權的個人，須在商業登記署登記為最終擁有人後，才屬最終擁有人。"
    ],
    "options": [
     "1、2 及 3",
@@ -27042,7 +27042,7 @@
   "en": {
    "q": "According to paragraph 5.2 of the Licensing Guide, which of the following statements about what a Business Plan and an AML Policy should contain are correct?",
    "statements": [
-    "A Business Plan need cover only the finance of the company, the paragraph expressly excluding operation mode, organizational structure and staffing from it.",
+    "A Business Plan should cover the finance of the company, the operation mode, organizational structure and staffing being set out in the AML Policy instead.",
     "An AML Policy should set out the applicant's own policies, procedures and controls in the relevant operational areas, so as to mitigate the ML/TF risks to which it is exposed.",
     "An applicant that intends to operate a money service without using a bank account must provide relevant details as to how the business is operated in that circumstance.",
     "In preparing the two documents, an applicant should follow the Guidelines for Submission of Business Plan and the Guidelines for Submission of AML Policy."
@@ -27059,7 +27059,7 @@
   "tc": {
    "q": "根據《牌照指引》第5.2段，關於業務計劃及打擊洗錢政策應載述的內容，下列哪些陳述正確？",
    "statements": [
-    "業務計劃只須載述公司的財政狀況，該段明文將運作模式、組織架構及職員編制剔除在外。",
+    "業務計劃應載述公司的財政狀況，至於運作模式、組織架構及職員編制，則在打擊洗錢政策中載述。",
     "打擊洗錢政策應載列申請人就本身相關經營領域而制訂的政策、程序及管控措施，以減低其面對的洗錢／恐怖分子資金籌集風險。",
     "如申請人擬不使用銀行帳戶經營金錢服務，須就如何在此情況下經營金錢服務業務提供相關細節。",
     "申請人擬備該兩份文件時，應遵從《遞交業務計劃的指引》及《遞交打擊洗錢及恐怖分子資金籌集政策的指引》。"
@@ -27117,7 +27117,7 @@
    "statements": [
     "On receipt of a licence application the applicant is given an acknowledgment receipt, and a reminder for any outstanding documents is issued where necessary.",
     "Where an applicant fails to provide the requisite information or documents within a specified period, the application is considered invalid and will not be processed by C&ED.",
-    "Once all the requisite documents are submitted the applicant receives only an invitation letter for nominating the eligible persons, and no demand note for the fees is issued with it.",
+    "Once all the requisite documents are submitted the applicant receives an invitation letter for nominating the eligible persons, the demand note for the fees following within 14 days.",
     "At the interview the original documents and the payment record are verified, and the applicant must sign the application in the presence of the C&ED officers."
    ],
    "options": [
@@ -27134,7 +27134,7 @@
    "statements": [
     "海關收到牌照申請書後會向申請人發出確認收到申請書通知，並在有需要時發信催交尚欠文件。",
     "如申請人未能在指明期限內提供所需資料或遞交所需文件，該申請會被視作無效，不會獲海關處理。",
-    "申請人遞交全部所需文件後，只會收到邀請提名合資格人士應考能力評核的信件，而不會同時收到費用的繳費單。",
+    "申請人遞交全部所需文件後，會收到邀請提名合資格人士應考能力評核的信件，繳費單則於其後14日內發出。",
     "申請人須在會面時讓本署人員查驗文件的正本及繳費紀錄，並在海關人員面前於牌照申請書上簽署。"
    ],
    "options": [
@@ -27934,7 +27934,7 @@
    "q": "According to paragraph 5.1 of the Licensing Guide, which of the following statements about how an applicant applies for a licence to operate a money service are correct?",
    "statements": [
     "An applicant needs to complete the application form (Form 1), the supplementary information sheet and the relevant annex, and to submit a Business Plan and an AML Policy.",
-    "The application form, supplementary information sheet and annex must be completed in English only, and a version completed in Chinese, or in both languages, will not be accepted.",
+    "The application form, supplementary information sheet and annex must be completed in the language in which the applicant's Business Plan is written, and not in any other language.",
     "The completed form, supplementary information sheet and annex, with photocopies of the requisite documents, may be submitted by post, via C&ED's website or in person to the Money Service Supervision Bureau.",
     "Where the information or documents required for a new licence application are not submitted within a specified period, the application is deemed invalid and will not be processed by C&ED."
    ],
@@ -27951,7 +27951,7 @@
    "q": "根據《牌照指引》第5.1段，關於申請人如何申請經營金錢服務的牌照，下列哪些陳述正確？",
    "statements": [
     "申請人須填寫申請書（表格1）、補充資料表格及相關附件，並遞交業務計劃及打擊洗錢政策。",
-    "申請書、補充資料表格及附件只可用英文填寫，以中文或中英並用填寫的版本不獲接納。",
+    "申請書、補充資料表格及附件，須以申請人業務計劃所用的語文填寫，以其他語文填寫者不獲接納。",
     "填妥的申請書、補充資料表格及附件連同所需文件的複本，可郵寄、經海關網站或親自遞交至香港海關金錢服務監理科。",
     "如未有在指明期限內按規定就新牌照申請遞交有關資料或文件，有關申請將被視作無效申請，不獲海關處理。"
    ],
@@ -28621,7 +28621,7 @@
     "Where the change concerns the legal entity, the licensee needs to submit a fresh licence application for the CCE to consider whether the fit and proper status of the entity meets the eligibility criteria.",
     "A licensee wishing to change the nature of its money service business, for example from a money changing service to a remittance service or vice versa, is required to file a written submission with the CCE.",
     "That written submission must include the updated Business Plan and AML Policy as well as any relevant supporting documents deemed to be necessary.",
-    "That written submission is filed for record only, and the CCE does not review the licensee's fit and proper status for the provision of the proposed money service."
+    "That written submission is assessed by the Money Service Supervision Bureau, the licensee's fit and proper status being reviewed at the next licence renewal instead."
    ],
    "options": [
     "1, 2 and 3",
@@ -28638,7 +28638,7 @@
     "就改變法律實體而言，持牌人須遞交新的牌照申請，讓關長考慮該實體的適當人選資格是否符合批給牌照的資格準則。",
     "持牌人如有意改變金錢服務業務的性質，例如從貨幣兌換服務轉為匯款服務或反之亦然，須向關長遞交書面陳詞。",
     "該書面陳詞必須包括經修訂的業務計劃及打擊洗錢政策，以及任何其認為相關的證明文件。",
-    "該書面陳詞只作備案用途，關長不會就其擬提供的金錢服務檢視該持牌人的適當人選資格。"
+    "該書面陳詞由金錢服務監理科評估，該持牌人的適當人選資格則留待下次牌照續期時檢視。"
    ],
    "options": [
     "1、2 及 3",
@@ -29071,7 +29071,7 @@
    "statements": [
     "A licensee must report on suspicious transactions and must develop and maintain an effective AML Policy to mitigate ML/TF risks.",
     "A licensee licensed to operate a money service at premises specified in the licence must display the original of the licence in a conspicuous place at those premises.",
-    "A licensee need only ensure that its Compliance Officer, rather than any member of the senior management, has attended the Assessment.",
+    "A licensee must ensure that its Compliance Officer, rather than any member of the senior management, has attended the Assessment.",
     "Where a bank account is used for the money service business, it must be in the name of the licensee's company, the sole proprietor, partner, director or ultimate owner of the licensee."
    ],
    "options": [
@@ -29088,7 +29088,7 @@
    "statements": [
     "持牌人必須報告可疑交易，並必須制訂並維持有效的打擊洗錢政策，以減低洗錢或恐怖分子資金籌集風險。",
     "領有牌照在牌照指明的處所經營金錢服務的持牌人，須在該指明處所內的一處顯眼地方展示該牌照的正本。",
-    "持牌人只須確保其合規主任（而非其高級管理層的任何一名成員）已經應考該項有關能力評核。",
+    "持牌人須確保其合規主任（而非其高級管理層的任何一名成員）已經應考該項有關能力評核。",
     "如有使用銀行帳戶經營金錢服務業務，該帳戶必須屬持牌人公司、獨資經營者、合夥人、董事或最終擁有人名下。"
    ],
    "options": [
@@ -29477,7 +29477,7 @@
   "en": {
    "q": "According to paragraphs 8.1 to 8.4 of the Licensing Guide, which of the following statements about the changes that require the CCE's prior approval are correct?",
    "statements": [
-    "A licensee need not seek the CCE's prior approval when a person proposes to become its director, and need only notify the CCE of the appointment afterwards.",
+    "A licensee notifies the CCE within 14 days after a person becomes its director, prior approval being needed in the case of an ultimate owner.",
     "When a person proposes to become the licensee's ultimate owner, the licensee needs to make an application in Form 4 and the proposing ultimate owner needs to submit the fit and proper person declaration form.",
     "A licensee that wishes to add premises at which to operate a money service needs to make an application to the CCE in Form 5 to add those premises.",
     "A licensee operating without particular premises that wishes to change to operating at particular premises must, apart from Form 5, submit a Business Plan and an updated AML Policy."
@@ -29494,7 +29494,7 @@
   "tc": {
    "q": "根據《牌照指引》第8.1至8.4段，關於須事先取得關長批准的改變事項，下列哪些陳述正確？",
    "statements": [
-    "如有人擬成為持牌人的董事，持牌人無須事先取得關長的批准，只須在委任後向關長具報有關委任。",
+    "如有人成為持牌人的董事，持牌人須在其後14日內向關長具報，事先批准的規定適用於最終擁有人。",
     "如有人擬成為持牌人的最終擁有人，持牌人需要填寫表格4以提出申請，而擬成為最終擁有人的人則須遞交適當人選聲明表格。",
     "持牌人如有意加入處所經營金錢服務，需要向關長填寫表格5以提出加入該等處所的申請。",
     "在沒有特定處所的情況下經營的持牌人如有意更改為在特定處所經營，除遞交表格5外，還須遞交業務計劃及經修訂的打擊洗錢政策。"
@@ -31165,7 +31165,7 @@
   "tc": {
    "q": "根據《牌照指引》第XVI節的證明文件核對清單，關於申請人須遞交的文件，下列哪些陳述正確？",
    "statements": [
-    "該核對清單屬詳盡無遺，故海關在處理申請時不得要求申請人提交任何其他證明文件。",
+    "該核對清單屬詳盡無遺，海關如需其他證明文件，須先取得關長的書面批准。",
     "屬獨資經營的申請人須提交公司註冊證明書的複本，以及組織章程大綱及章程細則的複本。",
     "屬合夥的申請人須提交有效商業登記證的複本，以及商業登記冊內資料的摘錄複本。",
     "就每一個用作經營金錢服務的處所，均須提交該處所的平面圖及兩張顯示該處所外部及內部的4R照片。",
@@ -31823,7 +31823,7 @@
     "應考者不可以不當方式與任何在試場內或外面的人通訊或嘗試通訊。",
     "應考者在能力評核期間不可以任何方式干擾其他應考者。",
     "應考者不可在試場範圍之內拍照、錄音或進行錄影。",
-    "不過，應考者只要事先知會監考人員，即可與試場外面的人通訊。"
+    "不過，應考者在監考人員的陪同下，即可與試場外面的人通訊。"
    ],
    "options": [
     "1、2 及 3",
@@ -31864,7 +31864,7 @@
   "tc": {
    "q": "根據《能力評核須知》第10.3及10.4段，關於應考者在考試前須注意的事項，下列哪些陳述正確？",
    "statements": [
-    "應考者即使有發燒或傳染病，只要在整個考試期間正確佩戴口罩，仍可應考能力評核。",
+    "應考者如有發燒或傳染病，須在到達試場時通知監考人員，並可獲安排在獨立房間應考。",
     "應考者如有呼吸道感染症狀，必須在試場範圍內正確佩戴口罩，但監考員核實身份時會要求其脫下口罩。",
     "應考者必須攜帶身份證明文件（例如香港身份證、有效的本地／外地護照）及邀請信的列印本，以便核實身份。",
     "應考者如未能出示身份證明文件以核實其身份，將不會獲准應考該項能力評核。"
@@ -31995,7 +31995,7 @@
    "statements": [
     "As a general rule the Assessment is held as scheduled where typhoon signal No. 3 or lower, and/or rainstorm signal 'Amber' or 'Red', is issued by the Hong Kong Observatory.",
     "The Assessment is suspended if typhoon signal No. 8 or above, and/or the 'Black' rainstorm warning, is still hoisted at or after 8:00 a.m. on the scheduled date.",
-    "Alternative arrangements following such a suspension are always published in the Gazette on the day of the suspension itself.",
+    "Alternative arrangements following such a suspension are published in the Gazette on the day of the suspension itself, and nowhere else.",
     "Where changes to the Assessment arrangements are required by C&ED, candidates are informed by email before the Assessment as soon as practicable."
    ],
    "options": [
@@ -32560,7 +32560,7 @@
   "en": {
    "q": "Which of the following statements about the customer risk assessment described in paragraph 2.13 of the AML/CFT Guideline are correct?",
    "statements": [
-    "The assessment conducted at the initial stage of the CDD process determines whether any CDD measures need to be applied at all, rather than the extent of the measures to be applied",
+    "The assessment conducted at the initial stage of the CDD process determines which of the statutory CDD measures may be omitted, rather than the extent of the measures to be applied",
     "The assessment is of no assistance in differentiating between the risks of individual customers and business relationships, since the same CDD measures are applied to every relationship",
     "An MSO should assess the ML/TF risks associated with a customer or a proposed business relationship, an exercise usually referred to as a customer risk assessment",
     "Where the ML/TF risks associated with the business relationship are higher, the amount and type of information obtained, and the extent to which it is verified, should be increased",
@@ -32824,7 +32824,7 @@
   "en": {
    "q": "Which of the following statements about the responsibilities of senior management, and the appointments it should make, under paragraph 3.7 of the AML/CFT Guideline are correct?",
    "statements": [
-    "Responsibility for implementing effective AML/CFT Systems rests with the CCE rather than with the MSO's own senior management at all",
+    "Responsibility for implementing effective AML/CFT Systems rests with the CCE, which reviews the systems of every MSO before they take effect",
     "Senior management should appoint a Compliance Officer at the management level within the MSO itself",
     "The CO has the overall responsibility for the establishment and maintenance of the MSO's AML/CFT Systems",
     "Senior management should appoint a senior staff member as the MLRO to act as the central reference point for suspicious transaction reporting"
@@ -32901,7 +32901,7 @@
     "They should be placed within, rather than independent of, the MSO's own operational and business functions, regardless of the MSO's size",
     "They should normally be based in Hong Kong and be of a sufficient level of seniority and authority within the MSO",
     "They should be capable of accessing, on a timely basis, all available internal information such as CDD records and external sources such as CCE circulars",
-    "They need not be provided with any alternate or deputy, as cover for the absence of the CO and MLRO is not required"
+    "They should be provided with an alternate or deputy who is appointed by the CCE rather than by the MSO's senior management"
    ],
    "options": [
     "1, 2 and 3",
@@ -32919,7 +32919,7 @@
     "不論該經營者的規模如何，他們均應置於該經營者的營運及業務職能之內，而非獨立於該等職能",
     "他們通常應長駐香港，並在該經營者之內具備足夠的資歷及所需權限",
     "他們應能及時取得一切可得資料，包括客戶盡職審查紀錄等內部來源及關長通函等外部來源",
-    "他們無須獲配替任人或副手，因為合規主任及洗錢報告主任缺勤時無須有人補替"
+    "他們應獲配替任人或副手，而該替任人由關長而非由高級管理層委任"
    ],
    "options": [
     "1、2 及 3",
@@ -32945,7 +32945,7 @@
    "statements": [
     "The MLRO is the central reference point for reporting suspicious transactions and the main contact with the JFIU and law enforcement agencies",
     "The MLRO's functions include oversight of the review of internal disclosures and exception reports, and deciding whether a JFIU report is necessary",
-    "The MLRO is not responsible for the maintenance of any of the records relating to such internal reviews at all",
+    "The maintenance of records relating to such internal reviews is the Compliance Officer's responsibility, not the MLRO's",
     "The MLRO's functions include oversight of the provision of guidance on how to avoid tipping off customers"
    ],
    "options": [
@@ -32962,7 +32962,7 @@
    "statements": [
     "洗錢報告主任是報告可疑交易的中央聯絡點，也是與財富情報組及執法機構聯絡的主要人員",
     "洗錢報告主任的職能包括監督覆核內部披露及例外情況報告，並決定是否須向財富情報組報告",
-    "洗錢報告主任無須負責備存與該等內部覆核有關的任何一項紀錄",
+    "備存與該等內部覆核有關的紀錄，是合規主任而非洗錢報告主任的職責",
     "洗錢報告主任的職能包括監督就如何避免作出通風報訊提供指引"
    ],
    "options": [
@@ -33019,7 +33019,7 @@
     "An RBA means that jurisdictions, competent authorities and MSOs are expected to identify, assess and understand the ML/TF risks to which they are exposed",
     "Under an RBA, an MSO takes AML/CFT measures commensurate with its ML/TF risks in order to manage and mitigate those risks effectively",
     "An RBA allows an MSO to allocate its resources more effectively and to apply preventive measures commensurate with the nature and level of the risks",
-    "An MSO should adopt an RBA only in the implementation of its AML/CFT Systems, and not in the design of those Systems"
+    "An MSO should adopt an RBA in the implementation of its AML/CFT Systems, the design of those Systems following the CCE's standard template"
    ],
    "options": [
     "1, 2 and 3",
@@ -33036,7 +33036,7 @@
     "採用風險為本方式，意指預期司法管轄區、主管當局及金錢服務經營者要識別、評估和了解本身面對的洗錢／恐怖分子資金籌集風險",
     "在風險為本方式下，金錢服務經營者採取與其洗錢／恐怖分子資金籌集風險相稱的打擊洗錢／恐怖分子資金籌集措施，以有效管理和減低該等風險",
     "風險為本方式讓金錢服務經營者能夠更有效地分配資源，並採取與有關風險的性質及水平相稱的預防措施",
-    "金錢服務經營者只應在執行其打擊洗錢／恐怖分子資金籌集系統時採用風險為本方式，而在制訂該等系統時則無須採用"
+    "金錢服務經營者在執行其打擊洗錢／恐怖分子資金籌集系統時採用風險為本方式，而該等系統的制訂則按關長的範本進行"
    ],
    "options": [
     "1、2 及 3",
@@ -33064,7 +33064,7 @@
     "The assessment enables an MSO to understand how, and to what extent, its own business is vulnerable to ML/TF",
     "The assessment should identify, assess and understand the MSO's ML/TF risks in relation to its customers and the jurisdictions its customers are from or in",
     "The assessment should identify, assess and understand the MSO's ML/TF risks in relation to the countries or jurisdictions the MSO has operations in",
-    "The assessment need not cover the MSO's products, services, transactions and delivery channels, which are assessed only at the customer level"
+    "The assessment covers the MSO's products, services, transactions and delivery channels once the CCE has confirmed the scope of the assessment in writing"
    ],
    "options": [
     "1, 2 and 3",
@@ -33078,11 +33078,11 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第2.2段，以下有關機構層面洗錢／恐怖分子資金籌集風險評估的陳述，哪些是正確的？",
    "statements": [
-    "機構層面洗錢／恐怖分子資金籌集風險評估只是風險為本方式的可有可無的補充，而非風險為本方式賴以建立的基礎",
+    "機構層面洗錢／恐怖分子資金籌集風險評估屬風險為本方式的可有可無的補充，而非風險為本方式賴以建立的基礎",
     "該評估讓金錢服務經營者了解本身如何受到洗錢／恐怖分子資金籌集的影響，以及所受影響的程度",
     "該評估應識別、評估和了解該經營者與其客戶，以及其客戶所屬或所在的國家或司法管轄區有關的洗錢／恐怖分子資金籌集風險",
     "該評估應識別、評估和了解該經營者與其業務所在的國家或司法管轄區有關的洗錢／恐怖分子資金籌集風險",
-    "該評估無須涵蓋該經營者的產品、服務、交易及交付渠道，因為該等事項只在客戶層面評估"
+    "該評估須待關長書面確認評估範圍後，才涵蓋該經營者的產品、服務、交易及交付渠道"
    ],
    "options": [
     "1、2 及 3",
@@ -33356,7 +33356,7 @@
   "en": {
    "q": "Which of the following statements about the “other risk factors” that, under paragraph 2.4(e) of the AML/CFT Guideline, an MSO should consider in its institutional ML/TF risk assessment are correct?",
    "statements": [
-    "The results of internal or external audits are excluded from the other risk factors, since audit findings are dealt with only by the independent audit function",
+    "The results of internal or external audits are excluded from the other risk factors, audit findings being reported directly to the CCE instead",
     "The nature, scale and quality of the ML/TF risk management resources available to the MSO are given as an example of the other risk factors",
     "The availability of appropriately qualified staff with access to ongoing AML/CFT training and development forms part of the risk management resources considered",
     "Compliance and any regulatory findings that relate to the MSO itself are also given as an example of these other risk factors"
@@ -33373,7 +33373,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第2.4(e)段，以下有關金錢服務經營者在機構層面洗錢／恐怖分子資金籌集風險評估中應考慮的「其他風險因素」的陳述，哪些是正確的？",
    "statements": [
-    "內部或外部審計的結果並不屬其他風險因素，因為審計發現只由獨立審計職能處理",
+    "內部或外部審計的有關結果並不屬其他風險因素，有關的審計發現會直接向關長匯報",
     "該經營者可供運用的洗錢／恐怖分子資金籌集風險管理資源的性質、規模及質素，是該段所舉其他風險因素的例子",
     "是否具備可持續接受打擊洗錢／恐怖分子資金籌集培訓並具合適資格的員工，屬所考慮的風險管理資源的一部分",
     "有關該經營者的合規及監管方面的各項發現，亦是該段所舉其他風險因素的例子"
@@ -33400,7 +33400,7 @@
   "en": {
    "q": "Which of the following statements about the information that, under paragraph 2.6 of the AML/CFT Guideline, an MSO's institutional ML/TF risk assessment should consider are correct?",
    "statements": [
-    "The assessment should consider information from the MSO's own internal sources only, and not information from external sources",
+    "The assessment should consider information from the MSO's own internal sources, external information being considered at the customer level instead",
     "The assessment should consider both quantitative and qualitative information in order to identify, manage and mitigate the risks",
     "The assessment may take into account relevant risk assessments and guidance issued by the FATF, inter-governmental organisations, governments and authorities",
     "The assessment may take into account Hong Kong's jurisdiction-wide ML/TF risk assessment and any higher risks notified to MSOs by the CCE"
@@ -33417,7 +33417,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第2.6段，以下有關金錢服務經營者的機構層面洗錢／恐怖分子資金籌集風險評估應考慮的資料的陳述，哪些是正確的？",
    "statements": [
-    "評估應僅考慮來自該經營者本身內部來源的資料，而不考慮任何外部來源的資料",
+    "評估應考慮該經營者本身內部來源的資料，外部來源的資料則在客戶層面考慮",
     "評估應考慮定量及定性兩方面的資料，以識別、管理及緩減有關風險",
     "評估可考慮財務行動特別組織、跨政府組織、政府及主管當局發出的相關風險評估及指引",
     "評估可考慮香港的全面洗錢／恐怖分子資金籌集風險評估，以及關長通知經營者的任何較高風險"
@@ -33695,7 +33695,7 @@
     "An MSO should adopt a risk-based approach in both the design and in the implementation of its own customer risk assessment framework",
     "The complexity of the framework should be commensurate with the nature and the size of the MSO's business",
     "The framework should be designed based on the results of the MSO's own institutional ML/TF risk assessment",
-    "The framework will in general include customer and country risk factors only, and not product, service, transaction or delivery channel risk factors"
+    "The framework will in general include customer and country risk factors, product and channel factors being left to the institutional assessment"
    ],
    "options": [
     "1, 2 and 3",
@@ -33712,7 +33712,7 @@
     "金錢服務經營者制訂及執行其客戶風險評估框架時，均應採用風險為本的方式",
     "該框架的複雜程度應與該經營者所經營的各項業務的性質和規模相稱",
     "該框架應根據該經營者機構層面的洗錢／恐怖分子資金籌集風險評估的有關結果制訂",
-    "該框架一般只包含客戶及國家風險因素，而不包含產品、服務、交易或交付渠道的風險因素"
+    "該框架一般包含客戶及國家風險因素，產品及交付渠道因素則由機構層面評估處理"
    ],
    "options": [
     "1、2 及 3",
@@ -34305,7 +34305,7 @@
    "q": "Which of the following statements about the audit function's regular review of the AML/CFT Systems under paragraph 3.12 of the AML/CFT Guideline are correct?",
    "statements": [
     "The review should cover the adequacy of the MSO's AML/CFT Systems, its ML/TF risk assessment framework and its application of the RBA",
-    "The review need not cover the effectiveness of the MSO's suspicious transaction reporting systems, which fall outside the audit function's remit",
+    "The review covers the effectiveness of the MSO's suspicious transaction reporting systems every third year rather than at each review",
     "The review should also cover the effectiveness of the compliance function operating within the MSO",
     "The review should cover the level of awareness of the MSO's staff who have AML/CFT responsibilities of their own"
    ],
@@ -34322,7 +34322,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第3.12段，以下有關審計職能定期檢視打擊洗錢／恐怖分子資金籌集系統的陳述，哪些是正確的？",
    "statements": [
     "檢視應涵蓋該經營者打擊洗錢／恐怖分子資金籌集系統、風險評估框架及風險為本方式的充分性",
-    "該項檢視無須涵蓋該經營者可疑交易匯報系統的成效，因為這並不屬該審計職能的範圍",
+    "該項檢視每三年才涵蓋該經營者可疑交易匯報系統的有關成效，而非每次檢視均涵蓋",
     "檢視亦應涵蓋該經營者內部所運作的合規職能的整體成效及水平如何",
     "檢視應涵蓋該經營者負有打擊洗錢／恐怖分子資金籌集職責的員工的認知水平"
    ],
@@ -34350,7 +34350,7 @@
    "statements": [
     "The frequency and extent of the review should be commensurate with the nature, size and complexity of the MSO's business",
     "The frequency and extent of the review should also be commensurate with the ML/TF risks that arise from the MSO's own businesses",
-    "The review must be carried out by external parties in every case, since a review conducted by the MSO's own audit function cannot be independent",
+    "The review must be carried out by external parties whenever the MSO's own audit function has been in place for less than three years",
     "Where appropriate, the MSO should also seek a review of its own AML/CFT Systems from any external parties"
    ],
    "options": [
@@ -34453,7 +34453,7 @@
     "The Systems should be implemented having regard to the nature, size and complexity of the MSO's businesses and the ML/TF risks arising from them",
     "The Systems should also include appropriate compliance management arrangements and an independent audit function of the MSO's own",
     "The Systems should include procedures for the screening of the MSO's employees before their appointment",
-    "An ongoing employee training programme is not one of the elements that the Systems should include at all"
+    "An ongoing employee training programme is an element the Systems should include once the MSO employs 20 staff"
    ],
    "options": [
     "1, 2 and 3",
@@ -34685,7 +34685,7 @@
    "q": "Which of the following statements about the information to be provided to group-level functions, as described in footnote 11 to paragraph 3.17 of the AML/CFT Guideline, are correct?",
    "statements": [
     "The information should include information and analysis of transactions or activities which appear unusual, where such analysis was done",
-    "A suspicious transaction report, or the fact that one has been submitted, can never form part of the information provided to the group-level functions",
+    "A suspicious transaction report, or the fact that one has been submitted, is provided to the group-level functions after the JFIU has given its consent",
     "The information could also include the underlying information that lies behind any such suspicious transaction report itself",
     "Branches and subsidiary undertakings should likewise receive such information from the group-level functions when relevant and appropriate to risk management"
    ],
@@ -34773,7 +34773,7 @@
    "q": "Which of the following statements about what paragraph 3.19 of the AML/CFT Guideline requires where the host jurisdiction's laws do not permit the higher AML/CFT requirements to be applied are correct?",
    "statements": [
     "The paragraph applies where the laws of the host jurisdiction do not permit the branch or subsidiary undertaking of a Hong Kong-incorporated MSO to apply the higher AML/CFT requirements",
-    "The MSO is not required to inform the CCE of the failure, provided that it records the failure and its causes in its own internal records",
+    "The MSO informs the CCE of the failure at the next annual return, having first recorded the failure and its causes in its own internal records",
     "The requirements of particular concern are the CDD and record-keeping requirements that are imposed under Parts 2 and 3 of Schedule 2",
     "The MSO should take additional measures to effectively mitigate the ML/TF risks faced by the branch or subsidiary undertaking as a result of its inability to comply with the requirements"
    ],
@@ -34790,7 +34790,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第3.19段，以下有關所在地司法管轄區的法律不准許執行較嚴格打擊洗錢／恐怖分子資金籌集規定時金錢服務經營者應採取的行動的陳述，哪些是正確的？",
    "statements": [
     "該段適用於在香港註冊成立的經營者的境外分支機構或附屬企業，因所在地法律不准許而未能執行較嚴格規定的情況",
-    "該經營者無須將有關不能遵從規定的情況通知海關關長，只須在其內部記錄該情況及其成因",
+    "該經營者會在下一份周年申報表內將該情況通知關長，並先在其內部記錄該情況及其成因",
     "尤其受關注的規定，是根據附表2第2及3部所施加的客戶盡職審查及備存紀錄規定",
     "該經營者應採取額外措施，以有效地減低該分支機構或附屬企業因不能遵從該等規定而面對的洗錢／恐怖分子資金籌集風險"
    ],
@@ -35053,7 +35053,7 @@
    "statements": [
     "An MSO should keep records and relevant documents of all the customer risk assessments that it conducts",
     "The records should enable the MSO to demonstrate to the CCE, among others, how it assesses the customer's ML/TF risks",
-    "The records need not show that the extent of CDD measures and ongoing monitoring is appropriate, since that is a matter for the CCE's own judgement",
+    "The records should show that the extent of CDD measures and ongoing monitoring is appropriate, as measured against the MSO's institutional risk assessment",
     "The appropriateness of the CDD measures and ongoing monitoring is to be demonstrated by reference to that particular customer's ML/TF risks"
    ],
    "options": [
@@ -35070,7 +35070,7 @@
    "statements": [
     "金錢服務經營者均應就其所進行的每一項客戶風險評估備存有關的紀錄及相關的所有文件",
     "該等紀錄應使該經營者能向海關關長證明（其中包括）它如何評估客戶的洗錢／恐怖分子資金籌集風險",
-    "該等紀錄無須證明所執行的客戶盡職審查措施及持續監察程度是否合適，因為這是由海關關長自行判斷的事宜",
+    "該等紀錄應證明所執行的客戶盡職審查措施及持續監察程度是否合適，並以該經營者的機構風險評估為基準",
     "客戶盡職審查措施及持續監察程度是否合適，須以該名客戶本身的洗錢／恐怖分子資金籌集風險為基準證明"
    ],
    "options": [
@@ -35153,7 +35153,7 @@
   "en": {
    "q": "Which of the following statements about the duty described in paragraph 3.1 of the AML/CFT Guideline, which reflects section 23 of Schedule 2 to the AMLO, are correct?",
    "statements": [
-    "An MSO need only take such measures as it itself considers to be convenient to ensure that proper safeguards do exist against ML/TF",
+    "An MSO must take such measures as the CCE directs in writing from time to time to ensure that proper safeguards do exist against ML/TF",
     "One purpose of the required safeguards is to mitigate the risks of money laundering and terrorist financing",
     "The safeguards are also required to prevent a contravention of any requirement under Part 2 or 3 of Schedule 2",
     "To ensure compliance with this requirement, the MSO should implement appropriate internal AML/CFT Systems following the RBA stated in paragraph 2.1"
@@ -35170,7 +35170,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第3.1段（該段反映《打擊洗錢條例》附表2第23條），以下有關該項責任的陳述，哪些是正確的？",
    "statements": [
-    "金錢服務經營者只須採取其認為方便的措施，以確保設有保障措施防範洗錢／恐怖分子資金籌集",
+    "金錢服務經營者須採取關長以書面指示的措施，以確保設有保障措施防範洗錢／恐怖分子資金籌集",
     "設有該等保障措施的目的之一，是減低洗錢及恐怖分子資金籌集方面的風險",
     "該等保障措施亦須用以防止違反附表2第2或3部所訂明的任何規定",
     "為確保符合此項規定，該經營者應按第2.1段所述的風險為本方式執行適當的內部系統"
@@ -35462,7 +35462,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第2.3段，以下哪些屬金錢服務經營者進行機構層面洗錢／恐怖分子資金籌集風險評估時應採取的適當步驟？",
    "statements": [
-    "僅以定量分析為基礎記錄風險評估過程，而不作任何定性的分析",
+    "以定量分析為基礎記錄風險評估過程，而定性分析則交由外聘顧問處理",
     "在釐定整體風險水平及緩減措施的適當程度及類型前，考慮所有相關的風險因素",
     "就該項風險評估的結果取得該經營者高級管理層的正式批准",
     "設有適當的程序，使機構層面的風險評估能時刻保持最新",
@@ -35564,7 +35564,7 @@
   "tc": {
    "q": "根據香港海關通函MSSB/MIS_07/2018第2段，以下有關機構風險評估的陳述，哪些是正確的？",
    "statements": [
-    "金錢服務經營者進行機構風險評估後，便無須採取與其洗錢／恐怖分子資金籌集風險相稱的打擊洗錢／恐怖分子資金籌集措施",
+    "金錢服務經營者進行機構風險評估後，會由海關代其釐定與其洗錢／恐怖分子資金籌集風險相稱的打擊洗錢措施",
     "機構風險評估是金錢服務經營者在加強其打擊洗錢／恐怖分子資金籌集管控框架方面作出檢視並評估其影響的重要一步",
     "金錢服務經營者均應在機構層面及客戶層面這兩者之上均進行有關的洗錢／恐怖分子資金籌集風險評估",
     "客戶層面風險評估的規定已載於《打擊洗錢條例》指引，而該通函則進一步闡明海關對金錢服務經營者機構評估的期望"
@@ -35725,7 +35725,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.1.3段，關於適用於金錢服務經營者的客戶盡職審查措施，下列哪些陳述正確？",
    "statements": [
-    "金錢服務經營者須識別客戶並核實客戶的身分，而所倚賴的文件、數據或資料可由客戶提供，無須來自可靠而獨立的來源。",
+    "金錢服務經營者須識別客戶並核實客戶的身分，而所倚賴的文件、數據或資料可由客戶提供，其後再交由核數師查證來源。",
     "如客戶有實益擁有人，金錢服務經營者須識別該實益擁有人，並採取合理措施核實該實益擁有人的身分。",
     "金錢服務經營者須取得與其建立的業務關係的目的及擬有性質的資料，除非該目的及擬有性質顯而易見。",
     "如有人聲稱代表某客戶行事，金錢服務經營者須識別該人、採取合理措施核實其身分，並核實其行事的權限。"
@@ -35812,7 +35812,7 @@
    "statements": [
     "An MSO should identify a customer who is a natural person by obtaining at least that customer's full name.",
     "The identification information to be obtained also includes the date of birth and the nationality of that customer.",
-    "A unique identification number such as an identity card number suffices on its own, and the document type need not be obtained.",
+    "A unique identification number such as an identity card number is obtained, with the document type recorded at the first transaction instead.",
     "The information listed in that paragraph is a minimum, so an MSO is free to obtain further identification information about the customer."
    ],
    "options": [
@@ -35829,7 +35829,7 @@
    "statements": [
     "金錢服務經營者應最少取得該客戶的全名，以識別屬自然人的客戶。",
     "須取得的身分識別資料亦包括該客戶的出生日期及其本身國籍。",
-    "只須取得獨有身分識別號碼（例如身分證號碼），而無須一併取得有關文件的類別。",
+    "須取得獨有身分識別號碼（例如身分證號碼），文件類別則於首次交易時記錄。",
     "該段所列資料屬最低要求，故經營者可另行取得客戶的其他身分識別資料。"
    ],
    "options": [
@@ -36277,7 +36277,7 @@
    "q": "According to paragraphs 5.1 and 5.3 of the AML/CFT Guideline, which of the following statements about the ongoing monitoring of a business relationship are correct?",
    "statements": [
     "Ongoing CDD means reviewing from time to time the documents, data and information relating to the customer that were obtained for CDD purposes, to ensure they remain up-to-date and relevant.",
-    "Where a transaction is complex or unusually large and has no apparent economic or lawful purpose, the MSO need only note it and is not required to examine its background or set out its findings in writing.",
+    "Where a transaction is complex or unusually large and has no apparent economic or lawful purpose, the MSO examines its background and purpose and reports the findings orally to its senior management.",
     "Transaction monitoring includes conducting appropriate scrutiny of transactions to ensure they are consistent with the MSO's knowledge of the customer, the customer's business, risk profile and source of funds.",
     "All customers presenting high ML/TF risks should be subject to a minimum of an annual review, or more frequent reviews if the MSO deems it necessary, to ensure the CDD information retained remains up-to-date and relevant."
    ],
@@ -36294,7 +36294,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第5.1及5.3段，關於對業務關係的持續監察，下列哪些陳述正確？",
    "statements": [
     "持續的客戶盡職審查是指不時檢視為客戶盡職審查目的而取得的有關客戶的文件、數據及資料，以確保該等資料保持最新及相關。",
-    "如有關的交易複雜或款額異常龐大，且無明顯的經濟或合法目的，該金錢服務經營者只須加以記錄便可，而無須審查其背景或以書面列明有關的審查結果。",
+    "如有關的交易複雜或款額異常龐大，且無明顯的經濟或合法目的，該金錢服務經營者須審查該交易的背景及目的，並以口頭方式向其高級管理層匯報有關審查結果。",
     "交易監察包括對交易進行適當審察，以確保交易與金錢服務經營者對客戶、客戶的業務、風險狀況及資金來源的認識相符。",
     "所有構成高洗錢／恐怖分子資金籌集風險的客戶，最少須每年檢視一次，如金錢服務經營者認為有需要，則須更頻密地檢視，以確保所備存的客戶盡職審查資料保持最新及相關。"
    ],
@@ -36369,7 +36369,7 @@
     "該轉帳須附有匯款人的姓名，以及匯款人在匯款機構所開立帳戶的號碼；如無該帳戶，則須附有由匯款機構編配的獨有參考編號。",
     "該轉帳須附有匯款人的地址；或者附有匯款人的客戶識別號碼或身分證明文件號碼；如匯款人屬個人，則可附有其出生日期及地點。",
     "該轉帳須附有收款人的姓名，以及收款人在收款機構所開立帳戶的號碼；如無該帳戶，則須附有由收款機構就該轉帳編配的獨有參考編號。",
-    "只要伴隨該轉帳的所需匯款人及收款人資料齊全完整，匯款機構便無須確保該等匯款人資料準確，亦無須為其準確性負責。"
+    "伴隨該轉帳的所需匯款人及收款人資料齊全完整後，該等匯款人資料是否準確，則由有關的收款機構負責核實及承擔。"
    ],
    "options": [
     "1、2 及 3",
@@ -36600,7 +36600,7 @@
     "The MSO should verify the customer's name, date of birth, unique identification number and document type by reference to documents or data from a reliable and independent source.",
     "A Hong Kong identity card or another national identity card is an example of a document that can be used for this verification purpose.",
     "A valid travel document, such as an unexpired passport, is another example of a document that can be used for this verification purpose.",
-    "An identification document without a photograph of the customer can never be accepted, even where the associated risks have been properly assessed and mitigated."
+    "An identification document without a photograph of the customer is accepted where a second document bearing a photograph of the customer is produced at the same time."
    ],
    "options": [
     "1, 2 and 3",
@@ -36729,7 +36729,7 @@
    "q": "According to paragraph 4.3.7 of the AML/CFT Guideline, which of the following statements about verifying the identity of a customer that is a legal person are correct?",
    "statements": [
     "The MSO should normally verify the legal person's name and legal form by reference to documents, data or information provided by a reliable and independent source.",
-    "The MSO should verify that the legal person existed at the date of its incorporation, but need not verify its current existence at the time of verification.",
+    "The MSO should verify that the legal person existed at the date of its incorporation, its current existence being confirmed by the annual return filed with the registry.",
     "The MSO should also normally verify the powers that regulate and bind the legal person, and the documents relied on may include its constitutional document or a partnership agreement or deed.",
     "Examples of documents that may be used include a certificate of incorporation, a record in an independent company registry, a certificate of incumbency and a certificate of good standing."
    ],
@@ -36746,7 +36746,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.3.7段，關於核實屬法人的客戶的身分，下列哪些陳述正確？",
    "statements": [
     "該經營者通常應參照可靠及獨立來源提供的文件、數據或資料，核實該法人的名稱及法律形式。",
-    "該經營者應核實該法人在其成立日期時已存在，但無須核實該法人在核實時的現存狀況。",
+    "該經營者應核實該法人在其成立日期時已存在，其現存狀況則以向註冊處提交的周年申報表確認。",
     "該經營者通常亦應核實規管及約束該法人的權力，所依據的文件可包括其章程文件或合夥協議或契據。",
     "可採用的文件例子包括公司註冊證明書、獨立公司註冊處的記錄、現任職位證明書及信譽良好證明書。"
    ],
@@ -36849,7 +36849,7 @@
    "statements": [
     "就屬合夥或非法團組織的客戶而言，確認該客戶是相關專業或行業協會的成員，相當可能足以核實該客戶的身分。",
     "其中一項條件是該客戶是知名及信譽良好的組織，並在其所屬行業擁有悠久歷史。",
-    "任何屬法人的客戶（包括新成立的公司）只要是行業協會的成員，均可採用這種核實方式。",
+    "任何屬法人的客戶（包括新成立的公司），如是行業協會的成員，均可採用這種核實方式。",
     "就協會、會所、社團、慈善團體、宗教團體及類似的組織而言，該經營者應信納該組織的有關合法目的。"
    ],
    "options": [
@@ -36906,7 +36906,7 @@
     "An MSO should obtain at least the name of the trust or legal arrangement and its date of establishment or settlement.",
     "The identification information to be obtained includes the jurisdiction whose laws govern the trust or legal arrangement.",
     "It also includes any unique identification number granted by an applicable official body, together with the document type.",
-    "The address of the registered office must be obtained in every case, whether or not the trust or legal arrangement has one."
+    "The address of the registered office must be obtained, and where there is none the address of the trustee's own office is taken instead."
    ],
    "options": [
     "1, 2 and 3",
@@ -38040,7 +38040,7 @@
    "q": "According to paragraph 4.5.1 of the AML/CFT Guideline, which of the following statements about determining whether a person is a person purporting to act on behalf of the customer (PPTA) are correct?",
    "statements": [
     "A person may be appointed to act on behalf of a customer to establish a business relationship, or may be authorised to give instructions to the MSO to conduct activities through the account established.",
-    "Because the determination turns on the circumstances of each case, an MSO need not implement any policies or procedures for determining who is considered to be a PPTA.",
+    "Because the determination turns on the circumstances of each case, an MSO applies the policies published by the CCE for determining who is considered to be a PPTA.",
     "Whether a person is considered to be a PPTA should be determined based on the nature of that person's own roles and the activities which that person is authorised to conduct in practice.",
     "The ML/TF risks that are associated with those roles and those activities should also be taken into account in determining whether the person is a PPTA."
    ],
@@ -38057,7 +38057,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.5.1段，關於斷定某人是否聲稱代客戶行事的人，下列哪些陳述正確？",
    "statements": [
     "某人可獲委任代客戶行事以建立業務關係，或可獲授權向該經營者發出指示，透過已建立的帳戶或業務關係進行各項活動。",
-    "由於有關斷定取決於個別情況，金錢服務經營者無須就斷定何人被視為聲稱代客戶行事的人實施任何政策或程序。",
+    "由於有關斷定取決於個別情況，金錢服務經營者會採用關長公布的政策，斷定何人被視為聲稱代客戶行事的人。",
     "某人是否被視為聲稱代客戶行事的人，應根據該人角色的性質及其獲授權進行的活動而斷定。",
     "在斷定該人是否聲稱代客戶行事的人時，亦應考慮與該等角色及活動相關的洗錢／恐怖分子資金籌集風險。"
    ],
@@ -38214,11 +38214,11 @@
   "en": {
    "q": "According to paragraph 4.7.3 of the AML/CFT Guideline, where an MSO allows verification of a customer's identity to be completed after the business relationship is established, which of the following statements about the risk management policies and procedures it should adopt are correct?",
    "statements": [
-    "The policies should set a reasonable timeframe for completing identity verification, but need not say what follow-up action is taken if it is exceeded.",
+    "The policies should set a reasonable timeframe for completing identity verification, the follow-up action if it is exceeded being decided by the CCE.",
     "The policies should place appropriate limits on the number, types and/or amount of transactions that can be performed.",
     "The policies should provide for monitoring of large and complex transactions carried out outside the expected norms for that type of relationship.",
     "The policies should keep senior management periodically informed of any pending completion cases that remain.",
-    "The policies should ensure that funds are not paid out to any third party, and no exception to this may be made in any circumstances."
+    "The policies should ensure that funds are paid out to a third party where the customer gives written authority for the payment."
    ],
    "options": [
     "1, 2 and 3",
@@ -38232,11 +38232,11 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.7.3段，如金錢服務經營者容許在建立業務關係後才完成核實客戶的身分，關於其應採用的風險管理政策及程序，下列哪些陳述正確？",
    "statements": [
-    "該等政策應就完成身分核實訂立合理時限，但無須訂明超時的跟進行動。",
+    "該等政策應就完成身分核實訂立合理時限，超時的跟進行動則由關長決定。",
     "該等政策應就可進行的交易的數目、類型及／或金額設定適當限制。",
     "該等政策應規定監察超出該類關係預期常規的大額及複雜交易。",
     "該等政策應定期向高級管理層通報任何尚待完成身分核實的個案。",
-    "該等政策應確保不向任何第三方支付款項，且不得作出任何例外安排。"
+    "該等政策應確保在客戶書面授權下，可向第三方支付款項。"
    ],
    "options": [
     "1、2 及 3",
@@ -38496,7 +38496,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.8.8段，下列哪些獲舉為可行的簡化盡職審查措施例子？",
    "statements": [
-    "就屬第4.8.7(a)段類別的客戶（例如《打擊洗錢條例》所界定的金融機構），完全免除對其身分的核實。",
+    "就屬第4.8.7(a)段類別的客戶（例如《打擊洗錢條例》所界定的金融機構），其身分核實由關長代為進行。",
     "按照本指引第4.8.9至4.8.20段所指明的方式，就客戶的實益擁有人採用簡化客戶盡職審查。",
     "減低該經營者在業務關係期間更新其就有關客戶持有的客戶身分識別資料的頻次。",
     "按合理的款額門檻，減低該經營者對該客戶交易所施加的持續監察及審查程度。",
@@ -38945,8 +38945,8 @@
   "en": {
    "q": "According to footnote 32 to paragraph 4.8.7(a)(i) of the AML/CFT Guideline, which of the following statements about the Schedule 2 definition of a public body are correct?",
    "statements": [
-    "A board or committee appointed by the Chief Executive falls within the definition only if its members are paid for serving on it.",
-    "A Government department is outside the definition, which reaches only councils and bodies created by an enactment.",
+    "A board or committee appointed by the Chief Executive falls within the definition once it is listed in a notice published in the Gazette.",
+    "A Government department is outside the definition, which reaches councils and statutory bodies but not the civil service.",
     "Any executive, legislative, municipal or urban council falls within the Schedule 2 definition of a public body.",
     "Any local or public authority or undertaking likewise falls within that definition of a public body.",
     "So does any board, commission, committee or other body with power to act in a public capacity under any enactment."
@@ -38963,8 +38963,8 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.8.7(a)(i)段註腳32，關於附表2就「公共機構」所下的定義，下列哪些陳述正確？",
    "statements": [
-    "由行政長官委任的局或委員會，只有在其成員因出任該職而獲支付酬金的情況下，方屬該定義所指者。",
-    "政府部門並不屬該定義所指，該定義只涵蓋各級議會及根據成文法則設立的團體。",
+    "由行政長官委任的局或委員會，在憲報刊登的公告中列明後，即屬該定義所指者。",
+    "政府部門並不屬該定義所指，該定義涵蓋各級議會及法定團體，但不包括公務員體系。",
     "任何行政、立法、市政或區域議會，均屬附表2就公共機構所下的定義所指者。",
     "任何地方或公共當局或地方或公共事業，同樣屬該公共機構定義所指者。",
     "任何根據成文法則有權以公職身分行事的局、委員會、小組或其他團體，亦屬該定義所指者。"
@@ -40739,7 +40739,7 @@
     "A jurisdiction that is not a member of the FATF cannot be an equivalent jurisdiction, however similar its requirements are to those imposed under Schedule 2.",
     "An MSO may therefore be required to evaluate and determine for itself which jurisdictions other than FATF members apply requirements similar to those imposed under Schedule 2, and should document its assessment.",
     "The factors the MSO may consider include membership of a FATF-style regional body and its recent mutual evaluation report, and whether the FATF has identified the jurisdiction as having strategic AML/CFT deficiencies.",
-    "The MSO may not rely on advisory circulars issued by the CCE or on publications of non-governmental or commercial organisations, since the assessment must rest on FATF sources alone."
+    "The MSO may not rely on advisory circulars issued by the CCE or on publications of non-governmental or commercial organisations, those sources being reserved for the institutional risk assessment."
    ],
    "options": [
     "1, 2 and 3",
@@ -40757,7 +40757,7 @@
     "並非財務行動特別組織成員的司法管轄區，不論其規定與附表2所施加的規定如何相似，均不能成為對等司法管轄區。",
     "因此，金錢服務經營者可能須自行評估及斷定財務行動特別組織成員以外的哪些司法管轄區施加與附表2相似的規定，並應記錄其評估。",
     "該經營者可考慮的因素包括：財務行動特別組織形式區域組織的成員資格及其近期相互評估報告，以及該組織是否已識別該地存在策略性缺失。",
-    "該經營者不得倚賴關長發出的通函或非政府或商業組織的刊物，因為評估必須僅以財務行動特別組織的資料為依據。"
+    "關長發出的通函或非政府或商業組織的刊物，屬機構層面風險評估的資料來源，並非對等司法管轄區評估的來源。"
    ],
    "options": [
     "1、2 及 3",
@@ -41120,7 +41120,7 @@
     "An MSO should ensure that its transaction monitoring systems and processes can support the ongoing monitoring of a business relationship in a holistic approach.",
     "That approach may include monitoring the activities of a customer's multiple accounts within or across lines of business.",
     "It may also include monitoring the accounts of related customers, whether those accounts are within or across lines of business.",
-    "The MSO should for that reason preferably monitor on a transaction-by-transaction basis rather than adopt any relationship-based approach at all."
+    "The MSO should for that reason preferably monitor on a transaction-by-transaction basis, the relationship-based approach being reserved for high risk customers."
    ],
    "options": [
     "1, 2 and 3",
@@ -41178,7 +41178,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第5.7段，關於金錢服務經營者須顧及的交易特徵，下列哪些陳述正確？",
    "statements": [
-    "該等交易特徵只關乎設定參數及界限，而不關乎交易監察系統及程序本身的設計。",
+    "該等交易特徵關乎設定參數及界限，至於交易監察系統及程序的設計，則由關長指定。",
     "交易的性質及類型（例如款額或頻次異常）是須顧及的交易特徵之一。",
     "一連串交易的性質是另一項特徵，例子是把單一宗交易拆分為多筆現金存款。",
     "交易的對手方，以及付款或收款的地域來源或目的地，亦屬須顧及的特徵。"
@@ -41324,7 +41324,7 @@
    "statements": [
     "Examining the background and purposes of the transactions is one of the appropriate steps the paragraph gives for identifying whether there are grounds for suspicion.",
     "Making appropriate enquiries to a customer, or obtaining additional CDD information from the customer, is another of the steps the paragraph gives.",
-    "Those steps are called for only where the customer's transactions are inconsistent with what the MSO knows of the customer, and on no other occasion.",
+    "Those steps are called for where the customer's transactions are inconsistent with what the MSO knows of the customer, the complex-transaction trigger having been repealed.",
     "The steps are also called for where the MSO identifies transactions that are complex, unusually large or of an unusual pattern and have no apparent economic or lawful purpose."
    ],
    "options": [
@@ -41341,7 +41341,7 @@
    "statements": [
     "審查交易的背景及目的，是該段就識別是否有懷疑理由所舉的適當步驟之一。",
     "向客戶作出適當查詢，或向客戶取得額外的客戶盡職審查資料，是該段所舉的另一項步驟。",
-    "只有在該客戶的交易與該經營者對該客戶的認識不符時，方須採取該等步驟，其他情況一概不須。",
+    "在該客戶的交易與該經營者對該客戶的認識不符時，須採取該等步驟，而複雜交易的觸發條件已刪除。",
     "如該經營者識別出複雜、款額異常龐大或模式不尋常而又無明顯經濟或合法目的的交易，亦須採取該等步驟。"
    ],
    "options": [
@@ -41812,17 +41812,17 @@
   "module": 6,
   "answer": 3,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶6.4–6.5",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第6.4至6.5段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶6.4; s.4 & 5 UNATMO",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第6.4段；《聯合國（反恐怖主義措施）條例》第4及5條"
   },
   "en": {
-   "q": "According to paragraph 6.5 of the AML/CFT Guideline, which of the following statements about the provisions of the United Nations (Anti-Terrorism Measures) Ordinance (UNATMO) of particular relevance to MSOs are correct?",
+   "q": "According to paragraph 6.4 of the AML/CFT Guideline, which of the following statements about the specification of terrorists, terrorist associates and terrorist property under the UNATMO are correct?",
    "statements": [
-    "Section 6 of the UNATMO empowers the Secretary for Security to freeze property suspected to be terrorist property.",
-    "Section 7 of the UNATMO prohibits the provision or collection of any property for use to commit terrorist acts.",
-    "Section 8 empowers the Chief Executive to apply to the Court of First Instance for an order specifying a person as a terrorist or terrorist associate.",
-    "Section 8A prohibits dealing with property only where the person actually knows that it is specified terrorist property, so recklessness is not enough.",
-    "Section 11L prohibits providing or collecting property to finance the travel of a person between states for the purpose of terrorist acts or terrorist training."
+    "Where a Committee of the UNSC designates a person as a terrorist or terrorist associate, the Chief Executive may publish a notice in the Gazette specifying that person's name.",
+    "Section 5 of the UNATMO provides that the Chief Executive may make an application to the Court of First Instance for an order specifying a person or property.",
+    "Where such an order is made by the Court of First Instance, it takes effect on the date of the order and is served on the parties instead of being published in the Gazette.",
+    "The power to publish a notice in the Gazette specifying the name of the person or the property is conferred on the Secretary for Security rather than the Chief Executive.",
+    "Terrorist property means the property of a terrorist or terrorist associate, or any other property intended to be used or that was used to finance the commission of terrorist acts."
    ],
    "options": [
     "1, 2 and 3",
@@ -41831,16 +41831,16 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Statements 3 and 4 are false. Statement 3 is false because section 8 of the UNATMO prohibits any person from making available, collecting or soliciting property or financial (or related) services for terrorists and terrorist associates; the power to apply to the Court of First Instance for an order specifying a person or property is conferred by section 5, described in paragraph 6.4. Statement 4 is false because section 8A prohibits any person from dealing with property knowing that, or being reckless as to whether, it is specified terrorist property or the property of a specified terrorist or terrorist associate, so recklessness is enough. Statements 1, 2 and 5 are correct: section 6 empowers the Secretary for Security to freeze suspected terrorist property; section 7 prohibits the provision or collection of property for use to commit terrorist acts; and section 11L prohibits providing or collecting property to finance the travel of a person between states with the intention or knowledge that the travel is for the perpetration, planning or preparation of, or participation in, terrorist acts, or for terrorist training, even if no terrorist act actually occurs."
+   "explain": "Statements 3 and 4 are false. Statement 3 is false because paragraph 6.4 states that, if the order is made by the Court of First Instance, it will also be published in the Gazette. Statement 4 is false because section 4 of the UNATMO confers the power to publish the notice on the Chief Executive, not on the Secretary for Security. Statements 1, 2 and 5 are correct: where a Committee of the UNSC designates a person or property, the Chief Executive may publish a notice in the Gazette specifying the name under section 4; section 5 allows the Chief Executive to apply to the Court of First Instance for an order specifying a person or property; and terrorist property means the property of a terrorist or terrorist associate, or any other property that is intended to be used or was used to finance or assist the commission of terrorist acts."
   },
   "tc": {
-   "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第6.5段，關於《聯合國（反恐怖主義措施）條例》中與金錢服務經營者特別相關的條文，下列哪些陳述正確？",
+   "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第6.4段，關於根據《聯合國（反恐怖主義措施）條例》指明恐怖分子、恐怖分子聯繫者及恐怖分子財產的事宜，下列哪些陳述正確？",
    "statements": [
-    "該條例第6條授權保安局局長凍結懷疑屬於恐怖分子財產的任何有關財產。",
-    "該條例第7條禁止提供或收集任何財產，以用作作出任何的恐怖主義行為。",
-    "第8條授權行政長官向原訟法庭申請命令，將某人指明為恐怖分子或恐怖分子聯繫者。",
-    "第8A條只禁止在實際知道有關財產屬指明恐怖分子財產的情況下處理該財產，罔顧則不在禁止之列。",
-    "第11L條禁止提供或收集財產，以資助某人為作出恐怖主義行為或接受恐怖主義訓練而在國家之間往來。"
+    "如聯合國安理會轄下委員會將某人指定為恐怖分子或恐怖分子聯繫者，行政長官可在憲報刊登公告，指明該人的姓名。",
+    "《聯合國（反恐怖主義措施）條例》第5條訂明，行政長官可向原訟法庭提出申請，要求作出指明某人或某財產的命令。",
+    "原訟法庭如作出該項命令，該命令於作出當日生效並送達各方，而不會在憲報刊登有關公告。",
+    "在憲報刊登公告以指明該人的姓名或該財產的權力，是授予保安局局長，而非授予行政長官。",
+    "恐怖分子財產指恐怖分子或恐怖分子聯繫者的財產，或擬用於或曾用於資助作出恐怖主義行為的其他財產。"
    ],
    "options": [
     "1、2 及 3",
@@ -41849,7 +41849,7 @@
     "1、2 及 5",
     "3、4 及 5"
    ],
-   "explain": "陳述3 及 4 不正確。陳述3 不正確，因為《聯合國（反恐怖主義措施）條例》第8條禁止任何人為恐怖分子及恐怖分子聯繫者提供、收集或募集財產或金融（或有關）服務；向原訟法庭申請命令以指明某人或某財產的權力，是由第6.4段所述的第5條賦予。陳述4 不正確，因為第8A條禁止任何人在知道或罔顧有關財產是否屬指明恐怖分子財產或指明恐怖分子或恐怖分子聯繫者的財產的情況下處理該財產，故罔顧亦已足夠。陳述1、2 及 5 正確：第6條授權保安局局長凍結懷疑屬恐怖分子財產的財產；第7條禁止提供或收集財產以用作作出恐怖主義行為；第11L條則禁止任何人提供或收集財產，以資助某人在意圖或知道其往來是為了作出、策劃或準備恐怖主義行為或參與其中，或為了提供或接受相關訓練的情況下在國家之間往來，即使最終並無恐怖主義行為發生亦然。"
+   "explain": "陳述3 及 4 不正確。陳述3 不正確，因為第6.4段訂明，原訟法庭如作出該命令，該命令亦會在憲報刊登。陳述4 不正確，因為條例第4條將在憲報刊登公告的權力授予行政長官，而非保安局局長。陳述1、2 及 5 正確：如安理會轄下委員會作出指定，行政長官可根據第4條在憲報刊登公告指明有關姓名；第5條容許行政長官向原訟法庭申請命令，指明某人或某財產；恐怖分子財產指恐怖分子或恐怖分子聯繫者的財產，或擬用於或曾用於資助或協助作出恐怖主義行為的其他財產。"
   },
   "format": "combination"
  },
@@ -41954,7 +41954,7 @@
     "The UNSO empowers the Chief Executive to make regulations to implement sanctions decided by the UNSC, including targeted financial sanctions.",
     "Designated persons and entities are specified by notice published in the Gazette or on the website of the Commerce and Economic Development Bureau.",
     "Except under the authority of a licence granted by the Chief Executive, it is an offence to make funds available, directly or indirectly, for the benefit of a designated person.",
-    "Dealing with funds belonging to such a person or entity is an offence only where the dealing is direct, so indirect dealing falls outside that prohibition."
+    "Dealing with funds belonging to such a person or entity is an offence where the dealing is direct, indirect dealing being covered by the AMLO provisions instead."
    ],
    "options": [
     "1, 2 and 3",
@@ -41971,7 +41971,7 @@
     "《聯合國制裁條例》授權行政長官訂立規例，以實施聯合國安全理事會決定的制裁，包括定向金融制裁。",
     "指定人士及實體，是藉在憲報或商務及經濟發展局網站刊登的公告予以指明。",
     "除非獲行政長官批予牌照，否則直接或間接提供資金予指定人士或使其得益，即屬犯罪。",
-    "處理屬該等人士或實體所有的資金，只有在直接處理的情況下方屬犯罪，間接處理不受禁止。"
+    "處理屬該等人士或實體所有的資金，在直接處理的情況下屬犯罪，間接處理則由《打擊洗錢條例》處理。"
    ],
    "options": [
     "1、2 及 3",
@@ -42143,7 +42143,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第6.9段，關於聯合國安全理事會打擊擴散資金籌集的雙層方針，下列哪些陳述正確？",
    "statements": [
-    "安理會用以採取該方針的決議只屬建議性質，故並無向聯合國成員國施加強制性義務。",
+    "安理會用以採取該方針的決議是根據《聯合國憲章》第六章作出的，並無施加強制性義務。",
     "為打擊有關的擴散資金籌集活動，安理會透過根據《聯合國憲章》第七章作出的有關決議採取雙層的方針。",
     "第一層是根據第1540(2004)號決議及其後繼各項決議所採取的全球性方針。",
     "第二層是根據針對朝鮮的第1718(2006)號決議及針對伊朗的第2231(2015)號決議所採取的方針。"
@@ -42420,7 +42420,7 @@
     "The database should include the lists published in the Gazette or on the website of the Commerce and Economic Development Bureau.",
     "The database should include the lists that the CCE draws to the attention of MSOs from time to time.",
     "The database should be subject to timely update whenever there are changes to the lists it contains.",
-    "The database should be accessible only to the MSO's own compliance officer, and not to any other members of staff."
+    "The database should be accessible to the MSO's own compliance officer, who circulates extracts to the relevant staff each quarter."
    ],
    "options": [
     "1, 2 and 3",
@@ -42437,7 +42437,7 @@
     "該資料庫應納入在憲報或商務及經濟發展局網站刊登的名單。",
     "該資料庫應納入關長不時提請金錢服務經營者注意的名單。",
     "該資料庫應在其所載名單每有變動時，及時作出更新。",
-    "該資料庫應只供合規主任查閱，不應供其他職員查閱。"
+    "該資料庫應供合規主任查閱，並由其每季向相關職員傳閱摘錄。"
    ],
    "options": [
     "1、2 及 3",
@@ -43583,7 +43583,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第10.15段，關於在技術限制下中介機構的存檔責任，下列哪些陳述正確？",
    "statements": [
-    "中介機構所須保存的紀錄只限於匯款人資料，收款人資料並不在該項規定的涵蓋範圍之內。",
+    "中介機構所須保存的紀錄涵蓋匯款人資料，收款人資料則由收款機構按第10.17段保存。",
     "該項規定在技術限制令伴隨跨境電傳轉帳的所需資料無法隨相關的本地電傳轉帳保留時產生。",
     "在該情況下，該機構應將從匯款機構或另一中介機構收到的所有資料存檔，最少五年。",
     "如技術限制令伴隨本地電傳轉帳的資料無法隨相關的跨境電傳轉帳保留，同樣適用該項規定。"
@@ -43639,7 +43639,7 @@
   "en": {
    "q": "According to paragraph 10.16 of the AML/CFT Guideline, which of the following statements about the procedures an intermediary institution must maintain for incoming wire transfers are correct?",
    "statements": [
-    "An intermediary institution's procedures for identifying deficient incoming wire transfers need only cover transfers lacking originator information, since recipient information is the responsibility of the beneficiary institution.",
+    "An intermediary institution's procedures for identifying deficient incoming wire transfers cover transfers lacking originator information, recipient information being the responsibility of the beneficiary institution.",
     "The intermediary institution must establish and maintain effective procedures for identifying and handling incoming wire transfers that do not comply with the relevant information requirements.",
     "Those procedures include taking reasonable measures, consistent with straight-through processing, to identify cross-border wire transfers that lack any of the required originator or recipient information.",
     "Those procedures also include risk-based policies and procedures for determining when to execute, reject or suspend a deficient wire transfer, and the appropriate follow-up action."
@@ -43656,7 +43656,7 @@
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第10.16段，關於中介機構就匯入電傳轉帳須維持的程序，下列哪些陳述正確？",
    "statements": [
-    "中介機構用以識別資料不足的匯入電傳轉帳的程序，只須涵蓋欠缺匯款人資料的轉帳，因為收款人資料屬收款機構的責任。",
+    "中介機構用以識別資料不足的匯入電傳轉帳的程序，涵蓋欠缺匯款人資料的轉帳，收款人資料則屬收款機構的責任。",
     "該中介機構須設立及維持有效的程序，以識別及處理不符合有關相關資料規定的有關匯入電傳轉帳。",
     "該等程序包括採取與直通式處理一致的合理措施，以識別欠缺所需匯款人資料或所需收款人資料的跨境電傳轉帳。",
     "該等程序亦包括風險為本的政策及程序，以決定何時執行、拒絕或暫停資料不足的電傳轉帳，以及適當的跟進行動。"
@@ -44122,7 +44122,7 @@
     "The AMLO defines a remittance transaction as a transaction for the sending, or arranging for the sending, of money to any place outside Hong Kong itself.",
     "The special requirements for a remittance transaction amount to identification and verification of the originator and various record keeping requirements, and must be completed before the transaction.",
     "A remittance transaction is different from a wire transfer, which the AMLO defines as a transaction carried out by an ordering institution on behalf of an originator by electronic means.",
-    "Where a transaction is a wire transfer, the MSO should disregard Chapter 10 and apply only the special requirements for remittance transactions under section 13 of Schedule 2."
+    "Where a transaction is a wire transfer, the MSO should apply the special requirements for remittance transactions under section 13 of Schedule 2 rather than Chapter 10."
    ],
    "options": [
     "1, 2 and 3",
@@ -44139,7 +44139,7 @@
     "《打擊洗錢條例》將匯款交易界定為將款項送往香港以外地方或安排將款項送往香港以外地方的交易。",
     "匯款交易的特別規定實質上相當於識別及核實匯款人的身分以及各項備存紀錄規定，並須在進行交易前完成。",
     "匯款交易有別於電傳轉帳；《打擊洗錢條例》將電傳轉帳界定為由匯款機構代表匯款人以電子方式進行的交易。",
-    "如交易屬電傳轉帳，該經營者應不理會第10章，而只須遵守附表2第13條就匯款交易所訂的特別規定。"
+    "如交易屬電傳轉帳，該經營者應以附表2第13條就匯款交易所訂的特別規定，取代第10章的指引。"
    ],
    "options": [
     "1、2 及 3",
@@ -44281,7 +44281,7 @@
    "statements": [
     "Before carrying out a remittance transaction, other than a wire transfer, of $8,000 or above, an MSO is required to identify the originator and verify the originator's identity.",
     "The originator is the person from whose account with the MSO the money for the remittance is paid, or, where there is no such account, the person who instructs the MSO to carry it out.",
-    "That requirement applies only where the remittance is denominated in Hong Kong dollars, and not to an equivalent amount in any other currency.",
+    "That requirement applies where the remittance is denominated in Hong Kong dollars, an equivalent amount in another currency being covered by Chapter 10.",
     "The MSO is required to identify the originator and verify the originator's identity by reference to the originator's identification document."
    ],
    "options": [
@@ -44298,7 +44298,7 @@
    "statements": [
     "在進行電傳轉帳以外、款額為8,000元或以上的匯款交易前，金錢服務經營者須識別匯款人並核實其身分。",
     "匯款人是指該匯款款項從其在該經營者的戶口支付的人；如並無該等戶口，則指指示該經營者進行該項交易的人。",
-    "該項規定只適用於以港元計值的匯款交易，而不適用於任何其他貨幣的等值款額。",
+    "該項規定適用於以港元計值的匯款交易，其他貨幣的等值款額則由第10章涵蓋。",
     "該經營者須參照該匯款人的身分證明文件，識別該匯款人並核實其本人身分。"
    ],
    "options": [
@@ -44400,7 +44400,7 @@
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第11.6段，關於金錢服務經營者在進行並非電傳轉帳的匯款交易前須備存的紀錄，下列哪些陳述正確？",
    "statements": [
     "該備存紀錄的規定適用於每宗此類匯款交易，不論所涉款額多少。",
-    "紀錄須載有匯款人的身分證明文件號碼，但無須載有旅行證件的簽發地點。",
+    "紀錄須載有匯款人的身分證明文件號碼，而簽發地點則由收款機構記錄。",
     "紀錄須載有該匯款人的姓名，連同該匯款人的地址。",
     "紀錄須載有該交易所涉及的貨幣，以及所涉及的款額。",
     "紀錄須載有收到指示的日期及時間、收款人的姓名及地址，以及交付方式。"
@@ -46560,7 +46560,7 @@
    "q": "Which of the following statements about the obligation to file an STR, as set out in paragraph 7.5 and footnote 60 of the Guideline, are correct?",
    "statements": [
     "Once knowledge or suspicion has been formed, an STR should be filed even where no transaction has been conducted by or through the MSO.",
-    "The obligation to report arises only where the amount involved reaches the CDD threshold applicable to the transaction concerned.",
+    "The obligation to report arises when the transaction has been completed, rather than when the suspicion is first formed.",
     "The STR must be made as soon as reasonably practical after the suspicion was first identified.",
     "The reporting obligations apply to “any property” and therefore also cover attempted transactions."
    ],
@@ -46577,7 +46577,7 @@
    "q": "根據本指引第7.5段及註60，下列關於提交可疑交易報告責任的陳述，哪些正確？",
    "statements": [
     "一旦形成知悉或懷疑，即使並無交易由經營者進行或透過經營者進行，亦應提交可疑交易報告。",
-    "只有當所涉的款額達到有關交易所適用的客戶盡職審查門檻時，才產生有關報告責任。",
+    "有關的報告責任在該項交易完成之時方會產生，而並非在首次形成該懷疑之時產生。",
     "可疑交易報告須在首次識別出該懷疑後，在合理切實可行範圍內盡快作出。",
     "報告責任適用於「任何財產」，故此亦涵蓋任何企圖進行的交易。"
    ],
@@ -46793,7 +46793,7 @@
    "q": "Which of the following statements about an MLRO's decision not to file an STR, as set out in paragraph 7.20 of the Guideline, are correct?",
    "statements": [
     "Where an MLRO acts in good faith in deciding not to file an STR with the JFIU, it is unlikely that criminal liability for failing to report will arise.",
-    "Good faith alone suffices for this purpose, and the MLRO need not have taken all available information into account before concluding there is no suspicion.",
+    "Good faith is established by the MLRO recording the decision in writing within seven days of concluding that there is no suspicion in the case.",
     "It is nonetheless vital for the MLRO to keep proper records of all the deliberations and of the actions taken.",
     "Those records serve to demonstrate that the MLRO has in fact acted in a reasonable manner in each of the cases."
    ],
@@ -46867,7 +46867,7 @@
    "statements": [
     "Filing an STR with the JFIU provides the MSO with a statutory defence to the offence of ML/TF in respect of the acts disclosed in the report.",
     "Where the report is made before the MSO undertakes the disclosed acts, the defence requires that the acts be undertaken with the consent of the JFIU.",
-    "Where the report is made after the MSO has performed the disclosed acts, it may be made at any time and need not be made on the MSO's own initiative.",
+    "Where the report is made after the MSO has performed the disclosed acts, the defence requires the JFIU to confirm the report in writing within 30 days.",
     "The defence is available under either limb, that is, where the report is made before the disclosed acts or where it is made after them."
    ],
    "options": [
@@ -46884,7 +46884,7 @@
    "statements": [
     "向財富情報組提交可疑交易報告，可為經營者就報告所披露的作為提供洗錢／恐怖分子資金籌集罪行的法定免責辯護。",
     "如報告在經營者作出所披露的作為之前作出，該免責辯護要求該等作為須在財富情報組同意下進行。",
-    "如有關報告在經營者作出所披露的作為之後作出，該報告可於任何時間作出，亦無須由該經營者主動作出。",
+    "如有關報告在經營者作出所披露的作為之後作出，該免責辯護要求財富情報組在30日內書面確認該報告。",
     "該免責辯護在兩種情況下均可適用，即報告在所披露的作為之前作出，或在其之後作出。"
    ],
    "options": [
@@ -47187,7 +47187,7 @@
    "statements": [
     "The obligation arises where a person knows or suspects that any property represents any person's proceeds of drug trafficking or an indictable offence.",
     "The obligation also arises where a person knows or suspects that any property was used, or is intended to be used, in connection with such conduct.",
-    "The obligation arises only where a person has firm evidence that property is terrorist property, and not where terrorist property is merely suspected.",
+    "The obligation arises where a person has firm evidence that property is terrorist property, a mere suspicion being reported to the Police instead.",
     "Failure to report such knowledge or suspicion carries a maximum penalty of imprisonment for three months and also a fine of $50,000."
    ],
    "options": [
@@ -47204,7 +47204,7 @@
    "statements": [
     "凡任何人知道或懷疑任何財產代表任何人從販毒或可公訴罪行所得的得益，便產生該責任。",
     "凡任何人知道或懷疑任何財產曾用於或擬用於與該等行為有關連的用途，亦產生該責任。",
-    "只有當任何人有確鑿證據證明財產屬恐怖分子財產時才產生該責任，僅屬懷疑則不會。",
+    "當任何人有確鑿證據證明財產屬恐怖分子財產時產生該責任，如屬懷疑則須向警方報告。",
     "沒有報告所知悉或懷疑的事宜，最高可判處監禁三個月及罰款50,000元。"
    ],
    "options": [
@@ -47607,7 +47607,7 @@
   "en": {
    "q": "Which of the following statements about the AML/CFT Systems that an MSO should implement in relation to suspicious transaction reporting, as set out in paragraph 7.7 of the Guideline, are correct?",
    "statements": [
-    "The policies and procedures required cover internal reporting and reporting to the JFIU only, and need not address the prevention of tipping off.",
+    "The policies and procedures required cover internal reporting and reporting to the JFIU, the prevention of tipping off being addressed in the staff handbook.",
     "The AML/CFT Systems should include the appointment of an MLRO, as that role is described in Chapter 3 of the Guideline.",
     "The AML/CFT Systems should also include the keeping of proper records of both internal reports and STRs that are made.",
     "The AML/CFT Systems are intended both to fulfil the MSO's statutory reporting obligations and to manage the risks associated with any customer involved in an STR."
@@ -47624,7 +47624,7 @@
   "tc": {
    "q": "根據本指引第7.7段，下列關於金錢服務經營者就可疑交易報告應實施的打擊洗錢／恐怖分子資金籌集制度的陳述，哪些正確？",
    "statements": [
-    "所需的政策及程序只涵蓋內部報告及向財富情報組報告，無須處理防止通風報訊。",
+    "所需的政策及程序涵蓋內部報告及向財富情報組報告，防止通風報訊則於員工手冊處理。",
     "該制度應包括委任洗錢報告主任一職（見本指引第3章的說明）。",
     "該制度亦應包括妥為備存所有內部報告及可疑交易報告的紀錄。",
     "該制度旨在履行經營者的法定報告責任，並管理與可疑交易報告所涉客戶有關的風險。"
@@ -47699,7 +47699,7 @@
    "q": "根據本指引第7.9段，下列關於洗錢報告主任的陳述，哪些正確？",
    "statements": [
     "洗錢報告主任獲委任為報告可疑交易的中央聯絡點，但與財富情報組及執法機構的主要聯絡點應由另一人擔任。",
-    "洗錢報告主任的角色僅限於接收職員的報告，無須在識別可疑交易方面擔當積極的角色。",
+    "洗錢報告主任的角色是接收職員的報告，識別可疑交易方面的積極角色則由合規主任擔當。",
     "洗錢報告主任的主要職能包括監督覆核內部披露及例外情況報告，並根據所得資料決定是否須向財富情報組報告。",
     "洗錢報告主任的主要職能亦包括監督備存與該等內部覆核有關的所有相關紀錄。",
     "洗錢報告主任的主要職能亦包括監督向職員提供有關如何避免通風報訊的導引。"
@@ -47933,7 +47933,7 @@
     "Concentration of payments refers to a single sender transferring funds to the accounts of many different individuals or entities.",
     "A “U-turn” transaction is one where funds received from a person or company in a foreign jurisdiction are remitted to another person in the same jurisdiction.",
     "A lack of apparent relationship between the originator and the recipient of the funds is listed as a red flag indicator.",
-    "A substantial increase in the number, frequency or amount of a customer's transactions is a red flag indicator only where there is an apparent cause for it."
+    "A substantial increase in the number, frequency or amount of a customer's transactions is a red flag indicator where the customer has been with the MSO for under a year."
    ],
    "options": [
     "1, 2 and 3",
@@ -47951,7 +47951,7 @@
     "集中付款，是指由單一匯款人向多名不同的個人或實體的戶口作出轉帳。",
     "「U-turn」（回流）交易指從外地司法管轄區的某人收到的款項，被匯往同一司法管轄區的另一人。",
     "款項的匯款人與收款人之間並無任何明顯的關係，被列為預警指標之一。",
-    "只有在客戶交易的數目、頻率或金額大幅增加有明顯原因時，該增加才屬預警指標。"
+    "客戶交易的數目、頻率或金額大幅增加，在該客戶與經營者往來不足一年時，才屬預警指標。"
    ],
    "options": [
     "1、2 及 3",
@@ -48094,7 +48094,7 @@
     "Significant discrepancies between the description of the commodity on the bill of lading or invoice and the actual commodity shipped are listed as a red flag indicator.",
     "Significant discrepancies between the value of the commodity reported on the invoice and the commodity's fair market value are listed as a red flag indicator.",
     "A shipment or commodity whose size appears inconsistent with the scale of the exporter's or importer's regular business activities is listed as a red flag indicator.",
-    "Receipt of cash or other payments from third-party entities is a listed red flag only where those third parties have an apparent connection with the transaction.",
+    "Receipt of cash or other payments from third-party entities is a listed red flag where those third parties are located in the same jurisdiction as the importer.",
     "Transhipment of the commodity through one or more countries or jurisdictions is a listed red flag even where there is an apparent economic reason for it."
    ],
    "options": [
@@ -48112,7 +48112,7 @@
     "提單或發票上的商品說明與實際付運的商品之間出現重大差異，被列為預警指標之一。",
     "發票上申報的商品價值與該商品的公平市值之間出現重大差異，被列為預警指標之一。",
     "裝運或商品的規模看來與出口商或進口商日常業務活動的規模不相稱，被列為預警指標之一。",
-    "只有在第三方與交易有明顯關連時，向該等第三方收取現金或其他付款才被列為預警指標。",
+    "在第三方與進口商位於同一司法管轄區時，向該等第三方收取現金或其他付款才被列為預警指標。",
     "商品經一個或多個國家或司法管轄區轉運，即使有明顯的經濟原因，亦被列為預警指標。"
    ],
    "options": [
@@ -48398,7 +48398,7 @@
   "en": {
    "q": "Which of the following statements about the further sources of red flag indicators mentioned in footnote 61 to paragraph 7.10 of the Guideline are correct?",
    "statements": [
-    "For more red flag indicators, reference may be made only to guidance issued by the FATF, and not to guidance from other inter-governmental organisations, governments or authorities.",
+    "For more red flag indicators, reference may be made to guidance issued by the FATF, guidance from other inter-governmental organisations being available on request from the CCE.",
     "The FATF paper “Money Laundering through Money Remittance and Currency Exchange Providers” is cited there as one such source of further indicators of that kind.",
     "The FATF's “Guidance for Financial Institutions in Detecting Terrorist Financing” is cited as another such source of further indicators.",
     "The “Yearly ML/TF Typologies Report” issued by the Asia/Pacific Group on Money Laundering is also cited as a source of further indicators."
@@ -48415,7 +48415,7 @@
   "tc": {
    "q": "根據本指引第7.10段註腳61，下列關於預警指標其他資料來源的陳述，哪些正確？",
    "statements": [
-    "如需更多預警指標，只可參考財務行動特別組織發出的導引，而不可參考其他跨政府組織、各地政府或主管當局的導引。",
+    "如需要更多的預警指標，可參考財務行動特別組織發出的有關導引，其他跨政府組織的導引則可向關長索取。",
     "財務行動特別組織的《藉匯款和貨幣兌換供應商洗錢》文件獲引述為更多指標的其中一項資料來源。",
     "財務行動特別組織的《金融機構偵測恐怖分子資金籌集指引》獲引述為更多指標的另一項資料來源。",
     "亞洲／太平洋反清洗黑錢組織發出的《洗錢／恐怖分子資金籌集案例分析年度報告》亦獲引述為更多指標的資料來源。"
@@ -48969,7 +48969,7 @@
     "A customer instructing the MSO to move funds or other property, or to close the account, is given as an example of when urgent reporting may be required.",
     "A customer instructing the MSO to make cash available for collection, or to carry out significant changes to the business relationship, is another such example.",
     "Where urgent reporting is required, particularly when the account is part of an ongoing law enforcement investigation, the MSO should indicate this in the STR.",
-    "Where exceptional circumstances exist, an initial notification to the JFIU by telephone is prohibited and only a written STR may be made."
+    "Where exceptional circumstances exist, an initial notification to the JFIU by telephone must be confirmed in writing within 24 hours of the call."
    ],
    "options": [
     "1, 2 and 3",
@@ -48986,7 +48986,7 @@
     "客戶指示經營者轉移資金或其他財產，或關閉帳戶，是可能需要緊急報告的例子之一。",
     "客戶指示經營者備妥現金以供提取，或對業務關係作出重大更改，是另一此類例子。",
     "如需要緊急報告，尤其是該帳戶正受執法機關調查時，經營者應在可疑交易報告內註明此點。",
-    "在有特殊情況時，禁止先以電話通知財富情報組，只可提交書面可疑交易報告。"
+    "在有特殊情況時，先以電話通知財富情報組後，須在24小時內以書面確認。"
    ],
    "options": [
     "1、2 及 3",
@@ -49086,7 +49086,7 @@
    "q": "根據本指引第7.23段註腳65所述，下列關於聯合財富情報組季度報告的陳述，哪些正確？",
    "statements": [
     "該季度報告與所有金融界別相關，目的是提高打擊洗錢／恐怖分子資金籌集的意識。",
-    "該季度報告只由一個部分組成，即可疑交易報告分析，並不載有值得關注的事項及回饋。",
+    "該季度報告由可疑交易報告分析組成，值得關注的事項及回饋則另行以通函發出。",
     "該季度報告載於聯合財富情報組網站（www.jfiu.gov.hk）的保安區。",
     "經營者可填妥聯合財富情報組網站上的登記表格，或直接聯絡該組，以申請登入名稱及密碼。"
    ],
@@ -49406,8 +49406,8 @@
     "The record should include the date on which the internal report was made to the MLRO.",
     "The record should include the staff members who subsequently handled the internal report.",
     "The record should include the results of the assessment carried out on the internal report.",
-    "The record need only cover internal reports that resulted in an STR to the JFIU.",
-    "The record need not include information allowing the papers relevant to the report to be located."
+    "The record covers the internal reports that were made in the past two years.",
+    "The record includes the customer's name but not information allowing the relevant papers to be located."
    ],
    "options": [
     "1, 2 and 3",
@@ -49424,8 +49424,8 @@
     "該項紀錄應載有向該洗錢報告主任作出該項內部報告的日期。",
     "該紀錄應載有其後處理該份內部報告的各名職員。",
     "該紀錄應載有就該份內部報告所作評估的結果。",
-    "該紀錄只須涵蓋導致向財富情報組提交可疑交易報告的內部報告。",
-    "該紀錄無須載有可供查找該報告的相關文件的資料。"
+    "該紀錄涵蓋過去兩年內所作出的各份內部報告。",
+    "該紀錄載有客戶姓名，但不載有可供查找相關文件的資料。"
    ],
    "options": [
     "1、2 及 3",
@@ -49451,7 +49451,7 @@
    "statements": [
     "An MSO must establish and maintain a record of all the STRs that it has made to the JFIU.",
     "The record should include details of the date of the STR and of the person who made the STR.",
-    "The register of STRs must be kept separately from, and never combined with, the register of internal reports.",
+    "The register of STRs must be kept separately from the register of internal reports and submitted to the CCE each year.",
     "The record should include information sufficient to allow the papers relevant to the STR to be located."
    ],
    "options": [
@@ -49468,7 +49468,7 @@
    "statements": [
     "經營者須就其向聯合財富情報組提交的所有可疑交易報告，建立及維持紀錄。",
     "該紀錄應載有該可疑交易報告的日期及提交該報告的人的詳情。",
-    "該可疑交易報告登記冊須與內部報告登記冊分開備存，不得予以合併。",
+    "該可疑交易報告登記冊須與內部報告登記冊分開備存，並須每年提交關長。",
     "該紀錄應載有可據以找出與該可疑交易報告相關文件的資料。"
    ],
    "options": [
@@ -49627,7 +49627,7 @@
   "tc": {
    "q": "根據本指引第7.33段，下列關於限制令的陳述，哪些正確？",
    "statements": [
-    "限制令只會在執法調查結束後才送達，並永久禁止處理有關的資金或財產。",
+    "限制令在執法調查結束後送達，並永久禁止處理有關的資金或財產。",
     "金錢服務經營者必須確保它能夠扣留獲送達的限制令所涉及的相關財產。",
     "有關限制令不一定適用於某業務關係中所涉及的全部資金或財產。",
     "金錢服務經營者應考慮根據香港法例，可動用哪些資金或財產（如有）。"
@@ -49701,7 +49701,7 @@
    "q": "根據本指引第7.34段，下列關於充公及沒收的陳述，哪些正確？",
    "statements": [
     "某被告一經定罪，法院即可命令充公該名被告所取得的犯罪得益。",
-    "只要經營者持有屬某被告所有的資金或財產，該被告一經落案控告，經營者即可獲送達充公令。",
+    "如經營者持有屬某被告所有的資金或財產，該被告一經落案控告，經營者即可獲送達充公令。",
     "如經營者持有屬該被告所有、並經法院裁定代表其犯罪得益的資金或財產，可獲送達充公令。",
     "法院如信納有關的財產屬恐怖分子財產，亦可命令沒收該項有關財產。"
    ],
@@ -49802,7 +49802,7 @@
    "statements": [
     "Where, after completing the review of an internal report, the MLRO decides that there are grounds for knowledge or suspicion, he should disclose the information to the JFIU as soon as it is reasonable to do so after his evaluation is complete.",
     "The disclosure to the JFIU should be made together with the information on which the MLRO's knowledge or suspicion is based, and not as a bare conclusion that suspicion exists.",
-    "An STR may be made before a suspicious transaction or activity occurs only where the intended transaction ultimately takes place, and otherwise only after the transaction has been completed.",
+    "An STR may be made before a suspicious transaction or activity occurs, provided that the MLRO has first obtained the written consent of the MSO's senior management to making the disclosure.",
     "An MSO that controls both the ordering and the beneficiary sides of a wire transfer should also file an STR in any jurisdiction affected by the suspicious wire transfer and make relevant transaction information available to the Financial Intelligence Unit."
    ],
    "options": [
@@ -50310,7 +50310,7 @@
   "en": {
    "q": "Which of the following statements about the CCE's power to require records to be kept for a longer period, as set out in paragraph 8.8 of the Guideline, are correct?",
    "statements": [
-    "The CCE may require an MSO to keep the records for a longer period by informing it orally during an inspection, without any notice at all in writing.",
+    "The CCE may require an MSO to keep the records for a longer period by informing it orally during an inspection and confirming the request at the next inspection.",
     "The requirement may be directed at the records relating to a specified transaction or to a specified customer of the MSO.",
     "The period specified by the CCE may be longer than the retention periods referred to in paragraphs 8.4 and 8.6 above.",
     "The grounds are that the records are relevant to an ongoing criminal or other investigation carried out by the CCE, or to any other purposes specified in the notice."
@@ -50327,7 +50327,7 @@
   "tc": {
    "q": "根據本指引第8.8段，下列關於海關關長要求延長備存紀錄期限的權力的陳述，哪些正確？",
    "statements": [
-    "海關關長可在巡查期間以口頭方式告知經營者，無須發出書面通知，以要求延長備存紀錄的期限。",
+    "海關關長可在巡查期間以口頭方式告知經營者，並於下次巡查時確認，以要求延長備存紀錄的期限。",
     "有關要求可針對與某項指明的交易或某名指明的客戶有關的所有紀錄。",
     "海關關長所指明的期限，可長於上文第8.4及8.6段所述的備存期限。",
     "有關理由是該等紀錄與海關關長正進行的刑事或其他調查有關，或與通知內指明的任何其他目的有關。"
@@ -50660,7 +50660,7 @@
   "en": {
    "q": "Which of the following statements about the matters of which staff should be made aware, as listed in paragraph 9.4 of the Guideline, are correct?",
    "statements": [
-    "Staff need be made aware only of their MSO's statutory obligations under the AMLO, and not of their own personal statutory obligations.",
+    "Staff should be made aware of their MSO's statutory obligations under the AMLO, their own personal obligations being covered in the induction handbook.",
     "Staff should be made aware of the possible consequences of failure to report suspicious transactions under the DTROP, the OSCO and the UNATMO.",
     "Staff should be made aware of any other statutory and regulatory obligations under the DTROP, the OSCO, the UNATMO, the UNSO, the WMD(CPS)O and the AMLO.",
     "Staff should be made aware of the MSO's policies and procedures relating to AML/CFT, including suspicious transaction identification and reporting.",
@@ -50678,7 +50678,7 @@
   "tc": {
    "q": "根據本指引第9.4段，下列關於職員應知悉的事項的陳述，哪些正確？",
    "statements": [
-    "職員只須知悉其經營者根據《打擊洗錢條例》所承擔的法定責任，而無須知悉其本身的個人法定責任。",
+    "職員應知悉其經營者根據《打擊洗錢條例》所承擔的法定責任，其本身的個人法定責任則於入職手冊處理。",
     "職員應知悉根據《販毒（追討得益）條例》、《有組織及嚴重罪行條例》及《聯合國（反恐怖主義措施）條例》沒有報告可疑交易的可能後果。",
     "職員應知悉上述條例、《聯合國制裁條例》、《大規模毀滅武器（提供服務的管制）條例》及《打擊洗錢條例》下的其他法定及監管責任。",
     "職員應知悉經營者有關打擊洗錢／恐怖分子資金籌集的政策及程序，包括識別及報告可疑交易的程序。",
@@ -50736,7 +50736,7 @@
    "q": "Which of the following statements about the areas of training that paragraph 9.5 of the Guideline identifies as appropriate for particular groups of staff are correct?",
    "statements": [
     "Training for all new staff, irrespective of seniority, may include an introduction to the background to ML/TF and the importance placed on ML/TF by the MSO.",
-    "Training for members of staff dealing directly with the public need not cover the MSO's policies and procedures on CDD and record-keeping, as those matters are reserved for back-office staff.",
+    "Training for members of staff dealing directly with the public covers the MSO's policies and procedures on CDD and record-keeping once those staff have completed two years of service.",
     "Training for back-office staff, depending on their roles, may include appropriate training on customer verification and the relevant processing procedures.",
     "Training for managerial staff, including internal audit officers and compliance officers, may include specific training on supervising or managing staff, auditing the system and random checks.",
     "Training for MLROs is confined to assessing suspicious transaction reports and reporting to the JFIU, and does not extend to keeping abreast of AML/CFT requirements and developments generally."
@@ -50754,10 +50754,10 @@
    "q": "下列關於本指引第9.5段就特定員工組別指出的適當培訓範疇的陳述，哪些正確？",
    "statements": [
     "所有新入職員工（不論職級）的培訓，可包括介紹洗錢／恐怖分子資金籌集的背景，以及該經營者對洗錢／恐怖分子資金籌集的重視。",
-    "直接與公眾接觸的員工的培訓，無須涵蓋該經營者有關客戶盡職審查及備存紀錄的政策及程序，因為該等事宜專屬後勤員工的範圍。",
+    "直接與公眾接觸的員工的培訓，在該等員工服務滿兩年後，方涵蓋該經營者有關客戶盡職審查及備存紀錄的政策及程序。",
     "後勤員工所接受的有關培訓（視乎其本身職務而定），可包括有關客戶身分核實及相關處理程序方面的適當培訓。",
     "管理層員工（包括內部審計人員及合規主任）的培訓，可包括就其督導或管理員工、審核制度及進行隨機抽查的職責而提供的專門培訓。",
-    "洗錢報告主任的培訓只限於評估可疑交易報告及向聯合財富情報組舉報，並不延伸至掌握打擊洗錢／恐怖分子資金籌集的規定及發展。"
+    "洗錢報告主任的培訓集中於評估可疑交易報告及向聯合財富情報組舉報，並不延伸至掌握打擊洗錢／恐怖分子資金籌集的規定及發展。"
    ],
    "options": [
     "1、2 及 3",
@@ -50930,7 +50930,7 @@
     "The techniques and tools may include on-line learning systems, focused classroom training and relevant videos or films.",
     "Paper-based or intranet-based procedures manuals are also among the training tools that an MSO may choose to use.",
     "FATF papers and typologies may not be used as training materials, because they are not issued by the CCE itself.",
-    "An MSO need not be able to demonstrate to the CCE that its training materials are up-to-date, provided they were in line with the requirements when prepared."
+    "An MSO should be able to demonstrate to the CCE that its training materials are up-to-date by submitting them for approval before each training session."
    ],
    "options": [
     "1, 2 and 3",
@@ -50948,7 +50948,7 @@
     "這些技巧及工具可包括網上學習系統、課堂上的集思培訓及相關影片。",
     "紙張形式或以內聯網為本的程序手冊，屬金錢服務經營者可使用的培訓工具之一。",
     "財務行動特別組織的文章及典型案件並非由關長發出，因此不可用作培訓材料。",
-    "只要培訓材料在最初編製時符合規定，金錢服務經營者便無需能夠向關長證明該等材料是最新的。"
+    "金錢服務經營者應能向關長證明其培訓材料是最新的，方法是在每次培訓前將材料呈交批准。"
    ],
    "options": [
     "1、2 及 3",
