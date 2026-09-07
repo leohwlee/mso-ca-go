@@ -1184,7 +1184,7 @@
    "statements": [
     "根據《打擊洗錢條例》，金錢服務經營者如明知或出於詐騙關長的意圖而違反該條例指明的條文，即屬犯罪。",
     "違反即構成此罪行的條文，即「指明的條文」，載列於《打擊洗錢條例》第5(11)條。",
-    "金錢服務經營者如明知而違反指明的條文，一經定罪，最高可被判監禁5年及罰款五百萬元。",
+    "金錢服務經營者如明知而違反指明的條文，一經定罪，最高可被判罰款一百萬元，並無監禁刑罰。",
     "金錢服務經營者如出於詐騙關長的意圖而違反指明的條文，一經定罪，最高可被判監禁7年及罰款一百萬元。"
    ],
    "options": [
@@ -1616,7 +1616,7 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Statements 4 and 5 are false. Statement 4 is false because paragraph 6.2 states that all UN member states are required both to freeze the funds, other financial assets or economic resources of any person named in the lists and to report any suspected name matches to the relevant authorities. Statement 5 is false because the lists are published under UNSCR 1267 (1999), 1988 (2011), 1989 (2011), 2253 (2015), 2368 (2017) and their successor resolutions, and the freezing obligation applies to any person named in those lists. Statements 1, 2 and 3 are correct: UNSCR 1373 (2001) calls on all member states to act to prevent and suppress the financing of terrorist acts; the UN has published the names of individuals and organisations involved with Al-Qa'ida, ISIL (Da'esh) and the Taliban under the relevant UNSCRs; and all UN member states are required to freeze any funds, other financial assets or economic resources of any person named in those lists."
+   "explain": "Statements 4 and 5 are false. Statement 4 is false because paragraph 6.2 states that all UN member states are required both to freeze the funds, other financial assets or economic resources of any person named in the lists and to report any suspected name matches to the relevant authorities. Statement 5 is false because the lists are published under UNSCR 1267 (1999), 1988 (2011), 1989 (2011), 2253 (2015), 2368 (2017) and their successor resolutions, and the freezing obligation applies to any person named in those lists on designation, with no confirmation by a Hong Kong court required. Statements 1, 2 and 3 are correct: UNSCR 1373 (2001) calls on all member states to act to prevent and suppress the financing of terrorist acts; the UN has published the names of individuals and organisations involved with Al-Qa'ida, ISIL (Da'esh) and the Taliban under the relevant UNSCRs; and all UN member states are required to freeze any funds, other financial assets or economic resources of any person named in those lists."
   },
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第6.2段，關於有關恐怖分子資金籌集的聯合國安理會決議及其對成員國施加的責任，下列哪些陳述正確？",
@@ -1634,7 +1634,7 @@
     "1、2 及 5",
     "3、4 及 5"
    ],
-   "explain": "陳述4 及 5 不正確。陳述4 不正確，因為第6.2段訂明，聯合國全體成員國均須凍結名列該等名單的任何人等的資金、其他財務資產或經濟資源，並且就任何與該等名單吻合的可疑姓名／名稱向有關當局報告。陳述5 不正確，因為該等名單是根據安理會第1267 (1999)號、第1988 (2011)號、第1989 (2011)號、第2253 (2015)號、第2368 (2017)號決議及其後續決議公布，而凍結責任適用於名列該等名單的任何人等。陳述1、2 及 3 正確：安理會第1373 (2001)號決議要求全體成員國採取行動，防止和遏制恐怖分子資金籌集行為；聯合國已根據相關安理會決議公布涉及基地組織、伊黎伊斯蘭國（達伊沙）和塔利班組織的個人及組織的名單；聯合國全體成員國均須凍結名列該等名單的任何人等的資金、其他財務資產或經濟資源。"
+   "explain": "陳述4 及 5 不正確。陳述4 不正確，因為第6.2段訂明，聯合國全體成員國均須凍結名列該等名單的任何人等的資金、其他財務資產或經濟資源，並且就任何與該等名單吻合的可疑姓名／名稱向有關當局報告。陳述5 不正確，因為該等名單是根據安理會第1267 (1999)號、第1988 (2011)號、第1989 (2011)號、第2253 (2015)號、第2368 (2017)號決議及其後續決議公布，而凍結責任在被指定時即適用於名列該等名單的任何人等，無須香港法院確認。陳述1、2 及 3 正確：安理會第1373 (2001)號決議要求全體成員國採取行動，防止和遏制恐怖分子資金籌集行為；聯合國已根據相關安理會決議公布涉及基地組織、伊黎伊斯蘭國（達伊沙）和塔利班組織的個人及組織的名單；聯合國全體成員國均須凍結名列該等名單的任何人等的資金、其他財務資產或經濟資源。"
   },
   "format": "combination"
  },
@@ -2204,7 +2204,7 @@
     "1, 3 and 4",
     "All of the above"
    ],
-   "explain": "Statement 4 is false: paragraph 1.23 states that the UNATMO permits terrorist property to be frozen and subsequently forfeited. Statements 1, 2 and 3 are correct: the UNATMO criminalizes the provision or collection of property and making any property or financial (or related) services available to terrorists or terrorist associates; the highest penalty for the offence upon conviction is imprisonment for 14 years and a fine; and the UNATMO permits terrorist property to be frozen."
+   "explain": "Statement 4 is false: paragraph 1.23 states that the UNATMO permits terrorist property to be frozen and subsequently forfeited, and attaches no condition that the Secretary for Security first renew the freezing order. Statements 1, 2 and 3 are correct: the UNATMO criminalizes the provision or collection of property and making any property or financial (or related) services available to terrorists or terrorist associates; the highest penalty for the offence upon conviction is imprisonment for 14 years and a fine; and the UNATMO permits terrorist property to be frozen."
   },
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第1.23段，關於《聯合國（反恐怖主義措施）條例》下的罪行及權力，下列哪些陳述正確？",
@@ -2221,7 +2221,7 @@
     "1、3 及 4",
     "以上皆是"
    ],
-   "explain": "陳述4 不正確：第1.23段訂明，《聯合國（反恐怖主義措施）條例》容許將恐怖分子財產凍結，然後充公有關財產。陳述1、2 及 3 正確：該條例訂明向恐怖分子或與恐怖分子有聯繫者提供或籌集財產及向他們提供任何財產或金融（或有關的）服務均屬違法；若犯此罪，一經定罪，最高刑罰為監禁14年及罰款；該條例亦容許將恐怖分子財產凍結。"
+   "explain": "陳述4 不正確：第1.23段訂明，《聯合國（反恐怖主義措施）條例》容許將恐怖分子財產凍結，然後充公有關財產，並無附加保安局局長須先行續期凍結令的條件。陳述1、2 及 3 正確：該條例訂明向恐怖分子或與恐怖分子有聯繫者提供或籌集財產及向他們提供任何財產或金融（或有關的）服務均屬違法；若犯此罪，一經定罪，最高刑罰為監禁14年及罰款；該條例亦容許將恐怖分子財產凍結。"
   },
   "format": "combination"
  },
@@ -3483,7 +3483,7 @@
     "The use of letters of credit that are repeatedly amended or frequently extended",
     "Transhipping a commodity through one or more countries or jurisdictions for no economic reason"
    ],
-   "explain": "The circular draws attention to recent TBML typologies involving the use of falsified trade documents, such as fake contracts and invoices, to create bogus transaction records and disguise illicit money as legitimate trade income. The other options are genuine trade-based ML risk indicators listed elsewhere, in the AML/CFT Guideline's red-flag list (¶(c)(iv), (viii) and (x)), not the specific typology this circular names."
+   "explain": "The circular draws attention to recent TBML typologies involving the use of falsified trade documents, such as fake contracts and invoices, to create bogus transaction records and disguise illicit money as legitimate trade income. The other options are genuine trade-based ML risk indicators listed elsewhere, in the AML/CFT Guideline's red-flag list (¶7.10(c)(iv), (viii) and (x)), not the specific typology this circular names."
   },
   "tc": {
    "q": "香港海關在其打擊以貿易進行洗錢活動的通函中，提請金錢服務經營者注意哪一項近期手法？",
@@ -3493,7 +3493,7 @@
     "交易涉及使用經反覆修改或頻密延長期限的信用證",
     "商品經一個或多個國家或司法管轄區轉運而沒有經濟原因"
    ],
-   "explain": "該通函提請注意近期以貿易進行洗錢活動的手法，涉及使用偽造貿易文件（例如虛假合約及發票）製造虛假交易紀錄，將非法資金偽裝成合法貿易收入。其餘選項均為《打擊洗錢及恐怖分子資金籌集指引》風險指標清單中另行列出的真實以貿易為本的洗錢風險指標（第(c)(iv)、(viii)及(x)項），並非本通函所指明的手法。"
+   "explain": "該通函提請注意近期以貿易進行洗錢活動的手法，涉及使用偽造貿易文件（例如虛假合約及發票）製造虛假交易紀錄，將非法資金偽裝成合法貿易收入。其餘選項均為《打擊洗錢及恐怖分子資金籌集指引》風險指標清單中另行列出的真實以貿易為本的洗錢風險指標（第7.10(c)(iv)、(viii)及(x)項），並非本通函所指明的手法。"
   }
  },
  {
@@ -4493,7 +4493,7 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Statements 1 and 5 are false. Section 21(1) allows the relevant authority to exercise any one or more of the specified powers, so a reprimand, a remedial order and a pecuniary penalty may be combined; and section 21(9) provides that the pecuniary penalty and daily penalty powers in subsections (2)(c) and (4) are not exercisable in relation to the Government. Statements 2, 3 and 4 are correct: section 21(2)(c) caps the penalty at the greater of $10,000,000 or 3 times the profit gained or costs avoided, section 21(5) allows a penalty order to be registered in the Court of First Instance and treated as an order of that Court for the payment of money, and section 21(7) requires any penalty received to be paid into the general revenue."
+   "explain": "Statements 1 and 5 are false. Section 21(1) confers the powers on the relevant authority itself, subject only to sections 22 and 23, so no leave of the Court of First Instance is needed — that Court enters only under section 21(5), to register a penalty order already made; and section 21(9) provides that the pecuniary penalty and daily penalty powers in subsections (2)(c) and (4) are not exercisable in relation to the Government. Statements 2, 3 and 4 are correct: section 21(2)(c) caps the penalty at the greater of $10,000,000 or 3 times the profit gained or costs avoided, section 21(5) allows a penalty order to be registered in the Court of First Instance and treated as an order of that Court for the payment of money, and section 21(7) requires any penalty received to be paid into the general revenue."
   },
   "tc": {
    "q": "根據《打擊洗錢條例》第21條，有關當局可對違反指明的條文的金融機構採取紀律行動。關於該條，下列哪些陳述正確？",
@@ -4511,7 +4511,7 @@
     "1、2 及 5",
     "3、4 及 5"
    ],
-   "explain": "陳述1 及 5 不正確。第21(1)條容許有關當局行使指明權力中的一項或多於一項，因此公開譴責、糾正命令及罰款可以並用；而第21(9)條訂明，第(2)(c)及(4)款的罰款及按日罰款權力不可就政府而行使。陳述2、3 及 4 正確：第21(2)(c)條將罰款上限定為$10,000,000或所獲利潤或所避免開支的3倍（以較大者為準），第21(5)條容許罰款命令在原訟法庭登記並視為該法庭就繳付款項而作出的命令，第21(7)條則規定收取的罰款須撥入政府一般收入。"
+   "explain": "陳述1 及 5 不正確。第21(1)條直接將有關權力賦予有關當局，須受第22及23條規限，故無需事先取得原訟法庭的許可——原訟法庭只在第21(5)條登記已作出的罰款命令時才介入；而第21(9)條訂明，第(2)(c)及(4)款的罰款及按日罰款權力不可就政府而行使。陳述2、3 及 4 正確：第21(2)(c)條將罰款上限定為$10,000,000或所獲利潤或所避免開支的3倍（以較大者為準），第21(5)條容許罰款命令在原訟法庭登記並視為該法庭就繳付款項而作出的命令，第21(7)條則規定收取的罰款須撥入政府一般收入。"
   },
   "format": "combination"
  },
@@ -14892,7 +14892,7 @@
     "1, 3 and 4",
     "All of the above"
    ],
-   "explain": "Statement 3 is false: paragraph (c) of the definition covers the collection of property or solicitation of financial (or related) services for the benefit of a person knowing that, or being reckless as to whether, the person is a terrorist or terrorist associate, so recklessness is expressly sufficient. Statements 1, 2 and 4 are correct: paragraph (a) covers the provision or collection of property with the intention or knowledge that it be used to commit terrorist acts, whether or not it is actually so used; paragraph (b) covers making property or financial (or related) services available to or for the benefit of a person, knowing that or being reckless as to whether the person is a terrorist or terrorist associate; and section 2 of Part 1 gives terrorist, terrorist act and terrorist associate the meaning in section 2(1) of the United Nations (Anti-Terrorism Measures) Ordinance (Cap. 575)."
+   "explain": "Statement 3 is false: paragraph (c) of the definition covers the collection of property or solicitation of financial (or related) services for the benefit of a person knowing that, or being reckless as to whether, the person is a terrorist or terrorist associate; the act of collecting or soliciting completes the limb, so nothing turns on whether the property is in fact received, and an unsuccessful solicitation is inside the definition. Statements 1, 2 and 4 are correct: paragraph (a) covers the provision or collection of property with the intention or knowledge that it be used to commit terrorist acts, whether or not it is actually so used; paragraph (b) covers making property or financial (or related) services available to or for the benefit of a person, knowing that or being reckless as to whether the person is a terrorist or terrorist associate; and section 2 of Part 1 gives terrorist, terrorist act and terrorist associate the meaning in section 2(1) of the United Nations (Anti-Terrorism Measures) Ordinance (Cap. 575)."
   },
   "tc": {
    "q": "根據《打擊洗錢條例》附表1第1部第1條「恐怖分子資金籌集」的定義，並連同該部第2條理解，下列哪些陳述正確？",
@@ -14909,7 +14909,7 @@
     "1、3 及 4",
     "以上皆是"
    ],
-   "explain": "陳述3 不正確：該定義的(c)段涵蓋在知道某人是或罔顧某人是否恐怖分子或與恐怖分子有聯繫者的情況下，為該人的利益籌集財產或尋求金融（或有關的）服務——罔顧明文已足夠。陳述1、2 及 4 正確：(a)段涵蓋懷有將財產用於作出恐怖主義行為的意圖或知道財產將會如此使用而提供或籌集財產，不論該財產實際上有否被如此使用；(b)段涵蓋在知道或罔顧某人是否恐怖分子或與恐怖分子有聯繫者的情況下，向該人或為該人的利益提供財產或金融（或有關的）服務；第1部第2條則訂明恐怖分子、恐怖主義行為及與恐怖分子有聯繫者具有《聯合國（反恐怖主義措施）條例》（第575章）第2(1)條給予的涵義。"
+   "explain": "陳述3 不正確：該定義的(c)段涵蓋在知道某人是或罔顧某人是否恐怖分子或與恐怖分子有聯繫者的情況下，為該人的利益籌集財產或尋求金融（或有關的）服務——籌集或尋求的作為本身已使該段成立，故該財產實際上有否由對方收取並不相干，尋求不遂亦在定義範圍之內。陳述1、2 及 4 正確：(a)段涵蓋懷有將財產用於作出恐怖主義行為的意圖或知道財產將會如此使用而提供或籌集財產，不論該財產實際上有否被如此使用；(b)段涵蓋在知道或罔顧某人是否恐怖分子或與恐怖分子有聯繫者的情況下，向該人或為該人的利益提供財產或金融（或有關的）服務；第1部第2條則訂明恐怖分子、恐怖主義行為及與恐怖分子有聯繫者具有《聯合國（反恐怖主義措施）條例》（第575章）第2(1)條給予的涵義。"
   },
   "format": "combination"
  },
@@ -17695,7 +17695,7 @@
     "1, 3 and 4",
     "All of the above"
    ],
-   "explain": "Statement 3 is false: section 18(3)(c)(ii) requires the person to have measures in place to ensure compliance with requirements similar to those imposed under Schedule 2, and that condition sits alongside, not instead of, the supervision condition. Statements 1, 2 and 4 are correct: the paragraph names lawyers, notaries public, auditors, professional accountants, trust or company service providers and tax advisors practising in an equivalent jurisdiction (as well as trust companies, estate-agency-type businesses and intermediary-financial-institution-type businesses there); sub-paragraph (i) requires the person to be required to be registered or licensed under, or to be regulated under, the law of that jurisdiction; and sub-paragraph (iii) requires supervision for compliance by an authority there performing functions similar to those of a relevant authority or regulatory body."
+   "explain": "Statement 3 is false: section 18(3)(c)(ii) requires the person to have measures in place to ensure compliance with requirements similar to those imposed under Schedule 2; supervision is by an authority in that jurisdiction under sub-paragraph (iii), and section 18 gives no Hong Kong authority a reviewing role and sets no three-yearly cycle. Statements 1, 2 and 4 are correct: the paragraph names lawyers, notaries public, auditors, professional accountants, trust or company service providers and tax advisors practising in an equivalent jurisdiction (as well as trust companies, estate-agency-type businesses and intermediary-financial-institution-type businesses there); sub-paragraph (i) requires the person to be required to be registered or licensed under, or to be regulated under, the law of that jurisdiction; and sub-paragraph (iii) requires supervision for compliance by an authority there performing functions similar to those of a relevant authority or regulatory body."
   },
   "tc": {
    "q": "根據《打擊洗錢條例》附表2第18(3)(c)條，關於可擔任指明中介人的境外專業人士及機構，下列哪些陳述正確？",
@@ -17712,7 +17712,7 @@
     "1、3 及 4",
     "以上皆是"
    ],
-   "explain": "陳述3 不正確：第18(3)(c)(ii)條規定該人須已有措施確保遵從與根據附表2施加的規定相類似的規定，此條件與受監管的條件並存，而非可以其中一項取代另一項。陳述1、2 及 4 正確：該段列明在對等司法管轄區執業的律師、公證人、核數師、專業會計師、信託或公司服務提供者及稅務顧問（以及當地的信託公司、經營類似地產代理業務的人及經營類似中介人金融機構業務的機構）；第(i)節規定該人須按該司法管轄區的法律規定註冊或領牌，或根據該法律受規管；第(iii)節規定該人須在遵從該等規定方面，受到當地職能與有關當局或監管機構相類似的主管當局監管。"
+   "explain": "陳述3 不正確：第18(3)(c)(ii)條規定該人須已有措施確保遵從與根據附表2施加的規定相類似的規定；監管由該司法管轄區的主管當局按第(iii)節進行，第18條並無賦予香港的有關當局任何覆核角色，亦無訂明三年一次的周期。陳述1、2 及 4 正確：該段列明在對等司法管轄區執業的律師、公證人、核數師、專業會計師、信託或公司服務提供者及稅務顧問（以及當地的信託公司、經營類似地產代理業務的人及經營類似中介人金融機構業務的機構）；第(i)節規定該人須按該司法管轄區的法律規定註冊或領牌，或根據該法律受規管；第(iii)節規定該人須在遵從該等規定方面，受到當地職能與有關當局或監管機構相類似的主管當局監管。"
   },
   "format": "combination"
  },
@@ -19005,7 +19005,7 @@
     "1, 3 and 4",
     "All of the above"
    ],
-   "explain": "Statement 4 is false: section 6(7) expressly allows the Tribunal to determine on its own initiative, as well as on the application of any of the parties, that in the interests of justice a sitting or part of a sitting should not be held in public. Statements 1, 2 and 3 are correct: section 6(6) makes public sittings the rule subject to subsections (7) and (8); section 6(7) permits a sitting or any part of it to be held in private where the Tribunal so determines in the interests of justice; and section 6(8) requires any hearing of an application for a private sitting to be held in private."
+   "explain": "Statement 4 is false: section 6(7) vests the determination in the Tribunal — if the Tribunal determines that in the interests of justice a sitting or part of a sitting should not be held in public, the Tribunal may hold it in private — so the chairperson holds no separate power over the question. Statements 1, 2 and 3 are correct: section 6(6) makes public sittings the rule subject to subsections (7) and (8); section 6(7) permits a sitting or any part of it to be held in private where the Tribunal so determines in the interests of justice; and section 6(8) requires any hearing of an application for a private sitting to be held in private."
   },
   "tc": {
    "q": "根據《打擊洗錢條例》附表4第6(6)至(8)條，關於覆核審裁處公開及閉門聆訊，下列哪些陳述正確？",
@@ -19022,7 +19022,7 @@
     "1、3 及 4",
     "以上皆是"
    ],
-   "explain": "陳述4 不正確：第6(7)條明文准許審裁處主動或應覆核任何一方的申請，裁定為達致公正，某次聆訊或其中部分不應公開進行。陳述1、2 及 3 正確：第6(6)條訂明，除第(7)及(8)款另有規定外，聆訊均須公開進行；第6(7)條准許審裁處在為達致公正而如此裁定時，閉門進行聆訊或其中部分；第6(8)條則規定閉門聆訊申請的聆訊本身須閉門進行。"
+   "explain": "陳述4 不正確：第6(7)條將該項裁定賦予審裁處本身——如審裁處裁定為達致公正，某次聆訊或其中部分不應公開進行，審裁處即可閉門進行——故主席就此並無獨立於其他成員的權力。陳述1、2 及 3 正確：第6(6)條訂明，除第(7)及(8)款另有規定外，聆訊均須公開進行；第6(7)條准許審裁處在為達致公正而如此裁定時，閉門進行聆訊或其中部分；第6(8)條則規定閉門聆訊申請的聆訊本身須閉門進行。"
   },
   "format": "combination"
  },
@@ -26835,7 +26835,7 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Statements 1 and 5 are false. Statement 1 is false because paragraph 4.2.1 provides that, in relation to an individual, an ultimate owner means another individual who ultimately owns or controls the money service business of the first-mentioned individual. Statement 5 is false because paragraph 4.2.2 lists exercising ultimate control over the management of the partnership as a limb of the definition in its own right, without any requirement to hold more than 25% of the capital. Statements 2, 3 and 4 are correct: where the individual applicant is acting on behalf of another person, that other person is the ultimate owner; and in relation to a partnership, an individual entitled to or controlling more than a 25% share of the capital or profits, or entitled to exercise or control the exercise of more than 25% of the voting rights, is an ultimate owner."
+   "explain": "Statements 1 and 5 are false. Statement 1 is false because paragraph 4.2.1 provides that, in relation to an individual, an ultimate owner means another individual who ultimately owns or controls the money service business of the first-mentioned individual. Statement 5 is false because paragraph 4.2.2 lists exercising ultimate control over the management of the partnership as a limb of the definition in its own right, satisfied by the exercise of ultimate control itself; paragraph 4.2.2 attaches no registration step, and the Business Registration Office keeps no register of ultimate owners. Statements 2, 3 and 4 are correct: where the individual applicant is acting on behalf of another person, that other person is the ultimate owner; and in relation to a partnership, an individual entitled to or controlling more than a 25% share of the capital or profits, or entitled to exercise or control the exercise of more than 25% of the voting rights, is an ultimate owner."
   },
   "tc": {
    "q": "根據《牌照指引》第4.2.1及4.2.2段，關於就屬個人或合夥的申請人或持牌人而言誰是最終擁有人，下列哪些陳述正確？",
@@ -26853,7 +26853,7 @@
     "1、2 及 5",
     "3、4 及 5"
    ],
-   "explain": "陳述1及5不正確。陳述1不正確，因為第4.2.1段訂明，就屬個人的申請人或持牌人而言，最終擁有人指最終擁有或控制該名個人的金錢服務業務的另一名個人。陳述5不正確，因為第4.2.2段將行使對該合夥的管理最終的控制權列為定義中獨立的一項，並無規定該人須同時持有該合夥資本的25%以上。陳述2、3及4正確：如屬個人的申請人是代表另一人行事，該另一人即為最終擁有人；而就合夥而言，直接或間接地有權攤分或控制該合夥的資本或利潤的25%以上的個人，或有權行使在該合夥的投票權的25%以上或支配該比重的投票權的行使的個人，均屬最終擁有人。"
+   "explain": "陳述1及5不正確。陳述1不正確，因為第4.2.1段訂明，就屬個人的申請人或持牌人而言，最終擁有人指最終擁有或控制該名個人的金錢服務業務的另一名個人。陳述5不正確，因為第4.2.2段將行使對該合夥的管理最終的控制權列為定義中獨立的一項，行使該最終控制權本身即已符合；第4.2.2段並無附加任何登記步驟，而商業登記署亦沒有備存最終擁有人的登記冊。陳述2、3及4正確：如屬個人的申請人是代表另一人行事，該另一人即為最終擁有人；而就合夥而言，直接或間接地有權攤分或控制該合夥的資本或利潤的25%以上的個人，或有權行使在該合夥的投票權的25%以上或支配該比重的投票權的行使的個人，均屬最終擁有人。"
   },
   "format": "combination"
  },
@@ -32910,7 +32910,7 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Statements 2 and 5 are false. Paragraph 3.8(b) requires the CO and MLRO, subject to the constraint of the MSO's size, to be independent of all operational and business functions, and paragraph 3.8(h) requires them to be equipped with sufficient resources, including appropriate cover for their absence in the form of an alternate or deputy CO and MLRO. Statements 1, 3 and 4 are correct: they restate paragraphs 3.8(a), (c), (d) and (g), namely appropriate qualification with sufficient AML/CFT knowledge, being normally based in Hong Kong with a sufficient level of seniority and authority, and timely access to all available information from internal and external sources."
+   "explain": "Statements 2 and 5 are false. Paragraph 3.8(b) requires the CO and MLRO, subject to the constraint of the MSO's size, to be independent of all operational and business functions, and paragraph 3.8(h) requires them to be equipped with sufficient resources, including appropriate cover for their absence in the form of an alternate or deputy CO and MLRO — cover the MSO's own senior management must ensure, not an appointment made by the CCE. Statements 1, 3 and 4 are correct: they restate paragraphs 3.8(a), (c), (d) and (g), namely appropriate qualification with sufficient AML/CFT knowledge, being normally based in Hong Kong with a sufficient level of seniority and authority, and timely access to all available information from internal and external sources."
   },
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第3.8段，為使合規主任及洗錢報告主任能有效履行職責，高級管理層應在切實可行範圍內確保以下哪些事項？",
@@ -35063,7 +35063,7 @@
     "1, 3 and 4",
     "All of the above"
    ],
-   "explain": "Statement 3 is false: paragraph 2.16 requires the records to enable the MSO to demonstrate to the CCE that the extent of CDD measures and ongoing monitoring is appropriate based on that customer's ML/TF risks; this is for the MSO to demonstrate, not a matter left to the CCE's own judgement. Statements 1, 2 and 4 are correct: an MSO should keep records and relevant documents of its customer risk assessments so that it can demonstrate to the CCE, among others, how it assesses the customer's ML/TF risks, and the appropriateness of the measures is judged by reference to that particular customer's ML/TF risks."
+   "explain": "Statement 3 is false: paragraph 2.16 requires the records to enable the MSO to demonstrate to the CCE that the extent of CDD measures and ongoing monitoring is appropriate based on that customer's ML/TF risks, not against the MSO's institutional risk assessment. Statements 1, 2 and 4 are correct: an MSO should keep records and relevant documents of its customer risk assessments so that it can demonstrate to the CCE, among others, how it assesses the customer's ML/TF risks, and the appropriateness of the measures is judged by reference to that particular customer's ML/TF risks."
   },
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第2.16段，以下有關金錢服務經營者應就客戶風險評估備存的紀錄的陳述，哪些是正確的？",
@@ -35080,7 +35080,7 @@
     "1、3 及 4",
     "以上皆是"
    ],
-   "explain": "陳述3 不正確：第2.16段規定該等紀錄須使該經營者能向海關關長證明，基於該客戶的洗錢／恐怖分子資金籌集風險，所執行的客戶盡職審查措施及持續監察程度是合適的；這是由該經營者證明的事宜，而非留待海關關長自行判斷。陳述1、2 及4 正確：金錢服務經營者應就客戶風險評估備存紀錄及相關文件，以便向海關關長證明（其中包括）它如何評估客戶的洗錢／恐怖分子資金籌集風險，而措施是否合適須以該名客戶本身的風險為基準。"
+   "explain": "陳述3 不正確：第2.16段規定該等紀錄須使該經營者能向海關關長證明，基於該客戶的洗錢／恐怖分子資金籌集風險，所執行的客戶盡職審查措施及持續監察程度是合適的，而非以該經營者的機構風險評估為基準。陳述1、2 及4 正確：金錢服務經營者應就客戶風險評估備存紀錄及相關文件，以便向海關關長證明（其中包括）它如何評估客戶的洗錢／恐怖分子資金籌集風險，而措施是否合適須以該名客戶本身的風險為基準。"
   },
   "format": "combination"
  },
@@ -38958,7 +38958,7 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Statements 1 and 2 are false. Footnote 32 brings within the definition any board, commission, committee or other body appointed by the Chief Executive or the Government whether paid or unpaid, so payment is not the condition statement 1 makes it; and the footnote expressly includes any Government department or undertaking, which is what statement 2 denies. Statements 3, 4 and 5 are correct: the Schedule 2 definition reproduced in that footnote covers any executive, legislative, municipal or urban council, any local or public authority or undertaking, and any board, commission, committee or other body that has power to act in a public capacity under or for the purposes of any enactment."
+   "explain": "Statements 1 and 2 are false. Footnote 32 brings within the definition any board, commission, committee or other body appointed by the Chief Executive or the Government whether paid or unpaid, and such a body falls within the definition on appointment, without any need for it to be gazetted first; and the footnote expressly includes any Government department or undertaking, which is what statement 2 denies. Statements 3, 4 and 5 are correct: the Schedule 2 definition reproduced in that footnote covers any executive, legislative, municipal or urban council, any local or public authority or undertaking, and any board, commission, committee or other body that has power to act in a public capacity under or for the purposes of any enactment."
   },
   "tc": {
    "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.8.7(a)(i)段註腳32，關於附表2就「公共機構」所下的定義，下列哪些陳述正確？",
@@ -38976,7 +38976,7 @@
     "1、2 及 5",
     "3、4 及 5"
    ],
-   "explain": "陳述1 及 2 不正確。註腳32 把由行政長官或政府委任的任何局、委員會、小組或其他團體（不論是有薪或無薪）納入該定義，故獲支付酬金並非陳述1 所指的條件；該註腳亦明文包括任何政府部門或事業，正是陳述2 所否定者。陳述3、4 及 5 正確：該註腳所載的附表2定義，涵蓋任何行政、立法、市政或區域議會、任何地方或公共當局或事業，以及任何根據或為施行任何成文法則而有權以公職身分行事的局、委員會、小組或其他團體。"
+   "explain": "陳述1 及 2 不正確。註腳32 把由行政長官或政府委任的任何局、委員會、小組或其他團體（不論是有薪或無薪）納入該定義，該等團體在獲委任時即屬該定義所指者，無需事先在憲報刊登；該註腳亦明文包括任何政府部門或事業，正是陳述2 所否定者。陳述3、4 及 5 正確：該註腳所載的附表2定義，涵蓋任何行政、立法、市政或區域議會、任何地方或公共當局或事業，以及任何根據或為施行任何成文法則而有權以公職身分行事的局、委員會、小組或其他團體。"
   },
   "format": "combination"
  },
@@ -46571,7 +46571,7 @@
     "1, 3 and 4",
     "All of the above"
    ],
-   "explain": "Paragraph 7.5 provides that once knowledge or suspicion has been formed, an MSO should file an STR even where no transaction has been conducted by or through the MSO, and that the STR must be made as soon as reasonably practical after the suspicion was first identified. Footnote 60 adds that the reporting obligations apply irrespective of the amount involved, that they apply to “any property”, and that the obligation to report applies whether or not a transaction was actually conducted and also covers attempted transactions. Statements 1, 3 and 4 are therefore correct. Statement 2 is false because the reporting obligation is not subject to any monetary threshold; the CDD thresholds do not limit it."
+   "explain": "Paragraph 7.5 provides that once knowledge or suspicion has been formed, an MSO should file an STR even where no transaction has been conducted by or through the MSO, and that the STR must be made as soon as reasonably practical after the suspicion was first identified. Footnote 60 adds that the reporting obligations apply irrespective of the amount involved, that they apply to “any property”, and that the obligation to report applies whether or not a transaction was actually conducted and also covers attempted transactions. Statements 1, 3 and 4 are therefore correct. Statement 2 is false because paragraph 7.5 ties the obligation to the formation of knowledge or suspicion — the STR must be made as soon as reasonably practical after the suspicion was first identified — and footnote 60 applies it whether or not a transaction was actually conducted."
   },
   "tc": {
    "q": "根據本指引第7.5段及註60，下列關於提交可疑交易報告責任的陳述，哪些正確？",
@@ -46588,7 +46588,7 @@
     "1、3 及 4",
     "以上皆是"
    ],
-   "explain": "第7.5段訂明，一旦形成知悉或懷疑，即使並無交易由經營者進行或透過經營者進行，亦應提交可疑交易報告，而該報告須在首次識別懷疑後，在合理切實可行範圍內盡快作出。註60補充，報告責任不論所涉款額多少均適用，適用於「任何財產」，並且不論交易是否實際進行均適用，亦涵蓋企圖進行的交易。因此陳述1、3 及 4 正確。陳述2 不正確，因為報告責任不設任何款額門檻，客戶盡職審查門檻並不限制該責任。"
+   "explain": "第7.5段訂明，一旦形成知悉或懷疑，即使並無交易由經營者進行或透過經營者進行，亦應提交可疑交易報告，而該報告須在首次識別懷疑後，在合理切實可行範圍內盡快作出。註60補充，報告責任不論所涉款額多少均適用，適用於「任何財產」，並且不論交易是否實際進行均適用，亦涵蓋企圖進行的交易。因此陳述1、3 及 4 正確。陳述2 不正確，因為第7.5段將報告責任繫於知悉或懷疑的形成——可疑交易報告須在首次識別懷疑後，在合理切實可行範圍內盡快作出——而註60亦訂明不論交易是否實際進行，該責任均適用。"
   },
   "format": "combination"
  },
@@ -49416,7 +49416,7 @@
     "1, 2 and 5",
     "3, 4 and 5"
    ],
-   "explain": "Paragraph 7.29 requires an MSO to establish and maintain a record of all ML/TF reports made to the MLRO, including the date the report was made, the staff members subsequently handling the report, the results of the assessment, whether the internal report resulted in an STR to the JFIU, and information to allow the papers relevant to the report to be located. Statements 1, 2 and 3 are therefore correct. Statement 4 is false because the record must cover all reports made to the MLRO and note whether each resulted in an STR, rather than being confined to those that did. Statement 5 is false because information allowing the relevant papers to be located is one of the required contents of the record."
+   "explain": "Paragraph 7.29 requires an MSO to establish and maintain a record of all ML/TF reports made to the MLRO, including the date the report was made, the staff members subsequently handling the report, the results of the assessment, whether the internal report resulted in an STR to the JFIU, and information to allow the papers relevant to the report to be located. Statements 1, 2 and 3 are therefore correct. Statement 4 is false because the paragraph sets no time window on that record at all; retention periods come from Chapter 8, not from this paragraph. Statement 5 is false because information allowing the relevant papers to be located is one of the required contents of the record."
   },
   "tc": {
    "q": "根據本指引第7.29段，下列關於向洗錢報告主任作出的洗錢／恐怖分子資金籌集報告紀錄的陳述，哪些正確？",
@@ -49434,7 +49434,7 @@
     "1、2 及 5",
     "3、4 及 5"
    ],
-   "explain": "第7.29段規定，經營者必須設立及備存向洗錢報告主任作出的所有洗錢／恐怖分子資金籌集報告的紀錄，包括作出報告的日期、其後處理該報告的職員、評估結果、該內部報告有否導致向財富情報組提交可疑交易報告，以及可供查找相關文件的資料。因此陳述1、2 及 3 正確。陳述4 不正確，因為該紀錄必須涵蓋向洗錢報告主任作出的所有報告，並須註明每項報告有否導致提交可疑交易報告，而非只限於有導致提交者。陳述5 不正確，因為可供查找相關文件的資料是該紀錄規定須載有的內容之一。"
+   "explain": "第7.29段規定，經營者必須設立及備存向洗錢報告主任作出的所有洗錢／恐怖分子資金籌集報告的紀錄，包括作出報告的日期、其後處理該報告的職員、評估結果、該內部報告有否導致向財富情報組提交可疑交易報告，以及可供查找相關文件的資料。因此陳述1、2 及 3 正確。陳述4 不正確，因為該段並無就該紀錄訂明任何時間範圍；保存期限出自第8章，而非本段。陳述5 不正確，因為可供查找相關文件的資料是該紀錄規定須載有的內容之一。"
   },
   "format": "combination"
  },
