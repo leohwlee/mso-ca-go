@@ -42775,28 +42775,28 @@
   "module": 6,
   "answer": 0,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶6.9",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第6.9段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶4.3.19(d)",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.3.19(d)段"
   },
   "en": {
-   "q": "Under which part of the UN Charter are the resolutions imposing mandatory PF obligations on member states made?",
+   "q": "Where a customer is a legal person that is not a corporation, a partnership or a trust, who is its connected party under paragraph 4.3.19?",
    "options": [
-    "Chapter VII",
-    "Chapter VI",
-    "Chapter V",
-    "Chapter IX"
+    "A natural person holding a senior management position, or having executive authority, in the customer",
+    "Any individual entitled, directly or indirectly, to more than 25% of the customer's capital or profits",
+    "The person who signs the customer's account mandate with the money service operator concerned",
+    "Any employee who is authorised to give the operator instructions on the customer's behalf"
    ],
-   "explain": "¶6.9 states that to combat PF the UNSC adopts a two-tiered approach through resolutions made under Chapter VII of the UN Charter, imposing mandatory obligations on UN member states — not Chapter V, Chapter VI or Chapter IX, which are other chapters of the same Charter."
+   "explain": "Paragraph 4.3.19(d) provides that, in cases not falling within paragraphs (a) to (c) — that is, where the customer is not a corporation, a partnership, or a trust or other similar legal arrangement — a connected party means a natural person holding a senior management position or having executive authority in the customer. An entitlement to more than 25% of the capital or profits makes a person a beneficial owner rather than a connected party; and signing the account mandate or being authorised to give instructions describes a person purporting to act on behalf of the customer, who is dealt with separately in paragraph 4.5.1."
   },
   "tc": {
-   "q": "對成員國施加強制性擴散資金籌集責任的決議，是根據《聯合國憲章》哪一章作出？",
+   "q": "如客戶屬法人，但並非法團、合夥或信託，根據第4.3.19段，何人是該客戶的有關連人士？",
    "options": [
-    "第七章",
-    "第六章",
-    "第五章",
-    "第九章"
+    "在該客戶中擔任高級管理職位或具有行政權力的自然人",
+    "直接或間接有權享有該客戶超過25%資本或利潤的個人",
+    "為該客戶與金錢服務經營者簽署戶口授權書的人",
+    "獲授權代該客戶向該經營者發出指示的任何僱員"
    ],
-   "explain": "第6.9段訂明為打擊擴散資金籌集，聯合國安全理事會透過根據《聯合國憲章》第七章作出、對聯合國成員國施加強制責任的決議，採取雙層方針——並非同一憲章下的第五章、第六章或第九章。"
+   "explain": "第4.3.19(d)段訂明，在不屬(a)至(c)段的情況下（即該客戶並非法團、合夥或信託或其他類似的法律安排），有關連人士指在該客戶中擔任高級管理職位或具有行政權力的自然人。有權享有超過25%資本或利潤的人屬實益擁有人，而非有關連人士；簽署戶口授權書或獲授權發出指示的人，則屬聲稱代客戶行事的人，由第4.5.1段另行處理。"
   }
  },
  {

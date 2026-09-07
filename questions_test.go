@@ -516,9 +516,14 @@ func TestNoDuplicateAnswers(t *testing.T) {
 				answer = side.Options[q.Answer]
 			}
 			answer = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(answer), " "))
-			if len([]rune(answer)) < 12 {
-				continue // too short to identify anything
+			if answer == "" {
+				continue
 			}
+			// No minimum length. The check keys on the cited passage as well as the
+			// answer, and a short answer is where a duplicate hides best: m1-73 and
+			// m6-219 both asked which Chapter of the UN Charter carries the mandatory
+			// PF obligations, both cited ¶6.9, and both answered "Chapter VII" — 11
+			// characters, one under the floor this test used to apply.
 			src = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(src), " "))
 			key := src + " || " + answer
 			seen[key] = append(seen[key], q.ID)
