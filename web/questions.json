@@ -40552,31 +40552,46 @@
  {
   "id": "m6-154",
   "module": 6,
-  "answer": 0,
+  "answer": 4,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶4.14.1",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.14.1段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶4.14.1; s.16, Sch. 2, AMLO",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第4.14.1段；《打擊洗錢條例》附表2第16條"
   },
   "en": {
-   "q": "To whom must a customer's CDD record be available, whether or not the relationship involves a numbered account?",
-   "options": [
-    "The CCE, competent authorities, the CO, auditors, and other staff with due authority",
-    "The JFIU, the HKMA, and the customer's relationship manager only",
-    "The CO and external auditors only, to the exclusion of the CCE and other competent authorities",
-    "Any staff member who requests access, without regard to their role or authority level"
+   "q": "According to paragraph 4.14.1 of the AML/CFT Guideline, which of the following statements about anonymous accounts and numbered accounts are correct?",
+   "statements": [
+    "An MSO must not open or maintain any anonymous account, or any account in a fictitious name, for any customer.",
+    "Confidential numbered accounts should not function as anonymous accounts, and should be subject to exactly the same CDD and control measures as all other business relationships.",
+    "A numbered account may offer additional confidentiality, but the customer's identity must be verified and known to enough staff to facilitate effective CDD and ongoing monitoring.",
+    "In all cases the customer's CDD record must be available to the CCE, other competent authorities, the CO, auditors and other staff with appropriate authority."
    ],
-   "explain": "¶4.14.1 states that in all cases, whether the relationship involves numbered accounts or not, the customer's CDD record must be available to the CCE, other competent authorities, the CO, auditors, and other staff with appropriate authority. The JFIU and HKMA are real AML bodies but are not named here, and a relationship manager has no special access right; nor is the list limited to just the CO and auditors, or opened to any requesting staff member."
+   "options": [
+    "1, 2 and 3",
+    "1, 2 and 4",
+    "2, 3 and 4",
+    "1, 3 and 4",
+    "All of the above"
+   ],
+   "explain": "All four statements are correct. Paragraph 4.14.1 prohibits an MSO from opening or maintaining any anonymous account or account in a fictitious name for any customer (statement 1); it provides that confidential numbered accounts should not function as anonymous accounts but should be subject to exactly the same CDD and control measures as all other business relationships (statement 2); it adds that while a numbered account can offer additional confidentiality for the customer, that customer's identity must be verified by the MSO and known to a sufficient number of staff to facilitate effective CDD and ongoing monitoring (statement 3); and it requires that, whether or not the relationship involves numbered accounts, the customer's CDD record be available to the CCE, other competent authorities, the CO, auditors and other staff with appropriate authority (statement 4)."
   },
   "tc": {
-   "q": "不論業務關係是否涉及編號帳戶，客戶的盡職審查紀錄須可供何人查閱？",
-   "options": [
-    "海關關長、主管當局、合規主任、審計師及有權限員工",
-    "聯合財富情報組、香港金融管理局，以及該客戶的客戶經理",
-    "只限合規主任及審計師，不包括海關關長及其他主管當局",
-    "任何提出查閱要求的員工，不論其職級或權限"
+   "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第4.14.1段，關於匿名帳戶及編號帳戶，下列哪些陳述正確？",
+   "statements": [
+    "金錢服務經營者不得為任何客戶開立或維持任何匿名帳戶，或以虛構名稱開立的帳戶。",
+    "保密編號帳戶不應具有匿名帳戶的作用，並應受與所有其他業務關係完全相同的客戶盡職審查及管控措施規限。",
+    "編號帳戶雖可提供額外保密，但客戶身分須經核實，並須為足夠數目的員工所知悉，以便有效進行客戶盡職審查及持續監察。",
+    "在所有情況下，客戶的盡職審查紀錄均須可供關長、其他主管當局、合規主任、審計師及有適當權限的員工查閱。"
    ],
-   "explain": "第4.14.1段訂明在所有情況下，不論業務關係是否涉及編號帳戶，客戶的盡職審查紀錄均須可供海關關長、其他主管當局、合規主任、審計師，以及具備適當權限的其他員工查閱。聯合財富情報組及香港金融管理局均為真實的打擊洗錢機構，但並非本段所列者；客戶經理亦無特別查閱權；名單亦未局限於合規主任及審計師，或開放予任何提出要求的員工。"
-  }
+   "options": [
+    "1、2 及 3",
+    "1、2 及 4",
+    "2、3 及 4",
+    "1、3 及 4",
+    "以上皆是"
+   ],
+   "explain": "四項陳述均正確。第4.14.1段禁止金錢服務經營者為任何客戶開立或維持任何匿名帳戶或以虛構名稱開立的帳戶（陳述1）；該段訂明保密編號帳戶不應具有匿名帳戶的作用，而應受與所有其他業務關係完全相同的客戶盡職審查及管控措施規限（陳述2）；並指出編號帳戶雖可為客戶提供額外保密，但該客戶的身分須由該經營者核實，並為足夠數目的員工所知悉，以便有效進行客戶盡職審查及持續監察（陳述3）；該段亦規定，不論業務關係是否涉及編號帳戶，客戶的盡職審查紀錄均須可供關長、其他主管當局、合規主任、審計師及有適當權限的員工查閱（陳述4）。"
+  },
+  "format": "combination"
  },
  {
   "id": "m6-155",
@@ -44256,31 +44271,46 @@
  {
   "id": "m6-266",
   "module": 6,
-  "answer": 0,
+  "answer": 1,
   "source": {
-   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶11.4",
-   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.4段"
+   "en": "AML/CFT Guideline for MSOs (Jun 2023) ¶11.3–11.5; s.13(1), (2) & (3), Sch. 2, AMLO",
+   "tc": "《打擊洗錢及恐怖分子資金籌集指引》（2023年6月）第11.3至11.5段；《打擊洗錢條例》附表2第13(1)、(2)及(3)條"
   },
   "en": {
-   "q": "A walk-in customer who holds no account with an MSO hands over HK$12,000 in cash and instructs the MSO to send it, otherwise than by electronic means, to a relative in Manila. For the purposes of Chapter 11 of the Guideline, who is the originator of this remittance transaction?",
-   "options": [
-    "The walk-in customer, being the person who instructs the MSO to carry out the transaction",
-    "The relative in Manila, being the person to whom the money is ultimately to be made available",
-    "The MSO itself, being the institution that sends the money to a place outside Hong Kong",
-    "Nobody — an originator exists only where the money is paid from an account held with the MSO"
+   "q": "According to paragraphs 11.3 to 11.5 of the AML/CFT Guideline, which of the following statements about identifying and verifying the originator of a remittance transaction are correct?",
+   "statements": [
+    "Before carrying out a remittance transaction, other than a wire transfer, of $8,000 or above, an MSO is required to identify the originator and verify the originator's identity.",
+    "The originator is the person from whose account with the MSO the money for the remittance is paid, or, where there is no such account, the person who instructs the MSO to carry it out.",
+    "That requirement applies only where the remittance is denominated in Hong Kong dollars, and not to an equivalent amount in any other currency.",
+    "The MSO is required to identify the originator and verify the originator's identity by reference to the originator's identification document."
    ],
-   "explain": "Paragraph 11.4 states that, under the AMLO, the originator of a remittance transaction is the person from whose account with the MSO the money for the remittance is paid or, in the absence of such an account, the person who instructs the MSO to carry out the remittance transaction. A walk-in customer has no account, so the customer giving the instruction is the originator. The recipient is never the originator, the MSO is the institution carrying out the transaction rather than a party to be identified, and the second limb of the definition means there is always an originator even where no account exists."
+   "options": [
+    "1, 2 and 3",
+    "1, 2 and 4",
+    "2, 3 and 4",
+    "1, 3 and 4",
+    "All of the above"
+   ],
+   "explain": "Statement 3 is false: paragraph 11.3 applies the requirement to a remittance transaction, other than a wire transfer, of $8,000 or above or of an equivalent amount in any other currency, so the currency in which the remittance is denominated makes no difference. Statements 1, 2 and 4 are correct: before carrying out such a remittance transaction an MSO is required to identify the originator and verify the originator's identity; paragraph 11.4 defines the originator as the person from whose account with the MSO the money for the remittance is paid or, in the absence of such an account, the person who instructs the MSO to carry out the remittance transaction; and paragraph 11.5 requires that identification and verification to be carried out by reference to the originator's identification document."
   },
   "tc": {
-   "q": "一名沒有在某金錢服務經營者開立戶口的即場客戶交來12,000港元現金，指示該經營者以電子方式以外的方法將款項送交其在馬尼拉的親屬。就《指引》第11章而言，誰是這宗匯款交易的匯款人？",
-   "options": [
-    "該即場客戶——即指示該經營者進行該項交易的人",
-    "馬尼拉的親屬——即款項最終將提供予的人",
-    "該經營者本身——即將款項送往香港以外地方的該機構",
-    "無人——只有款項自該經營者所開立的戶口匯出時才有匯款人"
+   "q": "根據《打擊洗錢及恐怖分子資金籌集指引》第11.3至11.5段，關於識別及核實匯款交易的匯款人身分，下列哪些陳述正確？",
+   "statements": [
+    "在進行電傳轉帳以外、款額為8,000元或以上的匯款交易前，金錢服務經營者須識別匯款人並核實其身分。",
+    "匯款人是指該匯款款項從其在該經營者的戶口支付的人；如並無該等戶口，則指指示該經營者進行該項交易的人。",
+    "該項規定只適用於以港元計值的匯款，而不適用於任何其他貨幣的等值款額。",
+    "該經營者須參照匯款人的身分證明文件，識別匯款人並核實其身分。"
    ],
-   "explain": "第11.4段訂明，根據《打擊洗錢條例》，匯款交易的匯款人是指該人在金錢服務經營者開立戶口，而該項交易所涉金錢是自該戶口匯出的；或如沒有此戶口，則是指示該經營者進行該項交易的人。即場客戶沒有戶口，故發出指示的客戶就是匯款人。收款人永不會是匯款人；該經營者是進行交易的機構，而非須予識別的一方；而定義的第二項準則意味著即使沒有戶口，亦必定有匯款人。"
-  }
+   "options": [
+    "1、2 及 3",
+    "1、2 及 4",
+    "2、3 及 4",
+    "1、3 及 4",
+    "以上皆是"
+   ],
+   "explain": "陳述3 不正確：第11.3段訂明，該項規定適用於電傳轉帳以外、款額為8,000元或以上或任何其他貨幣的等值款額的匯款交易，故匯款以何種貨幣計值並無分別。陳述1、2 及 4 正確：在進行該等匯款交易前，經營者須識別匯款人並核實其身分；第11.4段把匯款人界定為該匯款款項從其在該經營者的戶口支付的人，或如並無該等戶口，則為指示該經營者進行該項匯款交易的人；第11.5段則規定該項識別及核實須參照匯款人的身分證明文件進行。"
+  },
+  "format": "combination"
  },
  {
   "id": "m6-267",
