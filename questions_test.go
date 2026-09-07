@@ -873,3 +873,56 @@ func TestNoAbsoluteTell(t *testing.T) {
 		}
 	}
 }
+
+// TestNoSemicolonTell is the fifth lesson about surface form, and the first
+// that is not about length. The length guards above equalise how much space an
+// option takes; they say nothing about how it is punctuated. A September 2026
+// audit found the gap: a semicolon inside a four-option option made that option
+// the key 45% of the time in English and 46% in Chinese, against 25% by chance,
+// and where exactly one option in a question carried one, picking it scored 83%
+// and 81%. The cause is the same one that drove the length work — the key is
+// usually the fuller answer, and a semicolon is what joins its two clauses.
+//
+// The repair is not to balance the correlation but to remove the discrimination:
+// within one question either every option carries a semicolon or none does. A
+// feature that is uniform across the option set cannot tell a candidate which
+// option to pick, whatever the bank-wide base rate. Combination items are exempt
+// because their five options are the fixed printed block.
+func TestNoSemicolonTell(t *testing.T) {
+	bank := loadBank(t)
+
+	semi := func(s string) bool { return strings.ContainsAny(s, ";；") }
+
+	var bad []string
+	for _, q := range bank {
+		if q.combo() {
+			continue
+		}
+		for _, lang := range []string{"en", "tc"} {
+			opts := q.En.Options
+			if lang == "tc" {
+				opts = q.Tc.Options
+			}
+			n := 0
+			for _, o := range opts {
+				if semi(o) {
+					n++
+				}
+			}
+			if n != 0 && n != len(opts) {
+				bad = append(bad, fmt.Sprintf("%s [%s]: %d of %d options carry a semicolon",
+					q.ID, lang, n, len(opts)))
+			}
+		}
+	}
+	if len(bad) > 0 {
+		t.Errorf("%d question/language sets punctuate their options unevenly; want a semicolon in all of a question's options or none of them", len(bad))
+		for i, s := range bad {
+			if i == 15 {
+				t.Logf("... and %d more", len(bad)-15)
+				break
+			}
+			t.Logf("  %s", s)
+		}
+	}
+}

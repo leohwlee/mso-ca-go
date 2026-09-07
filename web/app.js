@@ -643,7 +643,10 @@ function bindExam() {
     b.onclick = () => {                       // mark the sheet directly
       const [i, di] = b.dataset.mark.split(':').map(Number);
       const qid = exam.qids[i];
-      const orig = exam.optOrder[qid][di];
+      // the bubbles were drawn through orderFor, so read the answer back the
+      // same way — a stored order of the wrong length would otherwise map the
+      // click to a different option than the one the candidate marked
+      const orig = orderFor(byId.get(qid), exam.optOrder[qid])[di];
       if (exam.answers[qid] === orig) delete exam.answers[qid];
       else exam.answers[qid] = orig;
       saveExam();

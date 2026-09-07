@@ -275,9 +275,9 @@
     "United Nations Sanctions Ordinance",
     "Securities and Futures Ordinance",
     "Business Registration Ordinance",
-    "Insurance Companies Ordinance (Cap. 615)"
+    "Insurance Ordinance (Cap. 41)"
    ],
-   "explain": "¶1.14 identifies six main pieces of Hong Kong legislation concerned with ML, TF, PF and financial sanctions: the AMLO, DTROP, OSCO, UNATMO, UNSO and WMD(CPS)O. The Securities and Futures Ordinance, Business Registration Ordinance and Insurance Companies Ordinance are real Hong Kong ordinances, but none of them is among that list."
+   "explain": "¶1.14 identifies six main pieces of Hong Kong legislation concerned with ML, TF, PF and financial sanctions: the AMLO, DTROP, OSCO, UNATMO, UNSO and WMD(CPS)O. The Securities and Futures Ordinance, Business Registration Ordinance and Insurance Ordinance are real Hong Kong ordinances, but none of them is among that list."
   },
   "tc": {
    "q": "下列哪項法例是指引所指香港六條主要涉及洗錢、恐怖分子資金籌集、擴散資金籌集及金融制裁的條例之一？",
@@ -285,9 +285,9 @@
     "《聯合國制裁條例》",
     "《證券及期貨條例》（第571章）",
     "《商業登記條例》",
-    "《保險公司條例》（第615章）"
+    "《保險業條例》（第41章）"
    ],
-   "explain": "第1.14段指出，香港六條主要涉及洗錢、恐怖分子資金籌集、擴散資金籌集及金融制裁的條例為：《打擊洗錢條例》、《販毒（追討得益）條例》、《有組織及嚴重罪行條例》、《聯合國（反恐怖主義措施）條例》、《聯合國制裁條例》及《大規模毀滅武器（提供服務的管制）條例》。《證券及期貨條例》、《商業登記條例》及《保險公司條例》均為真實的香港條例，但都不在上述六條之列。"
+   "explain": "第1.14段指出，香港六條主要涉及洗錢、恐怖分子資金籌集、擴散資金籌集及金融制裁的條例為：《打擊洗錢條例》、《販毒（追討得益）條例》、《有組織及嚴重罪行條例》、《聯合國（反恐怖主義措施）條例》、《聯合國制裁條例》及《大規模毀滅武器（提供服務的管制）條例》。《證券及期貨條例》、《商業登記條例》及《保險業條例》均為真實的香港條例，但都不在上述六條之列。"
   }
  },
  {
@@ -6208,7 +6208,7 @@
   "tc": {
    "q": "持牌人申請續牌，但牌照在海關關長裁定申請前已屆滿。該牌照會怎樣？",
    "options": [
-    "繼續有效，直至續期；或拒絕生效為止",
+    "繼續有效，直至續期，或拒絕生效為止",
     "於屆滿日即時失效，不獲任何延續",
     "無須申請，自動續期兩年，每次均可",
     "於屆滿後最多繼續有效14日"
@@ -6286,7 +6286,7 @@
    "q": "What may the Commissioner do to the conditions of a licence at the point of renewal?",
    "options": [
     "Amend or remove any condition, or impose any new condition, as appropriate",
-    "Only remove existing conditions; new conditions require a separate section 32 process",
+    "Only remove existing conditions, as new ones need a separate section 32 process",
     "Nothing at all — conditions are fixed for the entire life of the licence",
     "Amend conditions only with the licensee's prior written agreement"
    ],
@@ -6296,7 +6296,7 @@
    "q": "海關關長在牌照續期時，可對牌照條件作出甚麼處理？",
    "options": [
     "修訂或移除任何有關條件，或施加任何新的條件",
-    "只可移除現有條件；新條件須另循第32條程序施加",
+    "只可移除現有條件，新條件須另循第32條程序施加",
     "完全不可作任何處理——條件在牌照有效期內一律固定不變",
     "只有在取得持牌人的事先書面同意下方可修訂條件"
    ],
@@ -6779,7 +6779,7 @@
    "q": "Do the particulars that must be kept up to date under section 40 include particulars previously notified to the Commissioner as changes?",
    "options": [
     "Yes — later notifications under section 40(1) form part of the original application",
-    "No — only particulars in the original application count; later notifications do not",
+    "No — only particulars in the original application count, and later notifications do not",
     "Only if the Commissioner expressly requests a further update",
     "Only where the later change concerns a director or an ultimate owner"
    ],
@@ -6789,7 +6789,7 @@
    "q": "第40條下須保持更新的詳情，是否包括先前已作為變更通知海關關長的詳情？",
    "options": [
     "包括——第40(1)款通知的變更，視為原申請的一部分",
-    "不包括——只計原本申請中的詳情；其後的通知不算",
+    "不包括——只計原本申請中的詳情，其後的通知不算",
     "只有在關長明確要求進一步更新時方須更新",
     "只限其後的變更是涉及董事或最終擁有人的變更"
    ],
@@ -7835,8 +7835,8 @@
   "tc": {
    "q": "根據第17條手令移走的紀錄可保留多久？",
    "options": [
-    "自移走日起計不超過6個月；如刑事法律程序或本條例下的法律程序有需要，則可較長",
-    "自移走當日起計不超過3個月；如刑事法律程序或本條例下的法律程序有需要，則可較長",
+    "自移走日起計不超過6個月，如刑事法律程序或本條例下的法律程序有需要，則可較長",
+    "自移走當日起計不超過3個月，如刑事法律程序或本條例下的法律程序有需要，則可較長",
     "在任何情況下均不超過自移走日起計28日，並無任何延長的可能",
     "可無限期保留，全由進行調查的有關當局酌情決定，不設上限"
    ],
@@ -8104,7 +8104,7 @@
     "Not exceeding $100,000 for each day the failure continues",
     "Not exceeding $10,000 for each day that the failure continues",
     "Not exceeding $1,000,000 in total, regardless of how long the failure lasts",
-    "No daily penalty applies; the authority may only make a fresh remedial order"
+    "No daily penalty applies, and the authority may only make a fresh remedial order"
    ],
    "explain": "Section 21(4) permits a daily pecuniary penalty not exceeding $100,000 for each day the failure continues after the date specified in the remedial order; the lower $10,000 daily cap belongs to section 43(4) for MSO licensees, there is no fixed $1,000,000 total cap, and a fresh order is not the only recourse."
   },
@@ -8114,7 +8114,7 @@
     "就不遵從持續的每一日，不超過100,000元",
     "就該項不遵從持續的每一日，不超過10,000元罰款",
     "不論該項不遵從持續多久，總額不超過1,000,000元",
-    "並無每日罰款；當局只可另行作出新的糾正命令"
+    "並無每日罰款，當局只可另行作出新的糾正命令"
    ],
    "explain": "第21(4)條准許就不遵從糾正命令在指明日期後持續的每一日，施加不超過100,000元的每日罰款；10,000元的較低每日上限屬第43(4)條就金錢服務經營者持牌人而設，並無1,000,000元的總額上限，也不是只能另行作出新命令。"
   }
@@ -8452,7 +8452,7 @@
     "Parts 5, 5A, 5B and 5C, which are expressly excepted",
     "Part 7 alone, since that Part contains the power itself",
     "Parts 1 and 2 only, covering definitions and preliminary matters",
-    "No Parts are excepted; the power extends to the whole Ordinance"
+    "No Parts are excepted, and the power extends to the whole Ordinance"
    ],
    "explain": "Section 77(1) confers the power on the Chief Executive in Council to make regulations for the better carrying out of the Ordinance except Parts 5, 5A, 5B and 5C — those Parts have their own regulation-making regimes (e.g. section 51 for Part 5). Part 7 itself is not excepted, nor are Parts 1 and 2, and the exception is not empty."
   },
@@ -8462,7 +8462,7 @@
     "第5、5A、5B及5C部，該等部明文獲得剔除",
     "只有第7部獲剔除，因為該部載有有關權力的條文本身",
     "只有第1部及第2部獲剔除，即涉及釋義及導言的部分",
-    "並無任何一部獲得剔除；該項權力延伸至整條條例"
+    "並無任何一部獲得剔除，該項權力延伸至整條條例"
    ],
    "explain": "第77(1)條授予行政長官會同行政會議就更佳地實施本條例訂立規例的權力，但明文剔除第5、5A、5B及5C部——該等部另有本身的訂立規例機制（如第5部的第51條）。第7部本身並未獲剔除，第1、2部亦然，而該項剔除亦非空言。"
   }
@@ -9048,7 +9048,7 @@
    "q": "What powers does the Review Tribunal have in relation to contempt?",
    "options": [
     "The same contempt powers as the Court of First Instance, and the same standard of proof",
-    "No contempt powers at all; any contempt must instead be referred to the Court of First Instance",
+    "No contempt powers at all, and any contempt must instead be referred to the Court of First Instance",
     "Power to impose a fine for contempt, but no power to commit a person to imprisonment",
     "Power to punish for contempt, but only with the prior written consent of the Secretary for Justice"
    ],
@@ -9058,7 +9058,7 @@
    "q": "審裁處就藐視行為具有甚麼權力？",
    "options": [
     "與原訟法庭相同的懲罰藐視行為權力及相同舉證標準",
-    "並無任何藐視行為權力；任何藐視行為須轉交原訟法庭處理",
+    "並無任何藐視行為權力，任何藐視行為須轉交原訟法庭處理",
     "可就藐視行為判處罰款，但無權判處該人監禁服刑",
     "可懲罰藐視行為，但須先取得律政司司長的書面同意"
    ],
@@ -9108,7 +9108,7 @@
     "To any party to the review, or anyone whose attendance was necessary or required",
     "To any party, but not to a witness whose attendance was merely required, not necessary",
     "Only to whichever party is ultimately successful in the review itself",
-    "Only to the specified authority; costs may never be awarded to the applicant"
+    "Only to the specified authority, and costs may never be awarded to the applicant"
    ],
    "explain": "Section 65(1) lets the Tribunal award costs to any party to the review, or to any person whose attendance — whether or not as a witness, and whether necessary or merely required — was needed for the review; the 'merely required' limb is not excluded. The Tribunal is not limited to the successful party, and costs may be awarded to or against either side, not only the specified authority."
   },
@@ -9118,7 +9118,7 @@
     "覆核的任何一方，或出席屬必需或被規定出席的任何人",
     "覆核的任何一方，但不包括僅屬被規定出席的證人",
     "只限在覆核中最終勝訴的一方，敗訴方除外",
-    "只限指明當局；訟費永不可判給覆核申請人"
+    "只限指明當局，訟費永不可判給覆核申請人"
    ],
    "explain": "第65(1)條准許審裁處向覆核的任何一方，或向就覆核而言其出席（不論是否作為證人，也不論屬必需或僅屬被規定）屬必需或被規定的任何人判給訟費；「僅屬被規定」的情況並無被排除。審裁處並不限於只向勝訴一方判給，訟費亦可判給或責令任何一方支付，並非只限指明當局。"
   }
@@ -9674,7 +9674,7 @@
    "options": [
     "It may prohibit publication of material it receives, including from a private sitting",
     "It may prohibit publication of the material, but only after its determination has been delivered",
-    "It has no such power; publication control is a matter for the Court of First Instance, not the Tribunal",
+    "It has no such power, and publication control is a matter for the Court of First Instance, not the Tribunal",
     "It may prohibit publication of the material only if both parties to the review consent"
    ],
    "explain": "Section 61(1)(g) lets the Tribunal, at any time, order a person not to publish or disclose material it receives, and section 61(1)(h) lets it prohibit publication of material received at a sitting (or part of one) held in private — neither power is confined to after the determination, reserved to the Court of First Instance, or conditional on both parties' consent."
@@ -9684,7 +9684,7 @@
    "options": [
     "可禁止發布其接收的材料，包括非公開聆訊的材料",
     "只可在交付其裁定後，才可禁止發布該等材料",
-    "並無有關權力；發布管制屬原訟法庭而非審裁處的職權",
+    "並無有關權力，發布管制屬原訟法庭而非審裁處的職權",
     "只有在覆核雙方均同意下，方可禁止發布該等材料"
    ],
    "explain": "第61(1)(g)條准許審裁處隨時命令某人不得發布或披露其接收的材料，第61(1)(h)條則准許其禁止發布在非公開聆訊（或聆訊的部分）中接收的材料——兩項權力均不限於在裁定交付後才可行使，也不屬原訟法庭職權，更不以覆核雙方同意為條件。"
@@ -10039,20 +10039,20 @@
   "en": {
    "q": "Beyond the reasons and the right of review, what must a notice suspending a licence state, and what must a notice revoking one state?",
    "options": [
-    "A suspension notice states its duration and terms; a revocation notice states the surrender deadline",
+    "A suspension notice states its duration and terms, while a revocation notice states the surrender deadline",
     "Both must state the amount of any pecuniary penalty imposed, and the date on which the licensee must pay it",
     "Both must confirm that the licensee was given a reasonable opportunity to be heard before the decision",
-    "A suspension notice must state the appeal deadline; a revocation notice need only state the reasons"
+    "A suspension notice must state the appeal deadline, while a revocation notice need only state the reasons"
    ],
    "explain": "Section 34(5) requires a suspension notice to state the duration and terms of the suspension, and a revocation notice to state the time within which the licence is to be surrendered — on top of the reasons and review right common to both. A pecuniary penalty is a section 43/44 disciplinary matter, not part of a section 34 notice; the reasonable-opportunity-to-be-heard requirement in section 34(3) is a pre-condition to making the decision, not a required content of the notice; and both notices, not just a suspension notice, carry the review-right statement, with no separate 'appeal deadline'."
   },
   "tc": {
    "q": "除理由及覆核權利外，暫時吊銷牌照的通知須述明甚麼？撤銷牌照的通知又須述明甚麼？",
    "options": [
-    "暫時吊銷通知須述明期間及條款；撤銷通知須述明交回期限",
+    "暫時吊銷通知須述明期間及條款，撤銷通知須述明交回期限",
     "兩者均須述明所施加的任何罰款款額，以及持牌人須於何時繳付",
     "兩者均須確認持牌人在作出決定前已獲給予合理的陳詞機會",
-    "暫時吊銷通知須述明上訴期限；撤銷通知則只須述明理由"
+    "暫時吊銷通知須述明上訴期限，撤銷通知則只須述明理由"
    ],
    "explain": "第34(5)條規定，在兩者共有的理由及覆核權利陳述之外，暫時吊銷通知須述明吊銷的期間及條款，撤銷通知則須述明須於何時內交回牌照。罰款款額屬第43/44條紀律行動的事宜，並非第34條通知的內容；第34(3)條下給予合理陳詞機會的規定，是作出決定前的先決條件，並非通知須載有的內容；而覆核權利的陳述兩種通知均須載有，並非只限暫時吊銷通知，亦無所謂「上訴期限」。"
   }
@@ -10201,8 +10201,8 @@
   "en": {
    "q": "What must an authorized officer produce on request when exercising powers under Part 5?",
    "options": [
-    "The warrant when entering under section 47; evidence of appointment when arresting under section 48",
-    "Evidence of appointment when entering under section 47; the warrant itself when arresting under section 48",
+    "The warrant when entering under section 47, and evidence of appointment when arresting under section 48",
+    "Evidence of appointment when entering under section 47, and the warrant itself when arresting under section 48",
     "A copy of the licensee's licence, in both cases, and a copy of the register entry under section 27",
     "Nothing under Part 5 — production of authority is required only for an inspection under section 9"
    ],
@@ -10211,8 +10211,8 @@
   "tc": {
    "q": "獲授權人員行使第5部下的權力時，經要求須出示甚麼？",
    "options": [
-    "根據第47條進入處所時出示手令；根據第48條拘捕時出示委任證據",
-    "根據第47條進入處所時出示委任證據；根據第48條拘捕時則出示手令本身",
+    "根據第47條進入處所時出示手令，根據第48條拘捕時出示委任證據",
+    "根據第47條進入處所時出示委任證據，根據第48條拘捕時則出示手令本身",
     "兩種情況下均出示持牌人的牌照副本，以及第27條登記冊的紀錄副本",
     "第5部下無須出示——出示授權文件的規定只適用於第9條的視察"
    ],
@@ -10240,7 +10240,7 @@
   "tc": {
    "q": "獲授權人員須將根據第48條被拘捕的人帶往何處？",
    "options": [
-    "立即帶往警署；如需作進一步查訊，則先帶往海關辦事處",
+    "立即帶往警署，如需作進一步查訊，則先帶往海關辦事處",
     "帶往警署，但僅須於拘捕後的48個小時內帶往該處即可",
     "盡快帶往裁判官席前，而無須先帶往警署或任何其他地方",
     "帶往持牌人的業務處所，以便根據第47條手令繼續進行搜查"
@@ -11964,7 +11964,7 @@
   "tc": {
    "q": "某持牌人違反牌照條件，而其唯一董事亦不再是適當人選。哪些權力會被觸發？",
    "options": [
-    "違反牌照條件觸發第43條；喪失適當人選資格觸發第34條",
+    "違反牌照條件觸發第43條，喪失適當人選資格觸發第34條",
     "只觸發第43條，因該條的紀律權力亦延伸至適當人選資格事宜",
     "只觸發第34條，因為撤銷權力已吸納一切較輕的紀律制裁",
     "觸發第21條，因為兩者均屬違反指明的條文的有關情況"
@@ -12438,7 +12438,7 @@
    "options": [
     "To give access to any specified business record, produce it at the time and place specified, and answer any question raised",
     "To give the authorized person access to the record only at the person's own premises, regardless of any place the authorized person specifies",
-    "To answer questions orally only; the authorized person has no power to require production of any specified business record",
+    "To answer questions orally only, and the authorized person has no power to require production of any specified business record",
     "To produce specified business records within the time and place specified, but the authorized person has no power to ask any question"
    ],
    "explain": "Section 9(5) provides that, subject to section 9A, an authorized person exercising the inquiry power may require the person to give access to any specified business record and produce it within the time and at the place specified by the authorized person — not merely the person's own premises — and to answer any question raised for the purposes of that subsection. Paragraph (a)'s power over records and paragraph (b)'s power to question both apply together, so neither can be excluded."
@@ -12448,7 +12448,7 @@
    "options": [
     "讓其查閱指明業務紀錄並於指明時間地點交出，以及回答有關問題",
     "只可於該人本身的處所讓其查閱該紀錄，而不論獲授權人指明何處",
-    "只可口頭回答問題；獲授權人無權要求交出任何指明業務紀錄",
+    "只可口頭回答問題，獲授權人無權要求交出任何指明業務紀錄",
     "須於指明時間及地點交出指明業務紀錄，但獲授權人無權提出任何問題"
    ],
    "explain": "第9(5)條訂明，在第9A條的規限下，行使查詢權力的獲授權人可要求該人讓其查閱任何指明業務紀錄，並於獲授權人指明的時間及地點（而非僅該人本身的處所）交出該紀錄，以及回答為該款目的而提出的任何問題——(a)款關於紀錄的權力與(b)款關於提問的權力同時適用，兩者缺一不可。"
@@ -12860,7 +12860,7 @@
    "options": [
     "Prior written approval from the Commissioner is required, as the holding exceeds 25%",
     "Nothing is required — Commissioner approval applies only to directors, not shareholders",
-    "Notification to the Commissioner within one month is sufficient; no approval is needed",
+    "Notification to the Commissioner within one month is sufficient, and no approval is needed",
     "Nothing is required — approval is needed only once the holding exceeds 50%"
    ],
    "explain": "Under section 24(c)(i), an individual who owns or controls more than 25% of a corporation's issued share capital is an ultimate owner. Section 36(1) prohibits a person from becoming an ultimate owner of a licensee unless the Commissioner has, on the licensee's application, given prior written approval. A one-month notification under section 40(1) covers only a change in particulars, not this approval requirement, and the threshold that matters for anyone with this level of control is 25%, not 50%."
@@ -12870,7 +12870,7 @@
    "options": [
     "須事先取得關長的書面批准，因持股量超過25%",
     "無須任何行動——批准規定只適用於董事，不適用於股東",
-    "只須於一個月內通知海關關長；無須事先批准",
+    "只須於一個月內通知海關關長，無須事先批准",
     "無須任何行動——須待持股量超過50%方須批准"
    ],
    "explain": "根據第24(c)(i)條，直接或間接擁有或控制法團超過25%已發行股本的個人即屬最終擁有人。第36(1)條禁止任何人成為持牌人的最終擁有人，除非海關關長已應持牌人的申請事先以書面給予批准。第40(1)條的一個月通知只適用於詳情變更，並非批准規定；觸發門檻是25%而非50%，不論該人是否股東。"
@@ -12916,20 +12916,20 @@
   "en": {
    "q": "A licensee applies to renew its licence before it expires. The Commissioner refuses the renewal and, within the 21 days allowed, the licensee applies to the Review Tribunal; the notice of refusal specified no other time for the decision to take effect. May the licensee keep operating while the review is pending?",
    "options": [
-    "Yes — section 31(10)(b) keeps the licence in force until the refusal takes effect; section 75(1)(c) delays that until the review is decided or withdrawn",
+    "Yes — section 31(10)(b) keeps the licence in force until the refusal takes effect, and section 75(1)(c) delays that until the review is decided or withdrawn",
     "No — under section 69(1) the review application does not itself stay the refusal, so the licensee must stop operating unless the Tribunal grants a stay under section 69(2)",
     "No — the licence lapsed on its expiry date, and section 31(11) provides that only a renewal actually granted by the Tribunal can revive it",
-    "Yes, but only during the 21 days that section 59(1) allows for lodging the application; once that period ends the refusal takes effect whether or not a review is pending"
+    "Yes, but only during the 21 days that section 59(1) allows for lodging the application, and once that period ends the refusal takes effect whether or not a review is pending"
    ],
    "explain": "Section 31(10)(b) provides that a licence whose renewal has been applied for, and which expires before the application is determined, remains in force — if renewal is refused — until the Commissioner's decision to refuse takes effect. A refusal to renew is a specified decision, and section 75(1)(c) provides that where the person applies for a review within the 21 days allowed by section 59(1), the decision takes effect only when the Tribunal confirms, varies or substitutes it, or the application is withdrawn. Section 69(1) does say an application is not itself a stay of execution, but that is beside the point: the refusal has not yet taken effect, so there is nothing to stay."
   },
   "tc": {
    "q": "某持牌人在牌照有效期屆滿前申請續期。關長拒絕續期，而該持牌人在准許的21日內向覆核審裁處申請覆核；拒絕通知並無指明該決定於其他時間生效。在覆核有待裁定期間，該持牌人可否繼續經營？",
    "options": [
-    "可以——第31(10)(b)條下牌照在拒絕決定生效前仍然有效；第75(1)(c)條訂明須待審裁處裁定覆核或申請被撤回，該決定才生效",
+    "可以——第31(10)(b)條下牌照在拒絕決定生效前仍然有效，第75(1)(c)條訂明須待審裁處裁定覆核或申請被撤回，該決定才生效",
     "不可以——根據第69(1)條，覆核申請本身並不具暫緩執行該拒絕決定的效力，故除非審裁處根據第69(2)條批准暫緩執行，否則該持牌人須停止經營",
     "不可以——該牌照已於有效期屆滿當日失效，而根據第31(11)條，只有審裁處實際批出的續期方可使其恢復有效",
-    "可以，但只限於第59(1)條准許提出申請的21日內；該期限屆滿後，不論覆核是否有待裁定，該拒絕決定即告生效"
+    "可以，但只限於第59(1)條准許提出申請的21日內，該期限屆滿後，不論覆核是否有待裁定，該拒絕決定即告生效"
    ],
    "explain": "第31(10)(b)條訂明，如已就某牌照提出續期申請，而該牌照在關長作出決定前屆滿，則（如續期申請遭拒絕）在關長拒絕續期的決定生效前，該牌照仍然有效。拒絕續期屬指明決定；第75(1)(c)條訂明，如該人在第59(1)條指明的21日內提出覆核申請，該決定只在審裁處確認、更改或取代該決定，或該申請被撤回時才生效。第69(1)條固然訂明覆核申請本身不具暫緩執行的效力，但此點在此並不相干：該拒絕決定尚未生效，無可暫緩。"
   }
@@ -13454,7 +13454,7 @@
   "en": {
    "q": "What distinguishes the offences in sections 10(5) and 10(6) from those in sections 10(1) and 10(3)?",
    "options": [
-    "Sections 10(5) and (6) require intent to defraud and carry a 7-year maximum; sections 10(1) and (3) do not",
+    "Sections 10(5) and (6) require intent to defraud and carry a 7-year maximum, while sections 10(1) and (3) do not",
     "Sections 10(5) and (6) carry a $1,000,000 fine but only a 2-year maximum, not section 10(9)'s 7 years",
     "Sections 10(5) and (6) apply only to corporate licensees, not to individuals or partners",
     "Sections 10(1) and (3) require intent to defraud, while sections 10(5) and (6) do not"
@@ -13464,7 +13464,7 @@
   "tc": {
    "q": "第10(5)及10(6)條的罪行與第10(1)及10(3)條的罪行有何分別？",
    "options": [
-    "第10(5)及(6)條須具有欺騙意圖，最高刑期為7年；第10(1)及(3)條則不須具備該意圖",
+    "第10(5)及(6)條須具有欺騙意圖，最高刑期為7年，第10(1)及(3)條則不須具備該意圖",
     "第10(5)及(6)條可處罰款1,000,000元，最高刑期2年，並非第10(9)條的7年",
     "第10(5)及(6)條只適用於法團持牌人，並不適用於個人或合夥人本人",
     "第10(1)及(3)條須具有欺騙意圖，而第10(5)及(6)條則完全不須"
@@ -13995,8 +13995,8 @@
    "q": "According to the circular, the amendments clarified the definition of “beneficial owner” in relation to a trust under the AMLO. Whom does the clarified definition include?",
    "options": [
     "A trustee of the trust, a beneficiary, and a class of beneficiaries entitled to a vested interest in the trust.",
-    "Only the settlor who created the trust; the trustee and all the beneficiaries of the trust are expressly excluded.",
-    "Only the trustee of the trust; a beneficiary or a class of beneficiaries can never be a beneficial owner of the trust.",
+    "Only the settlor who created the trust, and the trustee and all the beneficiaries of the trust are expressly excluded.",
+    "Only the trustee of the trust, and a beneficiary or a class of beneficiaries can never be a beneficial owner of the trust.",
     "Any person who has ever received a distribution from the trust, whether or not they hold a vested interest in it."
    ],
    "explain": "Paragraph 3(b) of the circular states that the amendments clarified the definition of “beneficial owner” in relation to a trust under the AMLO, including a trustee of the trust, a beneficiary and a class of beneficiaries of the trust entitled to a vested interest in the trust. The definition is therefore not confined to the settlor with the trustee and beneficiaries excluded, and it is not confined to the trustee with beneficiaries excluded. Receiving a distribution is not the test the circular describes: the class of beneficiaries it refers to is one entitled to a vested interest in the trust."
@@ -14005,8 +14005,8 @@
    "q": "根據通函，修訂澄清了《打擊洗錢及恐怖分子資金籌集條例》中「實益擁有人」就信託而言的定義。經澄清的定義包括哪些人？",
    "options": [
     "該信託的受託人、受益人，以及有權享有該信託既得權益的一類受益人。",
-    "僅限設立該信託的財產授予人；該信託的受託人及所有受益人均被明文排除在外。",
-    "僅限該信託的受託人；受益人或一類受益人永遠不能成為該信託的實益擁有人。",
+    "僅限設立該信託的財產授予人，該信託的受託人及所有受益人均被明文排除在外。",
+    "僅限該信託的受託人，受益人或一類受益人永遠不能成為該信託的實益擁有人。",
     "任何曾從該信託收取分派的人，不論其是否持有該信託的既得權益。"
    ],
    "explain": "通函第3(b)段指出，修訂澄清了《打擊洗錢及恐怖分子資金籌集條例》中「實益擁有人」就信託而言的定義，包括該信託的受託人、受益人，以及有權享有該信託既得權益的一類受益人。因此，定義並非僅限於財產授予人而排除受託人及受益人，亦非僅限於受託人而排除受益人。曾否收取分派並非通函所述的準則：通函所指的一類受益人，是有權享有該信託既得權益的一類受益人。"
@@ -14387,20 +14387,20 @@
   "en": {
    "q": "Under Schedule 2, how do the verification standards differ between a customer and a beneficial owner?",
    "options": [
-    "The customer must be verified; a beneficial owner needs only reasonable measures to confirm identity",
+    "The customer must be verified, and a beneficial owner needs only reasonable measures to confirm identity",
     "Both must be verified to the identical standard, using government-issued documents in every case",
     "The beneficial owner must be verified to a higher standard than the customer, including independent audit",
-    "Only the beneficial owner needs verification; the customer need only be identified, not verified"
+    "Only the beneficial owner needs verification, and the customer need only be identified, not verified"
    ],
    "explain": "Sch. 2 s.2(1): the customer must be identified and verified from the listed reliable sources; for a beneficial owner the MSO need only identify them and take reasonable measures — a lower, risk-sensitive standard (¶4.4.3) — to be satisfied it knows who they are, including understanding ownership and control structures for legal persons and trusts. Neither limb is dropped, and no audit requirement exists."
   },
   "tc": {
    "q": "根據附表2，對客戶與對實益擁有人的身分核實標準有何分別？",
    "options": [
-    "客戶身分必須核實；實益擁有人則只需採取合理措施核實身分",
+    "客戶身分必須核實，實益擁有人則只需採取合理措施核實身分",
     "兩者均須以相同標準核實，並在任何情況下都須使用政府簽發的文件",
     "實益擁有人需以比客戶更高的標準核實，包括進行獨立的審計",
-    "只有實益擁有人需要核實；而客戶則只需識別，並無需核實"
+    "只有實益擁有人需要核實，而客戶則只需識別，並無需核實"
    ],
    "explain": "附表2第2(1)條：客戶必須依所列可靠來源識別及核實身分；對實益擁有人，經營者只需識別並採取合理措施——一項較低、按風險而定的標準（第4.4.3段），包括了解法人或信託的擁有權及控制權架構。兩項措施都不可省略，法例也無獨立審計要求。"
   }
@@ -14648,7 +14648,7 @@
   "en": {
    "q": "Under Part 3 of Schedule 2, in what form may required records be kept?",
    "options": [
-    "The original, or a copy on microfilm or in a computer database; data records likewise",
+    "The original, or a copy on microfilm or in a computer database, and data records likewise",
     "Any electronic format is acceptable, provided the original document is destroyed afterward",
     "The original document only — microfilm or computer-database copies are not permitted",
     "Whatever form the relevant authority specifies by written notice under section 20(4)"
@@ -14658,7 +14658,7 @@
   "tc": {
    "q": "根據附表2第3部，規定備存的紀錄可以何種形式保存？",
    "options": [
-    "正本，或縮微膠卷／電腦數據庫副本；數據紀錄方式相同",
+    "正本，或縮微膠卷／電腦數據庫副本，數據紀錄方式相同",
     "任何電子格式均可接受，惟其後須銷毀該文件的正本",
     "只可保存文件正本——不准以縮微膠卷或電腦數據庫保存副本",
     "以有關當局根據第20(4)條書面通知指明的任何形式"
@@ -14854,7 +14854,7 @@
     "Money, goods, choses in action and land anywhere, with any related interests",
     "Only tangible, physical assets that are located within the territory of Hong Kong itself",
     "Only assets that are capable of being registered in a public register or land registry",
-    "Only money and goods; choses in action such as debts and cheques are expressly excluded"
+    "Only money and goods, and choses in action such as debts and cheques are expressly excluded"
    ],
    "explain": "The definition covers money, goods, choses in action and land, whether in Hong Kong or elsewhere, together with obligations, easements and every description of estate, interest and profit arising out of them. It is not limited to tangible assets physically in Hong Kong, is not limited to registrable assets, and does not exclude choses in action."
   },
@@ -14864,7 +14864,7 @@
     "金錢、貨品、據法權產及土地，不論何處，連同相關權益",
     "只限實際位於香港境內、可觸摸的有形資產",
     "只限可在公共登記冊或土地註冊處正式登記的資產",
-    "只限金錢及貨品；據法權產（如債務及支票）明文被排除在外"
+    "只限金錢及貨品，據法權產（如債務及支票）明文被排除在外"
    ],
    "explain": "該定義涵蓋金錢、貨品、據法權產及土地（不論在香港或其他地方），連同因該等財產而產生或附帶的義務、地役權及各種產業權、權益及收益。定義並不限於實際位於香港的有形資產，也不限於可登記的資產，更沒有將據法權產排除在外。"
   }
@@ -15111,7 +15111,7 @@
     "《法律執業者條例》的律師或外地律師",
     "在香港獲正式認許執業的律師或大律師",
     "以業務方式向其他人提供法律意見的任何人",
-    "只限本地律師；外地律師明文被排除在外"
+    "只限本地律師，外地律師明文被排除在外"
    ],
    "explain": "附表1第2部界定「法律專業人士」為《法律執業者條例》（第159章）第2(1)條所界定的律師，或該條所界定的外地律師——並不取決於是否大律師，也不只是以業務方式提供法律意見，更沒有將外地律師排除在外。"
   }
@@ -15386,9 +15386,9 @@
   "tc": {
    "q": "機構可在符合哪兩項條件下，於建立業務關係後（而非之前）核實客戶身分？",
    "options": [
-    "為免打斷正常業務往來；及洗錢／恐怖分子資金籌集風險受管理",
-    "客戶是根據公司條例註冊的法團；及所涉款額低於120,000元",
-    "客戶已親自書面同意進行核實；及機構的一名董事已批准",
+    "為免打斷正常業務往來，及洗錢／恐怖分子資金籌集風險受管理",
+    "客戶是根據公司條例註冊的法團，及所涉款額低於120,000元",
+    "客戶已親自書面同意進行核實，及機構的一名董事已批准",
     "有關當局已事先給予明確的正式書面豁免證明文件"
    ],
    "explain": "第3(2)條只在下列情況下准許事後核實：為免打斷與該客戶的正常業務往來而有此需要；及因延後核實而可能引致的洗錢／恐怖分子資金籌集風險獲有效管理——並非因為客戶是法團且款額低於120,000元，也不是客戶書面同意加董事批准，更不是有關當局給予豁免。"
@@ -16339,7 +16339,7 @@
   "en": {
    "q": "Where an insurance policy beneficiary is a legal person or trust, when must the institution verify the beneficial owners' identities?",
    "options": [
-    "Where there is high ML/TF risk given the beneficial owners' circumstances; identification alone applies otherwise",
+    "Where there is high ML/TF risk given the beneficial owners' circumstances, and identification alone applies otherwise",
     "Using documents, data or information provided by a governmental body or other source recognized by the relevant authority",
     "Never — identifying the legal person or trust itself is always sufficient on its own",
     "Only where the payout to the beneficiary exceeds $8,000, the wire-transfer CDD threshold"
@@ -18106,20 +18106,20 @@
   "en": {
    "q": "A Hong Kong-incorporated MSO has an overseas branch and an overseas subsidiary in a different line of business. Under section 22(1) of Schedule 2, which of these must have compliance procedures in place?",
    "options": [
-    "The branch always; the subsidiary only if it carries on the same business",
+    "The branch always, and the subsidiary only if it carries on the same business",
     "Both of them, but only if the institution owns more than half the shares in each",
-    "Neither of them; section 22(1) only requires a group-wide AML/CFT policy instead",
-    "The subsidiary unconditionally; the branch only if it employs local staff there"
+    "Neither of them, and section 22(1) only requires a group-wide AML/CFT policy instead",
+    "The subsidiary unconditionally, and the branch only if it employs local staff there"
    ],
    "explain": "Section 22(1) applies to 'its branches' without qualification but limits the subsidiary limb to 'subsidiary undertakings that carry on the same business as a financial institution' outside Hong Kong, so a subsidiary in an unrelated line of business falls outside section 22(1). There is no shareholding-percentage test, no alternative of a group-wide policy, and the branch/subsidiary treatment is not reversed."
   },
   "tc": {
    "q": "某在香港註冊成立的金錢服務經營者，在境外設有一間分支機構及一間經營不同業務的附屬公司。根據附表2第22(1)條，以下何者須設有合規程序？",
    "options": [
-    "分支機構一律須有；附屬公司只在經營與金融機構相同業務時才須有",
+    "分支機構一律須有，附屬公司只在經營與金融機構相同業務時才須有",
     "兩者皆須有，但只限該機構持有超過百分之五十股權的情況",
-    "兩者皆不須有；第22(1)條只要求訂立集團洗錢及恐怖分子資金籌集政策",
-    "附屬公司一律須有；分支機構則只在僱用當地員工時才須有"
+    "兩者皆不須有，第22(1)條只要求訂立集團洗錢及恐怖分子資金籌集政策",
+    "附屬公司一律須有，分支機構則只在僱用當地員工時才須有"
    ],
    "explain": "第22(1)條對「其分支機構」的適用並無附帶條件，但就附屬公司而言，則只限於「在香港以外地方經營與金融機構相同業務的附屬企業」——故經營不同業務的附屬公司不屬第22(1)條範圍。條文並無股權百分比的測試，亦無以集團政策代替的選項，分支機構與附屬公司的處理方式亦沒有互換。"
   }
@@ -18218,10 +18218,10 @@
   "tc": {
    "q": "附表2第23條規定須為兩個目的採取一切合理措施。該兩個目的是甚麼？",
    "options": [
-    "確保設有適當防護措施以防止違反附表2第2或3部；並減低洗錢及恐怖分子資金籌集風險",
+    "確保設有適當防護措施以防止違反附表2第2或3部，並減低洗錢及恐怖分子資金籌集風險",
     "訂立及維持有效程序以斷定政治人物身分，並識別不符規定的電傳轉賬",
     "保存所有交易及客戶紀錄至少5年，另須以文件正本或副本形式妥為保存",
-    "確保設有適當的防護措施，以防止違反附表2第1或2部的規定；並須減低一般的營運風險"
+    "確保設有適當的防護措施，以防止違反附表2第1或2部的規定，並須減低一般的營運風險"
    ],
    "explain": "第23條規定須採取一切合理措施：(a)確保設有適當防護措施，以防止違反附表2第2或3部下的任何規定；及(b)減低洗錢及恐怖分子資金籌集風險。斷定政治人物身分及識別不符規定的電傳轉賬屬第19條的程序責任；保存紀錄5年屬第20/21條的紀錄保存責任；而防護措施責任所防範的是第2及3部（並非第1及2部），所減低的是洗錢及恐怖分子資金籌集風險（並非一般營運風險）。"
   }
@@ -18906,7 +18906,7 @@
   "en": {
    "q": "The membership of the Tribunal changes during proceedings for a review. On what basis may the proceedings continue?",
    "options": [
-    "Only if the parties consent; otherwise proceedings must be discontinued",
+    "Only if the parties consent, and otherwise proceedings must be discontinued",
     "Only with the leave of the Court of First Instance, on the chairperson's application",
     "Automatically, since the Tribunal continues in being regardless of its membership",
     "Only if the change concerns an ordinary member rather than the chairperson"
@@ -18916,7 +18916,7 @@
   "tc": {
    "q": "審裁處的成員組成在覆核的法律程序期間有變。該法律程序可基於甚麼繼續進行？",
    "options": [
-    "只有各方同意方可；否則須終止，但可重新開始",
+    "只有各方同意方可，否則須終止，但可重新開始",
     "只可經原訟法庭應主席的申請而批准許可",
     "自動繼續進行，因審裁處不論成員如何均延續存在",
     "只限有關變動涉及普通成員而非主席"
@@ -18935,7 +18935,7 @@
   "en": {
    "q": "What is the minimum composition required for a Tribunal sitting, and who has the right to preside?",
    "options": [
-    "Chairperson and 2 ordinary members; chairperson presides at every sitting",
+    "Chairperson and 2 ordinary members, with the chairperson presiding",
     "Any two members, who then elect one of themselves to preside",
     "The chairperson sitting alone is sufficient in every case",
     "The chairperson and one ordinary member, with either free to preside"
@@ -18945,7 +18945,7 @@
   "tc": {
    "q": "審裁處聆訊所需的最低成員組合為何？何人有權主持？",
    "options": [
-    "主席及2名普通成員；並由主席主持每次聆訊",
+    "主席及2名普通成員，並由主席主持每次聆訊",
     "任何兩名成員，並由他們互選其中一人擔任主持",
     "在任何情況下均只須主席獨自出席已足夠",
     "主席及一名普通成員，由各方屬意的人主持"
@@ -18964,7 +18964,7 @@
   "en": {
    "q": "How is a question of law before the Review Tribunal determined?",
    "options": [
-    "By the chairperson alone; other questions by a majority of votes cast",
+    "By the chairperson alone, and other questions by a majority of votes cast",
     "By a majority of the votes cast by the chairperson and the ordinary members together",
     "By unanimous agreement of the chairperson and both ordinary members",
     "By referral of the question to the Court of First Instance for a formal ruling"
@@ -18974,7 +18974,7 @@
   "tc": {
    "q": "審裁處席前的法律問題如何裁定？",
    "options": [
-    "主席獨自裁定；其他多數票裁定",
+    "主席獨自裁定，其他多數票裁定",
     "以主席及普通成員的過半數票裁定",
     "須經主席及兩名普通成員一致同意",
     "將有關問題轉交原訟法庭裁定"
@@ -19616,7 +19616,7 @@
   "tc": {
    "q": "小組成員可獲委任的任期為何？可否再度獲委任？",
    "options": [
-    "由局長認為適當的任何任期委任；任期屆滿的人可再度獲委任",
+    "由局長認為適當的任何任期委任，任期屆滿的人可再度獲委任",
     "任期固定為3年，屆滿後一律不可再度獲委任",
     "任期完全由主席一人決定，並只可續任一次而已",
     "終身任職，並只可基於附表所訂明的法定理由而被免任"
@@ -20772,8 +20772,8 @@
   "en": {
    "q": "Under Schedule 2, whose recognition qualifies a digital identification system for a financial institution, and whose recognition applies instead for a DNFBP who is an accounting professional, estate agent or legal professional?",
    "options": [
-    "The relevant authority for a financial institution; the relevant regulatory body for those DNFBP professionals",
-    "The relevant regulatory body for a financial institution; the relevant authority for those DNFBP professionals",
+    "The relevant authority for a financial institution, and the relevant regulatory body for those DNFBP professionals",
+    "The relevant regulatory body for a financial institution, and the relevant authority for those DNFBP professionals",
     "The Hong Kong Monetary Authority in every case, regardless of the type of institution or DNFBP",
     "The Commissioner of Customs and Excise in every case, regardless of the type of institution or DNFBP"
    ],
@@ -20782,8 +20782,8 @@
   "tc": {
    "q": "根據附表2的定義，就金融機構而言，數碼身分識別系統須獲哪個團體認可方符合資格？就屬會計專業人士、地產代理或法律專業人士的指定非金融企業及行業而言，則須獲哪個團體認可？",
    "options": [
-    "就金融機構而言為有關當局；就上述指定非金融企業及行業專業人士而言則為有關監管團體",
-    "就金融機構而言為有關監管團體；就上述指定非金融企業及行業專業人士而言則為有關當局",
+    "就金融機構而言為有關當局，就上述指定非金融企業及行業專業人士而言則為有關監管團體",
+    "就金融機構而言為有關監管團體，就上述指定非金融企業及行業專業人士而言則為有關當局",
     "不論機構或指定非金融企業及行業的類型為何，一律為香港金融管理局",
     "不論機構或指定非金融企業及行業的類型為何，一律為海關關長"
    ],
@@ -21954,9 +21954,9 @@
   "en": {
    "q": "How do sections 4 and 15 of Schedule 2 relate to one another?",
    "options": [
-    "Section 4 permits simplified CDD in lower-risk situations; section 15 adds requirements in high-risk situations",
-    "Both sections impose additional requirements; section 15's requirements are simply the stricter of the two",
-    "Section 4 applies only to financial institutions; section 15 applies only to DNFBPs",
+    "Section 4 permits simplified CDD in lower-risk situations, while section 15 adds requirements in high-risk situations",
+    "Both sections impose additional requirements, and section 15's requirements are simply the stricter of the two",
+    "Section 4 applies only to financial institutions, while section 15 applies only to DNFBPs",
     "Section 15 displaces section 4 whenever both could otherwise apply to the same customer"
    ],
    "explain": "Section 4 allows an institution to carry out only the section 2(1)(a), (ab), (c) and (d) measures instead of full CDD where the customer or product falls within its listed categories; the Guideline at paragraph 4.1.2 frames this as the low-risk route, saying an MSO may apply simplified due diligence measures in low risk situations. Section 15 works in the opposite direction: in specified high-risk situations it adds senior management approval and either source of wealth/funds enquiries or additional mitigating measures. Both sections apply to financial institutions and DNFBPs alike, and nothing in the text makes one displace the other."
@@ -21964,9 +21964,9 @@
   "tc": {
    "q": "附表2第4條與第15條有何關係？",
    "options": [
-    "第4條在較低風險下准許簡化客戶盡職審查；第15條則在高風險下加入額外規定",
-    "兩條均施加額外規定；第15條的規定只是兩者中較嚴格的一項",
-    "第4條只適用於金融機構；而第15條則只適用於指定非金融企業及行業",
+    "第4條在較低風險下准許簡化客戶盡職審查，第15條則在高風險下加入額外規定",
+    "兩條均施加額外規定，第15條的規定只是兩者中較嚴格的一項",
+    "第4條只適用於金融機構，而第15條則只適用於指定非金融企業及行業",
     "凡兩條均可能適用於同一名客戶時，第15條即取代第4條"
    ],
    "explain": "第4條准許機構在客戶或產品屬其所列類別的情況下，只進行第2(1)(a)、(ab)、(c)及(d)條的措施，以代替完整的客戶盡職審查；《打擊洗錢及恐怖分子資金籌集指引》第4.1.2段將此定性為低風險途徑，訂明金錢服務經營者在低風險的情況下可採取簡化盡職審查措施。第15條方向相反：在指明的高風險情況下，加入高級管理層批准，以及財富及資金來源查究或額外減低風險措施兩者之一。兩條同樣適用於金融機構及指定非金融企業及行業，文本中並無一條取代另一條的規定。"
@@ -21983,7 +21983,7 @@
   "en": {
    "q": "What is the division of subject matter between sections 20 and 21 of Schedule 2?",
    "options": [
-    "Section 20 governs what must be kept and for how long; section 21 governs the form of keeping",
+    "Section 20 governs what must be kept and for how long, while section 21 governs the form of keeping",
     "Section 20 applies to financial institutions only, and section 21 applies to DNFBPs only",
     "Section 20 covers transaction records only, and section 21 covers customer records only",
     "Section 21 sets a materially longer retention period than section 20 requires"
@@ -21993,7 +21993,7 @@
   "tc": {
    "q": "附表2第20條與第21條在主題上如何分工？",
    "options": [
-    "第20條規管須保存哪些紀錄及保存多久；第21條規管保存的形式",
+    "第20條規管須保存哪些紀錄及保存多久，第21條規管保存的形式",
     "第20條只限金融機構，第21條只限指定非金融企業及行業",
     "第20條只涵蓋交易紀錄，第21條只涵蓋客戶紀錄",
     "第21條訂明的保存期，較第20條所訂者明顯更長"
@@ -22022,7 +22022,7 @@
   "tc": {
    "q": "根據附表2第4部，在香港註冊成立的金錢服務經營者須就其境外分支機構及附屬公司做甚麼？在此之上另須負有甚麼責任？",
    "options": [
-    "確保境外分支機構及同業附屬企業設有合規程序；並須另採取一切合理措施防止違反規定，減低洗錢及恐怖分子資金籌集風險",
+    "確保境外分支機構及同業附屬企業設有合規程序，並須另採取一切合理措施防止違反規定，減低洗錢及恐怖分子資金籌集風險",
     "任何未能完全符合香港程序的境外分支機構，一律須立即結束該分支機構的業務，別無其他替代選擇",
     "只須確保由該機構全資擁有的境外附屬公司設有合規程序，分支機構及非全資附屬公司則完全不受規管，亦無須通知有關當局或採取額外措施",
     "只有在當地法律明文採納與香港相同標準的情況下，方須在境外全面適用附表2的所有有關規定"
@@ -22099,7 +22099,7 @@
   "en": {
    "q": "How do the termination consequences in sections 5 and 6 of Schedule 2 differ?",
    "options": [
-    "Section 6(2) requires termination if a pre-existing customer fails the section 6(1) trigger; section 5 has no termination duty",
+    "Section 6(2) requires termination if a pre-existing customer fails the section 6(1) trigger, while section 5 has none",
     "Both sections require termination on identical terms whenever ongoing monitoring reveals any discrepancy",
     "Section 5 requires termination for suspicious transactions, while section 6 imposes no termination duty at all",
     "Neither section provides for termination, since only section 3(4) contains a rule of that kind"
@@ -22109,10 +22109,10 @@
   "tc": {
    "q": "附表2第5條與第6條的終止關係後果有何不同？",
    "options": [
-    "第6(2)條規定，先前客戶如未能符合第6(1)款的要求，須終止關係；第5條並無終止條文",
+    "第6(2)條規定，先前客戶如未能符合第6(1)款的要求，須終止關係，第5條並無終止條文",
     "只要在持續監察期間發現任何輕微差異，兩條均一律規定須按完全相同的條款終止關係",
     "第5條規定機構一旦發現任何可疑交易即須終止關係，而第6條則完全無任何終止責任",
-    "兩條均完全並無終止規定；此類終止規則其實只見於第3(4)條當中而已"
+    "兩條均完全並無終止規定，此類終止規則其實只見於第3(4)條當中而已"
    ],
    "explain": "第5條訂明持續監察責任，並在第(3)款訂明就較高風險客戶的額外措施，但本身並無終止條文。第6(2)條規定，如第6(1)款的觸發情況出現而機構無法就先前客戶進行客戶盡職審查，須在合理切實可行範圍內盡快終止關係。第3(4)條就其他情況另訂有相對應的終止規則——該規則是在第5、6條以外並存的規定，並不代表第6(2)條本身沒有終止規定。"
   }
@@ -22128,7 +22128,7 @@
   "en": {
    "q": "Which institutions are subject to section 13 of Schedule 2, and how does that differ from section 12?",
    "options": [
-    "Section 13 applies to licensed MSOs' non-wire remittances; section 12 applies to institutions generally for wire transfers",
+    "Section 13 applies to licensed MSOs' non-wire remittances, while section 12 applies to institutions generally for wire transfers",
     "Section 13 applies to authorized institutions, while section 12 applies only to licensed money service operators",
     "Both sections apply identically to every financial institution, without any distinction between them",
     "Section 13 applies only to virtual asset transfers carried out by any financial institution at all"
@@ -22138,7 +22138,7 @@
   "tc": {
    "q": "附表2第13條適用於哪些機構？與第12條有何分別？",
    "options": [
-    "第13條適用於持牌經營者的非電傳轉賬匯款交易；第12條則就電傳轉賬適用於金融機構",
+    "第13條適用於持牌經營者的非電傳轉賬匯款交易，第12條則就電傳轉賬適用於金融機構",
     "第13條特別適用於認可機構的匯款交易，第12條則只適用於金錢服務經營者",
     "不論交易性質為何，第12條及第13條兩者均不加區別地一律適用於每一間金融機構",
     "第13條的適用範圍其實只限於任何金融機構進行的虛擬資產轉移交易"
@@ -22319,9 +22319,9 @@
   "en": {
    "q": "A customer is not physically present for identification. Which two distinct obligations does Schedule 2 impose?",
    "options": [
-    "Section 9 requires one special verification measure at the outset; section 5(3)(a) requires extra ongoing monitoring measures",
-    "Only section 9 applies at the outset; ongoing monitoring under section 5 is completely unaffected by this at all",
-    "Only section 5(3)(a) applies during monitoring; no special measure is needed at the outset at all",
+    "Section 9 requires one special verification measure at the outset, while section 5(3)(a) requires extra ongoing monitoring measures",
+    "Only section 9 applies at the outset, and ongoing monitoring under section 5 is completely unaffected by this at all",
+    "Only section 5(3)(a) applies during monitoring, and no special measure is needed at the outset at all",
     "Both sections require the proposed business relationship to be refused outright in every case"
    ],
    "explain": "Section 9(1) addresses the point of identification, requiring at least one of three listed measures. Section 5(3)(a) addresses the ongoing relationship, requiring additional measures in monitoring to compensate for the risk. Both are disapplied where a recognized digital identification system was used — neither obligation is switched off by the other, and neither requires outright refusal of the relationship."
@@ -22329,9 +22329,9 @@
   "tc": {
    "q": "某客戶並未親身出席以供識別。附表2施加哪兩項不同的責任？",
    "options": [
-    "第9條規定開始時須進行三項核實措施之一；第5(3)(a)條規定持續監察時須採取額外措施",
-    "只有第9條在客戶開始關係時適用；第5條下的持續監察完全不受此情況絲毫影響",
-    "只有第5(3)(a)條在其後的持續監察期間適用；在開始時完全無須任何特別的措施",
+    "第9條規定開始時須進行三項核實措施之一，第5(3)(a)條規定持續監察時須採取額外措施",
+    "只有第9條在客戶開始關係時適用，第5條下的持續監察完全不受此情況絲毫影響",
+    "只有第5(3)(a)條在其後的持續監察期間適用，在開始時完全無須任何特別的措施",
     "兩條均規定不論任何情況為何，均須一律徹底拒絕建立該擬議業務關係"
    ],
    "explain": "第9(1)條處理識別環節，規定須進行所列三項措施中至少一項。第5(3)(a)條則處理持續關係，規定在監察時須採取額外措施以抵銷風險。如已使用獲認可數碼身分識別系統，兩者均不適用——兩項責任並不會互相排除，亦不會要求一律拒絕建立該關係。"
@@ -22392,7 +22392,7 @@
   "en": {
    "q": "An MSO relies on an overseas office for part of its compliance work. Which Schedule 2 provisions may be engaged?",
    "options": [
-    "Section 18, if the office is an intermediary doing CDD; section 22, if it is a branch or subsidiary",
+    "Section 18 if the office is an intermediary doing CDD, and section 22 if it is a branch or subsidiary",
     "Only section 18, since section 22 under Schedule 2 applies only to authorized institutions incorporated overseas",
     "Only section 22, since section 18 applies only to intermediaries based in Hong Kong itself",
     "Neither - an MSO's Schedule 2 duties stop at its own Hong Kong premises and never reach any overseas office"
@@ -22402,7 +22402,7 @@
   "tc": {
    "q": "某金錢服務經營者倚賴海外辦事處處理部分合規工作。附表2的哪些條文可能適用？",
    "options": [
-    "辦事處作中介人進行盡職審查，適用第18條；屬分支或附屬企業，則適用第22條",
+    "辦事處作中介人進行盡職審查，適用第18條，屬分支或附屬企業，則適用第22條",
     "只適用第18條，因附表2第22條只適用於在海外註冊成立的認可機構",
     "只適用第22條，因為第18條只適用於設在香港本地的有關中介人",
     "兩者皆不適用——經營者的附表2責任只及於其香港處所，不涉任何海外辦事處"
@@ -22421,7 +22421,7 @@
   "en": {
    "q": "How do the obligations in sections 19 and 23 of Schedule 2 differ in character?",
    "options": [
-    "Section 19 sets specific procedures, e.g. PEP determination; section 23 is a general safeguards and risk-mitigation duty",
+    "Section 19 sets specific procedures, e.g. PEP determination, while section 23 is a general safeguards duty",
     "Section 19 applies only to financial institutions, while section 23 applies only to DNFBPs, with no overlap",
     "Section 23 is narrower than section 19 and is limited to record-keeping obligations under Part 3",
     "The two sections are alternative routes to compliance, so satisfying one discharges the other"
@@ -22431,7 +22431,7 @@
   "tc": {
    "q": "附表2第19條與第23條的責任在性質上有何不同？",
    "options": [
-    "第19條就個別事項訂明具體程序（如政治人物身分）；第23條為一般防護責任",
+    "第19條就個別事項訂明具體程序（如政治人物身分），第23條為一般防護責任",
     "第19條只適用於金融機構，第23條則只適用於指定非金融企業及行業，兩者互不重疊",
     "第23條較第19條為窄，只限於第3部下的紀錄保存責任及相關安排",
     "兩條屬達致合規的替代途徑，遵從當中其一即已履行另一項規定"
@@ -22479,10 +22479,10 @@
   "en": {
    "q": "Since when has the Customs and Excise Department been the authority regulating money service operators, and under which ordinance?",
    "options": [
-    "Since 1 April 2012, under the Anti-Money Laundering Ordinance (Cap. 615)",
-    "Since 1997, when the Banking Ordinance first covered remittance agents",
-    "Since 2018, under the Organized and Serious Crimes Ordinance",
-    "Since 2022, under the Stored Value Facilities Ordinance"
+    "Since 1 April 2012, under the Anti-Money Laundering and Counter-Terrorist Financing Ordinance",
+    "Since 1997, when the Banking Ordinance first covered remittance agents in Hong Kong",
+    "Since 2018, under the Organized and Serious Crimes Ordinance, Cap. 455 of the laws of Hong Kong",
+    "Since 2022, under the Payment Systems and Stored Value Facilities Ordinance, Cap. 584"
    ],
    "explain": "Licensing Guide §1.1: the C&ED has been the authority for regulating MSOs with effect from 1 April 2012, with the relevant powers provided under the AMLO (Cap. 615). The Banking Ordinance, the Organized and Serious Crimes Ordinance and the Payment Systems and Stored Value Facilities Ordinance are all real ordinances but none of them is the source of the Commissioner's MSO-licensing powers or the 2012 start date."
   },
@@ -22518,7 +22518,7 @@
   "tc": {
    "q": "金錢服務經營者牌照一般的有效期是多久？牌照在其他哪些情況下失效？",
    "options": [
-    "一般為2年；如身故、解散或開始清盤，牌照即告失效",
+    "一般為2年，如身故、解散或開始清盤，牌照即告失效",
     "一般為1年，按月自動續期，並不受持牌人身故、解散或清盤影響",
     "一般為5年，牌照可自動續期，並無任何提早失效的情況出現",
     "一經批出即無限期有效，只有交回牌照方可令其失效"
@@ -22757,7 +22757,7 @@
   "en": {
    "q": "Which statement about the Competence Assessment as a licensing requirement is CORRECT?",
    "options": [
-    "The proprietor, partner or director must pass; one fitness factor",
+    "The proprietor, partner or director must pass, and this is one fitness factor",
     "Every employee of the applicant, not just senior management, must pass",
     "Passing the Assessment automatically guarantees the grant of a licence",
     "The Assessment is voluntary and carries no bearing on licensing at all"
@@ -22767,7 +22767,7 @@
   "tc": {
    "q": "關於能力評核作為發牌規定，下列哪項正確？",
    "options": [
-    "東主、任一合夥人或董事須通過評核；結果只是其中一項因素",
+    "東主、任一合夥人或董事須通過評核，結果只是其中一項因素",
     "申請人的所有僱員均須通過評核，不限於高級管理層",
     "通過評核即自動保證該申請人必然獲批發牌照",
     "評核純屬自願性質，與牌照審批無關，亦不影響適當人選的評估"
@@ -23865,7 +23865,7 @@
   "en": {
    "q": "What limit does the guideline place on the size of a pecuniary penalty, and what does the CCE take into account?",
    "options": [
-    "Must not risk financial jeopardy for licensee; CCE weighs size and resources",
+    "Must not risk financial jeopardy for licensee, and CCE weighs size and resources",
     "A penalty must never exceed 10 per cent of the licensee's annual turnover",
     "The penalty must not exceed three times the profit gained from the contravention",
     "The penalty must be fixed at the statutory maximum unless the licensee cooperates"
@@ -24286,7 +24286,7 @@
   "en": {
    "q": "How does the Disciplinary Fining Guideline describe the list of seriousness factors it sets out?",
    "options": [
-    "Not exhaustive; some may not apply, others may be relevant",
+    "Not exhaustive, so some may not apply and others may be relevant",
     "Exhaustive and legally binding, with every factor mandatorily scored",
     "Applicable only to a licensee's first-ever contravention of the AMLO",
     "Applicable only where the contravention was proven to be intentional"
@@ -24460,7 +24460,7 @@
   "en": {
    "q": "What rule does the Business Plan guideline state about bank accounts used for the money service business?",
    "options": [
-    "No third-party bank account allowed; give the account number and owner",
+    "No third-party bank account allowed, and the account number and owner must be given",
     "Any bank account may be used, provided the applicant discloses its existence",
     "Only accounts held with authorized institutions in Hong Kong may be used",
     "At least two separate bank accounts must be maintained for the business"
@@ -24910,7 +24910,7 @@
   "en": {
    "q": "Which topics must the AML/CFT framework section of the policy cover?",
    "options": [
-    "What ML, TF and PF are; MSO's legal obligations under different legislation; and what STR and tipping off are",
+    "What ML, TF and PF are, MSO's legal obligations under different legislation, and what STR and tipping off are",
     "CDD thresholds for walk-in customers, Customer Risk Assessment, and source of funds/source of wealth measures",
     "Screening against targeted financial sanctions related to terrorism, proliferation, and politically exposed persons",
     "Staff's personal statutory obligations, new and emerging ML/TF techniques, and the training records kept"
@@ -24920,7 +24920,7 @@
   "tc": {
    "q": "政策中的打擊洗錢框架部分須涵蓋哪些課題？",
    "options": [
-    "何謂洗錢、恐怖分子資金籌集及擴散資金籌集；經營者責任；可疑交易報告及通風報訊",
+    "何謂洗錢、恐怖分子資金籌集及擴散資金籌集，經營者責任，可疑交易報告及通風報訊",
     "即場客戶的客戶盡職審查門檻、客戶風險評估，以及資金來源／財富來源措施",
     "針對與恐怖主義、擴散融資及政治人物有關的定向金融制裁的篩查工作",
     "員工的個人法定責任、洗錢／恐怖分子資金籌集的新興技巧，以及所備存的培訓紀錄"
@@ -26135,7 +26135,7 @@
   "en": {
    "q": "What are the consequences of failing to submit LMO or LPS information, and of failing to maintain them once licensed?",
    "options": [
-    "Failure to submit invalidates the application; failure to maintain leads to suspension or revocation of the licence",
+    "Failure to submit invalidates the application, and failure to maintain leads to suspension or revocation of the licence",
     "Both attract a pecuniary penalty of up to HK$1,000,000 under section 29 of the AMLO for operating without a licence",
     "Both constitute a criminal offence under section 52 of the AMLO, punishable by a fine of up to $50,000 and imprisonment for 6 months",
     "Both result in automatic referral to the Anti-Money Laundering and Counter-Terrorist Financing Review Tribunal for a fresh decision"
@@ -26145,7 +26145,7 @@
   "tc": {
    "q": "未有提交本地管理辦事處或本地存放簿冊及紀錄的地方的資料，以及領牌後未能維持該等處所，各有甚麼後果？",
    "options": [
-    "未有提交會令申請無效；未能維持則會導致牌照被暫時吊銷或撤銷",
+    "未有提交會令申請無效，未能維持則會導致牌照被暫時吊銷或撤銷",
     "兩者均會招致根據《打擊洗錢條例》第29條就無牌經營處以最高100萬港元的罰款",
     "兩者均構成《打擊洗錢條例》第52條所訂罪行，最高可處罰款5萬元及監禁6個月",
     "兩者均會自動轉交打擊洗錢及恐怖分子資金籌集覆核審裁處重新作出決定"
@@ -26164,7 +26164,7 @@
   "en": {
    "q": "Where another business is run on the same premises as the applicant's money service, what does the Licensing Guide require?",
    "options": [
-    "The money service must be partitioned; sharing premises with another MSO is not accepted",
+    "The money service must be partitioned, and sharing premises with another MSO is not accepted",
     "The other business sharing the premises must relocate within 90 days of the licence being granted",
     "The applicant must obtain and retain a copy of the other business's Business Registration Certificate",
     "The other business operating on the premises must also hold a valid MSO licence"
@@ -26174,7 +26174,7 @@
   "tc": {
    "q": "如申請人的金錢服務與其他業務在同一處所經營，《牌照指引》有何規定？",
    "options": [
-    "金錢服務須與其他業務分隔；與經營者共用處所不獲接受",
+    "金錢服務須與其他業務分隔，與經營者共用處所不獲接受",
     "共用處所的其他業務須在牌照批出後90日內遷離",
     "申請人須取得並保留該其他業務的商業登記證副本",
     "在該處所經營的其他業務亦須持有有效的金錢服務經營者牌照"
@@ -26378,7 +26378,7 @@
   "tc": {
    "q": "申請人或持牌人並無有效商業登記證，有何後果？",
    "options": [
-    "申請不會獲處理；如已批出牌照，該牌照可被暫時吊銷及／或撤銷",
+    "申請不會獲處理，如已批出牌照，該牌照可被暫時吊銷及／或撤銷",
     "根據《打擊洗錢條例》第29條施加最高100萬港元的罰款",
     "牌照獲批出，但附加須於30日內取得商業登記證的條件",
     "申請人可就此規定向打擊洗錢及恐怖分子資金籌集覆核審裁處提出上訴"
@@ -26965,7 +26965,7 @@
   "tc": {
    "q": "申請人可以哪種語文填寫申請表格、補充資料表及附件？",
    "options": [
-    "英文或中文均可；如情況需要，亦可兩者兼用",
+    "英文或中文均可，如情況需要，亦可兩者兼用",
     "只限英文，因海關不接受以中文填寫的申請",
     "只限中文，因申請表格並無英文版本",
     "由香港海關就個別申請人指定的語文"
@@ -28045,7 +28045,7 @@
   "tc": {
    "q": "香港海關接獲牌照申請後，申請人會收到甚麼？",
    "options": [
-    "申請的收妥通知；如有需要，並發提示要求提交欠交文件",
+    "申請的收妥通知，如有需要，並發提示要求提交欠交文件",
     "面談通知，連同繳付牌照費用的繳費通知書（45日內）",
     "邀請提名合資格人士出席應考能力評核的邀請信",
     "預約應考能力評核的日期、時間及試場的信件"
@@ -28122,7 +28122,7 @@
   "en": {
    "q": "How do the LPS and LMO refusal grounds differ in scope?",
    "options": [
-    "LPS failure is a ground for any applicant; LMO failure applies only to an applicant without particular premises",
+    "LPS failure is a ground for any applicant, and LMO failure applies only to an applicant without particular premises",
     "Both grounds apply only to applicants who choose to operate without particular premises",
     "Both grounds apply only to applicants operating at particular premises, not those without",
     "Failure to provide LMO information applies to all applicants, and LPS only to those without premises under s.5.10(d)"
@@ -28132,7 +28132,7 @@
   "tc": {
    "q": "存放紀錄地方與本地管理辦事處這兩項拒發理由，適用範圍有何不同？",
    "options": [
-    "存放紀錄地方適用於任何申請人；本地管理辦事處則只適用於不設處所經營者",
+    "存放紀錄地方適用於任何申請人，本地管理辦事處則只適用於不設處所經營者",
     "兩項理由均只適用於選擇不設任何特定處所經營金錢服務的申請人",
     "兩項理由均只適用於在特定處所經營金錢服務的申請人，不適用於不設處所者",
     "本地管理辦事處適用於所有申請人，存放紀錄地方則只適用於不設處所者"
@@ -28924,7 +28924,7 @@
   "en": {
    "q": "How does the Licensing Guide characterise the list of licensee's obligations it sets out?",
    "options": [
-    "As a non-exhaustive list; the licensee is obliged to comply with all applicable AMLO provisions and CCE guidelines",
+    "As a non-exhaustive list, since the licensee must comply with all applicable AMLO provisions and CCE guidelines",
     "As a list confined, under s.11.1, to the suspicious-transaction reporting and AML Policy duties in paragraphs (a) and (b)",
     "As a list applying only to licensees at particular premises, excluding those without particular premises",
     "As a list applying only until the licensee's first renewal application is approved by the CCE"
@@ -29113,20 +29113,20 @@
   "en": {
    "q": "How do the LPS and LMO revocation grounds differ in their conditions?",
    "options": [
-    "The LPS ground applies to any licensee; the LMO ground applies only to those without premises",
+    "The LPS ground applies to any licensee, while the LMO ground applies only to those without premises",
     "Both apply only to licensees operating a money service at particular premises specified in the licence",
     "Both apply only where the premises have been inspected by C&ED officers and found non-compliant",
-    "The LMO ground applies to everyone; the LPS ground applies only to those without premises"
+    "The LMO ground applies to everyone, while the LPS ground applies only to those without premises"
    ],
    "explain": "Paragraph 7.1(d) applies where any licensee fails to maintain an LPS or the LPS falls foul of the guide's requirements, without qualification. Paragraph 7.1(e) is expressly limited to a licensee that operates without particular premises — the reverse of paragraph (d)'s universal scope, not a premises-only or inspection-triggered rule."
   },
   "tc": {
    "q": "存放紀錄地方與本地管理辦事處這兩項撤銷理由，條件有何不同？",
    "options": [
-    "存放紀錄地方一項適用於任何持牌人；本地管理辦事處一項只適用於不設處所者",
+    "存放紀錄地方一項適用於任何持牌人，本地管理辦事處一項只適用於不設處所者",
     "兩者均只適用於在牌照上指明的特定處所經營金錢服務的持牌人",
     "兩者均只適用於處所經海關人員視察後被認為不合格的情況",
-    "本地管理辦事處一項適用於所有人；存放紀錄地方一項只適用於不設處所者"
+    "本地管理辦事處一項適用於所有人，存放紀錄地方一項只適用於不設處所者"
    ],
    "explain": "第7.1(d)段適用於任何持牌人未有維持存放紀錄地方，或該地方不符本指引所載規定的情況，並無附加條件。第7.1(e)段則明文限於持牌人在無特定處所下經營金錢服務的情況——與(d)段的普遍適用範圍剛好相反，並非只限有處所或須經視察觸發。"
   }
@@ -29532,7 +29532,7 @@
    "q": "在撤銷或暫時吊銷牌照的理由中，何人喪失適當人選資格被列為首項？",
    "options": [
     "批出牌照後，持牌人、個人、任何合夥人、董事及最終擁有人",
-    "只限獨資經營者；如屬法團，則只限擔任董事總經理的董事",
+    "只限獨資經營者，如屬法團，則只限擔任董事總經理的董事",
     "只限最終擁有人，不包括持牌人本身、合夥人及董事（有限公司）",
     "只限合規主任及洗錢報告主任，並不包括任何最終擁有人"
    ],
@@ -30059,7 +30059,7 @@
   "en": {
    "q": "On which publicly available materials are the Assessment questions mainly based?",
    "options": [
-    "The AMLO; the AML/CFT Guideline for MSOs; the Licensing Guide; and any guidelines and circulars that are issued by the C&ED to MSOs",
+    "The AMLO, the AML/CFT Guideline for MSOs, the Licensing Guide, and any guidelines and circulars that are issued by the C&ED to MSOs",
     "Textbooks and study guides published by commercial examination-preparation providers, none of which the C&ED endorses as reference material",
     "The FATF Recommendations and the mutual evaluation reports on Hong Kong's AML/CFT regime published by the FATF",
     "Past Assessment question papers and the corresponding correct answers released by the C&ED after each sitting"
@@ -30262,7 +30262,7 @@
   "en": {
    "q": "What does the Guidance Notes say about damaged or defaced identification documents?",
    "options": [
-    "The candidate may not be allowed to attend; inspect documents carefully beforehand",
+    "The candidate may not be allowed to attend, so inspect documents carefully beforehand",
     "A photocopy of the identification document will be accepted at the invigilator's discretion",
     "The candidate may still attend but must produce a replacement document within seven days",
     "The invigilator may verify the candidate's identity by other reasonable means instead"
@@ -30272,7 +30272,7 @@
   "tc": {
    "q": "《須知》就損毀或污損的身分證明文件有何說明？",
    "options": [
-    "該考生可能不獲准出席；宜於評核前小心檢查證件",
+    "該考生可能不獲准出席，宜於評核前小心檢查證件",
     "監考員可酌情接受身分證明文件的影印本",
     "該考生仍可出席，但須於七日內補交替代證明文件",
     "監考員可改以其他合理方式核實考生身分"
@@ -30320,7 +30320,7 @@
   "en": {
    "q": "What is the position on requests to change the Assessment date, time or centre, and on late arrival?",
    "options": [
-    "Not considered; no entry once the Assessment has begun",
+    "Not considered, and no entry once the Assessment has begun",
     "Requests for change are considered on payment of a fee",
     "Late arrivals are admitted within the first fifteen minutes",
     "Changes are permitted once only for each candidate"
@@ -30330,7 +30330,7 @@
   "tc": {
    "q": "就更改評核日期、時間或中心的要求，以及遲到，有何規定？",
    "options": [
-    "更改要求不獲考慮；評核開始後不得進場",
+    "更改要求不獲考慮，評核開始後不得進場",
     "繳付指定費用後，更改要求方獲考慮",
     "遲到考生可於評核開始後首十五分鐘內入場",
     "每名考生可更改評核日期、時間或中心一次"
@@ -30407,7 +30407,7 @@
   "en": {
    "q": "Where must a candidate mark answers, and what is the consequence of marking them elsewhere?",
    "options": [
-    "On the answer sheet provided; elsewhere unmarked",
+    "On the answer sheet provided, and elsewhere unmarked",
     "On the question book, which is collected and marked",
     "On either the question book or answer sheet, candidate's choice",
     "On the invitation letter, which is collected with the script"
@@ -30417,7 +30417,7 @@
   "tc": {
    "q": "考生須在何處填寫答案？在其他地方填寫有何後果？",
    "options": [
-    "須填在提供的答題紙上；別處不予評分",
+    "須填在提供的答題紙上，別處不予評分",
     "在試題冊上填寫，該試題冊會被收回評分",
     "可由考生自行選擇寫在試題冊或答題紙上",
     "在邀請信上填寫，該信會連同答卷一併收回"
@@ -30523,9 +30523,9 @@
   "en": {
    "q": "Within what period may a candidate dissatisfied with the result request a re-checking, and what happens to late requests?",
    "options": [
-    "Seven days from the result notification; late, not considered",
-    "Within 14 days; late requests are considered on payment of a fee",
-    "Within 30 days; late requests are considered at the CCE's discretion",
+    "Seven days from the result notification, with late requests not considered",
+    "Within 14 days, and late requests are considered on payment of a fee",
+    "Within 30 days, and late requests are considered at the CCE's discretion",
     "There is no time limit at all for requesting a re-checking"
    ],
    "explain": "Paragraph 12.2 states that candidates not satisfied with their results may, within seven days after the date of issuance of the result notification, request a re-checking; late submission will not be considered — there is no fee-based extension to 14 days, no discretionary 30-day extension, and no unlimited time to ask."
@@ -30533,9 +30533,9 @@
   "tc": {
    "q": "對結果不滿的考生可於多久內要求覆核？逾期提出的要求會如何處理？",
    "options": [
-    "通知後七日內；逾期不獲考慮",
-    "14日內；逾期繳費可獲考慮",
-    "30日內；逾期由關長酌情考慮",
+    "通知後七日內，逾期不獲考慮",
+    "14日內，逾期繳費可獲考慮",
+    "30日內，逾期由關長酌情考慮",
     "覆核要求並無任何時限規定"
    ],
    "explain": "第12.2段訂明對評核結果不滿的考生，可於結果通知發出日期後七日內要求覆核；逾期提交者不獲考慮——並無繳費延至14日的安排、由關長酌情延至30日的安排，或不設時限的安排。"
@@ -30552,7 +30552,7 @@
   "en": {
    "q": "What does the re-checking of an answer sheet involve, and within what period is the result sent?",
    "options": [
-    "Technical-error checks (e.g. wrong mark entries); written result within 14 days",
+    "Technical-error checks (e.g. wrong mark entries), and written result within 14 days",
     "A full re-marking by a different examiner, with the result sent within 30 days",
     "A review of the question paper for errors, with the result sent within 7 days",
     "An interview with the candidate, followed by a written decision within a month"
@@ -30581,7 +30581,7 @@
   "en": {
    "q": "What does the C&ED say about disclosing exact scores, questions and correct answers?",
    "options": [
-    "Final; never discloses scores, questions or answers",
+    "Final, and never discloses scores, questions or answers",
     "Scores are disclosed on request after re-checking",
     "Questions and answers are published annually",
     "Scores are disclosed but questions are not"
@@ -30591,7 +30591,7 @@
   "tc": {
    "q": "香港海關就披露確實分數、試題及正確答案有何說明？",
    "options": [
-    "為最終決定；海關永不披露分數、試題及答案",
+    "為最終決定，海關永不披露分數、試題及答案",
     "只要考生提出要求，覆核後海關會披露分數",
     "評核試題及正確答案會於每年年底公開",
     "海關會披露確實分數，但不會披露評核試題"
@@ -30610,7 +30610,7 @@
   "en": {
    "q": "What does the Guidance Notes emphasise about the relationship between passing the Assessment and obtaining a licence?",
    "options": [
-    "Not necessarily eligible; must meet AMLO and Licensing Guide requirements",
+    "Not necessarily eligible, and must meet AMLO and Licensing Guide requirements",
     "A pass automatically guarantees the grant of a licence with no further review",
     "A pass exempts the applicant from the fit and proper person test entirely",
     "A pass entitles the applicant to a provisional licence pending full vetting"
@@ -30620,7 +30620,7 @@
   "tc": {
    "q": "《須知》就通過評核與取得牌照的關係強調甚麼？",
    "options": [
-    "非必然符合牌照資格；仍須符合《打擊洗錢條例》牌照指引規定",
+    "非必然符合牌照資格，仍須符合《打擊洗錢條例》牌照指引規定",
     "通過能力評核即自動保證必定獲海關批出牌照，毋須再經任何審批",
     "通過能力評核可完全豁免適當人選準則的相關規定",
     "通過能力評核可獲發臨時牌照，待日後完成全面審核"
@@ -30668,7 +30668,7 @@
   "en": {
    "q": "What does the Guidance Notes say about the significance of receiving an invitation to the Assessment?",
    "options": [
-    "Not proof of meeting licensing requirements; vetting in progress",
+    "Not proof of meeting licensing requirements, and vetting in progress",
     "It confirms the applicant has satisfied the fit and proper test",
     "It guarantees the candidate an interview with C&ED officers",
     "It confirms that the premises have already been approved"
@@ -30678,7 +30678,7 @@
   "tc": {
    "q": "《須知》就獲邀參加評核的意義有何說明？",
    "options": [
-    "不代表已完全符合發牌規定；審核在進行",
+    "不代表已完全符合發牌規定，審核在進行",
     "確認該申請人已完全通過適當人選測試",
     "保證可獲安排與香港海關人員面談",
     "確認其經營處所已獲海關批准"
@@ -30697,7 +30697,7 @@
   "en": {
    "q": "What arrangement is available for candidates with disabilities?",
    "options": [
-    "Contact the C&ED; medical proof may be required to arrange suitable support",
+    "Contact the C&ED, and medical proof may be required to arrange suitable support",
     "No special arrangements of any kind are available to candidates with disabilities",
     "Arrangements are made automatically on the basis of the application form",
     "Candidates must apply to the Review Tribunal for accommodations"
@@ -30707,7 +30707,7 @@
   "tc": {
    "q": "殘疾考生可獲甚麼安排？",
    "options": [
-    "可致電海關查詢；海關可要求醫學證明以作安排",
+    "可致電海關查詢，海關可要求醫學證明以作安排",
     "任何種類的特別安排均概不提供予殘疾考生使用",
     "純粹按申請表格內容自動作出相關安排",
     "考生須向覆核審裁處提出申請以獲便利安排"
@@ -31225,7 +31225,7 @@
     "Office hours, Monday to Friday, except public holidays",
     "24 hours a day, seven days a week, including public holidays",
     "Office hours, Monday to Saturday, including public holidays",
-    "Only by post or fax; the phone line does not operate at all"
+    "Only by post or fax, and the phone line does not operate at all"
    ],
    "explain": "Paragraph 15.1 states that phone enquiries on licensing matters may be made at 3742 7742 during office hours from Monday to Friday except public holidays. Post, fax and email are separate, additional channels alongside the phone line, not substitutes for it, and the line does not run continuously or on Saturdays."
   },
@@ -31280,7 +31280,7 @@
   "en": {
    "q": "A licensed MSO contravenes a specified provision of Schedule 2 and, separately, a condition of its licence. Which pecuniary penalty caps apply?",
    "options": [
-    "The greater of $10 million or 3x the profit gained under section 21; $1,000,000 under section 43",
+    "The greater of $10 million or 3x the profit gained under section 21, and $1,000,000 under section 43",
     "$1,000,000 under section 43 applies to both the Schedule 2 contravention and the licence-condition breach alike",
     "$10 million or 3 times the profit gained, whichever is the greater, under section 21, applies to both contraventions",
     "$1,000,000 for the Schedule 2 contravention, and a daily penalty of up to $10,000 for the licence-condition breach until remedied"
@@ -31290,10 +31290,10 @@
   "tc": {
    "q": "某持牌金錢服務經營者違反附表2的指明的條文，另又違反其牌照條件。適用哪些罰款上限？",
    "options": [
-    "第21條：1,000萬元或利潤三倍（以較高者）；第43條：1,000,000元",
+    "第21條：1,000萬元或利潤三倍（以較高者），第43條：1,000,000元",
     "第43條規定，附表2的違反及違反牌照條件，兩者上限一律為1,000,000元",
     "第21條規定，就兩項違反均訂為1,000萬元或所獲利潤的三倍（以較高者為準）",
-    "附表2的違反訂為1,000,000元；違反牌照條件則按日計算，最高每日10,000元"
+    "附表2的違反訂為1,000,000元，違反牌照條件則按日計算，最高每日10,000元"
    ],
    "explain": "第21(2)(c)條就金融機構違反附表2的行為，將罰款上限訂為1,000萬元或所獲利潤／所避免成本的三倍（以較高者為準）；第43(2)(c)條就金錢服務經營者持牌人違反牌照條件，將罰款上限訂為1,000,000元。第43(4)條所訂每日10,000元，是就未有遵從補救令另行施加的罰款，並非原本違反行為的罰款上限。"
   }
@@ -31309,7 +31309,7 @@
   "en": {
    "q": "How do the Licensing Guide and the Guidance Notes together describe who must sit and pass the Assessment?",
    "options": [
-    "The sole proprietor, or any partner/director, must pass; at most three partners or directors may be nominated",
+    "The sole proprietor, or any partner/director, must pass, and at most three partners or directors may be nominated",
     "Every partner and every one of the directors of the applicant must sit and pass the Assessment",
     "Up to three partners or directors may be nominated, each attending a different session of the Assessment",
     "The compliance officer, rather than a partner or director, must sit the Assessment on the applicant's behalf"
@@ -31338,9 +31338,9 @@
   "en": {
    "q": "How does the CO/MLRO requirement operate differently before and after a licence is granted?",
    "options": [
-    "Before grant, failing to appoint a CO/MLRO grounds refusal; after, failing to maintain one grounds revocation or suspension",
-    "It applies only before grant; an applicant who later fails to maintain a CO or MLRO faces no consequence under the Licensing Guide",
-    "It applies only after grant; an applicant lacking a competent CO or MLRO at the time of application may still be granted a licence",
+    "Before grant, failing to appoint a CO/MLRO grounds refusal, and after, failing to maintain one grounds revocation or suspension",
+    "It applies only before grant, and an applicant who later fails to maintain a CO or MLRO faces no consequence under the Licensing Guide",
+    "It applies only after grant, and an applicant lacking a competent CO or MLRO at the time of application may still be granted a licence",
     "The requirement is identical at both stages: failing to appoint is a ground for refusal both before and after the licence is granted"
    ],
    "explain": "Paragraph 5.10(g) makes an applicant's failure to appoint a competent CO or MLRO a ground on which the CCE may refuse to grant a licence. Paragraph 7.1(i) makes a licensee's failure to appoint or maintain a competent CO or MLRO a ground for revocation or suspension after grant - the pre-grant consequence is refusal, and the post-grant ground covers the continuing duty to maintain, not merely appoint, and is revocation/suspension, not 'refusal'."
@@ -31348,9 +31348,9 @@
   "tc": {
    "q": "合規主任／洗錢報告主任的規定，在批出牌照前後有何不同運作？",
    "options": [
-    "批出前未有委任即拒發牌照理由；批出後未有維持是撤銷或暫時吊銷理由",
-    "只在批出前適用；批出後未能維持合規主任或洗錢報告主任並無後果",
-    "只在批出後適用；申請時缺乏稱職的合規主任或洗錢報告主任仍可獲批牌照",
+    "批出前未有委任即拒發牌照理由，批出後未有維持是撤銷或暫時吊銷理由",
+    "只在批出前適用，批出後未能維持合規主任或洗錢報告主任並無後果",
+    "只在批出後適用，申請時缺乏稱職的合規主任或洗錢報告主任仍可獲批牌照",
     "兩個階段的規定完全相同：批出前後未有委任均是拒發牌照的理由"
    ],
    "explain": "第5.10(g)段將申請人未有委任稱職的合規主任或洗錢報告主任列為關長可拒發牌照的理由。第7.1(i)段則將持牌人未有委任或維持稱職的該等主任列為批出後可撤銷或暫時吊銷牌照的理由——批出前的後果是拒發牌照，批出後則涵蓋持續維持的責任而不僅是委任，且後果是撤銷或暫時吊銷，而非拒發。"
@@ -31396,7 +31396,7 @@
   "en": {
    "q": "How do the Licensing Guide's two bank account provisions work together?",
    "options": [
-    "In the name of the licensee's company, sole proprietor, partner, director or ultimate owner; notify any change in Form 6 within one month",
+    "In the name of the licensee's company, sole proprietor, partner, director or ultimate owner, and notify any change in Form 6 within one month",
     "The account may be opened in any name whatsoever, provided any later change is notified in Form 6 within one month, with no restriction on whose name is used",
     "The account must be in the licensee's name, but no notification is required at all if the account stays with the same bank, whatever the account number",
     "The account must be pre-approved by the CCE in Form 4 before use, with any later change notified within seven days instead of one month"
@@ -31406,7 +31406,7 @@
   "tc": {
    "q": "《牌照指引》就銀行帳戶的兩項規定如何配合運作？",
    "options": [
-    "以公司、獨資經營者、合夥人、董事或最終擁有人名義開立；變更於一個月內以表格6通知",
+    "以公司、獨資經營者、合夥人、董事或最終擁有人名義開立，變更於一個月內以表格6通知",
     "該帳戶可以任何名義開立，只要變更於一個月內以表格6通知，並無任何其他條件限制",
     "該帳戶須以持牌人名義開立，惟如仍屬同一銀行，不論帳戶號碼有否更改，均無須以表格6通知",
     "該帳戶須先經關長以表格4批准方可開立及使用，其後如有變更須於七日內通知，而非表格6"
@@ -31454,7 +31454,7 @@
   "en": {
    "q": "Which reason, drawn from the Licensing Guide, explains why a change in the occupants of particular premises in a mixed commercial and residential building must be notified?",
    "options": [
-    "Because occupant consent to inspection is continuing; a new occupant's refusal grounds revocation",
+    "Because occupant consent to inspection is continuing, and a new occupant's refusal grounds revocation",
     "Because the C&ED maintains a public register of every occupant of mixed commercial and residential premises",
     "Because every new occupant must be approved in advance by the CCE using Form 4, like a new director",
     "Because the rent apportioned to the money service business must be recalculated whenever occupants change"
@@ -31527,7 +31527,7 @@
   "en": {
    "q": "How does the Licensing Guide treat premises shared with another business as against premises shared with another MSO?",
    "options": [
-    "Shared with a business, it must be clearly partitioned; shared with another MSO, it is not accepted at all",
+    "Shared with a business, it must be clearly partitioned, while shared with another MSO, it is not accepted at all",
     "Both arrangements are acceptable, provided the money service area is clearly partitioned in each case",
     "Both arrangements are refused outright, since the C&ED requires sole occupancy of the premises",
     "Sharing with another MSO is acceptable if partitioned, but sharing with a business is refused outright"
@@ -31537,10 +31537,10 @@
   "tc": {
    "q": "《牌照指引》如何區別對待與其他業務共用處所，以及與另一金錢服務經營者共用處所？",
    "options": [
-    "與其他業務共用須清楚間隔；與另一金錢服務經營者共用則完全不獲接受",
+    "與其他業務共用須清楚間隔，與另一金錢服務經營者共用則完全不獲接受",
     "只要金錢服務範圍清楚間隔，兩種共用安排均可接受",
     "兩種安排均一律被拒絕，因香港海關要求處所須獨立佔用",
-    "與另一金錢服務經營者共用，有間隔即可接受；與其他業務共用則拒絕"
+    "與另一金錢服務經營者共用，有間隔即可接受，與其他業務共用則拒絕"
    ],
    "explain": "第4.8段規定，如同一處所經營其他業務，金錢服務業務須與之清楚間隔及區分；並訂明與另一金錢服務經營者共用處所以經營金錢服務業務，一概不獲關長接受。第4.6段亦另行將已由其他金錢服務經營者使用或申報的處所列為不適合——間隔並不能補救此點，而所述理由亦非處所須獨立佔用。"
   }
@@ -31556,7 +31556,7 @@
   "en": {
    "q": "How do the Supplementary F&P Guideline and the Licensing Guide together describe the compliance officer requirement?",
    "options": [
-    "Competent, senior and authoritative; an Employment Ordinance employee unless also proprietor/partner/director/owner",
+    "Competent, senior and authoritative, and an Employment Ordinance employee unless also proprietor/partner/director/owner",
     "The CO may always be an external consultant, since the Guideline does not require any employment relationship with the licensee at all",
     "The CO must hold a recognised professional accounting or legal qualification and pass a separate CCE examination before appointment",
     "The CO must be approved in advance by the CCE in Form 4, in the same way as a new director, partner or ultimate owner"
@@ -31566,7 +31566,7 @@
   "tc": {
    "q": "《適當人選補充指引》與《牌照指引》合起來如何描述合規主任的規定？",
    "options": [
-    "須稱職有資歷及權限；除獨資經營者／合夥人／董事／最終擁有人外，須為僱員",
+    "須稱職有資歷及權限，除獨資經營者／合夥人／董事／最終擁有人外，須為僱員",
     "合規主任在任何情況下均可為外聘顧問，因指引並無要求其與持牌人存在任何僱傭關係",
     "須持有認可的專業會計或法律資格，並須通過關長另行設立的獨立考核，方可獲委任",
     "須像新委任的董事、合夥人或最終擁有人一樣，須事先以書面向關長申請表格4批准"
@@ -31585,7 +31585,7 @@
   "en": {
    "q": "What are the two limbs of the periodic return requirement in the Licensing Guide?",
    "options": [
-    "Lodged within 2 weeks of each half year unless the CCE specifies otherwise; late lodgement may lead to suspension",
+    "Lodged within 2 weeks of each half year unless the CCE specifies otherwise, and late lodgement may lead to suspension",
     "Lodged annually within one month of the financial year end, and late submission attracts a fixed penalty",
     "Lodged quarterly within 2 weeks of quarter end, and late submission is a criminal offence under the AMLO",
     "Lodged only when specifically demanded by the CCE, and any failure results in immediate prosecution"
@@ -31595,7 +31595,7 @@
   "tc": {
    "q": "《牌照指引》定期申報表規定的兩個部分是甚麼？",
    "options": [
-    "須在每半年開始兩星期內提交，除非關長另作指明；逾期可致暫時吊銷",
+    "須在每半年開始兩星期內提交，除非關長另作指明，逾期可致暫時吊銷",
     "須每年於持牌人財政年度結束一個月內提交，逾期提交會被定額罰款",
     "須每季於季結兩星期內提交，逾期提交屬《打擊洗錢條例》下的罪行",
     "只須在關長特別提出要求時方須提交，未有提交會即時被檢控"
@@ -31614,7 +31614,7 @@
   "en": {
    "q": "An applicant deliberately omits one of its business premises from the licence application. What two consequences may follow?",
    "options": [
-    "A section 52(2) offence: fine up to $50,000, 6 months' imprisonment; plus refusal as incomplete",
+    "A section 52(2) offence: fine up to $50,000, 6 months' imprisonment, plus refusal as incomplete",
     "Only a warning letter from the C&ED, with no offence committed and no effect on the application",
     "Only a delay in processing, since the omission is treated as a minor clerical error under the Guide",
     "Automatic revocation of any licence subsequently granted, without any separate offence being committed"
@@ -31624,7 +31624,7 @@
   "tc": {
    "q": "申請人在牌照申請中故意遺漏其中一個業務處所。可能招致哪兩項後果？",
    "options": [
-    "第52(2)條：罰款50,000元，監禁6個月；申請不完整拒發牌照",
+    "第52(2)條：罰款50,000元，監禁6個月，申請不完整拒發牌照",
     "只會收到香港海關發出的書面警告信，不構成任何罪行，亦完全不影響申請結果",
     "只會延誤申請的處理程序，因該遺漏在指引下被視為輕微的文書錯誤而已",
     "其後獲批的任何牌照均會自動被撤銷，而遺漏本身不會構成任何獨立的刑事罪行"
@@ -31643,7 +31643,7 @@
   "en": {
    "q": "Both the Guidance Notes and the Licensing Guide use a 90-day period in the renewal context. What does each refer to?",
    "options": [
-    "Guidance Notes: nomination window with no eligible passer; Licensing Guide: when the reminder letter is sent",
+    "Guidance Notes: nomination window with no eligible passer, and Licensing Guide: when the reminder letter is sent",
     "Both of them refer to the statutory deadline for submitting the renewal application before expiry",
     "Both refer to the 30-day period within which the eligible person(s) must attend the Assessment after receiving the invitation",
     "The Guidance Notes refer to the reminder letter, and the Licensing Guide to the renewal application deadline itself"
@@ -31653,7 +31653,7 @@
   "tc": {
    "q": "《能力評核須知》及《牌照指引》在續期情境中均使用90日期間。各自所指為何？",
    "options": [
-    "《須知》指提名期間；《牌照指引》指提示信發出時間",
+    "《須知》指提名期間，《牌照指引》指提示信發出時間",
     "兩者均指持牌人提交續期申請所須遵守的法定期限",
     "兩者均指合資格人士接獲邀請信後須於30日內出席評核的期間",
     "《須知》指提示信發出時間，《牌照指引》指續期申請期限"
@@ -31774,7 +31774,7 @@
   "en": {
    "q": "What is provided at the Assessment centre, and what may be placed on the desk?",
    "options": [
-    "Stationery is provided; only necessary, permitted stationery may be placed on the desk",
+    "Stationery is provided, and only necessary, permitted stationery may be placed on the desk",
     "Candidates must bring their own stationery, and calculators are permitted on the desk throughout",
     "Reference materials are provided, and personal notes may be placed on the desk during the Assessment",
     "Nothing is provided, and candidates may keep personal belongings such as bags on the desk"
@@ -31784,7 +31784,7 @@
   "tc": {
    "q": "評核中心會提供甚麼？桌上可放置甚麼？",
    "options": [
-    "中心會提供文具；桌上只可放置必需及獲准許的文具",
+    "中心會提供文具，桌上只可放置必需及獲准許的文具",
     "考生須自行攜帶文具，並可在桌上使用計算機",
     "中心提供參考資料，應考期間桌上可放置個人筆記",
     "中心不提供任何物品，考生可將手袋等個人物品放於桌上"
@@ -32987,7 +32987,7 @@
   "en": {
    "q": "A Hong Kong-incorporated MSO has an overseas branch in a jurisdiction whose AML/CFT requirements are laxer than Hong Kong's. What should the MSO do?",
    "options": [
-    "Apply the higher requirements; where local law forbids it, inform the CCE and mitigate further",
+    "Apply the higher requirements, and where local law forbids it, inform the CCE and mitigate further",
     "Follow the local, laxer requirements without informing the CCE or taking any further action",
     "Close the overseas branch immediately rather than operate under differing standards",
     "Apply Hong Kong's requirements only to customers who happen to be Hong Kong residents"
@@ -32997,7 +32997,7 @@
   "tc": {
    "q": "一間在香港成立為法團的金錢服務經營者，其外地分行位處打擊洗錢規定較香港寬鬆的司法管轄區。該經營者應怎樣做？",
    "options": [
-    "執行較嚴格規定；如當地不准許，須通知關長並採取額外措施",
+    "執行較嚴格規定，如當地不准許，須通知關長並採取額外措施",
     "跟從當地（較寬鬆）規定，毋須通知關長或採取進一步行動",
     "立即結束該海外分行，以免在不同標準下經營",
     "只對恰巧是香港居民的客戶採用香港的規定"
@@ -33174,8 +33174,8 @@
   "tc": {
    "q": "風險評估過程本身須如何佐證及記錄？",
    "options": [
-    "須以文件記錄；風險的識別及評估須經定性及定量分析，運用內部及外部資料",
-    "須以文件記錄；但只須使用外部來源的定量分析識別相關風險，毋須任何內部資料",
+    "須以文件記錄，風險的識別及評估須經定性及定量分析，運用內部及外部資料",
+    "須以文件記錄，但只須使用外部來源的定量分析識別相關風險，毋須任何內部資料",
     "在高級管理層會議上以口頭記錄，只憑定性判斷評估風險",
     "須按關長訂明的標準範本以文件記錄，毋須輔以分析或來源資料"
    ],
@@ -33561,7 +33561,7 @@
   "en": {
    "q": "In relation to which two matters should an MSO identify and assess ML/TF risks under ¶2.11?",
    "options": [
-    "The development of new products and new business practices, including new delivery mechanisms; and the use of new or developing technologies for both new and pre-existing products",
+    "The development of new products and new business practices, including new delivery mechanisms, and the use of new or developing technologies for both new and pre-existing products",
     "The acquisition of new customer segments or delivery channels, and any significant change in the MSO's operational processes, target customers or business counterparts or registered office address",
     "The use of new or developing technologies for newly-launched products only, not technologies later applied to the MSO's pre-existing product range",
     "The introduction of new delivery mechanisms only, rather than the wider development of new products, new business practices or new technologies generally"
@@ -33571,7 +33571,7 @@
   "tc": {
    "q": "根據第2.11段，金錢服務經營者應就哪兩方面識別及評估洗錢及恐怖分子資金籌集風險？",
    "options": [
-    "新產品及新業務常規（包括新交付機制）的發展；以及就新產品及現有產品使用新或發展中的科技",
+    "新產品及新業務常規（包括新交付機制）的發展，以及就新產品及現有產品使用新或發展中的科技",
     "收購新的客戶類別或交付渠道，以及該經營者的營運程序、目標客戶或交易對手的重大改變，或註冊地址",
     "只限就新推出的產品使用新或發展中的科技，不包括其後應用於現有產品的科技",
     "只限新的交付機制，不包括新產品的整體發展、新業務常規或新科技的一般使用"
@@ -33600,7 +33600,7 @@
   "tc": {
    "q": "洗錢及恐怖分子資金籌集風險的高低，如何影響客戶盡職審查過程中取得及核實的資料？",
    "options": [
-    "風險較高時，所取得資料的數量及類型以及有關核實程度應予增加；風險較低時則可予簡化",
+    "風險較高時，所取得資料的數量及類型以及有關核實程度應予增加，風險較低時則可予簡化",
     "不論客戶的評定風險水平為何，每宗個案均採用相同的客戶盡職審查措施及持續監察",
     "應為低風險客戶取得比高風險客戶更多的資料，以便有理據將其列為低風險，作為每年周期的一部分",
     "風險較高須採取更嚴格的客戶盡職審查，風險較低則可簡化，惟取得的資料量不變"
@@ -33736,8 +33736,8 @@
   "en": {
    "q": "Which categories of risk factor will a customer risk assessment framework generally include?",
    "options": [
-    "Customer risk factors; country risk factors; and product, service, transaction or delivery channel risk factors",
-    "Customer risk factors; country risk factors; delivery or distribution channel risk factors; and other risk factors",
+    "Customer risk factors, country risk factors, and product, service, transaction or delivery channel risk factors",
+    "Customer risk factors, country risk factors, delivery or distribution channel risk factors, and other risk factors",
     "Country risk factors and product or service risk factors only, since customer risk factors are addressed separately under CDD",
     "Customer risk factors and transaction risk factors only, determined solely by the customer's nationality and occupation"
    ],
@@ -33746,8 +33746,8 @@
   "tc": {
    "q": "客戶風險評估框架一般會包括哪些類別的風險因素？",
    "options": [
-    "客戶風險因素；國家風險因素；以及產品、服務、交易或交付渠道風險因素",
-    "客戶風險因素；國家風險因素；交付或分銷渠道風險因素；以及其他風險因素",
+    "客戶風險因素，國家風險因素，以及產品、服務、交易或交付渠道風險因素",
+    "客戶風險因素，國家風險因素，交付或分銷渠道風險因素，以及其他風險因素",
     "只限國家風險因素及產品或服務風險因素，因客戶風險因素已於客戶盡職審查中另行處理",
     "只限客戶風險因素及交易風險因素，並純粹按客戶的國籍及職業釐定"
    ],
@@ -34026,7 +34026,7 @@
     "須獨立於所有的營運及業務職能，惟仍受到該經營者本身的規模所限制",
     "不論該經營者規模或架構為何，在任何情況下均須完全獨立於所有營運及業務職能",
     "無須獨立，只要合規主任及洗錢報告主任擁有合適資格及充足打擊洗錢知識即可",
-    "只有在該經營者僱員超過十人時，方須獨立於營運職能；規模較小者則無此規定"
+    "只有在該經營者僱員超過十人時，方須獨立於營運職能，規模較小者則無此規定"
    ],
    "explain": "第3.8(b)段訂明高級管理層應在切實可行範圍內，確保合規主任及洗錢報告主任在該經營者規模的限制下，獨立於所有營運及業務職能——此為附有限制的標準，並非絕對規定、並非因具備資格而獲豁免，亦無僱員人數門檻。"
   }
@@ -34052,7 +34052,7 @@
   "tc": {
    "q": "合規主任及洗錢報告主任通常應駐於何處？其缺席時應有甚麼替代安排？",
    "options": [
-    "通常應駐於香港；並應設有署理或副合規主任及洗錢報告主任，而在切實可行範圍內應具備相同地位",
+    "通常應駐於香港，並應設有署理或副合規主任及洗錢報告主任，而在切實可行範圍內應具備相同地位",
     "可駐於集團轄下任何海外辦事處，缺席期間須由集團的外部核數師代理，並具備審計專業資格",
     "通常應駐於香港，即使合規主任或洗錢報告主任長期缺席，亦無須設有任何特定的替代安排",
     "應駐於香港以外的集團總部，缺席期間須由集團合規部門代理，並向當地監管機構負責"
@@ -34816,7 +34816,7 @@
   "en": {
    "q": "How does the statutory duty in section 19(3) of Schedule 2 relate to the Guideline's requirements on an MSO's AML/CFT Systems in paragraph 3.2?",
    "options": [
-    "Section 19(3) requires effective procedures for the duties under sections 3, 4, 5, 9, 10 and 15 of Schedule 2; paragraph 3.2 requires senior management to approve the resulting AML/CFT Systems",
+    "Section 19(3) requires effective procedures for the duties under sections 3, 4, 5, 9, 10 and 15 of Schedule 2, and paragraph 3.2 requires senior management to approve the resulting AML/CFT Systems",
     "Section 19(3)'s procedural duty is superseded by the broader duty in section 23 of Schedule 2, which paragraph 3.1 says an MSO meets through a risk-based AML/CFT System, certified by the CO within 14 days",
     "Paragraph 3.2's requirement that senior management approve the AML/CFT Systems applies only where section 22(1)'s duty on overseas branches is also engaged",
     "Both impose the identical requirement in identical wording, so the statutory minimum and the Guideline's expectations are simply the same provision restated"
@@ -34826,7 +34826,7 @@
   "tc": {
    "q": "附表2第19(3)條的法定責任，與本指引第3.2段就打擊洗錢系統的規定有何關係？",
    "options": [
-    "第19(3)條規定須設有有效程序，以履行附表2第3、4、5、9、10及15條的責任；第3.2段規定所得的打擊洗錢系統須經高級管理層批准",
+    "第19(3)條規定須設有有效程序，以履行附表2第3、4、5、9、10及15條的責任，第3.2段規定所得的打擊洗錢系統須經高級管理層批准",
     "第19(3)條這項程序責任已被第23條規定的更廣泛責任取代，第3.1段訂明須以風險為本方式建立打擊洗錢系統以符合第23條，並須每年由合規主任確認",
     "第3.2段規定打擊洗錢系統須經高級管理層批准，惟此規定只在第22(1)條的境外分行及附屬企業責任同時適用時方適用",
     "兩者以完全相同的措辭，就完全相同的事宜施加完全相同的法定責任，法定最低要求與本指引期望之間並無任何分別"
@@ -35343,8 +35343,8 @@
    "q": "How do section 22(1) of Schedule 2 and ¶3.16 of the Guideline align on overseas operations?",
    "options": [
     "Both require overseas branches/subsidiaries to match Schedule 2 Parts 2 and 3, where local law permits",
-    "Section 22(1) applies to branches only; the Guideline extends the same duty to subsidiaries only",
-    "Both require procedures matching Schedule 2 Part 2 only; Part 3 record-keeping is not covered",
+    "Section 22(1) applies to branches only, and the Guideline extends the same duty to subsidiaries only",
+    "Both require procedures matching Schedule 2 Part 2 only, and Part 3 record-keeping is not covered",
     "The Guideline's provision imposes a considerably stricter standard than section 22(1) and displaces it entirely"
    ],
    "explain": "AMLO Sch. 2 s.22(1) and ¶3.16 of the Guideline (not ¶3.15, which only states the general group-wide AML/CFT Systems obligation) impose the same duty: a Hong Kong-incorporated MSO must ensure its overseas branches and subsidiary undertakings carrying on the same business have procedures to comply, to the extent local law permits, with requirements similar to Parts 2 and 3 of Schedule 2 (CDD and record-keeping). The duty covers both branches and subsidiaries together, covers both Parts 2 and 3, and the Guideline provision implements rather than displaces the statutory duty."
@@ -35353,7 +35353,7 @@
    "q": "附表2第22(1)條與本指引第3.16段就境外業務如何相互配合？",
    "options": [
     "兩者規定境外分支及附屬企業須設有符合附表2第2、3部的程序，以當地法律准許為限",
-    "第22(1)條只適用於分支機構；本指引則只將同一責任擴展至附屬企業",
+    "第22(1)條只適用於分支機構，本指引則只將同一責任擴展至附屬企業",
     "兩者均只規定設有符合附表2第2部的程序，並不涵蓋第3部的備存紀錄規定，範圍較窄",
     "本指引的條文施加比第22(1)條更嚴格的標準，並完全取代該條文"
    ],
@@ -35752,20 +35752,20 @@
   "en": {
    "q": "Before carrying out an occasional transaction for a customer, at what amounts must an MSO carry out CDD measures?",
    "options": [
-    "$120,000 for general transactions; $8,000 for wire or virtual asset transfers",
+    "$120,000 for general transactions and $8,000 for wire or virtual asset transfers",
     "$8,000 or above for all types of transactions, whether single or linked operations",
     "$120,000 or above for all types of transactions, including wire transfers below $8,000",
-    "$500,000 or above for general transactions; $120,000 or above for wire transfers"
+    "$500,000 or above for general transactions and $120,000 or above for wire transfers"
    ],
    "explain": "CDD must be carried out before an occasional transaction of $120,000 or above (or foreign-currency equivalent), or a wire transfer / virtual asset transfer of $8,000 or above — whether in a single operation or several operations that appear linked (¶4.2.1(b))."
   },
   "tc": {
    "q": "在為客戶進行非經常交易前，涉及金額達到多少時金錢服務經營者必須執行客戶盡職審查措施？",
    "options": [
-    "一般交易達120,000元；電傳轉帳或虛擬資產轉移達8,000元",
+    "一般交易達120,000元，電傳轉帳或虛擬資產轉移達8,000元",
     "所有類別交易達8,000元或以上，不論以單一或有關連的操作進行",
     "所有類別交易達120,000元或以上，包括低於8,000元的電傳轉帳",
-    "一般交易達500,000元或以上；電傳轉帳達120,000元或以上"
+    "一般交易達500,000元或以上，電傳轉帳達120,000元或以上"
    ],
    "explain": "第4.2.1(b)段規定在進行非經常交易前，一般交易達120,000元或以上（或等值外幣），或電傳轉帳／虛擬資產轉移達8,000元或以上時，即須執行盡職審查——不論以單一或多項看來有關連的操作進行。"
   }
@@ -36024,7 +36024,7 @@
   "tc": {
    "q": "關於簡化盡職審查，下列哪項正確？",
    "options": [
-    "如懷疑洗錢／恐怖分子資金籌集，須停止採用簡化盡職審查；即使已採用，仍須持續監察業務關係",
+    "如懷疑洗錢／恐怖分子資金籌集，須停止採用簡化盡職審查，即使已採用，仍須持續監察業務關係",
     "一經採用簡化盡職審查，經營者便無須按附表2進行持續盡職審查或交易監察",
     "即使懷疑洗錢／恐怖分子資金籌集，只要每年為客戶進行覆核，仍可繼續採用簡化盡職審查，並知會高層",
     "簡化盡職審查一經評為低風險客戶，便可豁免所有盡職審查及備存紀錄責任"
@@ -36044,9 +36044,9 @@
    "q": "Which statement about enhanced due diligence (EDD) is CORRECT?",
    "options": [
     "EDD must be applied where a situation by its nature presents high ML/TF risk, or where the CCE specifies it in a written notice",
-    "EDD is required only once senior management has approved the business relationship; it is not required before that approval; reviewed twice yearly",
+    "EDD is required only once senior management has approved the relationship, is not required before that approval, and is reviewed twice yearly",
     "EDD applies automatically once a customer's transactions exceed $120,000, regardless of the assessed risk",
-    "EDD is required only when the customer is identified as a Hong Kong PEP; other high-risk situations need no such measures"
+    "EDD is required only when the customer is a Hong Kong PEP, and other high-risk situations need no such measures"
    ],
    "explain": "¶4.9.1: EDD must be applied in a situation that by its nature presents high ML/TF risk (having regard to the higher-risk factors in ¶4.9.5) or a situation the CCE specifies in a written notice — these are what trigger EDD. Senior management approval (¶4.9.3) is a separate, later requirement for establishing or continuing a high-risk relationship, not the trigger for applying EDD. $120,000 is the occasional-transaction threshold (¶4.2.1), not an EDD trigger, and Hong Kong PEP status (¶4.9.16-4.9.17) is only one example of a high-risk situation, not the only one."
   },
@@ -36321,7 +36321,7 @@
    "q": "Which statement about an MSO's sanctions screening obligations is CORRECT?",
    "options": [
     "Screen customers and beneficial owners at establishment and against new or updated designations, and screen all parties in a cross-border wire transfer before executing it",
-    "Screening is required only for customers the MSO has assessed as high risk; low-risk customers and their beneficial owners may be excluded from the checks",
+    "Screening is required only for customers the MSO has assessed as high risk, and low-risk customers and their beneficial owners may be excluded from the checks",
     "Names only need to be added to the screening database once Hong Kong legislation has formally implemented the relevant UN Security Council Resolution",
     "Screening cross-border wire transfer parties after the transfer has already been executed is acceptable, provided any name matches are then reported to the JFIU within 24 hours of detection"
    ],
@@ -36331,7 +36331,7 @@
    "q": "關於金錢服務經營者的制裁篩查責任，下列哪項正確？",
    "options": [
     "應在建立關係時及有新增或更新指認時對客戶及實益擁有人進行篩查，並在執行跨境電傳轉帳前對相關方進行篩查",
-    "只須對經評為高風險的客戶進行篩查；低風險客戶及其實益擁有人可獲豁免有關數據庫核對",
+    "只須對經評為高風險的客戶進行篩查，低風險客戶及其實益擁有人可獲豁免有關數據庫核對",
     "只須待香港透過立法正式實施有關聯合國安全理事會決議後，才須將名單加入篩查數據庫",
     "在跨境電傳轉帳執行後才對相關各方進行篩查亦可接受，只要其後將任何名單相符個案於偵測後24小時內向聯合財富情報組匯報"
    ],
@@ -36641,7 +36641,7 @@
   "en": {
    "q": "Must an identification document obtained by an MSO always contain a photograph of the customer?",
    "options": [
-    "It should; in exceptional circumstances where none can be obtained, one without a photograph may be accepted if the risks are properly assessed and mitigated",
+    "It should, and in exceptional circumstances where none can be obtained, one without a photograph may be accepted if the risks are properly assessed and mitigated",
     "Yes, without exception — the CCE will never accept a document lacking a photograph, however unusual the customer's circumstances",
     "No, a photograph is never required, since the other identification particulars are always sufficient to verify identity on their own",
     "Only where the customer is not physically present — for a customer who attends in person, a photograph is always mandatory without exception, per a 2024 CCE circular"
@@ -36651,7 +36651,7 @@
   "tc": {
    "q": "金錢服務經營者取得的身分證明文件是否必須載有客戶相片？",
    "options": [
-    "應載有；在例外情況下未能取得時，如已妥為評估及減低相關風險，可接受並無相片的文件",
+    "應載有，在例外情況下未能取得時，如已妥為評估及減低相關風險，可接受並無相片的文件",
     "是，並無例外——即使客戶情況如何特殊，關長亦絕不接受無相片的文件",
     "否——從不需要相片，因為其他身分資料本身已足以核實客戶身分",
     "只在客戶並未親身到場時方需要——凡客戶親身到場，相片均屬必須，並無例外，詳見有關通函"
@@ -38195,7 +38195,7 @@
   "tc": {
    "q": "如核實身分延後進行，該經營者的風險管理政策須訂立甚麼？",
    "options": [
-    "完成核實身分的合理時限；以及超逾時限的跟進行動",
+    "完成核實身分的合理時限，以及超逾時限的跟進行動",
     "訂為固定五年期限，與附表2所定的最低保存紀錄期完全相同",
     "訂為固定三年期限，與員工培訓紀錄的最低保存期完全相同",
     "並無固定時限——只在確實知悉洗錢／恐怖分子資金籌集時方須行動"
@@ -38289,7 +38289,7 @@
   "en": {
    "q": "If verification cannot be completed within the reasonable timeframe, what must the MSO do?",
    "options": [
-    "End the relationship promptly; stop transactions except to return funds or assets in original form",
+    "End the relationship promptly, and stop transactions except to return funds or assets in original form",
     "Continue the relationship as normal, but cap the amount of all further transactions at $8,000 per transaction",
     "Suspend further activity and formally refer the customer to another licensed MSO to complete verification",
     "Grant the customer one further extension of the timeframe, provided senior management approves it in writing"
@@ -38698,7 +38698,7 @@
   "en": {
    "q": "On the basis of documents from which sources must a person purporting to act on behalf of a customer be verified?",
    "options": [
-    "A governmental body; CCE or an RA; a similar overseas authority; or a CCE-recognised source",
+    "A governmental body, CCE or an RA, a similar overseas authority, or a CCE-recognised source",
     "Only documents that the customer itself chooses to provide by personal email, without independent verification",
     "Only documents that have been certified true by a practising Hong Kong solicitor of over five years' standing",
     "Only documents that were originally issued by an authority within Hong Kong within the past three months"
@@ -38708,7 +38708,7 @@
   "tc": {
    "q": "核實聲稱代客戶行事的人的身分時，須依據來自哪些來源的文件？",
    "options": [
-    "政府機構；關長或有關當局；相似境外當局；或認可來源",
+    "政府機構，關長或有關當局，相似境外當局，或認可來源",
     "只限由客戶自行以私人電郵選擇提供的文件，未經獨立核實",
     "只限經執業超過五年的香港律師核證屬實的文件",
     "只限最初由香港境內當局於三個月內簽發的文件"
@@ -38916,7 +38916,7 @@
   "en": {
    "q": "How do the verification requirements for a customer and for a beneficial owner differ under the AMLO?",
    "options": [
-    "A customer must be verified against reliable, independent-source documents; a beneficial owner needs only reasonable, risk-calibrated measures",
+    "A customer must be verified against reliable, independent-source documents, while a beneficial owner needs only reasonable, risk-calibrated measures",
     "Beneficial owners are, by statutory definition, always treated as posing low ML/TF risk, regardless of the nature of the business relationship involved",
     "A beneficial owner's identity is verified by the customer's own declaration alone, with the MSO playing no role at all",
     "A beneficial owner need not be identified or verified at all once the customer's own identity has been confirmed"
@@ -39267,9 +39267,9 @@
   "en": {
    "q": "What different standards govern an MSO's duty to identify a customer as a PEP, comparing non-Hong Kong PEPs with Hong Kong or international organisation PEPs?",
    "options": [
-    "Non-Hong Kong PEPs need effective s.19(1) procedures; Hong Kong/international-organisation PEPs need only reasonable measures",
+    "Non-Hong Kong PEPs need effective s.19(1) procedures, and Hong Kong/international-organisation PEPs need only reasonable measures",
     "Both categories require the MSO to establish and maintain effective screening procedures under section 19(1) of Schedule 2",
-    "Hong Kong and international organisation PEPs require effective procedures; non-Hong Kong PEPs need only reasonable measures",
+    "Hong Kong and international organisation PEPs require effective procedures, and non-Hong Kong PEPs need only reasonable measures",
     "Neither category requires more than the MSO's ordinary risk-based CDD measures under section 5 of Schedule 2"
    ],
    "explain": "¶4.9.9 requires an MSO to establish and maintain effective procedures under section 19(1) of Schedule 2 for determining whether a customer or beneficial owner is a non-Hong Kong PEP — a systemic, mandatory standard. ¶4.9.16 requires only that the MSO take reasonable measures to determine Hong Kong or international organisation PEP status, a lighter case-by-case standard; the two are not reversed, identical, or reducible to ordinary section 5 CDD."
@@ -39277,9 +39277,9 @@
   "tc": {
    "q": "在識別客戶是否政治人物的責任上，非香港政治人物與香港或國際組織政治人物所適用的標準有何不同？",
    "options": [
-    "非香港政治人物須按第19(1)條設有效程序；香港／國際組織政治人物只須採取合理措施",
+    "非香港政治人物須按第19(1)條設有效程序，香港／國際組織政治人物只須採取合理措施",
     "兩者均須按附表2第19(1)條，就客戶身分設有有效的篩選及核對程序",
-    "香港及國際組織政治人物須按第19(1)條設有效程序；非香港政治人物則只須合理措施",
+    "香港及國際組織政治人物須按第19(1)條設有效程序，非香港政治人物則只須合理措施",
     "兩者均只須按附表2第5條，對客戶採取一般以風險為本的盡職審查措施"
    ],
    "explain": "第4.9.9段規定該經營者須按附表2第19(1)條設有有效程序，以斷定客戶或實益擁有人是否非香港政治人物——這是系統性的強制標準。第4.9.16段則只要求該經營者採取合理措施，以斷定其是否香港政治人物或國際組織政治人物，屬較寬鬆的個別個案標準；兩者的規定並非互換、並非完全相同，也不能簡化為附表2第5條的一般盡職審查措施。"
@@ -39296,7 +39296,7 @@
   "en": {
    "q": "In which situations must an MSO apply the ¶4.9.10 EDD measures to a Hong Kong PEP or an international organisation PEP?",
    "options": [
-    "Before a high risk relationship begins; when one becomes high risk; or PEP found once high risk",
+    "Before a high risk relationship begins, when one becomes high risk, or PEP found once high risk",
     "In every case, regardless of risk level, in exactly the same way as for non-Hong Kong PEPs",
     "Only where a single transaction reaches the $120,000 occasional-transaction CDD threshold",
     "Only where the customer is also separately and independently identified as a non-Hong Kong PEP"
@@ -39306,7 +39306,7 @@
   "tc": {
    "q": "在哪些情況下，金錢服務經營者須對香港政治人物或國際組織政治人物採取第4.9.10段的加強盡職審查措施？",
    "options": [
-    "在高風險關係前；現有關係其後變高風險時；或高風險關係後得悉政治人物身分時",
+    "在高風險關係前，現有關係其後變高風險時，或高風險關係後得悉政治人物身分時",
     "在任何情況下均須執行加強盡職審查，與非香港政治人物相同，不論風險高低",
     "只在單一宗交易達到120,000元的一般非經常交易盡職審查適用門檻時",
     "只在該客戶亦被獨立識別為非香港政治人物的有關情況下方予適用"
@@ -39354,9 +39354,9 @@
   "en": {
    "q": "What twin dangers does the Guideline identify in classifying PEPs?",
    "options": [
-    "Under-classification raises the MSO's ML risk; over-classification burdens the MSO and its customers",
-    "Under-classification breaches the AMLO; over-classification breaches the Personal Data (Privacy) Ordinance",
-    "Under-classification attracts a disciplinary penalty; over-classification attracts none at all",
+    "Under-classification raises the MSO's own ML risk, and over-classification burdens the MSO and its customers",
+    "Under-classification breaches the AMLO, and over-classification breaches the Personal Data (Privacy) Ordinance",
+    "Under-classification attracts a disciplinary penalty, and over-classification attracts none",
     "Both risks are treated by the CCE as equally serious, regardless of circumstances"
    ],
    "explain": "¶4.9.19 states that under-classification of PEPs poses a higher ML risk to the MSO, whilst over-classification leads to an unnecessary compliance burden on the MSO and its customers — not a breach of the AMLO or the Personal Data (Privacy) Ordinance, not a disciplinary penalty on one side only, and not something the CCE treats as equally serious regardless of direction."
@@ -39364,8 +39364,8 @@
   "tc": {
    "q": "本指引指出在界定政治人物時有哪兩種危險？",
    "options": [
-    "界定不足會令該經營者承受較高洗錢風險；界定過寬則加重該經營者及客戶合規負擔",
-    "界定不足屬違反打擊洗錢條例；界定過寬則屬違反個人資料（私隱）條例的規定",
+    "界定不足會令該經營者承受較高洗錢風險，界定過寬則加重該經營者及客戶合規負擔",
+    "界定不足屬違反打擊洗錢條例，界定過寬則屬違反個人資料（私隱）條例的規定",
     "界定不足會招致紀律處分，而界定過寬則完全不會招致任何處分",
     "不論是界定不足還是界定過寬，關長一律視為同等嚴重的違規行為"
    ],
@@ -39412,7 +39412,7 @@
   "en": {
    "q": "What is the Guideline's position on the use of commercially available PEP databases?",
    "options": [
-    "Never replace traditional CDD; note their limits and use only as a support tool",
+    "Never replace traditional CDD, note their limits, and use only as a support tool",
     "They are comprehensive and reliable, so may safely replace traditional CDD entirely",
     "They must never be used at all, as the CCE treats them as inherently unreliable",
     "Each database must be individually approved by the CCE before any MSO may use it"
@@ -39422,7 +39422,7 @@
   "tc": {
    "q": "本指引就使用商業政治人物資料庫的立場為何？",
    "options": [
-    "不能取代傳統盡職審查；應留意限制，只用作支援工具",
+    "不能取代傳統盡職審查，應留意限制，只用作支援工具",
     "數據庫全面而可靠，因此可完全取代傳統的盡職審查程序",
     "絕對不可使用，因關長視這類數據庫為本質上不可靠的來源",
     "每個數據庫必須先經關長個別批准，該經營者方可使用"
@@ -39470,7 +39470,7 @@
   "en": {
    "q": "Which factors should an MSO take into account in determining the extent of EDD measures for a PEP?",
    "options": [
-    "The PEP's functions; jurisdiction risk; relationship nature; and former-PEP factors",
+    "The PEP's functions, jurisdiction risk, relationship nature, and former-PEP factors",
     "The customer's account balance and transaction frequency, without other factors",
     "The MSO's own size and resources alone, regardless of the PEP's own circumstances",
     "The total number of other PEP customers the MSO already happens to serve"
@@ -39480,7 +39480,7 @@
   "tc": {
    "q": "在決定就政治人物採取加強盡職審查措施的程度時，金錢服務經營者應顧及哪些因素？",
    "options": [
-    "政治人物公職性質；地區風險；業務關係性質；以及前政治人物風險因素",
+    "政治人物公職性質，地區風險，業務關係性質，以及前政治人物風險因素",
     "只考慮該客戶的銀行帳戶結餘及交易頻密程度，完全不理會其他任何因素",
     "只考慮該經營者本身業務的規模及資源，不論該政治人物的實際情況",
     "只考慮該經營者現時碰巧已服務的其他政治人物客戶的總數目"
@@ -39644,7 +39644,7 @@
   "en": {
    "q": "Which methods does the Guideline give as possible supplementary measures for a non-face-to-face customer?",
    "options": [
-    "Independent certification; checking data vs databases; or suitable technology",
+    "Independent certification, checking data vs databases, or suitable technology",
     "Requiring the customer to physically attend the branch in person within 30 days",
     "Obtaining a formal written guarantee from another authorized financial institution",
     "Permanently limiting the whole business relationship to a single transaction only"
@@ -39654,7 +39654,7 @@
   "tc": {
    "q": "本指引就非面對面客戶舉出哪些可行的補充措施方法？",
    "options": [
-    "獨立人選認證文件；核對數據庫；或用適當科技",
+    "獨立人選認證文件，核對數據庫，或用適當科技",
     "要求該客戶必須於30日內親身到訪分行報到登記",
     "取得另一間認可財務機構出具的正式書面擔保",
     "永久將整個業務關係限制於單一宗交易之內處理"
@@ -39857,7 +39857,7 @@
   "tc": {
    "q": "金錢服務經營者應要求其中介人承諾保存相關客戶盡職審查資料多久？",
    "options": [
-    "在該業務關係持續期間，並自關係終止之日起計至少五年；或直至關長指明的時間",
+    "在該業務關係持續期間，並自關係終止之日起計至少五年，或直至關長指明的時間",
     "自有關交易完成的日期起計至少五年期間內，不論業務關係其後於何時終止均須保存",
     "只要該經營者與該中介人之間所簽訂的中介協議仍然具有合約效力",
     "自該中介人進行有關的客戶盡職審查措施之日起計兩年為止"
@@ -39934,7 +39934,7 @@
   "en": {
    "q": "What should an MSO do if it has doubts about the reliability of its intermediary, and if it decides to terminate that relationship?",
    "options": [
-    "Review the intermediary's CDD ability; if terminating, immediately obtain its CDD information",
+    "Review the intermediary's CDD ability, and if terminating, immediately obtain its CDD information",
     "Continue the arrangement unchanged until the next regularly scheduled periodic review takes place",
     "Report the intermediary to the CCE and take no further step of its own",
     "Require the intermediary to fully indemnify the MSO against any resulting loss"
@@ -39944,7 +39944,7 @@
   "tc": {
    "q": "如金錢服務經營者對其中介人的可靠性存疑，以及決定終止該關係時，應怎樣做？",
    "options": [
-    "檢視中介人履行盡職審查職責的能力；如擬終止，須即時取得盡職審查資料",
+    "檢視中介人履行盡職審查職責的能力，如擬終止，須即時取得盡職審查資料",
     "維持該安排不變，直至下一次按原定計劃進行的定期檢視為止，暫不採取行動",
     "向海關關長舉報該中介人，而不再自行採取任何其他步驟",
     "要求該中介人就任何因此而生的損失向該經營者作出全面彌償"
@@ -40281,7 +40281,7 @@
    "q": "第4.12.2段舉出哪些觸發事件的例子，並補充了什麼？",
    "options": [
     "重新啟用停用帳戶，或帳戶實益擁有權或控制權變動，及經營者特有其他觸發事件",
-    "僅重新啟用停用帳戶一項；本指引將此列為窮盡而不可再作擴展的觸發事件清單",
+    "僅重新啟用停用帳戶一項，本指引將此列為窮盡而不可再作擴展的觸發事件清單",
     "僅客戶通訊地址出現變更一項，從不考慮任何其他類型的觸發事件",
     "僅涉及超過8,000元單一宗交易門檻的交易一項，不考慮任何其他事件"
    ],
@@ -40396,7 +40396,7 @@
   "tc": {
    "q": "因客戶盡職審查未能完成而終止業務關係，是否自動須作出可疑交易報告？",
    "options": [
-    "否——只在有相關知悉或懷疑時方須作出報告；終止本身並非判斷準則",
+    "否——只在有相關知悉或懷疑時方須作出報告，終止本身並非判斷準則",
     "是——每宗因客戶盡職審查失敗而終止的個案均自動須提交可疑交易報告",
     "不需要——業務關係一經終止，終止前形成的懷疑便無須再作報告",
     "是——但只限該客戶正式就終止決定提出書面爭議的情況"
@@ -40791,7 +40791,7 @@
   "tc": {
    "q": "由何人評估非財務行動特別組織成員的司法管轄區是否施加與附表2類似的規定？",
    "options": [
-    "該經營者本身；其可能須自行評估及斷定，並將評估記錄",
+    "該經營者本身，其可能須自行評估及斷定，並將評估記錄",
     "只限海關關長，並由其公布對等司法管轄區的權威名單",
     "只限財務行動特別組織本身，透過其自行公布的相互評估報告",
     "只限財經事務及庫務局，代該經營者作出有關評估"
@@ -41001,7 +41001,7 @@
   "en": {
    "q": "How should an MSO treat the CDD records of a dormant customer?",
    "options": [
-    "No regular review is required, but a review should occur on reactivation; the MSO should define 'dormant customer' in policy",
+    "No regular review is required, but a review should occur on reactivation, and the MSO should define 'dormant customer' in policy",
     "The records must be reviewed at least annually, the same minimum frequency ¶5.3 sets for customers presenting high ML/TF risk",
     "The records need not be reviewed even upon reactivation, unless doubts arise as to the veracity of the information previously obtained",
     "The customer must be reported to the JFIU as dormant, in the same way suspicious transactions are reported under ¶5.12"
@@ -41011,7 +41011,7 @@
   "tc": {
    "q": "金錢服務經營者應如何處理停用客戶的盡職審查紀錄？",
    "options": [
-    "無須定期檢視，但應在重新啟用該關係時進行檢視；該經營者應在政策中界定何謂停用客戶",
+    "無須定期檢視，但應在重新啟用該關係時進行檢視，該經營者應在政策中界定何謂停用客戶",
     "須最少每年檢視一次，與第5.3段就構成高洗錢／恐怖分子資金籌集風險客戶所訂的最低頻次相同",
     "即使重新啟用該關係亦無須檢視，除非對先前取得資料的真確性產生疑問",
     "須向聯合財富情報組報告該客戶已停用，方式與第5.12段呈報可疑交易相同"
@@ -41040,7 +41040,7 @@
   "tc": {
    "q": "就構成高洗錢／恐怖分子資金籌集風險的客戶，檢視的最低頻次為何？",
    "options": [
-    "最少每年檢視一次；如該經營者認為有需要，則須更頻密檢視",
+    "最少每年檢視一次，如該經營者認為有需要，則須更頻密檢視",
     "只需在關係重新啟用時檢視，並無固定的定期最低頻次",
     "最少每六個月檢視一次，與高風險的加強交易監察頻次相符",
     "最少每兩年檢視一次，除非客戶屬非香港政治人物"
@@ -41731,20 +41731,20 @@
   "en": {
    "q": "Under sections 4 and 5 of the UNATMO, by what two routes may a person or property be specified as a terrorist, terrorist associate or terrorist property?",
    "options": [
-    "By the Chief Executive publishing a Gazette notice after a UNSC Committee designation; or by applying to the Court of First Instance for an order, which is also gazetted",
-    "By the Secretary for Security issuing a freezing notice under section 6; or by the Chief Executive granting a licence exception to the freezing prohibitions under that section",
+    "By the Chief Executive publishing a Gazette notice after a UNSC Committee designation, or by applying to the Court of First Instance for an order, which is also gazetted",
+    "By the Secretary for Security issuing a freezing notice under section 6, or by the Chief Executive granting a licence exception to the freezing prohibitions under that section",
     "By the United Nations Security Council alone, taking automatic effect throughout Hong Kong without any Gazette notice or Court of First Instance order",
-    "By the Commerce and Economic Development Bureau issuing a public notice; or by the Court of First Instance making a confiscation order over the property"
+    "By the Commerce and Economic Development Bureau issuing a public notice, or by the Court of First Instance making a confiscation order over the property"
    ],
    "explain": "¶6.4 states that where a person or property is designated by a UNSC Committee, the Chief Executive may publish a notice in the Gazette under section 4; alternatively, under section 5 the Chief Executive may apply to the Court of First Instance for an order, which if made is also published in the Gazette. The Secretary for Security's freezing and licensing powers (¶6.5(a), ¶6.6), automatic UNSC effect, and the CEDB's role in the separate UNSO sanctions regime (¶6.7-6.8) are not the section 4/5 designation routes."
   },
   "tc": {
    "q": "根據《聯合國（反恐怖主義措施）條例》第4及5條，可透過哪兩個途徑將某人或財產指明為恐怖分子、恐怖分子聯繫者或恐怖分子財產？",
    "options": [
-    "由行政長官在安理會轄下委員會作出指定後於憲報刊登公告；或向原訟法庭申請命令並刊登於憲報",
-    "由保安局局長根據第6條發出財產凍結通知；或由行政長官根據同一條文批出豁免有關凍結禁令的特許",
+    "由行政長官在安理會轄下委員會作出指定後於憲報刊登公告，或向原訟法庭申請命令並刊登於憲報",
+    "由保安局局長根據第6條發出財產凍結通知，或由行政長官根據同一條文批出豁免有關凍結禁令的特許",
     "僅由聯合國安全理事會作出決定，在香港全境自動生效，無須刊登憲報公告或法庭命令",
-    "由商務及經濟發展局發出公告；或由原訟法庭就該財產作出充公令，兩者均屬可行途徑"
+    "由商務及經濟發展局發出公告，或由原訟法庭就該財產作出充公令，兩者均屬可行途徑"
    ],
    "explain": "第6.4段訂明，如某人或財產獲安理會轄下委員會指定，行政長官可根據第4條在憲報刊登公告；或行政長官可根據第5條向原訟法庭申請命令，如命令作出亦會在憲報刊登。保安局局長的凍結及特許權力（第6.5(a)及6.6段）、安理會決定的自動生效，以及商務及經濟發展局在另一套《聯合國制裁條例》制度下的角色（第6.7至6.8段），均非第4及5條所訂的指定途徑。"
   }
@@ -42024,7 +42024,7 @@
   "en": {
    "q": "Beyond designated persons and entities themselves, to whom is it an offence to make funds available under the applicable UNSO regulations?",
    "options": [
-    "Persons or entities acting on behalf of, or at the direction of, designated persons or entities, or owned or controlled by them; and entities owned by those persons",
+    "Persons or entities acting on behalf of, or at the direction of, designated persons or entities, or owned or controlled by them, and entities owned by those persons",
     "Any counterparty to a transaction with a designated person, provided that the transaction had already taken place before the person's name was first published in the Gazette",
     "Any person who is merely resident in the same jurisdiction as a designated person, regardless of whether any relationship with that person exists",
     "Only the immediate family members of a designated person, as determined from time to time by the Joint Financial Intelligence Unit"
@@ -42034,7 +42034,7 @@
   "tc": {
    "q": "除指定人士及實體本身外，根據適用的《聯合國制裁條例》規例，向何人提供資金亦屬罪行？",
    "options": [
-    "代指定人士或實體行事或按其指示行事，或由其擁有或控制的人士或實體；以及由該等人士或實體擁有的實體",
+    "代指定人士或實體行事或按其指示行事，或由其擁有或控制的人士或實體，以及由該等人士或實體擁有的實體",
     "只要有關交易是在指定人士的姓名於憲報或商經局網站刊登之前已經進行，曾與該人進行交易的任何對手方均屬之",
     "僅與指定人士居於同一司法管轄區的任何人，不論兩者之間有否任何實質的個人或商業關係存在",
     "僅由聯合財富情報組不時認定的指定人士直系家庭成員，不論彼此有否任何實際的關連或往來"
@@ -42340,9 +42340,9 @@
   "tc": {
    "q": "金錢服務經營者應維持甚麼資料庫？獲准採用甚麼替代方式？",
    "options": [
-    "綜合已知悉名單的恐怖分子及指定人士資料庫；或第三方供應商的資料庫",
+    "綜合已知悉名單的恐怖分子及指定人士資料庫，或第三方供應商的資料庫",
     "只備存本身客戶的有關交易紀錄資料庫，完全不容許任何替代方式",
-    "與其他金錢服務經營者透過關長聯合維持的資料庫；或改以人手紙本檔案代替",
+    "與其他金錢服務經營者透過關長聯合維持的資料庫，或改以人手紙本檔案代替",
     "由商務及經濟發展局直接提供並持續更新的資料庫，完全不容許任何替代方式"
    ],
    "explain": "第6.13段訂明該經營者應維持一個綜合已知悉名單的恐怖分子及指定人士姓名及詳情資料庫；或可訂用第三方服務供應商所維持的該等資料庫，並採取適當措施（例如定期抽樣測試）以確保完整及準確。並非只備存本身客戶交易紀錄的資料庫，也不是透過關長與其他經營者聯合維持的資料庫或人手紙本檔案，更不是由商務及經濟發展局提供——該局根據第6.15段的角色是刊登名單，並非提供資料庫。"
@@ -42471,7 +42471,7 @@
   "tc": {
    "q": "就制裁資料庫本身，另有哪兩項要求？",
    "options": [
-    "每當有變動時須適時更新；並須讓相關員工易於查閱",
+    "每當有變動時須適時更新，並須讓相關員工易於查閱",
     "須每日備份所有紀錄，並須將副本一直存放於香港以外",
     "須端對端加密，並只限合規主任方可查閱",
     "須每年獨立審計，並由關長以書面核證結果"
@@ -44017,9 +44017,9 @@
   "en": {
    "q": "An MSO acting as ordering institution executes a cross-border wire transfer of $9,000 for a walk-in customer with no account, sent to a recipient who holds an account at the beneficiary institution. Which combination satisfies ¶10.5?",
    "options": [
-    "Originator's name; a unique reference number assigned by the MSO; originator's date and place of birth; recipient's name; and the recipient's account number at the beneficiary institution",
-    "Originator's name and identity card number; the originator's own account number at the ordering institution, which this walk-in customer does not have; and the recipient's name only",
-    "Originator's name and address; a unique reference number assigned by the MSO; and the recipient's name and address at the beneficiary institution",
+    "Originator's name, a unique reference number assigned by the MSO, originator's date and place of birth, recipient's name, and the recipient's account number at the beneficiary institution",
+    "Originator's name and identity card number, the originator's own account number at the ordering institution, which this walk-in customer does not have, and the recipient's name only",
+    "Originator's name and address, a unique reference number assigned by the MSO, and the recipient's name and address at the beneficiary institution",
     "A unique reference number and the recipient's name only, on the basis that $9,000 falls below the $120,000 threshold for occasional-transaction due diligence"
    ],
    "explain": "For a transfer of $8,000 or above, ¶10.5 requires all five items. With no account, ¶10.5(b) is satisfied by a unique reference number assigned by the MSO; ¶10.5(c) may be satisfied for an individual by date and place of birth; and since the recipient holds an account, ¶10.5(e) requires the recipient's account number at the beneficiary institution. Quoting an account number the walk-in originator does not have, adding an address the recipient limb does not require, and invoking the unrelated $120,000 occasional-transaction CDD threshold are each incomplete or wrong."
@@ -44027,9 +44027,9 @@
   "tc": {
    "q": "某金錢服務經營者以匯款機構身分，為一名並無帳戶的即場客戶執行一宗9,000元的跨境電傳轉帳，收款人在收款機構持有帳戶。哪一組合符合第10.5段？",
    "options": [
-    "匯款人姓名；由該經營者編配的獨有參考編號；匯款人的出生日期及地點；收款人姓名；以及收款人在收款機構的帳戶號碼",
-    "匯款人姓名及身分證號碼；匯款人在匯款機構的帳戶號碼（惟此即場客戶其實根本並無該帳戶）；以及僅收款人姓名",
-    "匯款人姓名及地址；由該經營者編配的一個獨有參考編號；以及收款人在收款機構的姓名及地址",
+    "匯款人姓名，由該經營者編配的獨有參考編號，匯款人的出生日期及地點，收款人姓名，以及收款人在收款機構的帳戶號碼",
+    "匯款人姓名及身分證號碼，匯款人在匯款機構的帳戶號碼（惟此即場客戶其實根本並無該帳戶），以及僅收款人姓名",
+    "匯款人姓名及地址，由該經營者編配的一個獨有參考編號，以及收款人在收款機構的姓名及地址",
     "僅一個獨有參考編號及收款人姓名，理由是9,000元低於非經常交易客戶盡職審查的120,000元門檻"
    ],
    "explain": "就8,000元或以上的轉帳，第10.5段規定須具備全部五項資料。由於客戶並無帳戶，第10.5(b)款可由該經營者編配的獨有參考編號滿足；第10.5(c)款就個人而言可由出生日期及地點滿足；而由於收款人持有帳戶，第10.5(e)款須具備收款人在收款機構的帳戶號碼。引用即場匯款人根本沒有的帳戶號碼、在收款人一項加入並非規定的地址，以及援引無關的120,000元非經常交易客戶盡職審查門檻，均屬不完整或錯誤。"
@@ -44485,9 +44485,9 @@
   "en": {
    "q": "Which documents does paragraph 2 of Appendix A itself list for a non-resident individual who is not physically present in Hong Kong?",
    "options": [
-    "A valid international passport or other travel document; a current national identity card bearing the individual's photograph; or a current valid national driving licence with photographic evidence of identity, issued by a competent national or state authority",
-    "A Permanent Resident Identity Card of the Macau Special Administrative Region; a Mainland Travel Permit for Taiwan Residents; or a Seaman's Identity Document issued under the International Labour Organisation's Seafarers' Identity Document Convention 1958, as amended",
-    "An Exit-entry Permit for Travelling to and from Hong Kong and Macau for Official Purposes; a Hong Kong birth certificate for a minor; or a full company search report obtained from the place of incorporation",
+    "A valid international passport or other travel document, a current national identity card bearing the individual's photograph, or a current valid national driving licence with photographic evidence of identity, issued by a competent national or state authority",
+    "A Permanent Resident Identity Card of the Macau Special Administrative Region, a Mainland Travel Permit for Taiwan Residents, or a Seaman's Identity Document issued under the International Labour Organisation's Seafarers' Identity Document Convention 1958, as amended",
+    "An Exit-entry Permit for Travelling to and from Hong Kong and Macau for Official Purposes, a Hong Kong birth certificate for a minor, or a full company search report obtained from the place of incorporation",
     "A utility bill showing the individual's address, a personal bank statement, or an employer's reference letter, each certified as a true copy by a solicitor, notary public or chartered secretary"
    ],
    "explain": "Appendix A ¶2 lists, for a non-resident individual not physically present in Hong Kong: a valid international passport or other travel document; a current national identity card bearing the individual's photograph; or a current valid national driving licence with photographic evidence of identity, issued by a competent national or state authority. The named documents in ¶3 (e.g. Macau permanent resident card, Taiwan travel permit, seaman's document) illustrate what counts as a travel document generally, not the complete ¶2 list; the exit-entry permit, birth certificate and company search report belong to ¶3, ¶4 (minors) and ¶5 (corporate customers) respectively; and certified utility bills or reference letters are not identity documents under ¶2 at all."
@@ -44495,9 +44495,9 @@
   "tc": {
    "q": "附錄A第2段本身就並未身處香港的非居民個人，列出哪些文件？",
    "options": [
-    "有效的國際護照或其他旅行證件；載有該個人照片的現行國家身分證；或由主管的國家或州當局發出、載有身分照片證據的現行有效國家駕駛執照",
-    "澳門特別行政區永久居民身分證；台灣居民往來內地通行證；或根據國際勞工組織《1958年海員身分證件公約》的規定所簽發的海員身分證明文件",
-    "因公往來香港澳門特別行政區通行證；適用於未成年人的香港出生證明書；或在註冊地取得的完整公司查冊報告",
+    "有效的國際護照或其他旅行證件，載有該個人照片的現行國家身分證，或由主管的國家或州當局發出、載有身分照片證據的現行有效國家駕駛執照",
+    "澳門特別行政區永久居民身分證，台灣居民往來內地通行證，或根據國際勞工組織《1958年海員身分證件公約》的規定所簽發的海員身分證明文件",
+    "因公往來香港澳門特別行政區通行證，適用於未成年人的香港出生證明書，或在註冊地取得的完整公司查冊報告",
     "顯示個人住址的水電費單、個人銀行結單或僱主推薦信，並經律師、公證人或特許秘書核證為真確副本"
    ],
    "explain": "附錄A第2段就並未身處香港的非居民個人列出：有效的國際護照或其他旅行證件；載有該個人照片的現行國家身分證；或由主管的國家或州當局發出、載有身分照片證據的現行有效國家駕駛執照。第3段所列的具名文件（例如澳門永久居民身分證、台灣旅遊許可證、海員身分證明文件）僅說明一般而言何謂旅行證件，並非第2段的完整清單；因公往來港澳通行證、出生證明書及公司查冊報告分別屬於第3、4（未成年人）及5（公司客戶）段；水電費單或推薦信經核證後仍非第2段所指的身分證明文件。"
@@ -44640,7 +44640,7 @@
   "tc": {
    "q": "在香港出生、既無有效旅行證件亦無香港身分證的未成年人，其身分應如何核實？",
    "options": [
-    "參照未成年人的香港出生證明書核實；並須同時核實其父母或監護人身分",
+    "參照未成年人的香港出生證明書核實，並須同時核實其父母或監護人身分",
     "參照載有照片的學校紀錄核實，無須核實父母或監護人的身分",
     "只須參照其父母的身分證核實，毋須查核該未成年人本身的有關文件",
     "無法核實該未成年人身分，故必須一律拒絕建立該業務關係"
@@ -44833,7 +44833,7 @@
   "en": {
    "q": "What should a certifier do on the copy document?",
    "options": [
-    "Sign, date and print their name in capitals; state their position and that it is a true copy",
+    "Sign, date and print their name in capitals, and state their position and that it is a true copy",
     "Sign it only, since the date and certifier's position can both be inferred from the file record",
     "Affix a company chop on the copy, without any signature or any printed name at all",
     "Attach a separate letter of certification, while leaving the copy document itself unmarked"
@@ -44843,7 +44843,7 @@
   "tc": {
    "q": "核證人應在文件副本上作甚麼？",
    "options": [
-    "簽署及註明日期，以大楷列明姓名；註明職位及屬真本",
+    "簽署及註明日期，以大楷列明姓名，註明職位及屬真本",
     "只須簽署，因日期及核證人職位均可從檔案紀錄推斷得知",
     "只加蓋公司印章，而無須任何簽署或列明任何姓名",
     "另附一封核證函件，而文件副本本身則不作任何標註"
@@ -45075,7 +45075,7 @@
   "tc": {
    "q": "除另有指明外，本指引採用哪一個「金融機構」的定義？",
    "options": [
-    "財務行動特別組織建議的定義；另有指明者除外（如《打擊洗錢條例》）",
+    "財務行動特別組織建議的定義，另有指明者除外（如《打擊洗錢條例》）",
     "一律採用《打擊洗錢條例》的定義，並無財務行動特別組織的後備定義可用",
     "《銀行業條例》（第155章）所載、適用於持牌銀行的定義",
     "金融管理局在其本身的監管指引中現時採用的任何定義"
@@ -45297,7 +45297,7 @@
   "en": {
    "q": "Which feature distinguishes a wire transfer from a remittance transaction as those terms are used in the Guideline?",
    "options": [
-    "A wire transfer is electronic, via an ordering institution; a remittance transaction sends money outside Hong Kong",
+    "A wire transfer is electronic, via an ordering institution, and a remittance transaction sends money outside Hong Kong",
     "A wire transfer must always be cross-border in nature, whereas a remittance transaction is always purely domestic",
     "A wire transfer covers any amount above $8,000, whereas a remittance transaction covers amounts below that figure",
     "A wire transfer necessarily involves at least one intermediary institution, whereas a remittance transaction never involves one"
@@ -45307,7 +45307,7 @@
   "tc": {
    "q": "按本指引的用語，電傳轉帳與匯款交易的區別特徵為何？",
    "options": [
-    "電傳轉帳由匯款機構以電子方式進行；匯款交易指送款往香港以外地方",
+    "電傳轉帳由匯款機構以電子方式進行，匯款交易指送款往香港以外地方",
     "電傳轉帳必須屬跨境的性質，而匯款交易則必然純屬本地的交易",
     "電傳轉帳指款額高於8,000元的交易，匯款交易則指低於該款額的交易",
     "電傳轉帳必然涉及至少一間中介機構，匯款交易則從不涉及任何中介機構"
@@ -45789,7 +45789,7 @@
   "en": {
    "q": "How does the circular describe the standing of the examples of good practices it sets out in its Appendix?",
    "options": [
-    "They are not exhaustive and not the only ways of meeting the requirements; MSOs should assess whether to adopt them",
+    "They are not exhaustive and not the only ways of meeting the requirements, and MSOs should assess whether to adopt them",
     "They are mandatory minimum standards that every licensee must adopt in full within a period fixed by C&ED",
     "They apply only to those licensees whose systems were found to be deficient during the compliance inspections",
     "They replace the corresponding paragraphs of the AML Guideline for MSOs until that Guideline is next revised"
@@ -45799,7 +45799,7 @@
   "tc": {
    "q": "通函如何描述其附錄所載良好做法例子的地位？",
    "options": [
-    "該等例子並非詳盡無遺，亦非符合規定的唯一方法；經營者應評估是否採納",
+    "該等例子並非詳盡無遺，亦非符合規定的唯一方法，經營者應評估是否採納",
     "該等例子是每名持牌人均須在海關訂定期限內全面採納的強制性最低標準",
     "該等例子只適用於在合規視察中被發現系統有欠妥之處的持牌人",
     "該等例子取代《打擊洗錢指引》的相應段落，直至該指引下次修訂為止"
@@ -46846,7 +46846,7 @@
   "tc": {
    "q": "一名顯然正受執法機構調查的客戶突然指示金錢服務經營者調走全部資金並結束帳戶。應如何處理緊急報告？",
    "options": [
-    "在報告中表明情況緊急；如情況特殊，考慮先以電話通知聯合財富情報組",
+    "在報告中表明情況緊急，如情況特殊，考慮先以電話通知聯合財富情報組",
     "毋須即時處理，只須留待聯合財富情報組下一次季度報告的反饋週期一併提出",
     "先完成客戶指示，再按一般報告方式於30日內提交可疑交易報告",
     "只有金額超過一般非經常交易適用的120,000元門檻才須報告"
@@ -47011,7 +47011,7 @@
   "en": {
    "q": "Which of the following should be included in an MSO's records under the record-keeping requirements?",
    "options": [
-    "Customer and beneficial owner identity documents; CDD and monitoring records; account records and correspondence",
+    "Customer and beneficial owner identity documents, CDD and monitoring records, account records and correspondence",
     "Only the customer's name and telephone number — no other CDD documentation needs to be kept on file, regardless of risk",
     "Only records of transactions that individually meet or exceed the $120,000 occasional-transaction threshold",
     "Only the records of customers who have actually been the subject of an STR made to the JFIU"
@@ -47021,7 +47021,7 @@
   "tc": {
    "q": "根據備存紀錄規定，下列哪項應包括在金錢服務經營者的紀錄內？",
    "options": [
-    "客戶及實益擁有人的身分文件；客戶盡職審查所得紀錄；以及帳戶紀錄及業務通訊",
+    "客戶及實益擁有人的身分文件，客戶盡職審查所得紀錄，以及帳戶紀錄及業務通訊",
     "只須備存客戶的姓名及電話號碼——完全毋須備存任何其他客戶盡職審查文件記錄，不論風險",
     "只須備存個別已達到120,000元非經常交易門檻的交易紀錄及單據",
     "只須備存曾實際成為向聯合財富情報組提交報告對象的客戶的相關紀錄"
@@ -47050,7 +47050,7 @@
   "tc": {
    "q": "盡職審查文件及交易紀錄須保存多久？",
    "options": [
-    "業務關係持續期間及結束後最少5年；非經常或已完成交易則在交易後最少5年",
+    "業務關係持續期間及結束後最少5年，非經常或已完成交易則在交易後最少5年",
     "業務關係結束後僅1年而已——與可疑交易報告紀錄冊本身較短的法定保存期相同",
     "由客戶首次開戶當日起計10年，不論業務關係其後何時結束",
     "只須保存至客戶根據打擊洗錢條例行使刪除其個人資料的權利為止"
@@ -47108,7 +47108,7 @@
   "tc": {
    "q": "關於打擊洗錢／恐怖分子資金籌集職員培訓，下列哪項正確？",
    "options": [
-    "新職員獲聘後應盡快接受初步培訓，並定期舉辦複修培訓；紀錄須保存最少3年",
+    "新職員獲聘後應盡快接受初步培訓，並定期舉辦複修培訓，紀錄須保存最少3年",
     "只有合規主任及洗錢報告主任需要接受培訓，因為前線職員並無任何報告職責",
     "職員入職時接受一次培訓，已足夠應付其整個職業生涯的需要",
     "職員一旦通過經營者的內部測試，其培訓紀錄即可立即銷毀"
@@ -47389,7 +47389,7 @@
   "en": {
    "q": "Must a person know the nature of the underlying criminal activity before knowledge or suspicion arises?",
    "options": [
-    "No — one need not know the nature of the crime, or that the funds arose from it; the same applies to TF",
+    "No — one need not know the nature of the crime, or that the funds arose from it, and the same applies to TF",
     "Yes — the specific predicate offence that generated the funds must first be positively identified and proven",
     "Yes — at least the general legal category of the offence involved must first be clearly identified",
     "No — but the exact amount of the criminal proceeds involved must first be firmly established and verified"
@@ -47399,7 +47399,7 @@
   "tc": {
    "q": "在產生知悉或懷疑之前，是否必須知悉相關犯罪活動的性質？",
    "options": [
-    "否——無須知悉犯罪性質或資金來源；同一原則適用於恐怖分子資金籌集",
+    "否——無須知悉犯罪性質或資金來源，同一原則適用於恐怖分子資金籌集",
     "是——必須先正面識別出產生該等資金的具體前置罪行是甚麼，並加以證明",
     "是——最少須先清楚識別出所涉罪行所屬的一般法律類別為何，方符合規定",
     "否——但須先確切核實並清楚證明所涉犯罪得益的準確金額為何，缺一不可"
@@ -49654,7 +49654,7 @@
   "en": {
    "q": "Does a restraint order necessarily apply to all funds or property in a business relationship?",
    "options": [
-    "No -- the order may not cover every asset; the MSO must assess what remains usable under Hong Kong law",
+    "No -- the order may not cover every asset, and the MSO must assess what remains usable under Hong Kong law",
     "Yes -- the whole business relationship is automatically frozen the instant the order is served on the MSO",
     "Yes -- unless the customer successfully applies to the court to have the restraint order varied or lifted entirely",
     "No -- the MSO alone decides, without regard to the order's actual terms, which funds to restrain"
@@ -49664,7 +49664,7 @@
   "tc": {
    "q": "限制令是否必然適用於某業務關係中的所有資金或財產？",
    "options": [
-    "否——命令未必涵蓋每項資金或財產；須按香港法律評估可動用部分",
+    "否——命令未必涵蓋每項資金或財產，須按香港法律評估可動用部分",
     "是——該命令一經送達該經營者，其整段業務關係即會自動被全面凍結",
     "是——除非該客戶成功向法院申請將該限制令全部更改或撤銷",
     "否——該經營者可不理會命令的實際條款，自行決定限制哪些資金"
@@ -50150,8 +50150,8 @@
   "en": {
    "q": "Which occasional transaction thresholds trigger the ¶8.4 five-year retention duty?",
    "options": [
-    "$8,000 for wire/virtual asset transfers; $120,000 for other transaction types",
-    "$120,000 for wire/virtual asset transfers; $8,000 for other transaction types",
+    "$8,000 for wire/virtual asset transfers and $120,000 for other transaction types",
+    "$120,000 for wire/virtual asset transfers and $8,000 for other transaction types",
     "$8,000 for every type of occasional transaction, with no higher threshold at all",
     "$120,000 for every type of occasional transaction, with no lower threshold at all"
    ],
