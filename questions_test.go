@@ -191,6 +191,31 @@ func TestNoDuplicateStems(t *testing.T) {
 			}
 		}
 	}
+
+	// The pass above compares within a module, so it cannot see a question that a
+	// second module asks in the same words — the very thing the user objected to.
+	// A September 2026 review found m1-93 and m6-190 carrying byte-identical
+	// Chinese stems on the same paragraph with the same answer, invisible to both
+	// the per-module sweep and to any English-only check, because their English
+	// wording had drifted apart while the Chinese had not. An exact match on the
+	// normalised stem is cheap and catches that in either language.
+	for _, lang := range []string{"en", "tc"} {
+		byStem := map[string][]string{}
+		for _, q := range bank {
+			stem := q.En.Q
+			if lang == "tc" {
+				stem = q.Tc.Q
+			}
+			stem = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(stem), " "))
+			byStem[stem] = append(byStem[stem], q.ID)
+		}
+		for stem, ids := range byStem {
+			if len(ids) > 1 {
+				t.Errorf("%s: %s ask the same question word for word: %q",
+					lang, strings.Join(ids, ", "), stem)
+			}
+		}
+	}
 }
 
 // TestOptionLengthBalance guards the bank's biggest weakness as an exam: a
@@ -473,28 +498,36 @@ func TestCombinationFormat(t *testing.T) {
 func TestNoDuplicateAnswers(t *testing.T) {
 	bank := loadBank(t)
 
-	seen := map[string][]string{}
-	for _, q := range bank {
-		// what the question settles: the keyed option, or for a combination item
-		// the statements, since its options are the same fixed block every time
-		answer := ""
-		if q.combo() {
-			answer = strings.Join(q.En.Statements, " ")
-		} else if q.Answer >= 0 && q.Answer < len(q.En.Options) {
-			answer = q.En.Options[q.Answer]
+	// Checked in both languages: a pair can drift apart in English while the
+	// Chinese still says the same thing, and half the bank is Chinese.
+	for _, lang := range []string{"en", "tc"} {
+		seen := map[string][]string{}
+		for _, q := range bank {
+			side, src := q.En, q.Source.En
+			if lang == "tc" {
+				side, src = q.Tc, q.Source.Tc
+			}
+			// what the question settles: the keyed option, or for a combination item
+			// the statements, since its options are the same fixed block every time
+			answer := ""
+			if q.combo() {
+				answer = strings.Join(side.Statements, " ")
+			} else if q.Answer >= 0 && q.Answer < len(side.Options) {
+				answer = side.Options[q.Answer]
+			}
+			answer = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(answer), " "))
+			if len([]rune(answer)) < 12 {
+				continue // too short to identify anything
+			}
+			src = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(src), " "))
+			key := src + " || " + answer
+			seen[key] = append(seen[key], q.ID)
 		}
-		answer = strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(answer), " "))
-		if len(answer) < 12 {
-			continue // too short to identify anything
-		}
-		src := strings.TrimSpace(nonWord.ReplaceAllString(strings.ToLower(q.Source.En), " "))
-		key := src + " || " + answer
-		seen[key] = append(seen[key], q.ID)
-	}
-	for key, ids := range seen {
-		if len(ids) > 1 {
-			t.Errorf("%s all cite the same passage and give the same answer, so they ask one "+
-				"question: %q", strings.Join(ids, ", "), key)
+		for key, ids := range seen {
+			if len(ids) > 1 {
+				t.Errorf("%s: %s all cite the same passage and give the same answer, so they ask one "+
+					"question: %q", lang, strings.Join(ids, ", "), key)
+			}
 		}
 	}
 
@@ -710,6 +743,82 @@ func TestNoLengthStandout(t *testing.T) {
 				break
 			}
 			t.Logf("  %s [%s] %s: %s", o.id, o.lang, o.what, o.dir)
+		}
+	}
+}
+
+// TestNoAbsoluteTell guards a giveaway that survived every length rule. In a
+// combination item a candidate has to decide which statements are true, and a
+// September 2026 audit found the wording did that work for them: a statement
+// carrying an absolute qualifier — "only", "never", "in every case", 只限, 一律,
+// 無須 — was true just 33% of the time in English and 27% in Chinese, against a
+// 76% base rate for statements generally. Marking the absolutes false and reading
+// off the remaining combination scored 68% on the two fifths of items where the
+// rule discriminated, against 20% for chance. Distractors drift that way because
+// it is easy to make a statement wrong by overstating it; the repair was to make
+// them wrong on substance instead — a wrong section, body, threshold or date.
+//
+// The check is statistical rather than per-question: one absolute on one false
+// statement is noise, and a bank-wide correlation is what a candidate can learn.
+func TestNoAbsoluteTell(t *testing.T) {
+	bank := loadBank(t)
+
+	absolute := map[string]*regexp.Regexp{
+		"en": regexp.MustCompile(`(?i)\b(only|solely|exclusively|alone|always|never|at all|whatsoever|need not|not required|no requirement|nothing more|no more than)\b|in (every|all) cases?`),
+		"tc": regexp.MustCompile(`只|僅|一律|完全|絕不|永不|毫無|無須|毋須|不得`),
+	}
+	// Which statements a combination answer asserts to be true, by statement count.
+	trueSets := map[int][][]int{
+		4: {{0, 1, 2}, {0, 1, 3}, {1, 2, 3}, {0, 2, 3}, {0, 1, 2, 3}},
+		5: {{0, 1, 2}, {1, 2, 3}, {0, 2, 3}, {0, 1, 4}, {2, 3, 4}},
+	}
+
+	for _, lang := range []string{"en", "tc"} {
+		var total, trueOnes int
+		perModTotal, perModTrue := map[int]int{}, map[int]int{}
+		for _, q := range bank {
+			if !q.combo() {
+				continue
+			}
+			sts := q.En.Statements
+			if lang == "tc" {
+				sts = q.Tc.Statements
+			}
+			sets, ok := trueSets[len(sts)]
+			if !ok || q.Answer < 0 || q.Answer >= len(sets) {
+				t.Fatalf("%s: %d statements with answer %d", q.ID, len(sts), q.Answer)
+			}
+			isTrue := map[int]bool{}
+			for _, i := range sets[q.Answer] {
+				isTrue[i] = true
+			}
+			for i, s := range sts {
+				if !absolute[lang].MatchString(s) {
+					continue
+				}
+				total++
+				perModTotal[q.Module]++
+				if isTrue[i] {
+					trueOnes++
+					perModTrue[q.Module]++
+				}
+			}
+		}
+		if total == 0 {
+			continue
+		}
+		if share := float64(trueOnes) / float64(total); share < 0.60 {
+			t.Errorf("%s: a statement carrying an absolute qualifier is true in only %.0f%% of cases (%d of %d), want at least 60%% against a base rate near 76%%",
+				lang, share*100, trueOnes, total)
+		}
+		for m := 1; m <= 7; m++ {
+			if perModTotal[m] < 8 {
+				continue // too few to read anything into
+			}
+			if share := float64(perModTrue[m]) / float64(perModTotal[m]); share < 0.45 {
+				t.Errorf("%s module %d: a statement carrying an absolute qualifier is true in only %.0f%% of cases (%d of %d), want at least 45%%",
+					lang, m, share*100, perModTrue[m], perModTotal[m])
+			}
 		}
 	}
 }
