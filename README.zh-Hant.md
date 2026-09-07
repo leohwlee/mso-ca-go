@@ -153,6 +153,11 @@ go run .                               # 或：開發時在本機提供 web/
 | 不得有重複題幹，不同單元不得有相同答案 | 同一條問題被問兩次 |
 | 組合題格式 | 選項須與官方印本逐字相同，答案字母須分布平均 |
 
+上表背後的做法——如何依據一組固定文件編寫雙語題庫、如何蒙著答案覆核、以及如何量度
+那些讓考生不必讀懂教材也能猜中的表面線索——已整理成一份可重用的 skill，見
+[`.claude/skills/exam-question-bank/SKILL.md`](.claude/skills/exam-question-bank/SKILL.md)。
+它並不限於本考試。
+
 字型：DM Sans 及 DM Mono 以 SIL Open Font License 內嵌；中文使用作業系統字型。
 
 **發佈**以標籤觸發。推送以 `v` 開頭的標籤，會執行

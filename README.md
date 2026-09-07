@@ -179,6 +179,12 @@ review found it in real questions.
 | No duplicate stems, no shared answer across modules | one question asked twice |
 | Combination format | the printed option block, verbatim, and a spread of answer letters |
 
+The method behind that table — how to write a bilingual bank from a fixed set of
+documents, verify it blind, and measure the surface tells that let a candidate
+guess without knowing the material — is written up as a reusable skill in
+[`.claude/skills/exam-question-bank/SKILL.md`](.claude/skills/exam-question-bank/SKILL.md).
+It is not specific to this exam.
+
 Fonts: DM Sans and DM Mono are embedded under the SIL Open Font License; Chinese
 text uses the operating system's fonts.
 
