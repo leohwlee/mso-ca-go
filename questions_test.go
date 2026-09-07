@@ -197,33 +197,41 @@ func TestNoDuplicateStems(t *testing.T) {
 // options in 83% of questions, by a median of 55 characters, so a candidate who
 // knew nothing could pass 64% of simulated papers by always picking the longest
 // one. Option order is shuffled at draw time, but length is not, so length must
-// not signal the key.
+// not signal the key. The same cap applies to the Chinese options: a
+// September 2026 check found the Chinese key was the longest option in 54% of
+// module 3, so testing English alone left half a bank unguarded.
 func TestOptionLengthBalance(t *testing.T) {
 	bank := loadBank(t)
 
-	perMod, longestMod := map[int]int{}, map[int]int{}
-	for _, q := range bank {
-		if q.combo() {
-			continue // its options are the fixed block, identical on every such question
-		}
-		perMod[q.Module]++
-		best, at := 0, 0
-		for i, o := range q.En.Options {
-			if n := len([]rune(o)); n > best {
-				best, at = n, i
+	for _, lang := range []string{"en", "tc"} {
+		perMod, longestMod := map[int]int{}, map[int]int{}
+		for _, q := range bank {
+			if q.combo() {
+				continue // its options are the fixed block, identical on every such question
+			}
+			opts := q.En.Options
+			if lang == "tc" {
+				opts = q.Tc.Options
+			}
+			perMod[q.Module]++
+			best, at := 0, 0
+			for i, o := range opts {
+				if n := len([]rune(o)); n > best {
+					best, at = n, i
+				}
+			}
+			if at == q.Answer {
+				longestMod[q.Module]++
 			}
 		}
-		if at == q.Answer {
-			longestMod[q.Module]++
-		}
-	}
-	for m := 1; m <= 7; m++ {
-		if perMod[m] == 0 {
-			continue
-		}
-		if share := float64(longestMod[m]) / float64(perMod[m]); share > 0.45 {
-			t.Errorf("module %d: keyed answer is the longest option in %.0f%% of questions, want at most 45%%",
-				m, share*100)
+		for m := 1; m <= 7; m++ {
+			if perMod[m] == 0 {
+				continue
+			}
+			if share := float64(longestMod[m]) / float64(perMod[m]); share > 0.45 {
+				t.Errorf("%s module %d: keyed answer is the longest option in %.0f%% of questions, want at most 45%%",
+					lang, m, share*100)
+			}
 		}
 	}
 }
@@ -549,4 +557,91 @@ func jaccard(a, b map[string]bool) float64 {
 		}
 	}
 	return float64(inter) / float64(len(a)+len(b)-inter)
+}
+
+// spread reports how unevenly a set of option or statement texts is sized: the
+// gap between the longest and the shortest, as a share of the mean.
+func spread(ss []string) (gap int, share float64) {
+	if len(ss) == 0 {
+		return 0, 0
+	}
+	lo, hi, sum := 1<<30, 0, 0
+	for _, s := range ss {
+		n := len([]rune(s))
+		sum += n
+		if n < lo {
+			lo = n
+		}
+		if n > hi {
+			hi = n
+		}
+	}
+	return hi - lo, float64(hi-lo) / (float64(sum) / float64(len(ss)))
+}
+
+// TestOptionLengthSpread is the third lesson about length, and the one the two
+// tests above cannot teach. They rank the options and ask how often the answer
+// comes first, so they see order but never size: four options of 40, 41, 42 and
+// 130 characters rank exactly like four of 40, 41, 42 and 43. A September 2026
+// measurement found the bank passing both while leaking badly at the extremes —
+// in English an option more than 25% longer than its nearest rival was the
+// answer in 1 of 55 questions and one more than 40% longer in 0 of 31, while an
+// option more than 25% shorter than its nearest rival was the answer 47% of the
+// time. Trimming keys to defeat "pick the longest" had taught "avoid the long
+// one, take the stubby one" instead.
+//
+// The fix is not to balance a tell but to remove the signal: inside one
+// question every option should occupy about the same space, so length carries
+// no information in either direction. The same applies to the statements of a
+// combination item, where the false statement was the longest or the shortest
+// of the four in 14% of high-spread questions against 50% by chance — the
+// outliers were reliably true, which hands over an elimination for free.
+//
+// The floor exempts genuinely short answer sets: "$8,000" against "$120,000"
+// varies by half and signals nothing a candidate can use.
+func TestOptionLengthSpread(t *testing.T) {
+	bank := loadBank(t)
+
+	const tol = 0.40
+	floor := map[string]int{"en": 20, "tc": 8}
+
+	type offence struct {
+		id, lang, what string
+		gap            int
+		share          float64
+	}
+	var bad []offence
+	for _, q := range bank {
+		for _, lang := range []string{"en", "tc"} {
+			l := q.En
+			if lang == "tc" {
+				l = q.Tc
+			}
+			sets := map[string][]string{}
+			if q.combo() {
+				// The options are the fixed printed block; only the
+				// statements can leak.
+				sets["statements"] = l.Statements
+			} else {
+				sets["options"] = l.Options
+			}
+			for what, ss := range sets {
+				gap, share := spread(ss)
+				if gap > floor[lang] && share > tol {
+					bad = append(bad, offence{q.ID, lang, what, gap, share})
+				}
+			}
+		}
+	}
+	if len(bad) > 0 {
+		t.Errorf("%d question/language pairs vary too much in length; want the longest and shortest within %.0f%% of the mean (or %d/%d runes apart)",
+			len(bad), tol*100, floor["en"], floor["tc"])
+		for i, o := range bad {
+			if i == 15 {
+				t.Logf("... and %d more", len(bad)-15)
+				break
+			}
+			t.Logf("  %s [%s] %s: %d runes apart, %.0f%% of mean", o.id, o.lang, o.what, o.gap, o.share*100)
+		}
+	}
 }
